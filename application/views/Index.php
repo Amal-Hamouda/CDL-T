@@ -1121,8 +1121,7 @@
 							class="projects-masonry__item projects-masonry__item--primary projects-masonry__item--height-2">
 							<div class="projects-masonry__img"><img class="img--bg" src="<?php echo base_url();?>/resources/img/typography.jpg"
 									alt="img" />
-								<div class="projects-masonry__inner"><span class="projects-masonry__badge"
-										style="background: #F36F8F;">orphelinat</span>
+								<div class="projects-masonry__inner">
 									<h3 class="projects-masonry__title"><a href="#ProjectModal1"  data-toggle="modal">Lorem Ipsum</a>
 									</h3>
 									<p>Nam fermentum fringilla libero, id gravida erat tempor quis. Aliquam sollicitudin
@@ -1146,8 +1145,7 @@
 						<div
 							class="projects-masonry__item projects-masonry__item--primary projects-masonry__item--height-2">
 							<div class="projects-masonry__img"><img class="img--bg" src="<?php echo base_url();?>/resources/img/personne.jpg" alt="img" />
-								<div class="projects-masonry__inner"><span class="projects-masonry__badge"
-										style="background: #49C2DF;">Lorem</span>
+								<div class="projects-masonry__inner">
 									<h3 class="projects-masonry__title"> <a href="#ProjectModal2"  data-toggle="modal">Lorem Ipsum </a>
 									</h3>
 									<p>Suspendisse potenti. Praesent tortor nunc, ornare non dictum a, euismod vel
@@ -1167,34 +1165,9 @@
 					<div class="projects-slider__item">
 						<div
 							class="projects-masonry__item projects-masonry__item--primary projects-masonry__item--height-2">
-							<div class="projects-masonry__img"><img class="img--bg" src="<?php echo base_url();?>/resources/img/Palestine.jpg" alt="img" />
-								<div class="projects-masonry__inner"><span class="projects-masonry__badge"
-										style="background: #F36F8F;">Palestine</span>
-									<h3 class="projects-masonry__title"> <a href="#ProjectModal3"  data-toggle="modal">Lorem Ipsum</a>
-									</h3>
-									<p>Quisque orci leo, ultricies eget nulla non, aliquet viverra velit. Sed dignissim
-										risus nulla, a dictum risus vulputate vel. Duis cursus tincidunt velit a
-										viverra.
-										Quisque viverra diam ex, vitae consectetur libero hendrerit nec. Ut egestas
-										porttitor erat.</p>
-									<div class="projects-masonry__details-holder">
-										<div class="projects-masonry__details-item"><span>But: </span><span>135
-												000$</span>
-										</div>
-										<div class="projects-masonry__details-item"><span>Date: </span><span>23
-												Jan'19</span></div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="projects-slider__item">
-						<div
-							class="projects-masonry__item projects-masonry__item--primary projects-masonry__item--height-2">
 							<div class="projects-masonry__img"><img class="img--bg" src="<?php echo base_url();?>/resources/img/Mosque.jpg" alt="img" />
-								<div class="projects-masonry__inner"><span class="projects-masonry__badge"
-										style="background: #F36F8F;">Mosquée</span>
-									<h3 class="projects-masonry__title"> <a href="cause-details.html">Projet de
+								<div class="projects-masonry__inner">
+									<h3 class="projects-masonry__title"> <a href="#ProjectModal3"  data-toggle="modal">Projet de
 											construction
 											de la mosquée</a></h3>
 									<p> Après plusieurs années d'efforts, les conditions pour la réalisation du projet
