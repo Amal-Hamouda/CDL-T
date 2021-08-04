@@ -6481,7 +6481,6 @@ a.close.disabled {
     pointer-events: auto;
     background-color: #fff;
     background-clip: padding-box;
-    border: 3px solid rgba(0, 0, 0, 0.507);
     border-radius: .3rem;
     outline: 0
 }
@@ -20387,7 +20386,7 @@ header.header--intro .button {
     content: "";
     display: inline-block;
     border: 15px solid transparent;
-    border-top: 20px solid #343877;
+    border-top: 20px solid #d4ac46;
     position: absolute;
     top: -15px;
     left: 40px;
@@ -20404,7 +20403,7 @@ header.header--intro .button {
     left: -35px;
     width: 235px;
     padding: 35px;
-    background-color: #343877;
+    background-color: #d4ac46;
     -webkit-transform: translateY(15px);
     -ms-transform: translateY(15px);
     transform: translateY(15px);
@@ -20456,7 +20455,7 @@ header.header--intro .button {
 
 .main-menu__sub-list li a:hover,
 .main-menu__sub-list li.item--active a {
-    color: #c4c4c4
+    color: black
 }
 
 .main-menu__sub-list li a:hover::after,
