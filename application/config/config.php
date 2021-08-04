@@ -23,7 +23,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'https://home/centredeph/www/CDL/CDL-T/';
+$config['base_url'] = 'https://test.centre-des-lumieres.fr/CDL-T/';
 
 /*
 |--------------------------------------------------------------------------
