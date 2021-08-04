@@ -251,26 +251,26 @@ $session =\Stripe\Checkout\Session::create([
 																<label class="fieldlabels">Combien voudriez-vous donner ?</label> <input type="number">
 															</div>
 																<div class="col-4">
-																<input class="checkbox-budget" type="radio" name="budget" id="budget-1" checked>
+																<input class="checkbox-budget" type="radio" name="budget" id="budget-1" value="10" checked>
 																<label class="for-checkbox-budget" for="budget-1">
 																	<span data-hover="10€">10€</span>
 																</label><!--
 																	
 																-->
-																<input class="checkbox-budget" type="radio" name="budget" id="budget-2">
+																<input class="checkbox-budget" type="radio" name="budget" id="budget-2" value="25">
 																<label class="for-checkbox-budget" for="budget-2">							
 																	<span data-hover="25€">25€</span>
 																</label></div><!--
-																--><div class="col-4"><input class="checkbox-budget" type="radio" name="budget" id="budget-3">
+																--><div class="col-4"><input class="checkbox-budget" type="radio" name="budget" id="budget-3" value="50">
 																<label class="for-checkbox-budget" for="budget-3">							
 																	<span data-hover="50€">50€</span>
 																</label><!--
 
-																--><input class="checkbox-budget" type="radio" name="budget" id="budget-4">
+																--><input class="checkbox-budget" type="radio" name="budget" id="budget-4" value="100">
 																<label class="for-checkbox-budget" for="budget-4">							
 																	<span data-hover="100€">100€</span>
 																</label></div><!--
-																--><div class="col-4"><input class="checkbox-budget" type="radio" name="budget" id="budget-5">
+																--><div class="col-4"><input class="checkbox-budget" type="radio" name="budget" id="budget-5" value="250">
 																<label class="for-checkbox-budget" for="budget-5">							
 																	<span data-hover="250€">250€</span>
 																</label><!--
@@ -286,7 +286,13 @@ $session =\Stripe\Checkout\Session::create([
 															</div>
 															
 										</label>
-									</div>  <input type="button" name="previous" class="previous action-button-previous" value="Previous" /> <input type="button" name="next" class="next action-button" value="Next" />
+									</div>  <input type="button" name="previous" class="previous action-button-previous" value="Previous" /> <input type="button" name="next" class="next action-button" value="Next" id="check" />
+									<script>	
+									document.getElementById('check').onclick = function() {
+    								var pay = document.querySelector('input[type="radio"]:checked').value;
+									console.log(pay);
+									}
+									</script>
 								</fieldset>
 								<fieldset>
 									<div class="form-card">
@@ -328,6 +334,7 @@ $session =\Stripe\Checkout\Session::create([
     btn.addEventListener('click', function(e){
       e.preventDefault();
     stripe.redirectToCheckout({
+
       sessionId:"<?php echo $session->id; ?>"
     });
     });
