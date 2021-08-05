@@ -17224,11 +17224,7 @@ section.section {
 
 .form__submit:hover {
     color: #333;
-<<<<<<< HEAD
     background-color: #fff;
-=======
-    background-color: #efc940;
->>>>>>> parent of 39e3cdb (Merge branch 'Master' of https://github.com/Amal-Hamouda/CDL-T into Master)
     -webkit-transform: translateY(-5px);
     -ms-transform: translateY(-5px);
     transform: translateY(-5px);
