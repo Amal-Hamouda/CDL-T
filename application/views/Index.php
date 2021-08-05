@@ -163,11 +163,11 @@
                                 <li id="Contact" class="main-menu__item main-menu__item--has-child"><a class="main-menu__link" href="#Contact1"><span>Contact</span></a>
 
                                 </li>
-                                <li id="participer" class="main-menu__item main-menu__item--has-child"> <a class="form__submit_h" href="#" style="margin-top:15px	"><span>Faire un don</span></a>
+                                <li id="participer" class="main-menu__item main-menu__item--has-child"> <a class="form__submit" href="#" style="margin-top:15px	"><span>Faire un don</span></a>
             
 
                                 </li>
-                                <li id="participer" class="main-menu__item main-menu__item--has-child"><a class="form__submit_h" href="#" style="margin-top:15px"><span>Adhésion</span></a>
+                                <li id="participer" class="main-menu__item main-menu__item--has-child"><a class="form__submit" href="#" style="margin-top:15px"><span>Adhésion</span></a>
 
                                 </li>
                             </ul>
