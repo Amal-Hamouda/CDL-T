@@ -6481,7 +6481,6 @@ a.close.disabled {
     pointer-events: auto;
     background-color: #fff;
     background-clip: padding-box;
-    border: 3px solid rgba(0, 0, 0, 0.507);
     border-radius: .3rem;
     outline: 0
 }
@@ -17231,6 +17230,34 @@ section.section {
     -webkit-box-shadow: 0 20px 38px rgba(0, 0, 0, .16);
     box-shadow: 0 20px 38px rgba(0, 0, 0, .16)
 }
+.form__submit_h {
+    display: inline-block;
+    color: #333;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 14px 40px;
+    border-radius: 50px;
+    letter-spacing: .050em;
+    text-decoration: none;
+    min-width: 160px;
+    background: #efc940;
+    border: 2px solid #efc940;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s
+}
+
+.form__submit_h:hover {
+    color: #333;
+    background-color: #fff;
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+    -webkit-box-shadow: 0 20px 38px rgba(0, 0, 0, .16);
+    box-shadow: 0 20px 38px rgba(0, 0, 0, .16)
+}
 
 .form__submit_violet {
     display: inline-block;
@@ -20387,7 +20414,7 @@ header.header--intro .button {
     content: "";
     display: inline-block;
     border: 15px solid transparent;
-    border-top: 20px solid #343877;
+    border-top: 20px solid #d4ac46;
     position: absolute;
     top: -15px;
     left: 40px;
@@ -20404,7 +20431,7 @@ header.header--intro .button {
     left: -35px;
     width: 235px;
     padding: 35px;
-    background-color: #343877;
+    background-color: #d4ac46;
     -webkit-transform: translateY(15px);
     -ms-transform: translateY(15px);
     transform: translateY(15px);
@@ -20456,7 +20483,7 @@ header.header--intro .button {
 
 .main-menu__sub-list li a:hover,
 .main-menu__sub-list li.item--active a {
-    color: #c4c4c4
+    color: black
 }
 
 .main-menu__sub-list li a:hover::after,

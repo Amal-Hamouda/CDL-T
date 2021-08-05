@@ -6516,7 +6516,6 @@ a.close.disabled {
     pointer-events: auto;
     background-color: #fff;
     background-clip: padding-box;
-    border: 3px solid rgba(0, 0, 0, 0.507);
     border-radius: .3rem;
     outline: 0
 }
@@ -19844,7 +19843,7 @@ header.header--inner {
     cursor: pointer;
     height: 16px;
     width: 27px;
-    margin: 0 100px 0 0;
+    margin: 0 170px 0 0;
     -webkit-transition: opacity .3s;
     -o-transition: opacity .3s;
     transition: opacity .3s
@@ -19928,7 +19927,7 @@ header.header--inner {
     display: inline-block;
     max-height: 40px;
     max-width: auto;
-    margin-right:50px;
+    margin-right:120px;
 }
 
 
