@@ -17214,7 +17214,7 @@ section.section {
     letter-spacing: .050em;
     text-decoration: none;
     min-width: 160px;
-    background: #fff;
+    background:#efc940;
     border: 2px solid #efc940;
     -webkit-transition: all .3s;
     -o-transition: all .3s;
@@ -17223,34 +17223,6 @@ section.section {
 
 .form__submit:hover {
     color: #333;
-    background-color: #efc940;
-    -webkit-transform: translateY(-5px);
-    -ms-transform: translateY(-5px);
-    transform: translateY(-5px);
-    -webkit-box-shadow: 0 20px 38px rgba(0, 0, 0, .16);
-    box-shadow: 0 20px 38px rgba(0, 0, 0, .16)
-}
-.form__submit_h {
-    display: inline-block;
-    color: #333;
-    font-size: 12px;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-align: center;
-    padding: 14px 40px;
-    border-radius: 50px;
-    letter-spacing: .050em;
-    text-decoration: none;
-    min-width: 160px;
-    background: #efc940;
-    border: 2px solid #efc940;
-    -webkit-transition: all .3s;
-    -o-transition: all .3s;
-    transition: all .3s
-}
-
-.form__submit_h:hover {
-    color: #333;
     background-color: #fff;
     -webkit-transform: translateY(-5px);
     -ms-transform: translateY(-5px);
@@ -17258,6 +17230,7 @@ section.section {
     -webkit-box-shadow: 0 20px 38px rgba(0, 0, 0, .16);
     box-shadow: 0 20px 38px rgba(0, 0, 0, .16)
 }
+
 
 .form__submit_violet {
     display: inline-block;

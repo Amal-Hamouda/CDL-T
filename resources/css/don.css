@@ -265,7 +265,7 @@ label {
     letter-spacing: .050em;
     text-decoration: none;
     min-width: 160px;
-    background: #fff;
+    background: #0458A2;
     border: 2px solid #0458A2;
     -webkit-transition: all .3s;
     -o-transition: all .3s;
@@ -274,7 +274,7 @@ label {
 
 .form__submit_blue:hover {
     color: white;
-    background-color: #0458A2;
+    background-color: #fff;
     -webkit-transform: translateY(-5px);
     -ms-transform: translateY(-5px);
     transform: translateY(-5px);

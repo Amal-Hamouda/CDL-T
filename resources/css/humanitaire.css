@@ -17242,7 +17242,7 @@ section.section {
     letter-spacing: .050em;
     text-decoration: none;
     min-width: 160px;
-    background: #fff;
+    background: #7E42AE;
     border: 2px solid #7E42AE;
     -webkit-transition: all .3s;
     -o-transition: all .3s;
@@ -17251,7 +17251,7 @@ section.section {
 
 .form__submit_violet:hover {
     color: white;
-    background-color: #7E42AE;
+    background-color: #fff;
     -webkit-transform: translateY(-5px);
     -ms-transform: translateY(-5px);
     transform: translateY(-5px);
