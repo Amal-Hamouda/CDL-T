@@ -61,7 +61,7 @@
                 <div class="aside-dropdown__item d-lg-none d-block">
                     <ul class="aside-menu">
                         </li>
-                        <li class="aside-menu__item aside-menu__item--has-child"><a class="aside-menu__link" href="<?php echo site_url("Home");?>"><span>Accueil</span></a>
+                        <li class="aside-menu__item aside-menu__item--has-child"><a class="aside-menu__link" href="<?php echo site_url("donate");?>"><span>Accueil</span></a>
                             <!-- sub menu start-->
 
                             <!-- sub menu end-->
@@ -71,12 +71,22 @@
 
                             <!-- sub menu end-->
                         </li>
-                        <li class="aside-menu__item aside-menu__item--has-child"><a class="aside-menu__link" href="#horairep"><span>Horaire de prière</span></a>
-                        </li>
-						<li class="aside-menu__item aside-menu__item--has-child"><a class="aside-menu__link" href="#QuestionImam"><span>Question à l'Imam</span></a>
-                        </li>
+                      
+                        <li class="aside-menu__item aside-menu__item--has-child"><a class="aside-menu__link" href="javascript:void(0);"><span>Utilités</span></a>
+                                    <ul class="main-menu__sub-list">
+                                        <li><a href="#horairep"><span>Horaire de prière</span></a></li>
+                                        <li>
+                                        <a href="#QuestionImam"><span>Question à l'Imam</span></a>
+                                        </li>
+                                        <li><a href="#footerid"><span>Liens Utiles</span></a></li>
+                                        <li><a href="#AppM"><span>Application mobile</span></a></li>
+
+                                    </ul>
+
+                                </li>
+                        
+						
                         <li class="aside-menu__item aside-menu__item--has-child"><a class="aside-menu__link" href="#Contact1"><span>Contact</span></a></li>
-						<li class="aside-menu__item aside-menu__item--has-child"><a class="aside-menu__link" href="#footerid"><span>Liens utiles</span></a>
                         </li>
                     </ul>
                 </div>
@@ -107,7 +117,7 @@
 					
 					</ul>
 				</div>
-				<div class="aside-dropdown__item"><a class="form__submit_blue" href="#" style="margin-left:30px;"><span>Faire un don</span></a>
+				<div class="aside-dropdown__item"><a class="form__submit_blue" href="<?php echo site_url("donate");?>" style="margin-left:30px;"><span>Faire un don</span></a>
 				</div>
 			</div>
 		</div>

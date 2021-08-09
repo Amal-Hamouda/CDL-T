@@ -95,7 +95,7 @@
 
                     </ul>
                 </div>
-                <div class="aside-dropdown__item"><a class="form__submit_violet" href="#" style="margin-left:30px;"><span>Faire un don</span></a>
+                <div class="aside-dropdown__item"><a class="form__submit_violet" href="<?php echo site_url("donate");?>" style="margin-left:30px;"><span>Faire un don</span></a>
                 </div>
             </div>
         </div>
@@ -153,7 +153,7 @@
                                     <li id="Contact" class="main-menu__item main-menu__item--has-child"><a class="main-menu__link" href="#Contact1"><span>Contact</span></a>
 
                                     </li>
-                                    <li id="participer" class="main-menu__item main-menu__item--has-child"><a class="form__submit_violet" href="#" style="margin-top:15px;"><span>Faire un don</span></a>
+                                    <li id="participer" class="main-menu__item main-menu__item--has-child"><a class="form__submit_violet" href="<?php echo site_url("donate");?>" style="margin-top:15px;"><span>Faire un don</span></a>
 
                                     </li>
 
@@ -293,7 +293,7 @@
                                 <span class="don-text" style="color: blueviolet;"> Faites un don maintenant <br>et aidez-nous a changer des vies </span>
                             </div>
                             <div class="col-5 col-md-3 col-lg-2 m-0 p-0">
-                                <a class=" form__submit_violet  text-center" style="border-radius: 15px;" data-toggle="modal" data-target=".bd-example-modal-lg" href="<?php echo site_url("Home");?>">Faire un don</a>
+                                <a class=" form__submit_violet  text-center" style="border-radius: 15px;" data-toggle="modal" data-target=".bd-example-modal-lg" href="<?php echo site_url("donate");?>">Faire un don</a>
                             </div>
                         </div>
                     </div>
@@ -376,7 +376,7 @@
                             </div>
                             <div class="col-12 text-center">
 
-                                <a class="button button-don m-2 text-center" data-toggle="modal" data-target=".bd-example-modal-lg" href="#">Faire un don !</a>
+                                <a class="button button-don m-2 text-center" data-toggle="modal" data-target=".bd-example-modal-lg" href="<?php echo site_url("donate");?>">Faire un don !</a>
 
                             </div>
 
