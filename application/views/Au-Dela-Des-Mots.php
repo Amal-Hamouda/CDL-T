@@ -363,7 +363,7 @@
             <section class="section action-section">
                 <div class="jarallax">
                     <picture>
-                        <source srcset="img/imgbg.png" media="(min-width: 992px)" /><img class="jarallax-img" src="<?php echo base_url();?>/resources/img/ZAKAT.png" alt="img" />
+                        <source srcset="<?php echo base_url();?>/resources/img/imgbg.png" media="(min-width: 992px)" /><img class="jarallax-img" src="<?php echo base_url();?>/resources/img/ZAKAT.png" alt="img" />
                     </picture>
                 </div>
                 <div class="container">
