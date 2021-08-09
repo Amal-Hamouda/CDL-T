@@ -337,7 +337,7 @@
                         <br>
                         <h2 class="action-section__title" style="font-weight: 50;font-size:x-large"></h2>
                         <br>
-                        <a class="button button-zakat m-2" data-toggle="modal" id="modaleCalcul" data-target=".bd-example-modal-lg" href="#">Je Calcule ma Zakat</a>
+                        <a class="button button-zakat m-2" data-toggle="modal" id="modaleCalcul" data-target=".bd-example-modal-lg" data-backdrop="static" data-keyboard="false" href="#">Je Calcule ma Zakat</a>
                         <a class="button button-zakat m-2" data-toggle="modal" data-target=".bd-example-modal-lg2" href="#">Je verse ma Zakat</a>
 
 
@@ -1409,6 +1409,11 @@
 
         });
         $("#donate_button2").click(function() {
+            $("#show").hide();
+            $("#donate_button9").show();
+            $("#myModal").modal('hide');
+        });
+        $("#xclose").click(function() {
             $("#show").hide();
             $("#donate_button9").show();
             $("#myModal").modal('hide');
