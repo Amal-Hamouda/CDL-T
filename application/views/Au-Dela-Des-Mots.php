@@ -777,7 +777,7 @@
 
                                                 <div class="testimonials-slider__author">
 
-                                                    <a href="#modalScrollableCenter1" style="color: black;" role="button" class="form__submit_violet  m-2" data-toggle="modal">Plus de détail</a>
+                                                    <a href="#modalScrollableCenter1" role="button" class="form__submit_violet  m-2" data-toggle="modal">Plus de détail</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -796,7 +796,7 @@
                                                 </div>
 
                                                 <div class="testimonials-slider__author">
-                                                    <a href="#modalScrollableCenter2" style="color: black;" role="button" class="form__submit_violet  m-2" data-toggle="modal">Plus de détail</a>
+                                                    <a href="#modalScrollableCenter2"  role="button" class="form__submit_violet  m-2" data-toggle="modal">Plus de détail</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -815,7 +815,7 @@
                                                 </div>
 
                                                 <div class="testimonials-slider__author">
-                                                    <a href="#modalScrollableCenter3" style="color: black;" role="button" class="form__submit_violet  m-2" data-toggle="modal">Plus de détail</a>
+                                                    <a href="#modalScrollableCenter3" role="button" class="form__submit_violet  m-2" data-toggle="modal">Plus de détail</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -834,7 +834,7 @@
                                                 </div>
 
                                                 <div class="testimonials-slider__author">
-                                                    <a href="#modalScrollableCenter4" style="color: black;" role="button" class="form__submit_violet  m-2" data-toggle="modal">Plus de détail</a>
+                                                    <a href="#modalScrollableCenter4" role="button" class="form__submit_violet  m-2" data-toggle="modal">Plus de détail</a>
                                                 </div>
 
                                             </div>
