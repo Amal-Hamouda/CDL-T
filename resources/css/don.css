@@ -255,7 +255,7 @@ label {
 
 .form__submit_blue {
     display: inline-block;
-    color: #333;
+    color:#fff;
     font-size: 12px;
     font-weight: 700;
     text-transform: uppercase;
@@ -273,7 +273,7 @@ label {
 }
 
 .form__submit_blue:hover {
-    color: white;
+    color: #333;
     background-color: #fff;
     -webkit-transform: translateY(-5px);
     -ms-transform: translateY(-5px);

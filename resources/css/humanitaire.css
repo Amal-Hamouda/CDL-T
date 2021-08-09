@@ -17233,7 +17233,7 @@ section.section {
 
 .form__submit_violet {
     display: inline-block;
-    color: #333;
+    color: #fff;
     font-size: 12px;
     font-weight: 700;
     text-transform: uppercase;
@@ -17251,8 +17251,8 @@ section.section {
 }
 
 .form__submit_violet:hover {
-    color: white;
-    background-color: #fff;
+    color: #333;
+    background-color: white;
     -webkit-transform: translateY(-5px);
     -ms-transform: translateY(-5px);
     transform: translateY(-5px);
@@ -17924,7 +17924,7 @@ section.section {
     .form__submit_violet {
         width: 100px;
         display: inline-block;
-        color: #333;
+        color: #fff;
         font-weight: 700;
         text-transform: uppercase;
         text-align: center;
@@ -17932,7 +17932,7 @@ section.section {
         border-radius: 50px;
         letter-spacing: .050em;
         text-decoration: none;
-        background: #fff;
+        background: #7E42AE;
         min-width: 100%;
         border: 2px solid #7E42AE;
         -webkit-transition: all .3s;

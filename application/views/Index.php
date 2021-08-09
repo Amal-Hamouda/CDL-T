@@ -101,7 +101,7 @@
 									class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
                     </ul>
                 </div>
-                <div class="aside-dropdown__item"><a class="form__submit" href="#" style="margin-left:30px;"><span>Faire un don</span></a>
+                <div class="aside-dropdown__item"><a class="form__submit" href="<?php echo site_url("donate");?>" style="margin-left:30px;"><span>Faire un don</span></a>
                 </div>
             </div>
         </div>
@@ -163,7 +163,7 @@
                                 <li id="Contact" class="main-menu__item main-menu__item--has-child"><a class="main-menu__link" href="#Contact1"><span>Contact</span></a>
 
                                 </li>
-                                <li id="participer" class="main-menu__item main-menu__item--has-child"> <a class="form__submit" href="#" style="margin-top:15px	"><span>Faire un don</span></a>
+                                <li id="participer" class="main-menu__item main-menu__item--has-child"> <a class="form__submit" href="<?php echo site_url("donate");?>" style="margin-top:15px	"><span>Faire un don</span></a>
             
 
                                 </li>
