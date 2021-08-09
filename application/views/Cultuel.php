@@ -157,17 +157,19 @@
                                 <li id="Somme" class="main-menu__item main-menu__item--has-child
 											"><a class="main-menu__link" href="#QuiSommeNous"><span>A Propos</span></a>
                                 </li>
-                                <li id="Horaire" class="main-menu__item main-menu__item--has-child
-											"><a class="main-menu__link" href="#horairep"><span>Horaire de prière</span></a>
-                                </li>
-								<li id="Question" class="main-menu__item main-menu__item--has-child
-								"><a class="main-menu__link" href="#QuestionImam"><span>Question à l'Imam</span></a>
-					</li>
+                    <li class="main-menu__item main-menu__item--has-child" id="Utilités"><a class="main-menu__link" href="#Participer"><span>Utilités</span></a>
+                                    <ul class="main-menu__sub-list">
+                                        <li><a href="#horairep"><span>Horaire de prière</span></a></li>
+                                        <li>
+                                        <a href="#QuestionImam"><span>Question à l'Imam</span></a>
+                                        </li>
+                                        <li><a href="#footerid"><span>Liens Utiles</span></a></li>
+                                        <li><a href="#AppM"><span>Application mobile</span></a></li>
 
+                                    </ul>
+
+                                </li>
                                 <li id="Contact" class="main-menu__item main-menu__item--has-child"><a class="main-menu__link" href="#Contact1"><span>Contact</span></a>
-
-                                </li>
-								<li id="LienUtiles" class="main-menu__item main-menu__item--has-child"><a class="main-menu__link" href="#footerid"><span>Liens Utiles</span></a>
 
                                 </li>
                                 <li id="participer" class="main-menu__item main-menu__item--has-child"><a class="form__submit_blue" href="#" style="margin-top:15px;"><span>Je calcule ma ZAKAT</span></a>
