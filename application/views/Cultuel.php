@@ -73,7 +73,7 @@
                         </li>
                       
                         <li class="aside-menu__item aside-menu__item--has-child"><a class="aside-menu__link" href="javascript:void(0);"><span>Utilités</span></a>
-                                    <ul class="main-menu__sub-list">
+                                    <ul class="aside-menu__sub-list">
                                         <li><a href="#horairep"><span>Horaire de prière</span></a></li>
                                         <li>
                                         <a href="#QuestionImam"><span>Question à l'Imam</span></a>
