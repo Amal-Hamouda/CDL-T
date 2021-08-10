@@ -341,47 +341,54 @@ $session =\Stripe\Checkout\Session::create([
   </script>
 																	</div>
 																 <!-- End -->
-																<!-- Paypal info -->
-																<script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=USD" data-sdk-integration-source="button-factory"></script>
-  <script>
-    function initPayPalButton() {
-      paypal.Buttons({
-        style: {
-          shape: 'rect',
-          color: 'blue',
-          layout: 'vertical',
-          label: 'paypal',
-          
-        },
-
-        createOrder: function(data, actions) {
-          return actions.order.create({
-            purchase_units: [{"amount":{"currency_code":"USD","value":1}}]
-          });
-        },
-
-        onApprove: function(data, actions) {
-          return actions.order.capture().then(function(details) {
-            alert('Transaction completed by ' + details.payer.name.given_name + '!');
-          });
-        },
-
-        onError: function(err) {
-          console.log(err);
-        }
-      }).render('#paypal-button-container');
-    }
-    initPayPalButton();
-  </script>
-																<div id="paypal" class="tab-pane fade pt-3">
-																<div id="smart-button-container">
-      <div style="text-align: center;">
-        <div id="paypal-button-container"></div>
-      </div>
-    </div>
-																</div> 
-																
-  <!-- End -->
+																													<!-- Paypal info -->
+																													<script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=USD" data-sdk-integration-source="button-factory"></script>
+ 
+ <script src="https://www.paypal.com/sdk/js?client-id=AcAUrZDfwcXyX3G0de-lbhxpiT6fqTgTBDyI31Zd9P4WdkbUX7AaoBXEbvNewQp5EpzaAvP0ZjEmUTCW&disable-funding=credit,card"></script>
+	 <script>
+		 document.getElementById('check').onclick = function() {
+								 
+									 
+		 let  final = document.querySelector('input[type="radio"]:checked').value;
+		 console.log(final+"tt");
+		 paypal.Buttons({
+	 style : {
+		 color: 'blue',
+		 shape: 'pill'
+	 },
+	 createOrder: function (data, actions) {
+		 return actions.order.create({
+			 purchase_units : [{
+				 amount: {
+					 value:  final
+				 }
+			 }]
+		 });
+	 },
+	 onApprove: function (data, actions) {
+		 return actions.order.capture().then(function (details) {
+			 console.log(details)
+			 //window.location.replace("http://localhost:63342/tutorial/paypal/success.php")
+		 })
+	 },
+	 onCancel: function (data) {
+		 //window.location.replace("http://localhost:63342/tutorial/paypal/Oncancel.php")
+	 }
+ }).render('#paypal-payment-button');
+ }
+   </script>
+																 <div id="paypal" class="tab-pane fade pt-3">
+																 <div id="smart-button-container">
+	   <div style="text-align: center;">
+ 
+						 <div id="paypal-payment-button">
+ 
+						 </div>
+	   </div>
+	 </div>
+																 </div> 
+																 
+   <!-- End -->
 																<!-- Go Cardless info -->
 																<div id="net-banking" class="tab-pane fade pt-3">
 																	<div class="form-group "> <label for="Select Your Bank">
