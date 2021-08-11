@@ -132,7 +132,7 @@
                 <div class="row no-gutters justify-content-between" style="height:80px;">
                     <div class="col-auto d-flex align-items-center">
                         <div class="header-logo">
-                            <a class="header-logo__link" href="<?php echo site_url("Home");?>"><img class="header-logo__img logo--light" src="<?php echo base_url();?>/resources/img/Favicon.png" alt="logo" id="img_mob"><img class="header-logo__img logo--dark" src="<?php echo base_url();?>/resources/img/Logo-Horizontal.png" alt="logo" id="logo_img" style="height:300px"></a>
+                            <a class="header-logo__link"><img class="header-logo__img logo--light" src="<?php echo base_url();?>/resources/img/Favicon.png" alt="logo" id="img_mob"><img class="header-logo__img logo--dark" src="<?php echo base_url();?>/resources/img/Logo-Horizontal.png" alt="logo" id="logo_img" style="height:300px"></a>
                         </div>
                     </div>
                     <div class="col-auto">

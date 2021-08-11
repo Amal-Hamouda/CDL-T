@@ -75,12 +75,9 @@
                         <li class="aside-menu__item aside-menu__item--has-child"><a class="aside-menu__link" href="javascript:void(0);"><span>Utilités</span></a>
                                     <ul class="aside-menu__sub-list">
                                         <li><a href="#horairep"><span>Horaire de prière</span></a></li>
-                                        <li>
-                                        <a href="#QuestionImam"><span>Question à l'Imam</span></a>
-                                        </li>
-                                        <li><a href="#footerid"><span>Liens Utiles</span></a></li>
                                         <li><a href="#AppM"><span>Application mobile</span></a></li>
-
+                                        <li><a href="#QuestionImam"><span>Question à l'Imam</span></a></li>
+                                        <li><a href="#footerid"><span>Liens Utiles</span></a></li>
                                     </ul>
 
                                 </li>
@@ -154,7 +151,7 @@
                 <div class="row no-gutters justify-content-between">
                     <div class="col-auto d-flex align-items-center">
                     <div class="header-logo">
-                            <a class="header-logo__link" href="<?php echo site_url("Home");?>"><img class="header-logo__img logo--light" src="<?php echo base_url();?>/resources/img/logmobcultuel.jpg" alt="logo" id="img_mob"><img class="header-logo__img logo--dark" src="<?php echo base_url();?>/resources/img/logcultuel.png" alt="logo" id="logo_img"></a>
+                            <a class="header-logo__link"><img class="header-logo__img logo--light" src="<?php echo base_url();?>/resources/img/logmobcultuel.jpg" alt="logo" id="img_mob"><img class="header-logo__img logo--dark" src="<?php echo base_url();?>/resources/img/logcultuel.png" alt="logo" id="logo_img"></a>
                         </div>
                     </div>
                     <div class="col-auto">
@@ -170,12 +167,9 @@
                     <li class="main-menu__item main-menu__item--has-child" id="Utilités"><a class="main-menu__link" href="#Participer"><span>Utilités</span></a>
                                     <ul class="main-menu__sub-list">
                                         <li><a href="#horairep"><span>Horaire de prière</span></a></li>
-                                        <li>
-                                        <a href="#QuestionImam"><span>Question à l'Imam</span></a>
-                                        </li>
-                                        <li><a href="#footerid"><span>Liens Utiles</span></a></li>
                                         <li><a href="#AppM"><span>Application mobile</span></a></li>
-
+                                        <li> <a href="#QuestionImam"><span>Question à l'Imam</span></a></li>
+                                        <li><a href="#footerid"><span>Liens Utiles</span></a></li>
                                     </ul>
 
                                 </li>
@@ -225,7 +219,7 @@
         <!-- HERO Section start-->
         <section class="promo-primary" style="padding-bottom:52%;">
             <picture>
-                <source srcset="<?php echo base_url();?>/resources/img/about.jpg" media="(min-width: 992px)" /><img class="img--bg" style="height: 80%;" src="<?php echo base_url();?>/resources/img/about.jpg" alt="img" />
+                <source srcset="<?php echo base_url();?>/resources/img/Herocultuel.png" media="(min-width: 992px)" /><img class="img--bg" style="height: 80%;" src="<?php echo base_url();?>/resources/img/Herocultuel.png" alt="img" />
             </picture>
             <div class="promo-primary__description"> <span> </span></div>
             <div class="container">
@@ -240,18 +234,50 @@
                 </div>
             </div>
         </section>
+                <!-- about-us start-->
+                <section class="section" id="QuiSommeNous">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-xl-5" id="cent">
+                        <div class="heading heading--primary"><span class="heading__pre-title" style="color: black;">À propos du pôle </span>
+                            <h2 class="heading__title"><span style="color: #045dab;">CULTUEL</span> </h2>
+                        </div>
+                        <p style="color: black;">En tant qu’acteur humanitaire de premier plan, on est habilité à collecter votre Zakât puis à la relayer aux ayants-droits dans le respect de l’éthique musulmane. En France comme dans nos nombreux pays d’intervention, tels que
+                            la Syrie, le Pakistan, la Palestine ou encore le Mali, nous venons en aide à des millions de personnes. Précaires, elles font toutes partie individuellement comme collectivement de celles qui peuvent légitimement bénéficier
+                            de votre Zakât.
+                        </p>
+                        <p>
+                    </div>
+                    <div class="col-lg-6 col-xl-6 offset-xl-1" id="ZakatP">
+                        <div class="img-box">
+                            <video width="100%" height="100%" loop autoplay muted>
+									<source src="<?php echo base_url();?>/resources/img/Construction.mp4" type="video/mp4">
+									Your browser does not support the video tag.
+								</video>
+
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- about-us end-->
         <!--quote start-->
-        <section class="subscribe" style="background-color:lightgrey;padding-top: 2%;padding-bottom: 2%;margin-top: -10%;">
+        <section class="subscribe" style="background-color:#EEEEEE;padding-top: 2%;padding-bottom: 2%;margin-top: -10%;">
 
             <div class="container">
 
                 <div class="row">
+                <div class="col-xl-12 text-center mb-3" style="color:#626262;"id="Quoteita">le Prophète a dit </div>
+
                     <div class="col-xl-12 text-center mb-2"><i class="fas fa-quote-left fa-3x" style="color: #045dab;"></i></div>
                     <div class="col-xl-12 text-center m-3">
-                        <h2 class="subscribe__title" style="letter-spacing: 0.6px;color: black;">Les aumônes sont destinées aux pauvres, aux nécessiteux, à ceux qui sont chargés de la collecter, à ceux dont les cœurs sont à gagner, au rachat des captifs, aux insolvables, à ceux qui se consacrent à la cause d'Allâh et aux voyageurs.
+                        <h2 class="subscribe__title" style="letter-spacing: 0.6px;color: black;">L’aumône éteint le péché exactement comme<br>l’eau éteint le feu…
                         </h2>
                     </div>
-                    <div class="col-xl-12 text-center mb-3" style="color:black;"id="Quoteita">-Coran, S.9 V.60</div>
+                    <div class="col-xl-12 text-center mb-3" style="color:#626262;"id="Quoteita">Al-Boukhari, Sahih, hadith N° 2951</div>
                 </div>
 
             </div>
@@ -282,58 +308,27 @@
             </div>
         </div>
 
-        <!-- about-us start-->
-        <section class="section" id="QuiSommeNous">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6 col-xl-5" id="cent">
-                        <div class="heading heading--primary"><span class="heading__pre-title" style="color: black;">À propos du pôle </span>
-                            <h2 class="heading__title"><span style="color: #045dab;">CULTUEL</span> </h2>
-                        </div>
-                        <p style="color: black;">En tant qu’acteur humanitaire de premier plan, on est habilité à collecter votre Zakât puis à la relayer aux ayants-droits dans le respect de l’éthique musulmane. En France comme dans nos nombreux pays d’intervention, tels que
-                            la Syrie, le Pakistan, la Palestine ou encore le Mali, nous venons en aide à des millions de personnes. Précaires, elles font toutes partie individuellement comme collectivement de celles qui peuvent légitimement bénéficier
-                            de votre Zakât.
-                        </p>
-                        <p>
-                    </div>
-                    <div class="col-lg-6 col-xl-6 offset-xl-1" id="ZakatP">
-                        <div class="img-box">
-                            <video width="100%" height="100%" loop autoplay muted>
-									<source src="<?php echo base_url();?>/resources/img/Construction.mp4" type="video/mp4">
-									Your browser does not support the video tag.
-								</video>
 
-
-                        </div>
-
-
-                    </div>
-                </div>
-            </div>
-        </section>
         <!--zakat section start-->
 
         <section class="section action-section">
             <div class="jarallax">
                 <picture>
-                    <source srcset="<?php echo base_url();?>/resources/img/imgbg.png" style="background-image: url(<?php echo base_url();?>/resources/img/about.jpg);background-repeat: no-repeat;background-size: cover; background-attachment: fixed; background-position:center center;" /><img class="jarallax-img" src="<?php echo base_url();?>/resources/img/ZAKAT.png" alt="img" />
+                    <source srcset="<?php echo base_url();?>/resources/img/zakatimg.png" style="background-image: url(<?php echo base_url();?>/resources/img/about.jpg);background-repeat: no-repeat;background-size: cover; background-attachment: fixed; background-position:center center;" /><img class="jarallax-img" src="<?php echo base_url();?>/resources/img/zakatimg.png" alt="img" />
                 </picture>
             </div>
             <div class="container" id="Participer" style="margin-top:40px;margin-bottom: -40px ;">
                 <div class="row">
 
-                    <div class="col-3 text-right"><i class="fas fa-quote-left fa-2x" style="color: #ffff;"></i></div>
-                    <div class="col-6 text-center">
-                        <h2 class="action-section__title" style=" font-family: 'Montserrat';font-weight: 90;">Prélève de leurs biens une aumône par laquelle tu les purifie et les bénis</h2>
+                    <div class="col-12 text-center">
+                        <h2 class="action-section__title" style=" font-family: 'Montserrat';font-weight: 90; color:black">Calculez votre ZAKAT et complétez<br>
+votre 4ème pilier de l'Islam d'où vous êtes</h2>
                     </div>
-                    <div class="col-3"><i class="fas fa-quote-right fa-2x" style="color: #ffff;"></i></div>
+                   
 
 
 
                     <div class="col-12 text-center">
-
-                        <p class="action-section__text" id="Quoteita">
-                            (Coran, S.9 V.103)</p>
                         <br>
                         <h2 class="action-section__title" style="font-weight: 50;font-size:x-large"></h2>
                         <br>
@@ -584,43 +579,23 @@
         <!-- ButtonZakat end-->
 
         <!-- citation start-->
-        <section class="subscribe" style="background-color: #fff;margin-top:50px">
-            <hr>
+        <section class="subscribe" style="background-color: #0458A2;margin-top:50px">
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-12 text-center mb-2"><i class="fas fa-quote-left fa-3x" style="color: #045dab;"></i></div>
+                    <div class="col-xl-12 text-center mb-2"><i class="fas fa-quote-left fa-3x" style="color: white;"></i></div>
                     <div class="col-xl-12 text-center m-3">
-                        <h2 class="subscribe__title" style="letter-spacing: 0.6px;color: black;">Les aumônes sont destinées aux pauvres, aux nécessiteux, à ceux qui sont chargés de la collecter, à ceux dont les cœurs sont à gagner, au rachat des captifs, aux insolvables, à ceux qui se consacrent à la cause d'Allâh et aux voyageurs.
+                        <h2 class="subscribe__title" style="letter-spacing: 0.6px;color: white;">Ceux qui dépensent leurs biens pour Dieu <br>ressemblent à un grain d’où naissent sept épis,<br> chaque épi étant constitué de cent grains. Et <br>Dieu multiplie davantage à qui Il veut…
                         </h2>
                     </div>
-                    <div class="col-xl-12 text-center mb-3" id="Quoteita">(Coran, S.9 V.60)</div>
+                    <div class="col-xl-12 text-center mb-3" id="Quoteita" style="font-style:italic;color:#D4D4D4">Coran, sourate 1, verset 261.</div>
                 </div>
             </div>
-            <hr>
         </section>
 
         <!-- citation end-->
-        <section class="section action-section">
-            <div class="jarallax">
-                <picture>
-                    <source srcset="<?php echo base_url();?>/resources/img/follow-us-cultuel.png" media="(min-width: 992px)" /><img class="jarallax-img" src="<?php echo base_url();?>/resources/img/follow-us-cultuel.png" alt="img" />
-                </picture>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-6" style="text-align: justify;">
-                        <br>
-                        <p class="Suiv">Suivez nous sur les réseau sociaux</p>
-                    </div>
-                    <div class="icons col-6">
-                        <br>
-                        <i class="fab fa-youtube fa-2x"></i>&nbsp &nbsp &nbsp
-                        <i class="fab fa-twitter-square fa-2x"></i></a>&nbsp &nbsp &nbsp
-                        <i class="fab fa-google fa-2x"></i>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <!-- social start -->
+      
+        <!-- social end -->
 
         <!-- info banner start-->
         <section class="section no-padding-top" id="AppM">
@@ -712,34 +687,34 @@
   }
 ?>
         <!--question start-->
-        <section style="background-image: url(<?php echo base_url();?>/resources/img/about.jpg);background-repeat: no-repeat;background-size: cover; background-attachment: fixed; background-position:center center; padding-top: 1%;"id="QuestionImam">
+        <section style="background-image: url(<?php echo base_url();?>/resources/img/imampic.png);background-repeat: no-repeat;background-size: cover; background-attachment: fixed; background-position:center center; padding-top: 1%;"id="QuestionImam">
             <div>
                 <div class="row justify-content-end">
                     <br>
 
                     <div class="col-xl-4 p-xl-5">
                     <form class="form message-form_ben" action="<?php echo $_SERVER['PHP_SELF'];?>" method="post">
-                            <h4 class="justify-content-center_form" style="color:#045dab;font-weight: bold;">Question à l'Imam</h4>
+                            <h4 class="justify-content-center_form" style="color: #f9f7f6;font-weight: bold;opacity: 0.8;">Question à l'Imam</h4>
 
-                            <div class="col-lg-12">
-                                <h4 class="justify-content-center_form" style=color:gray;>Votre question:</h4>
+                            <div class="col-lg-10">
+                                <h4 class="justify-content-center_form" style="color:#f9f7f6;opacity: 0.8;font-size: 25px;font-weight: 100;">Faites confiance à l'Imam pour avoir la bonne réponse à votre question  </h4>
                             </div>
                             <div class="row">
                                 <div class="col-lg-12">
-                                    <input class="form__field form_fshadow" type="text" name="first-name" placeholder="Prenom*" required="required" />
+                                    <input class="form__field_q form_fshadow" type="text" name="first-name" placeholder="Prenom*" required="required" />
                                 </div>
                                 <div class="col-lg-12">
-                                    <input class="form__field form_fshadow" type="text" name="last-name" placeholder="Nom*" required="required" />
+                                    <input class="form__field_q form_fshadow" type="text" name="last-name" placeholder="Nom*" required="required" />
                                 </div>
                                 <div class="col-lg-12">
-                                    <input class="form__field form_fshadow" type="email" name="email" placeholder="Email" required="required" />
+                                    <input class="form__field_q form_fshadow" type="email" name="email" placeholder="Email" required="required" />
                                 </div>
 
                                 <div class="col-12">
-                                    <textarea class="form__message form__field form_fshadow" name="message" placeholder=""></textarea>
+                                    <textarea class="form__message form__field_q form_fshadow" name="message" placeholder="Question" required="required"></textarea>
                                 </div>
                                 <div class="col-12">
-                                    <button class="form__submit_blue_Shadow" type="submit form_fshadow" name="submit"  style="margin: 0%">Envoyer</button>
+                                    <button class="form__submit_blue" type="submit form_fshadow" name="submit"  style="margin: 0%">Envoyer</button>
                                 </div>
                             </div>
                         </form>
