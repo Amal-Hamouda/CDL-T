@@ -265,7 +265,7 @@
         </section>
         <!-- about-us end-->
         <!--quote start-->
-        <section class="subscribe" style="background-color:#EEEEEE;padding-top: 2%;padding-bottom: 2%;margin-top: -10%;">
+        <section class="subscribe" style="background-color:#EEEEEE;padding-top: 2%;padding-bottom: 2%;">
 
             <div class="container">
 
