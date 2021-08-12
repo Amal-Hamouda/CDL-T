@@ -17375,6 +17375,7 @@ section.section {
     transition: background .3s;
     outline: 0;
     opacity: 0.6;
+    margin-top: 5px;
 }
 
 .form__field:focus {
