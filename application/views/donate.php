@@ -202,7 +202,7 @@ $session =\Stripe\Checkout\Session::create([
 
 				});	
 		</script>
-			<div class="container-fluid">
+					<div class="container-fluid">
 				<div class="row justify-content-center">
 					<div class="col-11 col-sm-9 col-md-7 col-lg-6 col-xl-5 text-center p-0 mt-3 mb-2"style ="border-radius:10px;box-shadow:5px 5px 5px 5px whitesmoke;m">
 						<div class="card px-0 pt-4 pb-0 mt-3 mb-3" style="margin:20px">
@@ -251,32 +251,32 @@ $session =\Stripe\Checkout\Session::create([
 																<label class="fieldlabels">Combien voudriez-vous donner ?</label> <input type="number">
 															</div>
 																<div class="col-4">
-																<input class="checkbox-budget" type="radio" name="budget" id="budget-1" value="10" checked>
+																<input class="checkbox-budget" type="radio" name="data" id="budget-1" value="10" checked>
 																<label class="for-checkbox-budget" for="budget-1">
 																	<span data-hover="10€">10€</span>
 																</label><!--
 																	
 																-->
-																<input class="checkbox-budget" type="radio" name="budget" id="budget-2" value="25">
+																<input class="checkbox-budget" type="radio" name="data" id="budget-2" value="25">
 																<label class="for-checkbox-budget" for="budget-2">							
 																	<span data-hover="25€">25€</span>
 																</label></div><!--
-																--><div class="col-4"><input class="checkbox-budget" type="radio" name="budget" id="budget-3" value="50">
+																--><div class="col-4"><input class="checkbox-budget" type="radio" name="data" id="budget-3" value="50">
 																<label class="for-checkbox-budget" for="budget-3">							
 																	<span data-hover="50€">50€</span>
 																</label><!--
 
-																--><input class="checkbox-budget" type="radio" name="budget" id="budget-4" value="100">
+																--><input class="checkbox-budget" type="radio" name="data" id="budget-4" value="100">
 																<label class="for-checkbox-budget" for="budget-4">							
 																	<span data-hover="100€">100€</span>
 																</label></div><!--
-																--><div class="col-4"><input class="checkbox-budget" type="radio" name="budget" id="budget-5" value="250">
+																--><div class="col-4"><input class="checkbox-budget" type="radio" name="data" id="budget-5" value="250">
 																<label class="for-checkbox-budget" for="budget-5">							
 																	<span data-hover="250€">250€</span>
 																</label><!--
-																--><input class="checkbox-budget" type="radio" name="budget" id="budget-6">
+																--><input class="checkbox-budget" type="radio" name="data" id="budget-6">
 																<label class="for-checkbox-budget" for="budget-6">							
-																	<span data-hover="Personnalisé">Personnalisé</span>
+																	<span data-hover="...">...</span>
 																</label></div>
 																
 															</div>
@@ -284,17 +284,12 @@ $session =\Stripe\Checkout\Session::create([
 															</div>
 															</div>
 															</div>
-															
-										</label>
+																								</label>
 									</div>  <input type="button" name="previous" class="previous action-button-previous" value="Previous" /> <input type="button" name="next" class="next action-button" value="Next" id="check" />
-									<script>	
-									document.getElementById('check').onclick = function() {
-    								var pay = document.querySelector('input[type="radio"]:checked').value;
-									console.log(pay);
-									}
-									</script>
+			
 								</fieldset>
 								<fieldset>
+									
 									<div class="form-card">
 										<div class="row">
 											<div class="col-7">
@@ -325,58 +320,23 @@ $session =\Stripe\Checkout\Session::create([
 																</div> <!-- End -->
 																<!-- Credit card form content -->
 																<div class="tab-content">
+				
 																	<!-- credit card info-->
 																	<div id="credit-card" class="tab-pane fade show active pt-3">
-																	<button id="checkout-button">Checkout</button>
-  <script>
-    var stripe = Stripe('pk_test_51JHpHoG89vko2fx6HqUIn0ktlO2HJJPYj97tiI8Fww881IVfrX9KzXVa9xc4UjijCuDQg2DfwJa31XPGJx1cA3rj00cKqQiClC');
-    const btn = document.getElementById("checkout-button")
-    btn.addEventListener('click', function(e){
-      e.preventDefault();
-    stripe.redirectToCheckout({
+																	<input type="button" name="Stripe"  value="Stripe" id="checkout-button" style=" color:white;
+    background:#635bff;
+    font-weight: 700;
+    border-radius: 28px;
+    font-size:20px;"/>	
 
-      sessionId:"<?php echo $session->id; ?>"
-    });
-    });
-  </script>
 																	</div>
+																
 																 <!-- End -->
 																													<!-- Paypal info -->
 																													<script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=USD" data-sdk-integration-source="button-factory"></script>
  
  <script src="https://www.paypal.com/sdk/js?client-id=AcAUrZDfwcXyX3G0de-lbhxpiT6fqTgTBDyI31Zd9P4WdkbUX7AaoBXEbvNewQp5EpzaAvP0ZjEmUTCW&disable-funding=credit,card"></script>
-	 <script>
-		 document.getElementById('check').onclick = function() {
-								 
-									 
-		 let  final = document.querySelector('input[type="radio"]:checked').value;
-		 console.log(final+"tt");
-		 paypal.Buttons({
-	 style : {
-		 color: 'blue',
-		 shape: 'pill'
-	 },
-	 createOrder: function (data, actions) {
-		 return actions.order.create({
-			 purchase_units : [{
-				 amount: {
-					 value:  final
-				 }
-			 }]
-		 });
-	 },
-	 onApprove: function (data, actions) {
-		 return actions.order.capture().then(function (details) {
-			 console.log(details)
-			 //window.location.replace("http://localhost:63342/tutorial/paypal/success.php")
-		 })
-	 },
-	 onCancel: function (data) {
-		 //window.location.replace("http://localhost:63342/tutorial/paypal/Oncancel.php")
-	 }
- }).render('#paypal-payment-button');
- }
-   </script>
+	
 																 <div id="paypal" class="tab-pane fade pt-3">
 																 <div id="smart-button-container">
 	   <div style="text-align: center;">
@@ -502,6 +462,69 @@ $session =\Stripe\Checkout\Session::create([
 	   
 		</div>
 	</div>
+	<script type="text/javascript">
+  
+  document.getElementById('check').onclick = function() {
+    								var pay = document.querySelector('input[type="radio"]:checked').value*100;
+                    var amount = pay;
+									console.log(amount);
+    var handler = StripeCheckout.configure({
+      key: 'pk_test_51JHpHoG89vko2fx6HqUIn0ktlO2HJJPYj97tiI8Fww881IVfrX9KzXVa9xc4UjijCuDQg2DfwJa31XPGJx1cA3rj00cKqQiClC',
+      locale: 'auto',
+      token: function (token) {
+        // You can access the token ID with `token.id`.
+        // Get the token ID to your server-side code for use.
+        console.log('Token Created!!');
+        console.log(token)
+        $('#token_response').html(JSON.stringify(token));
+  
+        $.ajax({
+          url:"<?php echo base_url(); ?>donate/payment",
+          method: 'post',
+          data: { tokenId: token.id, amount: amount },
+          dataType: "json",
+          success: function( response ) {
+            console.log(response.data);
+            $('#token_response').append( '<br />' + JSON.stringify(response.data));
+          }
+        })
+      }
+    });
+    document.getElementById('checkout-button').onclick = function() {
+    handler.open({
+      name: 'Don',
+      description: 'Faire un don',
+      amount: amount,
+	  currency: 'eur'
+    });}
+	let  final = document.querySelector('input[type="radio"]:checked').value;
+		 console.log(final+"tt");
+		 paypal.Buttons({
+	 style : {
+		 color: 'blue',
+		 shape: 'pill'
+	 },
+	 createOrder: function (data, actions) {
+		 return actions.order.create({
+			 purchase_units : [{
+				 amount: {
+					 value:  final
+				 }
+			 }]
+		 });
+	 },
+	 onApprove: function (data, actions) {
+		 return actions.order.capture().then(function (details) {
+			 console.log(details)
+			 //window.location.replace("http://localhost:63342/tutorial/paypal/success.php")
+		 })
+	 },
+	 onCancel: function (data) {
+		 //window.location.replace("http://localhost:63342/tutorial/paypal/Oncancel.php")
+	 }
+ }).render('#paypal-payment-button');
+  }
+</script>
 </footer>
 <!-- footer end-->
     </div>
