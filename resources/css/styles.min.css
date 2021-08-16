@@ -21064,22 +21064,23 @@ header.header--intro .button {
 
 .about-us__text-aside {
     color: #efc940;
-    font-size: 72px;
+    font-size: 57px;
+    font-weight:600;
     line-height: 1.4;
     text-align: center;
-    font-family: Storytella, sans-serif;
+    font-family: Montserrat;
     letter-spacing: -.020em
 }
 
 @media only screen and (min-width:576px) {
     .about-us__text-aside {
-        font-size: 60px;
+        font-size: 45px;
     }
 }
 
 @media only screen and (min-width:992px) {
     .about-us__text-aside {
-        font-size: 60px;
+        font-size: 45px;
     }
 }
 

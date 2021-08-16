@@ -327,7 +327,7 @@
 <section class="section action-section">
 	<div class="jarallax">
 		<picture>
-			<source srcset="<?php echo base_url();?>/resources/img/home-section-1.png" media="(min-width: 992px)" /><img class="jarallax-img" src="<?php echo base_url();?>/resources/img/home-section-1.png"
+			<source srcset="<?php echo base_url();?>/resources/img/mosq.png" media="(min-width: 992px)" /><img class="jarallax-img" src="<?php echo base_url();?>/resources/img/home-section-1.png"
 				alt="img" />
 		</picture>
 	</div>
@@ -665,8 +665,8 @@
 	<!-- subscribe start-->
 	<section class="subscribe" style="background-color:#d4ac46;">
 		<div class="col-md-12" style="text-align: center;">
-			<h2 class="subscribe__title"> “ La vraie richesse d'un homme en ce monde se mesure au bien qu'il a fait autour de lui. ” </h2>
-			<div class="col-xl-12 text-center mb-3" id="Quoteita">(Le Prophète Mohammed SWS)</div>
+			<h2 class="subscribe__title"> “ Si, dans une commune, un homme décède de famine, alors tous les résidants de cette commune se mettent hors de la protection de Dieu et de son prophète… ” </h2>
+			<div class="col-xl-12 text-center mb-3" id="Quoteita" style="color:white">(Al-Hakim, Al-Moustadrak)</div>
 		</div>
 	</section>
 	<!-- subscribe end-->
@@ -794,7 +794,7 @@
 				<section class="section action-section">
 					<div class="jarallax">
 						<picture>
-							<source srcset="<?php echo base_url();?>/resources/img/home-section-2.png" media="(min-width: 992px)" /><img class="jarallax-img" src="<?php echo base_url();?>/resources/img/home-section-2.png"
+							<source srcset="<?php echo base_url();?>/resources/img/hand.png" media="(min-width: 992px)" /><img class="jarallax-img" src="<?php echo base_url();?>/resources/img/hand.png"
 								alt="img" />
 						</picture>
 					</div>
