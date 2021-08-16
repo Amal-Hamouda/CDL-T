@@ -358,7 +358,7 @@
 					<div class="row align-items-center">
 						<div class="col-lg-6 col-xl-5">
 							<div class="img-box">
-								<div class="img-box__img"><img class="img--bg" src="<?php echo base_url();?>/resources/img/home-about.png" alt="img" /></div>
+								<div class="img-box__img"><img class="img--bg" src="<?php echo base_url();?>/resources/img/apropos.jpg" alt="img" /></div>
 							</div>
 						</div>
 						<div class="col-lg-6 col-xl-6 offset-xl-1">
@@ -701,7 +701,7 @@
 			</div>
 			<div class="col-lg-6 col-xl-5 offset-xl-1">
 				<div class="img-box">
-					<div class="img-box__img"><img class="img--bg" style="height: 90%;" src="<?php echo base_url();?>/resources/img/home-vision.png"
+					<div class="img-box__img"><img class="img--bg" style="height: 90%;" src="<?php echo base_url();?>/resources/img/vision.jpg"
 							alt="img" /></div>
 				</div>
 			</div>
