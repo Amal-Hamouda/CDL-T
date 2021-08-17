@@ -361,7 +361,7 @@
 										  </section>
 										<label class="fieldlabels"></label>
 								</div>
-									<input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+									<input type="button" name="previous" class="previous action-button-previous" value="Previous"  id="previous"/>
 								</fieldset>
 							</form>
 						</div>
@@ -480,30 +480,33 @@
     });}
 	let  final = document.querySelector('input[type="radio"]:checked').value;
 		 console.log(final+"tt");
-		 paypal.Buttons({
-	 style : {
-		 color: 'blue',
-		 shape: 'pill'
-	 },
-	 createOrder: function (data, actions) {
-		 return actions.order.create({
-			 purchase_units : [{
-				 amount: {
-					 value:  final
-				 }
-			 }]
-		 });
-	 },
-	 onApprove: function (data, actions) {
-		 return actions.order.capture().then(function (details) {
-			 console.log(details)
-			 //window.location.replace("http://localhost:63342/tutorial/paypal/success.php")
-		 })
-	 },
-	 onCancel: function (data) {
-		 //window.location.replace("http://localhost:63342/tutorial/paypal/Oncancel.php")
-	 }
- }).render('#paypal-payment-button');
+		 var myButton = paypal.Buttons({
+    style : {
+        color: 'blue',
+        shape: 'pill'
+    },
+    createOrder: function (data, actions) {
+        return actions.order.create({
+            purchase_units : [{
+                amount: {
+                    value:  final
+                }
+            }]
+        });
+    },
+    onApprove: function (data, actions) {
+        return actions.order.capture().then(function (details) {
+            console.log(details)
+            //window.location.replace("http://localhost:63342/tutorial/paypal/success.php%22)
+        })
+    },
+    onCancel: function (data) {
+        //window.location.replace("http://localhost:63342/tutorial/paypal/Oncancel.php%22)
+    }
+});
+myButton.render('#paypal-payment-button');
+document.getElementById('previous').onclick = function() {
+myButton.close();}
   }
 </script>
 </footer>
