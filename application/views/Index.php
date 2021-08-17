@@ -324,21 +324,22 @@
 			</section>
 			
 			<!-- section end-->
-<section class="section action-section">
+			<section class="section action-section">
 	<div class="jarallax">
 		<picture>
-			<source srcset="<?php echo base_url();?>/resources/img/mosq.png" media="(min-width: 992px)" /><img class="jarallax-img" src="<?php echo base_url();?>/resources/img/home-section-1.png"
+			<source srcset="<?php echo base_url();?>/resources/img/mosq.png" media="(min-width: 992px)" /><img class="jarallax-img" src="<?php echo base_url();?>/resources/img/mosq.png"
 				alt="img" />
 		</picture>
 	</div>
 	<div class="container">
 		<div class="d-flex justify-content-center">
-			<div class="col-12 col-md-12">
-				<p style=" font-size: 18px; font-weight: bold; line-height: normal;">Depuis maintenant plusieurs années le centre des lumières fait la promotion de la culture arabo-musulmane en
-					France et dans le monde à travers :</p> <br>
-				<p style=" font-size: 15px; font-weight: 300; line-height: inherit;">la littérature, les sciences et techniques islamiques, la civilisation, la calligraphie, l'art (peinture
-					sculpture, musique, poésie, architecture, archéologie).</p>
-				<p style=" font-size: 14px; font-weight: 300; line-height: inherit;"> Il utilise tous les moyens et supports disponible pour y arriver, diffusion matérialisée et dématérialisé via
+			<div class="col-12 col-md-12" style="background-color: #d4ac46;border-radius: 8px;opacity:0.9; color:black;">
+				<p style=" font-size: 16px; font-weight: 600; line-height: ;"> <br> Depuis maintenant plusieurs années le centre des lumières fait la promotion de la culture arabo-musulmane en
+					France et dans le monde à travers :<br>
+				la littérature, les sciences et techniques islamiques, la civilisation, la calligraphie, l'art (peinture
+					sculpture, musique, poésie, architecture, archéologie).
+					<br>
+				Il utilise tous les moyens et supports disponible pour y arriver, diffusion matérialisée et dématérialisé via
 					la vidéo audio radio l'édition et la publication web des conférences des séminaires et
 					galas, colloques, cours et formation expositions festivités spectacles, il est un
 					partenaire
@@ -791,7 +792,7 @@
 
 				</div>
 			</section>
-				<section class="section action-section">
+				<section class="section action-section" style="padding:120px 0">
 					<div class="jarallax">
 						<picture>
 							<source srcset="<?php echo base_url();?>/resources/img/hand.png" media="(min-width: 992px)" /><img class="jarallax-img" src="<?php echo base_url();?>/resources/img/hand.png"
