@@ -64,7 +64,7 @@
    
 
         <!-- HERO Section start-->
-        <section class="promo-primary" style="padding-bottom:52%;">
+        <section class="promo-primary" style="padding-bottom:10%;">
             <picture>
           <source srcset="<?php echo base_url();?>/resources/img/dons.png"/><img class="img--bg" style="opacity: 80% ;height: 100%;" src="<?php echo base_url();?>/resources/img/about.jpg" alt="img" />
             </picture>
@@ -369,8 +369,8 @@
 				</div>
 			</div>
 	  </section>
-	  <div class="col-12" style="text-align: center;">
-		<button class="form__submit_accueil_Shadow_org" type="submit form_fshadow" style="margin-top: 40px;"> 	&lt; RETOUR VERS L'ACCUEIL</button>
+	  <div style="text-align: center;">
+		<button class="form__submit_accueil_Shadow_org" type="submit form_fshadow" style="margin-top: 20px;"> 	&lt; RETOUR VERS L'ACCUEIL</button>
 	</div>
          <!-- footer start-->
  <footer class="footer footer--front_2"id="footerid">
