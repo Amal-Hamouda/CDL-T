@@ -304,7 +304,7 @@
 				
 																	<!-- credit card info-->
 																	<div id="credit-card" class="tab-pane fade show active pt-3">
-																	<input type="button" name="Stripe"  value="Stripe" id="checkout-button" style=" color:white;
+																	<input type="button" name="Stripe"  value="Payer" id="checkout-button" style=" color:white;
     background:#635bff;
     font-weight: 700;
     border-radius: 28px;

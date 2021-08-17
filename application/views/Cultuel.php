@@ -949,7 +949,7 @@ votre 4ème pilier de l'Islam d'où vous êtes</h2>
                                             <input class="form__field" type="tel" name="phone-number" placeholder="Tél" />
                                         </div>
                                         <div class="col-12">
-                                            <textarea class="form__message form__field" name="message" placeholder="Message"></textarea>
+                                            <textarea class="form__message form__field" name="message" placeholder="Message"style="border-radius:25px"></textarea>
                                         </div>
                                         <div class="col-12" style="text-align: center;">
                                             <button class="form__submit_blue" type="submit" name="submit"  >Envoyer</button>
