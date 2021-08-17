@@ -302,7 +302,7 @@
             <!-- testimonials style-1 end-->
             </section>
             <!--floating img-->
-            <a href="#" id="StikyButton" style="visibility: hidden; width:75px;height: 75px ; top:80%;box-shadow: 8px 8px 12px #aaa;" class="float">
+            <a href="#" id="StikyButton" style="visibility: hidden; width:65px;height: 65px ; top:85%;box-shadow: 2px 2px 1px 1px grey;left:90%" class="float">
                 <img class="img-float" src="<?php echo base_url();?>/resources/img/Asset 1.png" />
             </a>
             <!--About us Start-->
