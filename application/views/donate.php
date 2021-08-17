@@ -1,23 +1,4 @@
-<?php
-require_once('vendor/autoload.php');
-\Stripe\Stripe::setApiKey('sk_test_51JHpHoG89vko2fx6LOAAOiW6g8NBU4dfXh8QbKULTHMs8b7UJwDQXkkS18RsyTk8JJ5mS3bP3KQ3WZ41Bz51YfWC00nEi4ookx');
-$session =\Stripe\Checkout\Session::create([
-  'payment_method_types' => ['card'],
-  'line_items' => [[
-    'price_data' => [
-      'currency' => 'eur',
-      'product_data' => [
-        'name' => 'Don',
-      ],
-      'unit_amount' => 2000,
-    ],
-    'quantity' => 1,
-  ]],
-  'mode' => 'payment',
-  'success_url' => 'https://example.com/success',
-  'cancel_url' => 'https://example.com/cancel',
-  ]);
-?>
+
 <html lang="en">
 
 <head>
@@ -38,7 +19,7 @@ $session =\Stripe\Checkout\Session::create([
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	<link rel="stylesheet" href="<?php echo base_url();?>/resources/css/donate.css" />
-	<script src="https://js.stripe.com/v3/"></script>
+	<script src="https://checkout.stripe.com/checkout.js"></script>
 
 
     <!-- web-font loader-->
@@ -462,7 +443,6 @@ $session =\Stripe\Checkout\Session::create([
 	   
 		</div>
 	</div>
-	<script src="https://checkout.stripe.com/checkout.js"></script>
 	<script type="text/javascript">
   
   document.getElementById('check').onclick = function() {
