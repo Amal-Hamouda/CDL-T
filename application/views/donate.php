@@ -64,7 +64,7 @@
    
 
         <!-- HERO Section start-->
-        <section class="promo-primary" style="padding-bottom:52%;">
+        <section class="promo-primary" style="padding-bottom:10%;">
             <picture>
           <source srcset="<?php echo base_url();?>/resources/img/dons.png"/><img class="img--bg" style="opacity: 80% ;height: 100%;" src="<?php echo base_url();?>/resources/img/about.jpg" alt="img" />
             </picture>
@@ -361,7 +361,7 @@
 										  </section>
 										<label class="fieldlabels"></label>
 								</div>
-									<input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+									<input type="button" name="previous" class="previous action-button-previous" value="Previous"  id="previous"/>
 								</fieldset>
 							</form>
 						</div>
@@ -369,8 +369,8 @@
 				</div>
 			</div>
 	  </section>
-	  <div class="col-12" style="text-align: center;">
-		<button class="form__submit_accueil_Shadow_org" type="submit form_fshadow" style="margin-top: 40px;"> 	&lt; RETOUR VERS L'ACCUEIL</button>
+	  <div style="text-align: center;">
+		<button class="form__submit_accueil_Shadow_org" type="submit form_fshadow" style="margin-top: 20px;"> 	&lt; RETOUR VERS L'ACCUEIL</button>
 	</div>
          <!-- footer start-->
  <footer class="footer footer--front_2"id="footerid">
@@ -480,30 +480,33 @@
     });}
 	let  final = document.querySelector('input[type="radio"]:checked').value;
 		 console.log(final+"tt");
-		 paypal.Buttons({
-	 style : {
-		 color: 'blue',
-		 shape: 'pill'
-	 },
-	 createOrder: function (data, actions) {
-		 return actions.order.create({
-			 purchase_units : [{
-				 amount: {
-					 value:  final
-				 }
-			 }]
-		 });
-	 },
-	 onApprove: function (data, actions) {
-		 return actions.order.capture().then(function (details) {
-			 console.log(details)
-			 //window.location.replace("http://localhost:63342/tutorial/paypal/success.php")
-		 })
-	 },
-	 onCancel: function (data) {
-		 //window.location.replace("http://localhost:63342/tutorial/paypal/Oncancel.php")
-	 }
- }).render('#paypal-payment-button');
+		 var myButton = paypal.Buttons({
+    style : {
+        color: 'blue',
+        shape: 'pill'
+    },
+    createOrder: function (data, actions) {
+        return actions.order.create({
+            purchase_units : [{
+                amount: {
+                    value:  final
+                }
+            }]
+        });
+    },
+    onApprove: function (data, actions) {
+        return actions.order.capture().then(function (details) {
+            console.log(details)
+            //window.location.replace("http://localhost:63342/tutorial/paypal/success.php%22)
+        })
+    },
+    onCancel: function (data) {
+        //window.location.replace("http://localhost:63342/tutorial/paypal/Oncancel.php%22)
+    }
+});
+myButton.render('#paypal-payment-button');
+document.getElementById('previous').onclick = function() {
+myButton.close();}
   }
 </script>
 </footer>

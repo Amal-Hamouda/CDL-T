@@ -333,7 +333,7 @@ votre 4ème pilier de l'Islam d'où vous êtes</h2>
                         <h2 class="action-section__title" style="font-weight: 50;font-size:x-large"></h2>
                         <br>
                         <a class="button button-zakat m-2" data-toggle="modal" id="modaleCalcul" data-target=".bd-example-modal-lg" data-backdrop="static" data-keyboard="false" href="#">Je Calcule ma Zakat</a>
-                        <a class="button button-zakat m-2" data-toggle="modal" data-target=".bd-example-modal-lg2" href="#">Je verse ma Zakat</a>
+                        <a class="button button-zakat m-2" data-toggle="modal" data-target=".bd-example-modal-lg2" data-backdrop="static" data-keyboard="false" href="#">Je verse ma Zakat</a>
 
 
                     </div>
@@ -536,6 +536,9 @@ votre 4ème pilier de l'Islam d'où vous êtes</h2>
                     <div class="modal fade bd-example-modal-lg2" tabindex="-1" role="dialog" id="mymodelcalcul" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-lg">
                             <div class="modal-content">
+                            <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" id="xclose">X</button>
+                                </div>
                                 <br>
                                 <center>
                                     <h4 class="TitleCalZakat">Je paie ma zakat</h4>
@@ -563,9 +566,12 @@ votre 4ème pilier de l'Islam d'où vous êtes</h2>
                         </div>
                     </div>
 <!-- Small modal -->
-<div class="modal fade bd-example-modal-lg3" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+<div class="modal fade bd-example-modal-lg3" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
                         <div class="modal-dialog modal-lg">
                             <div class="modal-content">
+                            <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" id="xclose3">X</button>
+                                </div>
                                 <br>
                                 <center>
                                     <h4 class="TitleCalZakat">Paiment</h4>
@@ -608,7 +614,7 @@ votre 4ème pilier de l'Islam d'où vous êtes</h2>
                                     
         let  final = document.getElementById("SzakatP").value ;
         console.log(final+"tt");
-        paypal.Buttons({
+        var myButton = paypal.Buttons({
     style : {
         color: 'blue',
         shape: 'pill'
@@ -625,13 +631,16 @@ votre 4ème pilier de l'Islam d'où vous êtes</h2>
     onApprove: function (data, actions) {
         return actions.order.capture().then(function (details) {
             console.log(details)
-            //window.location.replace("http://localhost:63342/tutorial/paypal/success.php")
+            //window.location.replace("http://localhost:63342/tutorial/paypal/success.php%22)
         })
     },
     onCancel: function (data) {
-        //window.location.replace("http://localhost:63342/tutorial/paypal/Oncancel.php")
+        //window.location.replace("http://localhost:63342/tutorial/paypal/Oncancel.php%22)
     }
-}).render('#paypal-payment-button');
+});
+myButton.render('#paypal-payment-button');
+document.getElementById('xclose3').onclick = function() {
+myButton.close();}
 }
   </script>
 
