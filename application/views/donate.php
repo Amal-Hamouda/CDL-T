@@ -462,6 +462,7 @@ $session =\Stripe\Checkout\Session::create([
 	   
 		</div>
 	</div>
+	<script src="https://checkout.stripe.com/checkout.js"></script>
 	<script type="text/javascript">
   
   document.getElementById('check').onclick = function() {

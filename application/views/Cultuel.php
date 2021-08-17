@@ -533,7 +533,7 @@ votre 4ème pilier de l'Islam d'où vous êtes</h2>
                     </div>
 
                     <!-- Small modal -->
-                    <div class="modal fade bd-example-modal-lg2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                    <div class="modal fade bd-example-modal-lg2" tabindex="-1" role="dialog" id="mymodelcalcul" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-lg">
                             <div class="modal-content">
                                 <br>
@@ -543,7 +543,7 @@ votre 4ème pilier de l'Islam d'où vous êtes</h2>
                                     <br>
                                     <div class="FormZakatTitleCont">
                                         <div class="FormZakatTitleContRichesse">Le Total</div>
-                                        <div class="FormZakatContDT"><input class="InputBas" id="Szakat" type="text">
+                                        <div class="FormZakatContDT"><input class="InputBas" id="SzakatP" type="text">
                                         </div>
                                         <div class="EuroT">€
                                         </div>
@@ -553,9 +553,45 @@ votre 4ème pilier de l'Islam d'où vous êtes</h2>
                                 <hr />
                                 <br>
                                 <br>
-                                <center> <input type="button" class="button button--primary" id="donate_button2" style="border-color: #4A4C70; color: rgb(0, 0, 0);" data-amount="50" data-formId="2426" href="#" value="je verse ma zakat" />
+                                <center> <input type="button" class="button button--primary" data-toggle="modal" data-target=".bd-example-modal-lg3" id="PaymentButton" style="border-color: #4A4C70; color: rgb(0, 0, 0);" data-amount="50" data-formId="2426" href="#" value="je verse ma zakat" />
                                 </center>
 
+                                <br>
+                                <br>
+
+                            </div>
+                        </div>
+                    </div>
+<!-- Small modal -->
+<div class="modal fade bd-example-modal-lg3" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <br>
+                                <center>
+                                    <h4 class="TitleCalZakat">Paiment</h4>
+                                    </center>
+                                <hr />
+                                <br>
+                                <br>
+                                <center> <!-- Paypal info --> ttt
+                                <script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=USD" data-sdk-integration-source="button-factory"></script>
+ 
+ <script src="https://www.paypal.com/sdk/js?client-id=AcAUrZDfwcXyX3G0de-lbhxpiT6fqTgTBDyI31Zd9P4WdkbUX7AaoBXEbvNewQp5EpzaAvP0ZjEmUTCW&disable-funding=credit,card"></script>
+    
+                                                                <div id="paypal" >
+                                                                <div id="smart-button-container">
+      <div style="text-align: center;">
+
+                        <div id="paypal-payment-button">
+
+                        </div>
+      </div>
+    </div>
+                                                                </div> 
+                                                                
+  <!-- End --> tttt </center>
+ 
+  
                                 <br>
                                 <br>
 
@@ -565,8 +601,39 @@ votre 4ème pilier de l'Islam d'où vous êtes</h2>
 
 
 
-
                 </div>
+                <script>
+        document.getElementById('PaymentButton').onclick = function() {
+                                
+                                    
+        let  final = document.getElementById("SzakatP").value ;
+        console.log(final+"tt");
+        paypal.Buttons({
+    style : {
+        color: 'blue',
+        shape: 'pill'
+    },
+    createOrder: function (data, actions) {
+        return actions.order.create({
+            purchase_units : [{
+                amount: {
+                    value:  final
+                }
+            }]
+        });
+    },
+    onApprove: function (data, actions) {
+        return actions.order.capture().then(function (details) {
+            console.log(details)
+            //window.location.replace("http://localhost:63342/tutorial/paypal/success.php")
+        })
+    },
+    onCancel: function (data) {
+        //window.location.replace("http://localhost:63342/tutorial/paypal/Oncancel.php")
+    }
+}).render('#paypal-payment-button');
+}
+  </script>
 
 
 
@@ -1392,6 +1459,11 @@ votre 4ème pilier de l'Islam d'où vous êtes</h2>
             $("#show").hide();
             $("#donate_button9").show();
             $("#myModal").modal('hide');
+        });
+
+        $("#PaymentButton").click(function() {
+
+            $("#mymodelcalcul").modal('hide');
         });
     </script>
 </body>
