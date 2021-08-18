@@ -71,7 +71,7 @@
             <div class="promo-primary__description"> <span> </span></div>
             <div class="container">
 			<div class="col-12" style="text-align: center;">
-					<button class="form__submit_accueil_Shadow" type="submit form_fshadow" style="margin-top: 40px;"> 	&lt; RETOUR VERS L'ACCUEIL</button>
+					<a class="form__submit_accueil_Shadow" type="submit form_fshadow" style="outline:none;margin-top: 40px;" href="<?php echo site_url("Home");?>"> 	&lt; RETOUR VERS L'ACCUEIL</a>
 				</div>
                 <div class="row">
                     <div class="col-auto">
@@ -370,7 +370,7 @@
 			</div>
 	  </section>
 	  <div style="text-align: center;">
-		<button class="form__submit_accueil_Shadow_org" type="submit form_fshadow" style="margin-top: 20px;"> 	&lt; RETOUR VERS L'ACCUEIL</button>
+		<button class="form__submit_accueil_Shadow_org" type="submit form_fshadow" style="outline:none;margin-top: 20px;" href="<?php echo site_url("Home");?>"> 	&lt; RETOUR VERS L'ACCUEIL</button>
 	</div>
          <!-- footer start-->
  <footer class="footer footer--front_2"id="footerid">
@@ -412,13 +412,13 @@
 					<nav>
 						<ul class="footer-menu">
 							<li class="footer-menu__item"><a class="footer-menu__link"
-									href="Index.html">Accueil</a></li>
+							href="<?php echo site_url("Home");?>">Accueil</a></li>
 
 							<li class="footer-menu__item"><a class="footer-menu__link"
 									></a>
 							</li>
 							
-							<li class="footer-menu__item"><a class="footer-menu__link" href="./Cultuel.html">Cultuel</a>
+							<li class="footer-menu__item"><a class="footer-menu__link" href="<?php echo site_url("Cultuel");?>">Cultuel</a>
 							</li>	
                             <li class="footer-menu__item"><a class="footer-menu__link"></a>
 							</li>
@@ -427,7 +427,7 @@
                             </li>
                             <li class="footer-menu__item"><a class="footer-menu__link"></a>
 							</li>
-                            <li class="footer-menu__item"><a class="footer-menu__link" href="./Au-Dela-Des-Mots.html">Humanitaire</a>
+                            <li class="footer-menu__item"><a class="footer-menu__link" href="<?php echo site_url("Humanitaire");?>">Humanitaire</a>
 							</li>
 						</ul>
 					</nav>
