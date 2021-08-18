@@ -665,10 +665,11 @@
 
 	<!-- subscribe start-->
 	<section class="subscribe" style="background-color:#d4ac46;">
-		<div class="col-md-12" style="text-align: center;">
-			<h2 class="subscribe__title"> “ Si, dans une commune, un homme décède de famine, alors tous les résidants de cette commune se mettent hors de la protection de Dieu et de son prophète… ” </h2>
-			<div class="col-xl-12 text-center mb-3" id="Quoteita" style="color:white">(Al-Hakim, Al-Moustadrak)</div>
-		</div>
+	<center>	<div class="col-md-8 justify-content-center text-center" >
+			<h2 class="subscribe__title"> “ Si, dans une commune, un homme décède de famine, alors tous les résidants de cette commune se mettent hors de la protection de Dieu et de son prophète… ”
+ </h2>
+			<div class="col-xl-12 text-center mb-3" id="Quoteita"> Al-Hakim, Al-Moustadrak</div>
+		</div></center>
 	</section>
 	<!-- subscribe end-->
 			<!--ttt-->
@@ -801,10 +802,13 @@
 					</div>
 					<div class="container">
 						<div class="row">
-							<div class="col-8" style="text-align: justify;">
+							<div class="col-4" style="text-align: justify;">
 								<br><br>
-								<p style=" font-size: 18px; font-weight: bold; line-height: normal;">" Un monde où l 'islam peut s'épanouir en tout lieu."</p> <br>
+								<p style=" font-size: 32px; font-weight: bold; line-height: normal;">“ Quiconque prête à Dieu de bonne grâce, Il le lui rendra multiplié 
+plusieurs fois.. ”</p> <br>						<div id="Quoteita" style="color:#777">Coran sourate 1,verset 245</div>
+
 							</div>
+						
 						</div>
 					</div>
 				</section>
