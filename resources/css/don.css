@@ -27570,7 +27570,7 @@ form_fshadow {
 }
 @media only screen and (max-width:768px) {
     #checkout-button {
-        width:100%
+        width:100%;
         padding: 8px 18px 8px 15px;
 
     }
@@ -27586,4 +27586,11 @@ form_fshadow {
         width:100%;
         padding:8px 18px -1px 15px;
     }
+}
+b{
+    background-image: linear-gradient(to bottom, white 50%, transparent 50%);
+    background-position: 0px 1.2em;
+    background-repeat: repeat-x;
+    background-size: 1px 20px;
+    display: inline;
 }

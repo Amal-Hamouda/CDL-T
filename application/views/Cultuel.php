@@ -223,11 +223,14 @@
             </picture>
             <div class="promo-primary__description"> <span> </span></div>
             <div class="container">
-                <div class="row">
-                    <div class="col-auto">
+            <div class="row">
+                    <div class="col-12">
                         <div class="align-container">
                             <div class="align-container__item">
-                                <h1 class="promo-primary__title"><span>CULTUEL</span><br /><span> </span></h1>
+                                <p style="color:white; line-height:80%;margin-top:100px">
+                                <span style="font-size:20px; letter-spacing:1px;background-color:white;color:#045dab;border-radius:5px">pole</span>
+                                <h1 style="color:white"> CU<b>LTUEL </b></h1>
+                                <span style="font-size:20px; letter-spacing:1px ;color:white;margin-left:60px">Centre des Lumières</span></p>
                             </div>
                         </div>
                     </div>
