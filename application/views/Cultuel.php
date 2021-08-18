@@ -574,16 +574,15 @@ votre 4ème pilier de l'Islam d'où vous êtes</h2>
                                 </div>
                                 <br>
                                 <center>
-                                    <h4 class="TitleCalZakat">Paiment</h4>
+                                    <h4 class="TitleCalZakat">Paiement</h4>
                                     </center>
                                 <hr />
                                 <br>
-                                <br>
-                                <center> <!-- Paypal info --> ttt
+                                <center> <!-- Paypal info -->
                                 <script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=USD" data-sdk-integration-source="button-factory"></script>
  
  <script src="https://www.paypal.com/sdk/js?client-id=AcAUrZDfwcXyX3G0de-lbhxpiT6fqTgTBDyI31Zd9P4WdkbUX7AaoBXEbvNewQp5EpzaAvP0ZjEmUTCW&disable-funding=credit,card"></script>
-    
+<div id="stripe"> <input type="button" name="Stripe"  value="Payer" id="checkout-button" style="color:white;background:#635bff;font-weight: 700;border-radius: 28px;font-size:20px;margin-bottom: 25px;"/></div>
                                                                 <div id="paypal" >
                                                                 <div id="smart-button-container">
       <div style="text-align: center;">
@@ -595,7 +594,7 @@ votre 4ème pilier de l'Islam d'où vous êtes</h2>
     </div>
                                                                 </div> 
                                                                 
-  <!-- End --> tttt </center>
+  <!-- End -->  </center>
  
   
                                 <br>
@@ -608,9 +607,41 @@ votre 4ème pilier de l'Islam d'où vous êtes</h2>
 
 
                 </div>
+                <script src="https://checkout.stripe.com/checkout.js"></script>
                 <script>
         document.getElementById('PaymentButton').onclick = function() {
-                                
+            var pay = document.getElementById("SzakatP").value*100;
+                    var amount = pay;
+									console.log(amount);
+    var handler = StripeCheckout.configure({
+      key: 'pk_test_51JHpHoG89vko2fx6HqUIn0ktlO2HJJPYj97tiI8Fww881IVfrX9KzXVa9xc4UjijCuDQg2DfwJa31XPGJx1cA3rj00cKqQiClC',
+      locale: 'auto',
+      token: function (token) {
+        // You can access the token ID with `token.id`.
+        // Get the token ID to your server-side code for use.
+        console.log('Token Created!!');
+        console.log(token)
+        $('#token_response').html(JSON.stringify(token));
+  
+        $.ajax({
+          url:"<?php echo base_url(); ?>cultuel/payment",
+          method: 'post',
+          data: { tokenId: token.id, amount: amount },
+          dataType: "json",
+          success: function( response ) {
+            console.log(response.data);
+            $('#token_response').append( '<br />' + JSON.stringify(response.data));
+          }
+        })
+      }
+    });
+    document.getElementById('checkout-button').onclick = function() {
+    handler.open({
+      name: 'Don',
+      description: 'Faire un don',
+      amount: amount,
+	  currency: 'eur'
+    });}          
                                     
         let  final = document.getElementById("SzakatP").value ;
         console.log(final+"tt");
