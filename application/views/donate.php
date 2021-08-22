@@ -229,7 +229,7 @@
 														
 															<div class="row">
 																<div class ="col-12">
-																<label class="fieldlabels">Combien voudriez-vous donner ?</label> <input type="number">
+																<label class="fieldlabels">Combien voudriez-vous donner ?</label> <input type="number" id="perso">
 															</div>
 																<div class="col-4">
 																<input class="checkbox-budget" type="radio" name="data" id="budget-1" value="10" checked>
@@ -446,6 +446,11 @@
 	<script type="text/javascript">
   
   document.getElementById('check').onclick = function() {
+	var personel = document.getElementById("perso").value;
+
+	if((document.getElementById("budget-6").checked==false)||(personel)){
+		document.getElementById("budget-6").value= personel;
+
     								var pay = document.querySelector('input[type="radio"]:checked').value*100;
                     var amount = pay;
 									console.log(amount);
@@ -507,6 +512,8 @@
 myButton.render('#paypal-payment-button');
 document.getElementById('previous').onclick = function() {
 myButton.close();}
+}else{alert("Remplir le champ du valeur personalisée");
+	window.location.reload();}
   }
 </script>
 </footer>
