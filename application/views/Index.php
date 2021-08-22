@@ -67,16 +67,16 @@
                         </li>
                         <li class="aside-menu__item aside-menu__item--has-child"><a class="aside-menu__link" href="javascript:void(0);"><span>Identité</span></a>
                             <ul class="aside-menu__sub-list">
-                                <li><a href="#"><span>Vision</span></a></li>
+                                <li><a href="#vision"><span>Vision</span></a></li>
                                 <li>
-                                    <a href="#"> <span>Principes</span></a>
+                                    <a href="#principes"> <span>Principes</span></a>
                                 </li>
-                                <li><a href="#"><span>Valeurs</span></a></li>
-                                <li><a href="#"><span>Application mobile</span></a></li>
+                                <li><a href="#valeurs"><span>Valeurs</span></a></li>
+                                <li><a href="#AppM"><span>Application mobile</span></a></li>
 
                             </ul>
                         </li>
-                        <li class="aside-menu__item"><a class="aside-menu__link" href=""><span>Contact</span></a></li>
+                        <li class="aside-menu__item"><a class="aside-menu__link" href="#Contact1"><span>Contact</span></a></li>
                     </ul>
                 </div>
                 <div class="aside-dropdown__item">
@@ -148,14 +148,14 @@
                                 </li>
                                 <li id="Somme" class="main-menu__item main-menu__item--has-child"><a class="main-menu__link" href="#QuiSommeNous"><span>A Propos de Nous</span></a>
                                 </li>
-                                <li class="main-menu__item main-menu__item--has-child" id="Participer1"><a class="main-menu__link" href="#Participer"><span>Identité</span></a>
+                                <li class="main-menu__item main-menu__item--has-child" id="Participer1"><a class="main-menu__link"><span>Identité</span></a>
                                     <ul class="main-menu__sub-list">
-                                        <li><a href="#"><span>Vision</span></a></li>
+                                        <li><a href="#vision"><span>Vision</span></a></li>
                                         <li>
-                                            <a href="#"> <span>Principe</span></a>
+                                            <a href="#principes"> <span>Principe</span></a>
                                         </li>
-                                        <li><a href="#"><span>valeurs</span></a></li>
-                                        <li><a href="#"><span>Application mobile</span></a></li>
+                                        <li><a href="#valeurs"><span>valeurs</span></a></li>
+                                        <li><a href="#AppM"><span>Application mobile</span></a></li>
 
                                     </ul>
 
@@ -167,7 +167,7 @@
             
 
                                 </li>
-                                <li id="participer" class="main-menu__item main-menu__item--has-child"><a class="form__submit" href="#" style="margin-top:15px"><span>Adhésion</span></a>
+                                <li id="participer" class="main-menu__item main-menu__item--has-child"><a class="form__submit" href="<?php echo site_url("adhesion");?>" style="margin-top:15px"><span>Adhésion</span></a>
 
                                 </li>
                             </ul>
@@ -677,7 +677,7 @@
 			<!-- events end-->
 
 <!-- vision start-->
-<section class="section about-us">
+<section class="section about-us" id="vision">
 	<div class="row margin-bottom">
 		<div class="col-12">
 			<div class="d-flex justify-content-center text-center">
@@ -716,7 +716,7 @@
 
 
 			<!-- events start-->
-			<section class="events">
+			<section class="events"id="principes">
 				<div class="row margin-bottom">
 					<div class="col-12">
 						<div class="d-flex justify-content-center text-center">
@@ -813,7 +813,7 @@ plusieurs fois.. ”</p> <br>						<div id="Quoteita" style="color:#777">Coran s
 					</div>
 				</section>
 			<!-- events end-->
-			<section class="section elements elements--testimonials">
+			<section class="section elements elements--testimonials" id='valeurs'>
 				<div class="container">
 					<div class="row">
 						<div class="col-12">
@@ -1507,10 +1507,10 @@ plusieurs fois.. ”</p> <br>						<div id="Quoteita" style="color:#777">Coran s
 							<li class="footer-menu__item"><a class="footer-menu__link" href="<?php echo site_url("Cultuel");?>">Cultuel</a>
 							</li>
 							<li class="footer-menu__item"><a class="footer-menu__link"
-									href="about.html">Participer</a></li>
+									href="#vision">Vision</a></li>
 							<li class="footer-menu__item"><a class="footer-menu__link" href="<?php echo site_url("Humanitaire");?>">Humanitaire</a>
 							</li>
-							<li class="footer-menu__item"><a class="footer-menu__link" href="#">Contact</a>
+							<li class="footer-menu__item"><a class="footer-menu__link" href="#Contact1">Contact</a>
 							</li>
 							<li class="footer-menu__item"><a class="footer-menu__link" style="visibility: hidden;">
 									Contact</a></li>

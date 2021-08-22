@@ -61,7 +61,7 @@
                 <div class="aside-dropdown__item d-lg-none d-block">
                     <ul class="aside-menu">
                         </li>
-                        <li class="aside-menu__item aside-menu__item--has-child"><a class="aside-menu__link" href="<?php echo site_url("donate");?>"><span>Accueil</span></a>
+                        <li class="aside-menu__item aside-menu__item--has-child"><a class="aside-menu__link" href="<?php echo site_url("Home");?>"><span>Accueil</span></a>
                             <!-- sub menu start-->
 
                             <!-- sub menu end-->
@@ -143,7 +143,7 @@
         <!-- top bar end-->
         <!-- header start-->
         <!-- header start-->
-        <!-- header start-->
+        <!-- header start-->    
         <header class="header header--front_3">
             <div class="container-fluid">
 
@@ -164,7 +164,7 @@
                                 <li id="Somme" class="main-menu__item main-menu__item--has-child
 											"><a class="main-menu__link" href="#QuiSommeNous"><span>A Propos</span></a>
                                 </li>
-                    <li class="main-menu__item main-menu__item--has-child" id="Utilités"><a class="main-menu__link" href="#Participer"><span>Utilités</span></a>
+                    <li class="main-menu__item main-menu__item--has-child" id="Utilités"><a class="main-menu__link"><span>Utilités</span></a>
                                     <ul class="main-menu__sub-list">
                                         <li><a href="#horairep"><span>Horaire de prière</span></a></li>
                                         <li><a href="#AppM"><span>Application mobile</span></a></li>
@@ -176,7 +176,7 @@
                                 <li id="Contact" class="main-menu__item main-menu__item--has-child"><a class="main-menu__link" href="#Contact1"><span>Contact</span></a>
 
                                 </li>
-                                <li id="participer" class="main-menu__item main-menu__item--has-child"><a class="form__submit_blue" href="#" style="margin-top:15px;"><span>Je calcule ma ZAKAT</span></a>
+                                <li id="participer" class="main-menu__item main-menu__item--has-child"><a class="form__submit_blue" href="#calculzak" style="margin-top:15px;"><span>Je calcule ma ZAKAT</span></a>
 
                                 </li>
 
@@ -286,7 +286,7 @@
             </div>
         </section>
         <!--quote end-->
-        <div class="container" id="horairep">
+        <div class="container" id="horairep"style="padding-top:50px; padding-bottom:50px">
             <div class="row">
                 <div class="col-xl-12 text-center m-3">
                     <!-- masjid start  -->
@@ -314,7 +314,7 @@
 
         <!--zakat section start-->
 
-        <section class="section action-section">
+        <section class="section action-section" id='calculzak'>
             <div class="jarallax">
                 <picture>
                     <source srcset="<?php echo base_url();?>/resources/img/zakatimg.png" style="background-image: url(<?php echo base_url();?>/resources/img/about.jpg);background-repeat: no-repeat;background-size: cover; background-attachment: fixed; background-position:center center;" /><img class="jarallax-img" src="<?php echo base_url();?>/resources/img/zakatimg.png" alt="img" />
@@ -505,7 +505,7 @@ votre 4ème pilier de l'Islam d'où vous êtes</h2>
                                     <br>
                                     <br>
                                     <center>
-                                        <input type="button" class="button button--primary" id="donate_button2" style="border-color: #4A4C70; color: rgb(0, 0, 0);" data-amount="50" data-formId="2426" href="#" value="Je paie ma zakat" />
+                                        <input type="button" class="button button--primary" id="donate_button2" style="border-color: #4A4C70; color: rgb(0, 0, 0);" data-amount="50" data-formId="2426" href="#" value="Je paie ma zakat" data-toggle="modal" data-target=".bd-example-modal-lg3" />
                                     </center>
 
                                 </div>
@@ -1121,7 +1121,7 @@ myButton.close();}
 							<li class="footer-menu__item"><a class="footer-menu__link" href="<?php echo site_url("Cultuel");?>">Cultuel</a>
 							</li>
 							<li class="footer-menu__item"><a class="footer-menu__link"
-									href="about.html">Horaire</a></li>
+									href="#horairep">Horaire</a></li>
 							<li class="footer-menu__item"><a class="footer-menu__link" href="<?php echo site_url("Humanitaire");?>">Humanitaire</a>
 							</li>
 							<li class="footer-menu__item"><a class="footer-menu__link" href="#QuestionImam">Question à l'Imam</a>
@@ -1497,6 +1497,68 @@ myButton.close();}
             $("#show").hide();
             $("#donate_button9").show();
             $("#myModal").modal('hide');
+            var pay = document.getElementById("Szakat").value*100;
+                    var amount = pay;
+									console.log(amount);
+    var handler = StripeCheckout.configure({
+      key: 'pk_test_51JHpHoG89vko2fx6HqUIn0ktlO2HJJPYj97tiI8Fww881IVfrX9KzXVa9xc4UjijCuDQg2DfwJa31XPGJx1cA3rj00cKqQiClC',
+      locale: 'auto',
+      token: function (token) {
+        // You can access the token ID with `token.id`.
+        // Get the token ID to your server-side code for use.
+        console.log('Token Created!!');
+        console.log(token)
+        $('#token_response').html(JSON.stringify(token));
+  
+        $.ajax({
+          url:"<?php echo base_url(); ?>cultuel/payment",
+          method: 'post',
+          data: { tokenId: token.id, amount: amount },
+          dataType: "json",
+          success: function( response ) {
+            console.log(response.data);
+            $('#token_response').append( '<br />' + JSON.stringify(response.data));
+          }
+        })
+      }
+    });
+    document.getElementById('checkout-button').onclick = function() {
+    handler.open({
+      name: 'Don',
+      description: 'Faire un don',
+      amount: amount,
+	  currency: 'eur'
+    });}          
+                                    
+        let  final = document.getElementById("Szakat").value ;
+        console.log(final+"tt");
+        var myButton = paypal.Buttons({
+    style : {
+        color: 'blue',
+        shape: 'pill'
+    },
+    createOrder: function (data, actions) {
+        return actions.order.create({
+            purchase_units : [{
+                amount: {
+                    value:  final
+                }
+            }]
+        });
+    },
+    onApprove: function (data, actions) {
+        return actions.order.capture().then(function (details) {
+            console.log(details)
+            //window.location.replace("http://localhost:63342/tutorial/paypal/success.php%22)
+        })
+    },
+    onCancel: function (data) {
+        //window.location.replace("http://localhost:63342/tutorial/paypal/Oncancel.php%22)
+    }
+});
+myButton.render('#paypal-payment-button');
+document.getElementById('xclose3').onclick = function() {
+myButton.close();}
         });
         $("#xclose").click(function() {
             $("#show").hide();

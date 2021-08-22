@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="shortcut icon" href="<?php echo base_url();?>/resources/img/favicon.ico" />
-    <title>Donate</title>
+    <title>Adhesion</title>
 	
 	
     <!-- styles-->
@@ -187,7 +187,7 @@
 				<div class="row justify-content-center">
 					<div class="col-11 col-sm-9 col-md-7 col-lg-6 col-xl-5 text-center p-0 mt-3 mb-2"style ="border-radius:10px;box-shadow:5px 5px 5px 5px whitesmoke;m">
 						<div class="card px-0 pt-4 pb-0 mt-3 mb-3" style="margin:20px">
-						
+							<h2 id="heading" style="margin-right:30px">Faire un don</h2>
 							
 							<form id="msform">
 								<!-- progressbar -->
@@ -296,7 +296,7 @@
 																	<ul role="tablist" class="nav bg-light nav-pills rounded nav-fill mb-3">
 																		<li class="nav-item"> <a data-toggle="pill" href="#credit-card" class="nav-link active "> <i class="fas fa-credit-card mr-2"></i> Credit Card </a> </li>
 																		<li class="nav-item"> <a data-toggle="pill" href="#paypal" class="nav-link "> <i class="fab fa-paypal mr-2"></i> Paypal </a> </li>
-																		<li class="nav-item"> <a class="nav-link "> <i class="fas fa-mobile-alt mr-2"></i> GoCardless </a> </li>
+																		<li class="nav-item"> <a data-toggle="pill" href="#net-banking" class="nav-link "> <i class="fas fa-mobile-alt mr-2"></i> GoCardless </a> </li>
 																	</ul>
 																</div> <!-- End -->
 																<!-- Credit card form content -->
@@ -460,7 +460,7 @@
         $('#token_response').html(JSON.stringify(token));
   
         $.ajax({
-          url:"<?php echo base_url(); ?>donate/payment",
+          url:"<?php echo base_url(); ?>adhesion/payment",
           method: 'post',
           data: { tokenId: token.id, amount: amount },
           dataType: "json",

@@ -67,7 +67,7 @@
 
                             <!-- sub menu end-->
                         </li>
-                        <li class="aside-menu__item aside-menu__item--has-child"><a class="aside-menu__link" href="#Participer"><span>Horaire de prière</span></a>
+                        <li class="aside-menu__item aside-menu__item--has-child"><a class="aside-menu__link" href="#devenirBenevole"><span>Devenir Bénevole</span></a>
                         </li>
                         <li class="aside-menu__item"><a class="aside-menu__link" href="#Contact1"><span>Contact</span></a></li>
                     </ul>
@@ -302,7 +302,7 @@
             <!-- testimonials style-1 end-->
             </section>
             <!--floating img-->
-            <a href="#" id="StikyButton" style="visibility: hidden; width:65px;height: 65px ; top:85%;box-shadow: 2px 2px 1px 1px grey;left:90%" class="float">
+            <a href="<?php echo site_url("donate");?>" id="StikyButton" style="visibility: hidden; width:65px;height: 65px ; top:85%;box-shadow: 2px 2px 1px 1px grey;left:90%" class="float">
                 <img class="img-float" src="<?php echo base_url();?>/resources/img/Asset 1.png" />
             </a>
             <!--About us Start-->
@@ -1214,7 +1214,7 @@
                                     </li>
                                     <li class="footer-menu__item"><a class="footer-menu__link" style="visibility: hidden;">
                                             Contact</a></li>
-                                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Contact</a>
+                                    <li class="footer-menu__item"><a class="footer-menu__link" href="#Contact1">Contact</a>
                                     </li>
                                     <li class="footer-menu__item"><a class="footer-menu__link" href="#" style="visibility:hidden;" type="hidden">Contact</a></li>
                                 </ul>
