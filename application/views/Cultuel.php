@@ -803,7 +803,7 @@ myButton.close();}
                     <br>
 
                     <div class="col-xl-4 p-xl-5">
-                    <form class="form message-form_ben" action="<?php echo $_SERVER['PHP_SELF'];?>" method="post">
+                    <form class="form message-form_ben" action="<?php echo $_SERVER['PHP_SELF'];?>" method="post" onsubmit="alert('message envoyé !')">
                             <h4 class="justify-content-center_form" style="color: #f9f7f6;font-weight: bold;opacity: 0.8;">Question à l'Imam</h4>
 
                             <div class="col-lg-10">
@@ -976,7 +976,7 @@ myButton.close();}
                         <div class="container">
                             <div class="row justify-content-end">
                                 <br>
-                                <form class="form message-form" action="<?php echo $_SERVER['PHP_SELF'];?>" method="post">
+                                <form class="form message-form" action="<?php echo $_SERVER['PHP_SELF'];?>" method="post" onsubmit="alert('message envoyé !')">
                                     <h6 class="form__title" style="color: black;">Envoyer un message</h6><span class="form__text">* Les informations suivantes sont requises</span>
                                     <div class="row">
                                         <div class="col-lg-6">

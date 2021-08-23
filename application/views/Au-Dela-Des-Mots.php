@@ -905,7 +905,7 @@
                         <br>
                         <div class="col-xl-6" id="devenirBenevole"></div>
                         <div class="col-xl-6 p-xl-5">
-                            <form class="form message-form_ben" action="<?php echo $_SERVER['PHP_SELF'];?>" method="post">
+                            <form class="form message-form_ben" action="<?php echo $_SERVER['PHP_SELF'];?>" method="post" onsubmit="alert('message envoyé !')">
                                 <h4 class="justify-content-center" style="color:blueviolet;">Devenir Bénévole</h4>
                                 <div class="row">
                                     <div class="col-lg-12">
@@ -1129,7 +1129,7 @@
                                 <div class="container">
                                     <div class="row">
                                         <div class="col-sm-6 col-lg-6 justify-content-end" style="margin-top: 50px;">
-                                        <form class="form message-form" action="<?php echo $_SERVER['PHP_SELF'];?>" method="post">
+                                        <form class="form message-form" action="<?php echo $_SERVER['PHP_SELF'];?>" method="post" onsubmit="alert('message envoyé !')">
                                                 <div class="row">
                                                     <div class="col-lg-12">
                                                         <input class="form__field form_fshadow" type="text" name="name" placeholder="Nom et Prenom*" required="required" />
