@@ -323,14 +323,11 @@
 
                                 </div>
                             </div>
-                            <p>A première vue, le gabarit semble renvoyer à une forme abstraite, cependant, sa signification est beaucoup plus profonde. Pour commencer, si nous décortiquons la forme qui semble abstraite, nous apercevrons une spirale qui
-                                commence avec le chiffre « 2 » et se termine avec une bulle. La spirale indique la continuation et l’infinité de la foie humaine à aider autrui. Après, le chiffre « 2 » qui est relié à la forme O de la spirale et qui forment
-                                ensemble O2. Paracerque, tout comme l’oxygène, nous sommes tous égaux. Nous acceptons de l’aide et nous aidons. Dernièrement, la bulle qui cache derrière la forme d’une tête. Nous pouvons même apercevoir une figure humaine
-                                en position de prière.
+                            <p>Pour les musulmans, les actes humanitaires constituent un élément essentiel de la pratique religieuse. Nombreux sont les textes coraniques et prophétiques qui plaident en faveur de l’action humanitaire en la définissant et en ordonnant de la pratiquer. Ils sont soit de nature obligatoire, soit de nature incitative et n’excluent pas les non-musulmans de l’aide humanitaire. Pour le musulman, accomplir un acte humanitaire est une façon de recevoir l’aide du ciel, de racheter ses péchés et de mériter le paradis. Les mécanismes établis par la religion (p. ex. la zakat, le waqf et la kaffara) ont eu un impact sans précédent sur la vie de la population : affranchissement des esclaves, soutien significatif aux plus vulnérables et expansion du système d’éducation et de santé. Aujourd’hui, "Au-Delà-Des-Mots", fondée sur la foi, se réfère à ces textes pour lancer ses programmes humanitaires dans divers domaines.
                             </p>
-                            <p>
+                            <a class="form__submit_violet" onclick="show()" style="margin-top:15px;"><span>Voir la suite</span></a>
                         </div>
-                        <div class="col-lg-6 col-xl-6 offset-xl-1" id="ZakatR">
+                        <div class="col-lg-6 col-xl-6" id="ZakatR">
                             <div class="img-box">
                                 <div class="img-box__img"><img class="img--bg" src="<?php echo base_url();?>/resources/img/A_propos.jpg" alt="img" id="imgR" />
                                 </div>
@@ -341,6 +338,10 @@
 
                         </div>
                     </div>
+                    <p style="display:none;" id="para">L’humanitaire est un des principes fondamentaux de la religion musulmane.<br>
+Faire un don ou secourir un sinistré sont des actes qui ne sont pas laissés à la libre appréciation du croyant mais sont parfois obligatoires au même titre que la prière, le jeûne du Ramadan ou le pèlerinage à La Mecque. L’exercice de l’acte humanitaire chez le musulman est donc une composante essentielle de la pratique religieuse, qu’il se limite à un don en argent ou en nature ou qu’il revête une forme plus pratique telle que, par exemple, don de soi, secours ou distribution d’aide.<br>
+Cette dimension religieuse motive, canalise et intensifie les autres dimensions que sont l’affectif et le sens du devoir.<br>
+Les textes coraniques ou prophétiques qui incitent à l’action humanitaire, qui la définissent ou qui la réglementent sont très nombreux. Ils ont soit un caractère obligatoire, soit un caractère incitatif. Pour un musulman, entreprendre une action humanitaire est un moyen de recevoir l’aide du ciel, d’effacer ses péchés, d’échapper au châtiment, de remercier le Seigneur pour ses bienfaits et de mériter le paradis.</p>
                 </div>
             </section>
             <!----About us End---->
@@ -349,13 +350,17 @@
             <!---START2-->
             <section class="Quotes" style="background-color:#7E42AE;">
                 <div class="container">
-                    <div class="row">
+                <div class="row">
                         <div class="col-xl-12 text-center mt-3"><i class="fas fa-quote-left fa-2x" style="color: #fff;"></i></div>
                         <div class="col-xl-12 text-center m-2">
-                            <h2 class="Quote_1" style="letter-spacing: 0.6px;font-weight:lighter ;">Je me suis lancée dans l’humanitaire il y a longtemps parce que j’espérais aider le monde de manière significative
+                        <div class="col-xl-12 text-center mb-3" style="color: whitesmoke;">Le hadith du Prophète rapporté par Al Hakim </div>
+                            <h2 class="Quote_1" style="letter-spacing: 0.6px;font-weight:lighter ;text-align:center">« Si, dans une commune, un homme décède de famine,<br>
+alors tous les résidants de cette commune se mettent hors de la protection de Dieu<br>
+et de son prophète…» 
                             </h2>
                         </div>
-                        <div class="col-xl-12 text-center mb-3" style="color: whitesmoke;" id="Quoteita">_ Angelina Jolie</div>
+                        <br>
+                        <div class="col-xl-12 text-center mb-3" style="color: whitesmoke;">_ Al-Hakim, Al-Moustadrak</div>
                     </div>
 
                 </div>

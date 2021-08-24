@@ -27594,3 +27594,62 @@ b{
     background-size: 1px 20px;
     display: inline;
 }
+.float {
+    z-index: 1;
+    display: flex;
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    top: 40%;
+    left: 75%;
+    background-color: #045dab;
+    color: #FFF;
+    border-radius: 50px;
+    align-items: center;
+    text-align: center;
+}
+
+.float:hover {
+    background-color: #096dc5;
+}
+
+.img-float {
+    z-index: 1;
+    filter: brightness(0) invert(1);
+    max-width: 100%;
+    max-height: 100%;
+    height: 50px;
+    width: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media only screen and (max-width:576px) {
+    .img-float {
+        z-index: 1;
+        filter: brightness(0) invert(1);
+        max-width: 50%;
+        max-height: 50%;
+        height: 40px;
+        width: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .float {
+        z-index: 1;
+        display: flex;
+        position: fixed;
+        width: 60px;
+        height: 64px;
+        top: 40%;
+        left: 75%;
+        background-color: #045dab;
+        color: #FFF;
+        border-radius: 50px;
+        align-items: center;
+        text-align: center;
+    }
+    .float:hover {
+        background-color: #096dc5;
+    }
+}

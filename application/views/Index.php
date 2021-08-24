@@ -215,7 +215,9 @@
 
 		</section>
 
-
+		<a href="<?php echo base_url();?>index.php/donate" id="StikyButton" style=" width:65px;height: 65px ; top:85%;box-shadow: 2px 2px 1px 1px grey;left:90%" class="float">
+                <img class="img-float" src="<?php echo base_url();?>/resources/img/Asset 1.png" />
+            </a>
 
 		<!-- Quote start-->
 		<section>
@@ -327,7 +329,7 @@
 			<section class="section action-section">
 	<div class="jarallax">
 		<picture>
-			<source srcset="<?php echo base_url();?>/resources/img/mosq.png" media="(min-width: 992px)" /><img class="jarallax-img" src="<?php echo base_url();?>/resources/img/mosq.png"
+			<source srcset="<?php echo base_url();?>/resources/img/imageporte.png" media="(min-width: 992px)" /><img class="jarallax-img" src="<?php echo base_url();?>/resources/img/imageporte.png"
 				alt="img" />
 		</picture>
 	</div>
