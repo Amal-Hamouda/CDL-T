@@ -215,7 +215,7 @@
 
 		</section>
 
-		<a href="<?php echo base_url();?>index.php/donate" id="StikyButton" style=" width:65px;height: 65px ; top:85%;box-shadow: 2px 2px 1px 1px grey;left:90%" class="float">
+		<a href="<?php echo base_url();?>index.php/donate" id="StikyButton" style=" width:65px;height: 65px ; top:85%;box-shadow: 1px 1px 4px 0px white;left:90%" class="float">
                 <img class="img-float" src="<?php echo base_url();?>/resources/img/Asset 1.png" />
             </a>
 

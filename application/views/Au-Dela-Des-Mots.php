@@ -302,7 +302,7 @@
             <!-- testimonials style-1 end-->
             </section>
             <!--floating img-->
-            <a href="<?php echo site_url("donate");?>" id="StikyButton" style="visibility: hidden; width:65px;height: 65px ; top:85%;box-shadow: 2px 2px 1px 1px grey;left:90%" class="float">
+            <a href="<?php echo site_url("donate");?>" id="StikyButton" style="visibility: hidden; width:65px;height: 65px ; top:85%;box-shadow: 1px 1px 4px 0px white;left:90%" class="float">
                 <img class="img-float" src="<?php echo base_url();?>/resources/img/Asset 1.png" />
             </a>
             <!--About us Start-->
