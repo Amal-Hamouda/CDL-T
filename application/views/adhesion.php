@@ -85,7 +85,7 @@
 							   <p style="text-align:center" style="margin-top: -60px;"><span style=" font-size: 65px;
 							    -webkit-text-stroke: 2px #CFA253;
 							   font-weight: 800;color:#fff;font-family:Montserrat-ExtraBold,sans-serif;"
-							   > À<b>NO</b>TRE C<b>AUSE</b></span></p>
+							   > À <b>NO</b>TRE C<b>AUSE</b></span></p>
                             </div>
                         </div>
                     </div>
