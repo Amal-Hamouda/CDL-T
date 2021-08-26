@@ -797,7 +797,7 @@ myButton.close();}
   }
 ?>
         <!--question start-->
-        <section style="background-image: url(<?php echo base_url();?>/resources/img/imampic.png);background-repeat: no-repeat;background-size: cover; background-attachment: fixed; background-position:center center; padding-top: 1%;"id="QuestionImam">
+        <section style="background-image: url(<?php echo base_url();?>/resources/img/imampic2.png);background-repeat: no-repeat;background-size: cover; background-attachment: fixed; background-position:center center; padding-top: 1%;"id="QuestionImam">
             <div>
                 <div class="row justify-content-end">
                     <br>
