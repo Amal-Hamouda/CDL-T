@@ -317,7 +317,7 @@
                             </div>
                             <div class="col-lg-6 col-xl-6 offset-xl-1" id="ZakatL">
                                 <div class="img-box">
-                                    <div class="img-box__img"><img class="img--bg" src="<?php echo base_url();?>/resources/img/A_propos.jpg" alt="img" id="imgL" />
+                                    <div class="img-box__img"><img class="img--bg" src="<?php echo base_url();?>/resources/img/prop.png" alt="img" id="imgL" />
                                     </div>
 
 
@@ -329,7 +329,7 @@
                         </div>
                         <div class="col-lg-6 col-xl-6" id="ZakatR">
                             <div class="img-box">
-                                <div class="img-box__img"><img class="img--bg" src="<?php echo base_url();?>/resources/img/A_propos.jpg" alt="img" id="imgR" />
+                                <div class="img-box__img"><img class="img--bg" src="<?php echo base_url();?>/resources/img/prop.png" alt="img" id="imgR" />
                                 </div>
 
 
@@ -344,6 +344,11 @@ Cette dimension religieuse motive, canalise et intensifie les autres dimensions 
 Les textes coraniques ou prophétiques qui incitent à l’action humanitaire, qui la définissent ou qui la réglementent sont très nombreux. Ils ont soit un caractère obligatoire, soit un caractère incitatif. Pour un musulman, entreprendre une action humanitaire est un moyen de recevoir l’aide du ciel, d’effacer ses péchés, d’échapper au châtiment, de remercier le Seigneur pour ses bienfaits et de mériter le paradis.</p>
                 </div>
             </section>
+            <script>
+                function show(){
+                    document.getElementById("para").style.display="unset";
+                }
+            </script>
             <!----About us End---->
 
 
@@ -391,6 +396,13 @@ et de son prophète…»
             </section>
             <!--END-->
             <!---Counter-->
+            <section class="section action-section">
+            <div class="jarallax">
+		<picture>
+			<source srcset="<?php echo base_url();?>/resources/img/compteur.png" media="(min-width: 992px)" /><img class="jarallax-img" src="<?php echo base_url();?>/resources/img/compteur.png"
+				alt="img" />
+		</picture>
+	</div>
             <div class="container" style=" font-family: 'Montserrat';">
                 <hr style="margin-bottom: 60px;">
                 <div class="row offset-margin">
@@ -398,17 +410,18 @@ et de son prophète…»
                         <div class="counter-item counter-item--style-3">
 
                             <div class="counter-item counter-item--style-3  d-flex align-items-center flex-column">
-                                <div class="counter-item__top">
+                            <div class="counter-item__num" style=" color : white;"><span class="js-counter">3,689
+                                        </span></div>    
+                            <div class="counter-item__top">
                                     <h6 class="counter-item__title" style=" color : black;">
                                         <img class="asset_img" src="<?php echo base_url();?>/resources/img/Asset 2.png" alt="img" />
 
                                     </h6>
                                 </div>
 
-                                <div class="counter-item__num" style=" color : #7E42AE;"><span class="js-counter">3,689
-                                        </span></div>
+                               
                                 <div class="counter-item__top">
-                                    <h6 class="counter-item__titles_stat">Dons Collectés
+                                    <h6 class="counter-item__titles_stat" style="color:white">Dons Collectés
                                     </h6>
                                 </div>
                             </div>
@@ -419,12 +432,12 @@ et de son prophète…»
                         <div class="counter-item counter-item--style-3">
 
                             <div class="counter-item counter-item--style-3  d-flex align-items-center flex-column">
+                            <div class="counter-item__num" style=" color: white;"><span class="js-counter">25</span></div>
                                 <div class="counter-item__top">
                                     <h6 class="counter-item__title" style=" color : black;"> <img class="asset_img" src="<?php echo base_url();?>/resources/img/Asset 3.png" alt="img" width="100" /> </h6>
                                 </div>
-                                <div class="counter-item__num" style=" color: #7E42AE;"><span class="js-counter">25</span></div>
                                 <div class="counter-item__top">
-                                    <h6 class="counter-item__titles_stat">Echange</h6>
+                                    <h6 class="counter-item__titles_stat" style="color:white">Echange</h6>
                                 </div>
                             </div>
 
@@ -434,13 +447,14 @@ et de son prophète…»
                         <div class="counter-item counter-item--style-3">
 
                             <div class="counter-item counter-item--style-3  d-flex align-items-center flex-column">
+                            <div class="counter-item__num" style="color:white"><span class="js-counter">25</span></div>
                                 <div class="counter-item__top">
                                     <h6 class="counter-item__title" style=" color : black;"> <img class="asset_img" src="<?php echo base_url();?>/resources/img/Asset 5.png" alt="img" width="100" />
                                     </h6>
                                 </div>
-                                <div class="counter-item__num" style=" color : #7E42AE;"><span class="js-counter">25</span></div>
+                              
                                 <div class="counter-item__top">
-                                    <h6 class="counter-item__titles_stat">Orientation</h6>
+                                    <h6 class="counter-item__titles_stat" style="color:white">Orientation</h6>
                                 </div>
                             </div>
 
@@ -448,15 +462,16 @@ et de son prophète…»
                     </div>
                     <div class="col-md-3 text-center">
                         <div class="counter-item counter-item--style-3  d-flex align-items-center flex-column">
+                        <div class="counter-item__num" style="color:white"><span class="js-counter">
+                                        1,865
+                                    </span></div>
                             <div class="counter-item__top">
                                 <h6 class="counter-item__title" style=" color : black;"> <img class="asset_img" src="<?php echo base_url();?>/resources/img/Asset 4.png" alt="img" width="100" />
                                 </h6>
                             </div>
-                            <div class="counter-item__num" style=" color : #7E42AE;"><span class="js-counter">
-                                        1,865
-                                    </span></div>
+                            
                             <div class="counter-item__top">
-                                <h6 class="counter-item__titles_stat">Plat</h6>
+                                <h6 class="counter-item__titles_stat" style="color:white">Plat</h6>
                             </div>
                         </div>
                     </div>
@@ -464,6 +479,7 @@ et de son prophète…»
                 </div>
                 <hr>
             </div>
+            </section>
             <!--end Counter-->
             <!--modal 1 start-->
             <div id="modalScrollableCenter1" class="modal fade bd-example-modal-xl" tabindex="-1">
@@ -729,7 +745,7 @@ et de son prophète…»
                 <div class="container">
                     <div class="row">
                         <div class="col-auto">
-                            <h4 class="elements__title">Variant 3</h4>
+                            <h4 class="elements__title"></h4>
                         </div>
                     </div>
                 </div>
@@ -743,11 +759,11 @@ et de son prophète…»
                         <div class="row">
                             <div class="col-xl-4">
                                 <div class="row align-items-end">
-                                    <div class="col-sm-8 col-md-6 col-xl-12">
-                                        <div class="primary-color"><span class="heading__pre-titl primary-colore">Testimonials</span>
-                                            <h2 class="heading__title primary-color"><span>What People</span><br /><span>Says About
-                                                    Us</span></h2>
+                                <div class="col-sm-8 col-md-6 col-xl-12">
+                                        <div class="primary-color"><span class="heading__pre-titl primary-colore"></span>
+                                            <h2 class="heading__title primary-color"><span>NOS <br> PROJET</span><br /></h2>
                                         </div>
+                                        <p>ici à AU DELÀ DES MOTS, nous faisons de notre mieux pour aider les autres à travers nos projets et nos événements</p>
                                     </div>
                                     <div class="col-sm-4 col-md-6 col-xl-12">
                                         <!-- slider nav start-->
@@ -769,15 +785,15 @@ et de son prophète…»
                                         <div class="testimonials-slider__item">
                                             <div class="testimonials-slider__icon primary-color">“</div>
                                             <div class="testimonials-slider__text">
-                                                <h4>Project 1</h4>
+                                                <h4>Projet 1</h4>
                                                 <div class="row">
-                                                    <div class="col-xl-12 m-0 p-0 col-lg-4 col-md-4">
+                                                    <div class="col-xl-12 m-0 p-0 col-lg-4 col-md-8">
                                                         <p>Slickhead grunion lake trout. Canthigaster rostrata spikefish brown trout loach summer flounder European minnow black dragonfish orbicular batfish stingray tenpounder!</p>
                                                     </div>
 
                                                 </div>
                                                 <div class="row">
-                                                    <img class="img-fluid" src="<?php echo base_url();?>/resources/img/Palestine.jpg">
+                                                    <img class="img-fluid" src="<?php echo base_url();?>/resources/img/prj1.jpg">
                                                 </div>
 
                                                 <div class="testimonials-slider__author">
@@ -789,15 +805,15 @@ et de son prophète…»
                                         <div class="testimonials-slider__item">
                                             <div class="testimonials-slider__icon primary-color">“</div>
                                             <div class="testimonials-slider__text">
-                                                <h4>Project 2</h4>
+                                                <h4>Projet 2</h4>
                                                 <div class="row">
-                                                    <div class="col-xl-12 m-0 p-0 col-lg-4 col-md-4">
+                                                    <div class="col-xl-12 m-0 p-0 col-lg-4 col-md-8">
                                                         <p>Slickhead grunion lake trout. Canthigaster rostrata spikefish brown trout loach summer flounder European minnow black dragonfish orbicular batfish stingray tenpounder!</p>
                                                     </div>
 
                                                 </div>
                                                 <div class="row">
-                                                    <img class="img-fluid" src="<?php echo base_url();?>/resources/img/Palestine.jpg">
+                                                    <img class="img-fluid" src="<?php echo base_url();?>/resources/img/prj2.jpg">
                                                 </div>
 
                                                 <div class="testimonials-slider__author">
@@ -808,15 +824,15 @@ et de son prophète…»
                                         <div class="testimonials-slider__item">
                                             <div class="testimonials-slider__icon primary-color">“</div>
                                             <div class="testimonials-slider__text">
-                                                <h4>Project 3</h4>
+                                                <h4>Projet 3</h4>
                                                 <div class="row">
-                                                    <div class="col-xl-12 m-0 p-0 col-lg-4 col-md-4">
+                                                    <div class="col-xl-12 m-0 p-0 col-lg-4 col-md-8">
                                                         <p>Slickhead grunion lake trout. Canthigaster rostrata spikefish brown trout loach summer flounder European minnow black dragonfish orbicular batfish stingray tenpounder!</p>
                                                     </div>
 
                                                 </div>
                                                 <div class="row">
-                                                    <img class="img-fluid" src="<?php echo base_url();?>/resources/img/Palestine.jpg">
+                                                    <img class="img-fluid" src="<?php echo base_url();?>/resources/img/prj3.jpg">
                                                 </div>
 
                                                 <div class="testimonials-slider__author">
@@ -827,9 +843,9 @@ et de son prophète…»
                                         <div class="testimonials-slider__item">
                                             <div class="testimonials-slider__icon primary-color">“</div>
                                             <div class="testimonials-slider__text">
-                                                <h4>Project 4</h4>
+                                                <h4>Projet 4</h4>
                                                 <div class="row">
-                                                    <div class="col-xl-12 m-0 p-0 col-lg-4 col-md-4">
+                                                    <div class="col-xl-12 m-0 p-0 col-lg-4 col-md-8">
                                                         <p>Slickhead grunion lake trout. Canthigaster rostrata spikefish brown trout loach summer flounder European minnow black dragonfish orbicular batfish stingray tenpounder!</p>
                                                     </div>
 
@@ -851,6 +867,22 @@ et de son prophète…»
                     </div>
                 </section>
                 <!-- testimonials style-3 end-->
+            </section>
+            <section class="Quotes" style="background-color:#7E42AE;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12 text-center mt-3"><i class="fas fa-quote-left fa-2x" style="color: #fff;"></i></div>
+                        <div class="col-xl-12 text-center m-2">
+                        <div class="col-xl-12 text-center mb-3" style="color: whitesmoke;"> </div>
+                            <h2 class="Quote_1" style="letter-spacing: 0.6px;font-weight:lighter ;text-align:center">Les aumônes sont destinées aux pauvres, aux nécessiteux, à ceux qui sont chargés de la collecter, à ceux dont les cœurs sont à gagner, au rachat des captifs, aux insolvables, à ceux qui se consacrent à la cause d'Allâh et aux
+                                voyageurs.
+                            </h2>
+                        </div>
+                        <br>
+                        <div class="col-xl-12 text-center mb-3" style="color: whitesmoke;">(Coran, S.9 V.60)</div>
+                    </div>
+
+                </div>
             </section>
 <?php
 
@@ -901,33 +933,46 @@ et de son prophète…»
     
   }
 ?>
-            <section style="
-                                  background-image: url(<?php echo base_url();?>/resources/img/Co.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;">
+            <section>
                 <div>
                     <div class="row justify-content-end">
                         <br>
-                        <div class="col-xl-6" id="devenirBenevole"></div>
+                        <div class="col-xl-6" id="devenirBenevole" style="
+                                  background-image: url(<?php echo base_url();?>/resources/img/benevole.png);
+    background-repeat: no-repeat;
+    background-size: cover;">  <div class="row">
+                        <div class="col-12"style="margin-left:50px;margin-top:90px">
+                            
+
+
+                              <h6 style="color: white"> PARTICIPER A UNE ACTION </h6>
+                           
+                            <h2 class="action-section__title mt-3" style="color: white"> DEVENIR BÉNÉVOLE </h2>
+                            <p style="color: white; font-size:20px">Vivre, c'est aider à vivre. Il faut créer<br>d'autres bonheurs pour être heureux.<br></p>
+                        </div>
+                    </div></div>
                         <div class="col-xl-6 p-xl-5">
                             <form class="form message-form_ben" action="<?php echo $_SERVER['PHP_SELF'];?>" method="post" onsubmit="alert('message envoyé !')">
                                 <h4 class="justify-content-center" style="color:blueviolet;">Devenir Bénévole</h4>
                                 <div class="row">
-                                    <div class="col-lg-12">
-                                        <input class="form__field form_fshadow" type="text" name="name" placeholder="Nom et Prenom*" required="required" />
+                                    <div class="col-lg-6">
+                                        <input class="form__field form_fshadow" type="text" name="name" placeholder="Nom" required="required" />
                                     </div>
-                                    <div class="col-lg-12">
+                                    <div class="col-lg-6">
+                                        <input class="form__field form_fshadow" type="text" name="name" placeholder="Prenom" required="required" />
+                                    </div>
+                                    <div class="col-lg-6">
                                         <input class="form__field form_fshadow" type="email" name="mail" placeholder="Email" required="required" />
                                     </div>
 
-                                    <div class="col-lg-12">
+                                    <div class="col-lg-6">
                                         <input class="form__field form_fshadow" type="tel" name="phone-number" placeholder="Tél" />
                                     </div>
                                     <div class="col-12">
                                         <textarea class="form__message form__field form_fshadow" name="message" placeholder="Message"></textarea>
                                     </div>
                                     <div class="col-12">
-                                        <button class="form__submit_violet_Shadow" type="submit form_fshadow" name="submit"  style="margin: 0%;">Envoyer</button>
+                                        <button class="form__submit_violet" type="submit form_fshadow" name="submit"  style="margin: 0%;">Envoyer</button>
                                     </div>
                                 </div>
                             </form>
@@ -936,41 +981,8 @@ et de son prophète…»
                 </div>
             </section>
             <!--Quote start-->
-            <section class="Quotes" style="background-color:#7E42AE;">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-12 text-center mt-3"><i class="fas fa-quote-left fa-2x" style="color: #fff;"></i></div>
-                        <div class="col-xl-12 text-center m-2">
-                            <h2 class="Quote_1" style="letter-spacing: 0.6px;;">Les aumônes sont destinées aux pauvres, aux nécessiteux, à ceux qui sont chargés de la collecter, à ceux dont les cœurs sont à gagner, au rachat des captifs, aux insolvables, à ceux qui se consacrent à la cause d'Allâh et aux
-                                voyageurs.
-                            </h2>
-                        </div>
-                        <div class="col-xl-12 text-center mb-3" style="color: whitesmoke;" id="Quoteita">(Coran, S.9 V.60)</div>
-                    </div>
-
-                </div>
-            </section>
             <!--Quote end-->
             <!-- Participe start-->
-            <section class="section about-us" id="Participer">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-lg-6">
-                            <div class="heading heading--primary">
-                                <h2 class="heading__title"><span style="color: #7E42AE;">Je participe </span> <span style="color:black;">a une action</span></h2>
-                            </div>
-                            <p><strong>Vous souhaitez apporter votre aide aux personnes souffrantes ou en situation de précarité ?
-									on vous propose des actions bénévoles humanitaires !</strong></p>
-                            <br>
-                            <a class="form__submit_violet" href="about.html">Participer</a>
-                        </div>
-                        <div class="col-lg-6 col-xl-5 offset-xl-1">
-                            <div class="info-box_vln" style="min-height: 395px !important"><img class="img--bg" src="<?php echo base_url();?>/resources/img/home-volunteer.png" alt="img" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
             <!-- Participe end-->
             <!-- info banner start-->
             <section class="section no-padding-top">
@@ -1021,10 +1033,6 @@ et de son prophète…»
                             <div class="col-12" style="margin-bottom: -75px;">
                                 <div class="d-flex justify-content-center text-center">
                                     <h2 class="heading__title" style="color:blueviolet"><span>Contactez Nous</span> </h2>
-
-                                </div>
-                                <div class="d-flex justify-content-center text-center col-12">
-                                    <span style="color :blueviolet;font-size: large;margin-top: -25px;">Exemple de text pour subtitle part goes here</span>
 
                                 </div>
                             </div>
@@ -1150,14 +1158,18 @@ et de son prophète…»
                                                         <textarea class="form__message form__field form_fshadow" name="message" placeholder="Message"></textarea>
                                                     </div>
                                                     <div class="col-12">
-                                                        <button class="form__submit_violet_Shadow" type="submit form_fshadow" name="submit"  style="margin: 0%;">Envoyer</button>
+                                                        <button class="form__submit_violet" type="submit form_fshadow" name="submit"  style="margin: 0%;">Envoyer</button>
                                                     </div>
                                                 </div>
                                             </form>
                                         </div>
-                                        <div class="col-sm-6 col-lg-6 justify-content-end" style="margin-top: 50px;"><img src="<?php echo base_url();?>/resources/img/storie_1.jpg" alt="img" />
-
-                                        </div>
+                                        <div class="col-sm-6 col-lg-6 justify-content-end" style="margin-top: 50px;">
+                                       
+                                       <div class="img-box">
+                                           <div class="img-box__img"><img class="img--bg" src="<?php echo base_url();?>/resources/img/cont.jpg" alt="img"style="height:80%" /></div>
+                                       </div>
+                                   
+                                                   </div>
                                     </div>
                                 </div>
                             </div>

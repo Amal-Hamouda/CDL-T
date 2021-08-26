@@ -65,9 +65,11 @@
 
         <!-- HERO Section start-->
         <section class="promo-primary" style="padding-bottom:10%;">
-            <picture>
-          <source srcset="<?php echo base_url();?>/resources/img/dons.png"/><img class="img--bg" style="opacity: 80% ;height: 100%;" src="<?php echo base_url();?>/resources/img/about.jpg" alt="img" />
-            </picture>
+		<div class="jarallax">
+		<picture>
+			<source srcset="<?php echo base_url();?>/resources/img/dons.png" media="(min-width: 992px)" /><img class="jarallax-img" src="<?php echo base_url();?>/resources/img/dons.png"
+				alt="img" />
+		</picture>
             <div class="promo-primary__description"> <span> </span></div>
             <div class="container">
 			<div class="col-12" style="text-align: center;">
@@ -104,6 +106,7 @@
                     </div>
                 </div>
             </div>
+			</div>
         </section>
         
 		<section style ="margin-top:100px; margin-bottom:1%">

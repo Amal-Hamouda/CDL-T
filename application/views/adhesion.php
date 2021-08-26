@@ -66,7 +66,7 @@
         <!-- HERO Section start-->
         <section class="promo-primary" style="padding-bottom:10%;">
             <picture>
-          <source srcset="<?php echo base_url();?>/resources/img/dons.png"/><img class="img--bg" style="opacity: 80% ;height: 100%;" src="<?php echo base_url();?>/resources/img/about.jpg" alt="img" />
+          <source srcset="<?php echo base_url();?>/resources/img/sub.png"/><img class="img--bg" style="opacity: 80% ;height: 100%;" src="<?php echo base_url();?>/resources/img/sub.png" alt="img" />
             </picture>
             <div class="promo-primary__description"> <span> </span></div>
             <div class="container">
@@ -74,31 +74,18 @@
 					<a class="form__submit_accueil_Shadow" type="submit form_fshadow" style="outline:none;margin-top: 40px;" href="<?php echo site_url("Home");?>"> 	&lt; RETOUR VERS L'ACCUEIL</a>
 				</div>
                 <div class="row">
-                    <div class="col-auto">
+                    <div class="col-12">
                         <div class="align-container">
                             <div class="align-container__item">
-                               <p><span style=" font-size: 65px;
+                               <p style="text-align:center"><span style=" font-size: 65px;
 							    -webkit-text-stroke: 2px #CFA253;
 							   font-weight: 800;color:#fff;font-family:Montserrat-ExtraBold,sans-serif;"
-							   > FAI<b>RE </b></span></p>
+							   > AD<b>HÉR</b>ER</span></p>
 							   
-							   <p style="margin-top: -60px;"><span style=" font-size: 65px;
+							   <p style="text-align:center" style="margin-top: -60px;"><span style=" font-size: 65px;
 							    -webkit-text-stroke: 2px #CFA253;
 							   font-weight: 800;color:#fff;font-family:Montserrat-ExtraBold,sans-serif;"
-							   > <b>UN D</b>ON</span></p>
-							   <section class="donate_title">
-								<div class="col-xl-12" ><i class="fas fa-quote-left fa-2x" style="color: #000000;"></i></div>
-								<div class="col-xl-12">
-									<p style="letter-spacing: 0.6px;color: black; font-style: italic;font-family: Montserrat,sans-serif; font-weight: 700;font-size: 20px"><span>LE DON EST ÉCHANGE DE VIE;</span>
-									</p>
-									<p style="letter-spacing: 0.6px;color: black; font-style: italic;font-family: Montserrat,sans-serif;font-weight: 700; font-size: 20px;margin-top: -20px;"><span>ET LA VIE, ÉCHANGE DE DON.</span>
-									</p>
-								
-								</div>
-								
-								<div class="col-xl-12" style="color:black; font-size: 12px;">DE PAUL ZUMTHOR/LA FÊTE DES FOUS</div>
-			
-							</section>
+							   > À<b>NO</b>TRE C<b>AUSE</b></span></p>
                             </div>
                         </div>
                     </div>
