@@ -22,5 +22,17 @@ class Home extends CI_Controller {
 	{
 		$this->load->view('Index');
 	}
-   
+	public function form_validation(){
+		
+		$this->load->model('contactmodel');
+		$data = array(
+		 "prenom"=>$this->input->post("first-name"),
+		 "nom"=>$this->input->post("last-name"),
+		 "email"=>$this->input->post("email"),
+		 "phone"=>$this->input->post("phone-number"),
+		 "msg"=>$this->input->post("message")
+
+	);
+	$this->contactmodel->insert_data($data);
+	}
 }
