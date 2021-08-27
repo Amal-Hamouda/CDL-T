@@ -1415,7 +1415,7 @@ plusieurs fois.. ”</p> <br>						<div id="Quoteita" style="color:#777">Coran s
 								<div class="container">
 									<div class="row justify-content-end">
 										<br>
-										<form class="form message-form" action="<?php echo base_url()?>Home/form_validation" method="post" onsubmit="alert('message envoyé !')">
+										<form class="form message-form" action="<?php echo base_url()?>index.php/Home/form_validation" method="post" onsubmit="alert('message envoyé !')">
 											<h6 class="form__title" style="color: black;">Envoyer un message</h6><span class="form__text">* Les
 												informations suivantes sont requises</span>
 											<div class="row">

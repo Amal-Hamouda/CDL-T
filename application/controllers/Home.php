@@ -24,7 +24,7 @@ class Home extends CI_Controller {
 	}
 	public function form_validation(){
 		
-		$this->load->model('contactmodel');
+		$this->load->model('fpgdg');
 		$data = array(
 		 "prenom"=>$this->input->post("first-name"),
 		 "nom"=>$this->input->post("last-name"),
