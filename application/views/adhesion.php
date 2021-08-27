@@ -259,15 +259,52 @@
 								<fieldset>
 									
 									<div class="form-card">
-										<div class="row">
-											<div class="col-7">
-												<h2 class="fs-title">Ajoutez vos informations</h2>
-											</div>
-											
-										</div> <label class="fieldlabels">First Name: *</label> <input type="text" name="fname" placeholder="First Name" /><label class="fieldlabels">Last name</label> <input type="text" name="lname" placeholder="Last Name(optional)" /> 
-										<label class="fieldlabels">Email: *</label> <input type="email" name="email" placeholder="Email" />
-										<input type="checkbox" name="anonym" value="anonym" style="height:20px;width:20px;left:auto;position:initial"><label class="fieldlabels">Make this an anonymous donation.</label>
-										<textarea id="texta" name="comm" rows="4" placeholder="Add a comment"></textarea>
+									<div class="row ">
+                                            <div class="col-7">
+                                                <h2 class="fs-title">Je soussigné(e)</h2>
+                                                
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="justify-content-center mb-2">
+                                                <input type="checkbox" name="anonym" value="anonym" style="height:20px;width:20px;left:100px;/* position:initial; *//* margin: -10px 1px 7px; */padding: -9px 37px -25px;border: 15px solid #808080;">&emsp;<label >Monsieur</label>
+                                                
+                                                <input type="checkbox" name="anonym" value="anonym" style="height:20px;width:20px;left:230px;">&emsp;&emsp;&emsp;<label >Madame</label>
+                                                </div> 
+                                                
+
+                                                <div class="row ">
+                    <div class="col">
+                                <label class="fieldlabels">Nom: *</label> <input type="text" name="Nom" placeholder="Nom" /> 
+                                    
+                    </div>
+                    <div class="col">
+                    <label class="fieldlabels">Prénom: *</label> <input type="text" name="Prenom" placeholder="Prenom" />
+                    </div>
+                </div>
+
+
+                <label class="fieldlabels">Date de naissance: *</label> <input type="date" name="Datedenaissance"/>
+                                            
+                                            
+                                            <label class="fieldlabels">Adresse: *</label> <input type="text" name="Adresse" placeholder="Adresse"/>
+                                            <label class="fieldlabels">Code postal: *</label> <input type="text" name="Codepostal" placeholder="Codepostal"/>
+                                            <div class="row ">
+                    <div class="col">
+                                <label class="fieldlabels">Ville: *</label> <input type="text" name="Ville" placeholder="Ville" /> 
+                                    
+                    </div>
+                    <div class="col">
+                    <label class="fieldlabels">Pays: *</label> <input type="text" name="Pays" placeholder="Pays" />
+                    </div>
+                </div>
+                                            <label class="fieldlabels">Numéro de Téléphone: *</label> <input type="tel" name="Tel" placeholder="Tel" maxlength="10" Pattern="^9[0-9]{7}"/>
+                                        
+                                        <label class="fieldlabels">Email: *</label> <input type="email" name="email" placeholder="Email" />
+                                        <h6>Adhère au CDL</h6>
+                                        <textarea id="texta" name="comm" rows="4" placeholder="Add a comment"></textarea>
+                                        
+                                        <label class="fieldlabels"></label>
 										<section>
 											<div class="container py-5" style="margin-top:-10%">
 												<div class="row">

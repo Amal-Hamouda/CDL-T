@@ -373,21 +373,23 @@ et de son prophète…»
             <section class="section action-section">
                 <div class="jarallax">
                     <picture>
-                        <source srcset="<?php echo base_url();?>/resources/img/imgbg.png" media="(min-width: 992px)" /><img class="jarallax-img" src="<?php echo base_url();?>/resources/img/ZAKAT.png" alt="img" />
+                        <source srcset="<?php echo base_url();?>/resources/img/sectiondon.png" media="(min-width: 992px)" /><img class="jarallax-img" src="<?php echo base_url();?>/resources/img/sectiondon.png" alt="img" />
                     </picture>
                 </div>
                 <div class="container">
                     <div class="row">
-                        <div class="col-12 text-center">
-                            <h2 class="action-section__title mt-3"> Headline Here </h2>
-                            <div class="col-12 text-center">
-
-                                Text TEXT text Text TEXT text</p>
+                        <div class="col-10 text-left">
+                            <p style="color:black; font-size:30px;font-weight:700"> Plus on aide les autres, plus on est heureux ;<br>Plus on est heureux, plus on a envie<br>d'aider les autres  </p>
+                            <div class="col-10 text-left">
+                            <p style="color: black;font-size:25px">-Frédéric Lenoir</p>
                             </div>
-                            <div class="col-12 text-center">
+                            <div class="col-10 text-left">
 
-                                <a class="button button-don m-2 text-center" data-toggle="modal" data-target=".bd-example-modal-lg" href="<?php echo site_url("donate");?>">Faire un don !</a>
+                                <a class="form__submit_violet"  style="margin-bottom:20px"href=""<?php echo site_url("donate");?>""><span>Faire un don</span></a>
 
+                            </div>
+                            <div class="col-10 text-left">
+                            <p style="color: black; font-size:25px" >Votre grandeur n'est pas ce que vous avez<br>C'est ce que vous donnez !</p>
                             </div>
 
                         </div>
@@ -414,7 +416,7 @@ et de son prophète…»
                                         </span></div>    
                             <div class="counter-item__top">
                                     <h6 class="counter-item__title" style=" color : black;">
-                                        <img class="asset_img" src="<?php echo base_url();?>/resources/img/Asset 2.png" alt="img" />
+                                        <img class="asset_img" src="<?php echo base_url();?>/resources/img/comp1.png" alt="img" />
 
                                     </h6>
                                 </div>
@@ -434,7 +436,7 @@ et de son prophète…»
                             <div class="counter-item counter-item--style-3  d-flex align-items-center flex-column">
                             <div class="counter-item__num" style=" color: white;"><span class="js-counter">25</span></div>
                                 <div class="counter-item__top">
-                                    <h6 class="counter-item__title" style=" color : black;"> <img class="asset_img" src="<?php echo base_url();?>/resources/img/Asset 3.png" alt="img" width="100" /> </h6>
+                                    <h6 class="counter-item__title" style=" color : black;"> <img class="asset_img" src="<?php echo base_url();?>/resources/img/comp2.png" alt="img" width="100" /> </h6>
                                 </div>
                                 <div class="counter-item__top">
                                     <h6 class="counter-item__titles_stat" style="color:white">Echange</h6>
@@ -449,7 +451,7 @@ et de son prophète…»
                             <div class="counter-item counter-item--style-3  d-flex align-items-center flex-column">
                             <div class="counter-item__num" style="color:white"><span class="js-counter">25</span></div>
                                 <div class="counter-item__top">
-                                    <h6 class="counter-item__title" style=" color : black;"> <img class="asset_img" src="<?php echo base_url();?>/resources/img/Asset 5.png" alt="img" width="100" />
+                                    <h6 class="counter-item__title" style=" color : black;"> <img class="asset_img" src="<?php echo base_url();?>/resources/img/comp3.png" alt="img" width="100" />
                                     </h6>
                                 </div>
                               
@@ -466,7 +468,7 @@ et de son prophète…»
                                         1,865
                                     </span></div>
                             <div class="counter-item__top">
-                                <h6 class="counter-item__title" style=" color : black;"> <img class="asset_img" src="<?php echo base_url();?>/resources/img/Asset 4.png" alt="img" width="100" />
+                                <h6 class="counter-item__title" style=" color : black;"> <img class="asset_img" src="<?php echo base_url();?>/resources/img/comp4.png" alt="img" width="100" />
                                 </h6>
                             </div>
                             
@@ -787,7 +789,7 @@ et de son prophète…»
                                             <div class="testimonials-slider__text">
                                                 <h4>Projet 1</h4>
                                                 <div class="row">
-                                                    <div class="col-xl-12 m-0 p-0 col-lg-4 col-md-8">
+                                                    <div class="col-xl-12 m-0 p-0 col-lg-8 col-md-8">
                                                         <p>Slickhead grunion lake trout. Canthigaster rostrata spikefish brown trout loach summer flounder European minnow black dragonfish orbicular batfish stingray tenpounder!</p>
                                                     </div>
 
@@ -807,7 +809,7 @@ et de son prophète…»
                                             <div class="testimonials-slider__text">
                                                 <h4>Projet 2</h4>
                                                 <div class="row">
-                                                    <div class="col-xl-12 m-0 p-0 col-lg-4 col-md-8">
+                                                    <div class="col-xl-12 m-0 p-0 col-lg-8 col-md-8">
                                                         <p>Slickhead grunion lake trout. Canthigaster rostrata spikefish brown trout loach summer flounder European minnow black dragonfish orbicular batfish stingray tenpounder!</p>
                                                     </div>
 
@@ -826,7 +828,7 @@ et de son prophète…»
                                             <div class="testimonials-slider__text">
                                                 <h4>Projet 3</h4>
                                                 <div class="row">
-                                                    <div class="col-xl-12 m-0 p-0 col-lg-4 col-md-8">
+                                                    <div class="col-xl-12 m-0 p-0 col-lg-8 col-md-8">
                                                         <p>Slickhead grunion lake trout. Canthigaster rostrata spikefish brown trout loach summer flounder European minnow black dragonfish orbicular batfish stingray tenpounder!</p>
                                                     </div>
 
@@ -845,7 +847,7 @@ et de son prophète…»
                                             <div class="testimonials-slider__text">
                                                 <h4>Projet 4</h4>
                                                 <div class="row">
-                                                    <div class="col-xl-12 m-0 p-0 col-lg-4 col-md-8">
+                                                    <div class="col-xl-12 m-0 p-0 col-lg-8 col-md-8">
                                                         <p>Slickhead grunion lake trout. Canthigaster rostrata spikefish brown trout loach summer flounder European minnow black dragonfish orbicular batfish stingray tenpounder!</p>
                                                     </div>
 
@@ -1164,12 +1166,13 @@ et de son prophète…»
                                             </form>
                                         </div>
                                         <div class="col-sm-6 col-lg-6 justify-content-end" style="margin-top: 50px;">
-                                       
+                                        <div id="imgcont1">         
                                        <div class="img-box">
                                            <div class="img-box__img"><img class="img--bg" src="<?php echo base_url();?>/resources/img/cont.jpg" alt="img"style="height:80%" /></div>
                                        </div>
                                    
                                                    </div>
+</div>
                                     </div>
                                 </div>
                             </div>

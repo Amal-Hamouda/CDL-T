@@ -1004,8 +1004,8 @@ pre code {
     .col-sm-6 {
         -ms-flex: 0 0 50%;
         -webkit-box-flex: 0;
-        flex: 0 0 50%;
-        max-width: 50%
+        flex: 0 0 100%;
+        max-width: 100%
     }
     .col-sm-7 {
         -ms-flex: 0 0 58.333333%;
@@ -1205,8 +1205,8 @@ pre code {
     .col-md-6 {
         -ms-flex: 0 0 50%;
         -webkit-box-flex: 0;
-        flex: 0 0 50%;
-        max-width: 50%
+        flex: 0 0 100%;
+        max-width: 100%
     }
     .col-md-7 {
         -ms-flex: 0 0 58.333333%;
@@ -16352,7 +16352,7 @@ main.main {
 section.section {
     position: relative;
     z-index: 0;
-    padding: 50px 0
+    padding: 1px 0
 }
 
 .img--bg {
@@ -17039,7 +17039,7 @@ section.section {
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 100%
+    height: 96%
 }
 
 .socials {
@@ -27372,12 +27372,22 @@ section.shop {
 }
 
 #imgR {
-    height: 60%;
-    margin-top: 150px;
+    height: 72%;
+    margin-top: 110px;
 }
 
 #Quoteita{
     font-style:italic;
+}
+@media only screen and (max-width:768px) {
+    .img-box__img::before {
+        content: "";
+        display: block;
+        padding-top: 82%
+    }
+    #imgcont1{
+        display:none;
+    }
 }
 /*# sourceMappingURL=styles.min.css.map */
 
