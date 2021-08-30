@@ -992,7 +992,7 @@ myButton.close();}
                                             <input class="form__field" type="email" name="email" placeholder="Email *" required="required" />
                                         </div>
                                         <div class="col-lg-6">
-                                            <input class="form__field" type="tel" name="phone-number" placeholder="Tél" />
+                                            <input class="form__field" type="tel" name="phone-number" placeholder="Tél"  required="required" />
                                         </div>
                                         <div class="col-12">
                                             <textarea class="form__message form__field" name="message" placeholder="Message"style="border-radius:25px"></textarea>
