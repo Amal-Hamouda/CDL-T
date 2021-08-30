@@ -954,17 +954,17 @@ et de son prophète…»
                         </div>
                     </div></div>
                         <div class="col-xl-6 p-xl-5">
-                            <form class="form message-form_ben" action="<?php echo $_SERVER['PHP_SELF'];?>" method="post" onsubmit="alert('message envoyé !')">
+                            <form class="form message-form_ben" action="<?php echo base_url()?>index.php/Humanitaire/form_benevole" method="post" onsubmit="alert('message envoyé !')">
                                 <h4 class="justify-content-center" style="color:blueviolet;">Devenir Bénévole</h4>
                                 <div class="row">
                                     <div class="col-lg-6">
-                                        <input class="form__field form_fshadow" type="text" name="name" placeholder="Nom" required="required" />
+                                        <input class="form__field form_fshadow" type="text" name="last-name" placeholder="Nom" required="required" />
                                     </div>
                                     <div class="col-lg-6">
-                                        <input class="form__field form_fshadow" type="text" name="name" placeholder="Prenom" required="required" />
+                                        <input class="form__field form_fshadow" type="text" name="first-name" placeholder="Prenom" required="required" />
                                     </div>
                                     <div class="col-lg-6">
-                                        <input class="form__field form_fshadow" type="email" name="mail" placeholder="Email" required="required" />
+                                        <input class="form__field form_fshadow" type="email" name="email" placeholder="Email" required="required" />
                                     </div>
 
                                     <div class="col-lg-6">
@@ -1144,13 +1144,16 @@ et de son prophète…»
                                 <div class="container">
                                     <div class="row">
                                         <div class="col-sm-6 col-lg-6 justify-content-end" style="margin-top: 50px;">
-                                        <form class="form message-form" action="<?php echo $_SERVER['PHP_SELF'];?>" method="post" onsubmit="alert('message envoyé !')">
+                                        <form class="form message-form" action="<?php echo base_url()?>index.php/Humanitaire/form_contact" method="post" onsubmit="alert('message envoyé !')">
                                                 <div class="row">
                                                     <div class="col-lg-12">
-                                                        <input class="form__field form_fshadow" type="text" name="name" placeholder="Nom et Prenom*" required="required" />
+                                                        <input class="form__field form_fshadow" type="text" name="last-name" placeholder="nom*" required="required" />
                                                     </div>
                                                     <div class="col-lg-12">
-                                                        <input class="form__field form_fshadow" type="email" name="mail" placeholder="Email" required="required" />
+                                                        <input class="form__field form_fshadow" type="text" name="first-name" placeholder="prenom*" required="required" />
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <input class="form__field form_fshadow" type="email" name="email" placeholder="Email" required="required" />
                                                     </div>
 
                                                     <div class="col-lg-12">

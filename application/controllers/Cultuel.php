@@ -48,5 +48,30 @@
      
             echo json_encode($data);
         }
+        public function form_question(){
+		
+            $data = array(
+             "prenom"=>$this->input->post("first-name"),
+             "nom"=>$this->input->post("last-name"),
+             "email"=>$this->input->post("email"),
+             "msg"=>$this->input->post("message")
+    
+        );
+        $this->db->insert("question_imam", $data);
+        $this->load->view('Cultuel');
+    }
+        public function form_contact(){
+		
+            $data = array(
+             "prenom"=>$this->input->post("first-name"),
+             "nom"=>$this->input->post("last-name"),
+             "email"=>$this->input->post("email"),
+             "phone"=>$this->input->post("phone-number"),
+             "msg"=>$this->input->post("message")
+    
+        );
+        $this->db->insert("contact", $data);
+        $this->load->view('Cultuel');
+    }
     }
     ?>
