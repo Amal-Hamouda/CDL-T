@@ -35,4 +35,12 @@ class Home extends CI_Controller {
 	$this->db->insert("contact", $data);
 	$this->load->view('Index');
 }
+function fetch_data()
+      {
+           //$query = $this->db->get("tbl_user");
+           //select * from tbl_user
+           //$query = $this->db->query("SELECT * FROM tbl_user ORDER BY id DESC");
+		   $data["fetch_data"] = $this->db->get("contact");
+		   $this->load->view('affichageformcontact');
+      }
 }
