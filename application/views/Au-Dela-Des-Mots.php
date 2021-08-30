@@ -894,7 +894,8 @@ et de son prophète…»
         la valeur des attributs name comme clé 
        */
      
-     $nom = $_POST['name'];
+    $Prenom = $_POST['first-name'];
+    $nom = $_POST['last-name'];
      $email = $_POST['email'];
      $phone = $_POST['phone-number'];
      $msg = $_POST['message'];
@@ -1094,7 +1095,8 @@ et de son prophète…»
         la valeur des attributs name comme clé 
        */
      
-     $nom = $_POST['name'];
+      $Prenom = $_POST['first-name'];
+      $nom = $_POST['last-name'];
      $email = $_POST['email'];
      $phone = $_POST['phone-number'];
      $msg = $_POST['message'];
