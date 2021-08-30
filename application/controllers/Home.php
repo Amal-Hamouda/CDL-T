@@ -41,6 +41,6 @@ function fetch_data()
            //select * from tbl_user
            //$query = $this->db->query("SELECT * FROM tbl_user ORDER BY id DESC");
 		   $data["fetch_data"] = $this->db->get("contact");
-		   $this->load->view('affichageformcontact');
+		   $this->load->view('affichageformcontact', $data);
       }
 }
