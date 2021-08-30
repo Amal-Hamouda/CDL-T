@@ -33,5 +33,6 @@ class Home extends CI_Controller {
 
 	);
 	$this->db->insert("contact", $data);
+	$this->load->view('Index');
 }
 }
