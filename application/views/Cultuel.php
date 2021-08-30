@@ -919,15 +919,16 @@ myButton.close();}
             <!-- section end-->
             <!-- section start contact-->
             </br>
-            <?php
+        <?php
 
 // Vérifier si le formulaire est soumis 
    if ( isset( $_POST['submit'] ) ) {
      /* récupérer les données du formulaire en utilisant 
         la valeur des attributs name comme clé 
        */
-     $Prenom = $_POST['first-name'];
-     $nom = $_POST['last-name'];
+     
+      $Prenom = $_POST['first-name'];
+      $nom = $_POST['last-name'];
      $email = $_POST['email'];
      $phone = $_POST['phone-number'];
      $msg = $_POST['message'];
@@ -992,7 +993,8 @@ myButton.close();}
                                             <input class="form__field" type="email" name="email" placeholder="Email *" required="required" />
                                         </div>
                                         <div class="col-lg-6">
-                                            <input class="form__field" type="tel" name="phone-number" placeholder="Tél"  required="required" />
+                                            <input class="form__field" type="tel" name="phone-number" placeholder="Tél" />
+
                                         </div>
                                         <div class="col-12">
                                             <textarea class="form__message form__field" name="message" placeholder="Message"style="border-radius:25px"></textarea>
