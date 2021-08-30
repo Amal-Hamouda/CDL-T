@@ -1357,56 +1357,7 @@ plusieurs fois.. ”</p> <br>						<div id="Quoteita" style="color:#777">Coran s
 
 
 
-<?php
-
-// Vérifier si le formulaire est soumis 
-   if ( isset( $_POST['submit'] ) ) {
-     /* récupérer les données du formulaire en utilisant 
-        la valeur des attributs name comme clé 
-       */
-     $Prenom = $_POST['first-name'];
-     $nom = $_POST['last-name'];
-     $email = $_POST['email'];
-     $phone = $_POST['phone-number'];
-     $msg = $_POST['message'];
-
- // Plusieurs destinataires
-     $to  = 'test@miraiphi.com'; // notez la virgule
-
-     // Sujet
-     $subject = 'Contact';
-
-     // message
-     $message = '
-     <html>
-      <head>
-       <title>Envoi MSG de la part de M./Mme '.$nom.' </title>
-      </head>
-      <body>
-       <p>Envoi MSG de la part de M./Mme '.$nom.' Ayan le numero '.$phone.' et voici son message :</p>
-       <p>'.$msg.'</p>
-       
-      </body>
-     </html>
-     ';
-
-     // Pour envoyer un mail HTML, l'en-tête Content-type doit être défini
-     $headers[] = 'MIME-Version: 1.0';
-     $headers[] = 'Content-type: text/html; charset=iso-8859-1';
-
-     // En-têtes additionnels
-     $headers[] = 'To: Test<test@miraiphi.com>';
-     $headers[] = 'From: '.$nom.'<'.$email.'>';
-     $headers[] = 'Cc: anniversaire_archive@example.com';
-     $headers[] = 'Bcc: anniversaire_verif@example.com';
-
-     // Envoi
-     mail($to, $subject, $message, implode("\r\n", $headers));
-
-    
-  }
-?>
-					<div class="container">
+			<div class="container">
 
 						<!-- contacts start-->
 						<!-- contacts start-->

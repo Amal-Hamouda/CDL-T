@@ -59,8 +59,45 @@
         );
 
         $this->db->insert("question_imam", $data);
-
-        $this->load->view('Cultuel');
+      
+        $Prenom = $this->input->post("first-name");
+        $nom = $this->input->post("last-name");
+        $email = $this->input->post("email");
+        $msg = $this->input->post("message");
+   
+    // Plusieurs destinataires
+        $to  = 'test@miraiphi.com'; // notez la virgule
+   
+        // Sujet
+        $subject = 'Contact';
+   
+        // message
+        $message = '
+        <html>
+         <head>
+          <title>Envoi MSG de la part de M./Mme '.$nom.' </title>
+         </head>
+         <body>
+          <p>Envoi MSG de la part de M./Mme '.$nom.' et voici son message :</p>
+          <p>'.$msg.'</p>
+          
+         </body>
+        </html>
+        ';
+   
+        // Pour envoyer un mail HTML, l'en-tête Content-type doit être défini
+        $headers[] = 'MIME-Version: 1.0';
+        $headers[] = 'Content-type: text/html; charset=iso-8859-1';
+   
+        // En-têtes additionnels
+        $headers[] = 'To: Test<test@miraiphi.com>';
+        $headers[] = 'From: '.$nom.'<'.$email.'>';
+        $headers[] = 'Cc: anniversaire_archive@example.com';
+        $headers[] = 'Bcc: anniversaire_verif@example.com';
+   
+        // Envoi
+        mail($to, $subject, $message, implode("\r\n", $headers));
+       // $this->load->view('Cultuel');
     }
         public function form_contact(){
 		

@@ -748,54 +748,7 @@ myButton.close();}
             </div>
         </section>
         <!-- info banner end-->
-<?php
 
-// Vérifier si le formulaire est soumis 
-   if ( isset( $_POST['submit'] ) ) {
-     /* récupérer les données du formulaire en utilisant 
-        la valeur des attributs name comme clé 
-       */
-     $Prenom = $_POST['first-name'];
-     $nom = $_POST['last-name'];
-     $email = $_POST['email'];
-     $msg = $_POST['message'];
-
- // Plusieurs destinataires
-     $to  = 'test@miraiphi.com'; // notez la virgule
-
-     // Sujet
-     $subject = 'Contact';
-
-     // message
-     $message = '
-     <html>
-      <head>
-       <title>Envoi MSG de la part de M./Mme '.$nom.' </title>
-      </head>
-      <body>
-       <p>Envoi MSG de la part de M./Mme '.$nom.' et voici son message :</p>
-       <p>'.$msg.'</p>
-       
-      </body>
-     </html>
-     ';
-
-     // Pour envoyer un mail HTML, l'en-tête Content-type doit être défini
-     $headers[] = 'MIME-Version: 1.0';
-     $headers[] = 'Content-type: text/html; charset=iso-8859-1';
-
-     // En-têtes additionnels
-     $headers[] = 'To: Test<test@miraiphi.com>';
-     $headers[] = 'From: '.$nom.'<'.$email.'>';
-     $headers[] = 'Cc: anniversaire_archive@example.com';
-     $headers[] = 'Bcc: anniversaire_verif@example.com';
-
-     // Envoi
-     mail($to, $subject, $message, implode("\r\n", $headers));
-
-    
-  }
-?>
         <!--question start-->
         <section style="background-image: url(<?php echo base_url();?>/resources/img/imampic2.png);background-repeat: no-repeat;background-size: cover; background-attachment: fixed; background-position:center center; padding-top: 1%;"id="QuestionImam">
             <div>
