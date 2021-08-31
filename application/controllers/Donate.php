@@ -47,5 +47,16 @@
      
             echo json_encode($data);
         }
+        public function insertpayment(){
+            $data = array(
+                "prenom"=>$this->input->post("firstname"),
+                "nom"=>$this->input->post("lastname"),
+                "email"=>$this->input->post("email"),
+                "msg"=>$this->input->post("msg"),
+                "paypal"=>"1"
+           );
+   
+           $this->db->insert("don", $data);
+        }
     }
     ?>

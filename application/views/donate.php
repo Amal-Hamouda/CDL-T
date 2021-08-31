@@ -294,9 +294,8 @@
 												<h2 class="fs-title">Ajoutez vos informations</h2>
 											</div>
 											
-										</div> <label class="fieldlabels">First Name: *</label> <input type="text" name="fname" placeholder="First Name" /><label class="fieldlabels">Last name</label> <input type="text" name="lname" placeholder="Last Name(optional)" /> 
-										<label class="fieldlabels">Email: *</label> <input type="email" name="email" placeholder="Email" />
-										<input type="checkbox" name="anonym" value="anonym" style="height:20px;width:20px;left:auto;position:initial"><label class="fieldlabels">Make this an anonymous donation.</label>
+										</div> <label class="fieldlabels">First Name: *</label> <input type="text" name="fname" id="first-name" placeholder="First Name" /><label class="fieldlabels">Last name</label> <input type="text" name="lname" id="last-name" placeholder="Last Name(optional)" /> 
+										<label class="fieldlabels">Email: *</label> <input type="email" name="email" id="email" placeholder="Email" />
 										<textarea id="texta" name="comm" rows="4" placeholder="Add a comment"></textarea>
 										<section>
 											<div class="container py-5" style="margin-top:-10%">
@@ -519,7 +518,24 @@
         return actions.order.capture().then(function (details) {
             console.log(details)
             //window.location.replace("http://localhost:63342/tutorial/paypal/success.php%22)
-        })
+			var firstname = $('#first-name').val();
+        var lastname = $('#last-name').val();
+        var email = $('#email').val();
+        var msg = $('#texta').val();
+		$.ajax({
+                url: "<?php echo base_url(); ?>donate/insertpayment",
+                type: "POST",
+                data: {
+                    firstname: firstname,
+                    email: email,
+                    lastname: lastname,
+                    msg: msg
+                },
+                cache: false,
+                success: function(dataResult){
+
+                }
+            }); })
     },
     onCancel: function (data) {
         //window.location.replace("http://localhost:63342/tutorial/paypal/Oncancel.php%22)
