@@ -47,13 +47,14 @@
      
             echo json_encode($data);
         }
-        public function insertpayment(){
+        public function insertpaymentpaypal(){
             $data = array(
                 "prenom"=>$this->input->post("firstname"),
                 "nom"=>$this->input->post("lastname"),
                 "email"=>$this->input->post("email"),
                 "msg"=>$this->input->post("msg"),
-                "paypal"=>"1"
+                "paypal"=>"payment fait a travers paypal",
+                
            );
    
            $this->db->insert("don", $data);
