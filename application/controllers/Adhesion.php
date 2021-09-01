@@ -58,7 +58,7 @@
                 "tel"=>$this->input->post("tel"),
                 "email"=>$this->input->post("email"),
                 "msg"=>$this->input->post("msg"),
-                "paypal"=>"payment fait a travers paypal",
+                "payment_method"=>"Paypal",
                 
            );
    
@@ -75,7 +75,7 @@
                 "tel"=>$this->input->post("tel"),
                 "email"=>$this->input->post("email"),
                 "msg"=>$this->input->post("msg"),
-                "Stripe"=>"payment fait a travers stripe",
+                "payment_method"=>"Stripe",
                 
            );
    
