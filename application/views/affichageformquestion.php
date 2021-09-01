@@ -1,7 +1,7 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>contact</title>
+	<title>Question a l'imam</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->	
@@ -51,7 +51,7 @@
                 </nav>
                 <!-- Page content-->
                 <div class="container-fluid">
-                    <h1 class="mt-4">Contact</h1>
+                    <h1 class="mt-4">Question a l'imam</h1>
 <div class="limiter">
 		<div class="container-table100">
 			<div class="wrap-table100">
@@ -64,9 +64,8 @@
 									<th class="cell100 column2">First Name</th>
 									<th class="cell100 column3">Last Name</th>
 									<th class="cell100 column4">Email</th>
-									<th class="cell100 column5">Phone number</th>
-                                    <th class="cell100 column6">Message</th>
-                                    <th class="cell100 column7">Date</th>
+                                    <th class="cell100 column5">Message</th>
+                                    <th class="cell100 column6">Date</th>
 
 								</tr>
 							</thead>
@@ -87,9 +86,8 @@
                      <td class="cell100 column2"><?php echo $row->prenom; ?></td>
                      <td class="cell100 column3"><?php echo $row->nom; ?></td>
                      <td class="cell100 column4"><?php echo $row->email; ?></td>
-                     <td class="cell100 column5"><?php echo $row->phone; ?></td>
-                     <td class="cell100 column6"><?php echo $row->msg; ?></td>
-                     <td class="cell100 column7"><?php echo $row->datejour; ?></td>
+                     <td class="cell100 column5"><?php echo $row->msg; ?></td>
+                     <td class="cell100 column6"><?php echo $row->datejour; ?></td>
 
                 </tr>
            <?php
@@ -99,7 +97,7 @@
            {
            ?>
                 <tr class="row100 body">
-                     <td class="cell100" colspan="7">No Data Found</td>
+                     <td class="cell100" colspan="6">No Data Found</td>
                 </tr>
            <?php
            }
