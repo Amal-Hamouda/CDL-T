@@ -76,9 +76,9 @@
 						<table>
 							<tbody>
                                    <?php
-           if($fetch_data->num_rows() > 0)
+           if($fetch_question->num_rows() > 0)
            {
-                foreach($fetch_data->result() as $row)
+                foreach($fetch_question->result() as $row)
                 {
            ?>
                 <tr class="row100 body">
