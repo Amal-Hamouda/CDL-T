@@ -59,5 +59,17 @@
    
            $this->db->insert("don", $data);
         }
+        public function insertpaymentstripe(){
+            $data = array(
+                "prenom"=>$this->input->post("firstname"),
+                "nom"=>$this->input->post("lastname"),
+                "email"=>$this->input->post("email"),
+                "msg"=>$this->input->post("msg"),
+                "Stripe"=>"payment fait a travers stripe",
+                
+           );
+   
+           $this->db->insert("don", $data);
+        }
     }
     ?>

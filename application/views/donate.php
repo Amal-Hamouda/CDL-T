@@ -487,6 +487,24 @@
           success: function( response ) {
             console.log(response.data);
             $('#token_response').append( '<br />' + JSON.stringify(response.data));
+			var firstname = $('#first-name').val();
+        var lastname = $('#last-name').val();
+        var email = $('#email').val();
+        var msg = $('#texta').val();
+		$.ajax({
+                url: "<?php echo base_url(); ?>index.php/donate/insertpaymentstripe",
+                type: "POST",
+                data: {
+                    firstname: firstname,
+                    email: email,
+                    lastname: lastname,
+                    msg: msg
+                },
+                cache: false,
+                success: function(dataResult){
+
+                }
+            });
           }
         })
       }
