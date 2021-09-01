@@ -275,32 +275,32 @@
 
                                                 <div class="row ">
                     <div class="col">
-                                <label class="fieldlabels">Nom: *</label> <input type="text" name="Nom" placeholder="Nom" /> 
+                                <label class="fieldlabels">Nom: *</label> <input type="text" id="lastname" name="Nom" placeholder="Nom" /> 
                                     
                     </div>
                     <div class="col">
-                    <label class="fieldlabels">Prénom: *</label> <input type="text" name="Prenom" placeholder="Prenom" />
+                    <label class="fieldlabels">Prénom: *</label> <input type="text" id="firstname" name="Prenom" placeholder="Prenom" />
                     </div>
                 </div>
 
 
-                <label class="fieldlabels">Date de naissance: *</label> <input type="date" name="Datedenaissance"/>
+                <label class="fieldlabels">Date de naissance: *</label> <input type="date" id="birthdate" name="Datedenaissance"/>
                                             
                                             
-                                            <label class="fieldlabels">Adresse: *</label> <input type="text" name="Adresse" placeholder="Adresse"/>
-                                            <label class="fieldlabels">Code postal: *</label> <input type="text" name="Codepostal" placeholder="Codepostal"/>
+                                            <label class="fieldlabels">Adresse: *</label> <input type="text" id="adresse" name="Adresse" placeholder="Adresse"/>
+                                            <label class="fieldlabels">Code postal: *</label> <input type="text" id="codepostal" name="Codepostal" placeholder="Codepostal"/>
                                             <div class="row ">
                     <div class="col">
-                                <label class="fieldlabels">Ville: *</label> <input type="text" name="Ville" placeholder="Ville" /> 
+                                <label class="fieldlabels">Ville: *</label> <input type="text" name="Ville" id="ville" placeholder="Ville" /> 
                                     
                     </div>
                     <div class="col">
-                    <label class="fieldlabels">Pays: *</label> <input type="text" name="Pays" placeholder="Pays" />
+                    <label class="fieldlabels">Pays: *</label> <input type="text" name="Pays" id="pays" placeholder="Pays" />
                     </div>
                 </div>
-                                            <label class="fieldlabels">Numéro de Téléphone: *</label> <input type="tel" name="Tel" placeholder="Tel" maxlength="10" Pattern="^9[0-9]{7}"/>
+                                            <label class="fieldlabels">Numéro de Téléphone: *</label> <input type="tel" name="Tel" id="phonenumber" placeholder="Tel" maxlength="10" Pattern="^9[0-9]{7}"/>
                                         
-                                        <label class="fieldlabels">Email: *</label> <input type="email" name="email" placeholder="Email" />
+                                        <label class="fieldlabels">Email: *</label> <input type="email" id="email" name="email" placeholder="Email" />
                                         <h6>Adhère au CDL</h6>
                                         <textarea id="texta" name="comm" rows="4" placeholder="Add a comment"></textarea>
                                         
@@ -484,13 +484,41 @@
         $('#token_response').html(JSON.stringify(token));
   
         $.ajax({
-          url:"<?php echo base_url(); ?>adhesion/payment",
+          url:"<?php echo base_url(); ?>index.php/adhesion/payment",
           method: 'post',
           data: { tokenId: token.id, amount: amount },
           dataType: "json",
           success: function( response ) {
             console.log(response.data);
             $('#token_response').append( '<br />' + JSON.stringify(response.data));
+			var firstname = $('#firstname').val();
+        var lastname = $('#lastname').val();
+		var birthdate = $('#birthdate').val();
+		var adresse = $('#adresse').val();
+		var ville = $('#ville').val();
+		var pays = $('#pays').val();
+		var tel = $('#tel').val();
+        var email = $('#email').val();
+        var msg = $('#texta').val();
+		$.ajax({
+                url: "<?php echo base_url(); ?>index.php/donate/insertpaymentstripe",
+                type: "POST",
+                data: {
+                    firstname: firstname,
+					lastname: lastname,
+					birthdate: birthdate,
+					adresse: adresse,
+					ville: ville,
+					pays: pays,
+					tel: tel,
+                    email: email,
+                    msg: msg
+                },
+                cache: false,
+                success: function(dataResult){
+
+                }
+            });
           }
         })
       }
@@ -522,6 +550,34 @@
         return actions.order.capture().then(function (details) {
             console.log(details)
             //window.location.replace("http://localhost:63342/tutorial/paypal/success.php%22)
+		var firstname = $('#firstname').val();
+        var lastname = $('#lastname').val();
+		var birthdate = $('#birthdate').val();
+		var adresse = $('#adresse').val();
+		var ville = $('#ville').val();
+		var pays = $('#pays').val();
+		var tel = $('#tel').val();
+        var email = $('#email').val();
+        var msg = $('#texta').val();
+		$.ajax({
+                url: "<?php echo base_url(); ?>index.php/adhesion/insertpaymentpaypal",
+                type: "POST",
+                data: {
+                    firstname: firstname,
+					lastname: lastname,
+					birthdate: birthdate,
+					adresse: adresse,
+					ville: ville,
+					pays: pays,
+					tel: tel,
+                    email: email,
+                    msg: msg
+                },
+                cache: false,
+                success: function(dataResult){
+
+                }
+            });
         })
     },
     onCancel: function (data) {

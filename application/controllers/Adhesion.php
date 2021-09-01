@@ -47,5 +47,39 @@
      
             echo json_encode($data);
         }
+        public function insertpaymentpaypal(){
+            $data = array(
+                "prenom"=>$this->input->post("firstname"),
+                "nom"=>$this->input->post("lastname"),
+                "date_de_naissance"=>$this->input->post("birthdate"),
+                "adresse"=>$this->input->post("adresse"),
+                "ville"=>$this->input->post("ville"),
+                "pays"=>$this->input->post("pays"),
+                "tel"=>$this->input->post("tel"),
+                "email"=>$this->input->post("email"),
+                "msg"=>$this->input->post("msg"),
+                "paypal"=>"payment fait a travers paypal",
+                
+           );
+   
+           $this->db->insert("adhesion", $data);
+        }
+        public function insertpaymentstripe(){
+            $data = array(
+                "prenom"=>$this->input->post("firstname"),
+                "nom"=>$this->input->post("lastname"),
+                "date_de_naissance"=>$this->input->post("birthdate"),
+                "adresse"=>$this->input->post("adresse"),
+                "ville"=>$this->input->post("ville"),
+                "pays"=>$this->input->post("pays"),
+                "tel"=>$this->input->post("tel"),
+                "email"=>$this->input->post("email"),
+                "msg"=>$this->input->post("msg"),
+                "Stripe"=>"payment fait a travers stripe",
+                
+           );
+   
+           $this->db->insert("adhesion", $data);
+        }
     }
     ?>
