@@ -298,7 +298,7 @@
                     <label class="fieldlabels">Pays: *</label> <input type="text" name="Pays" id="pays" placeholder="Pays" />
                     </div>
                 </div>
-                                            <label class="fieldlabels">Numéro de Téléphone: *</label> <input type="tel" name="Tel" id="phonenumber" placeholder="Tel" maxlength="10" Pattern="^9[0-9]{7}"/>
+                                            <label class="fieldlabels">Numéro de Téléphone: *</label> <input type="tel" name="Tel" id="tel" placeholder="Tel" maxlength="10" Pattern="^9[0-9]{7}"/>
                                         
                                         <label class="fieldlabels">Email: *</label> <input type="email" id="email" name="email" placeholder="Email" />
                                         <h6>Adhère au CDL</h6>
