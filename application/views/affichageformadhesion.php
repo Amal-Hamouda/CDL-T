@@ -96,7 +96,7 @@
                      <td class="cell100 column6"><?php echo $row->ville; ?></td>
                      <td class="cell100 column7"><?php echo $row->pays; ?></td>
                      <td class="cell100 column8"><?php echo $row->email; ?></td>
-                     <td class="cell100 column9"><?php echo $row->phone; ?></td>
+                     <td class="cell100 column9"><?php echo $row->tel; ?></td>
                      <td class="cell100 column10"><?php echo $row->payment_method; ?></td>
                      <td class="cell100 column11"><?php echo $row->msg; ?></td>
                      <td class="cell100 column12"><?php echo $row->datejour; ?></td>
