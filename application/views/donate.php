@@ -492,7 +492,7 @@
         var email = $('#email').val();
         var msg = $('#texta').val();
 		$.ajax({
-                url: "<?php echo base_url(); ?>index.php/donate/insertpaymentstripe",
+                url: "<?php echo base_url(); ?>donate/insertpaymentstripe",
                 type: "POST",
                 data: {
                     firstname: firstname,
