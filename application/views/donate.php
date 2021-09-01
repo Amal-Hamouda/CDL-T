@@ -480,7 +480,7 @@
         $('#token_response').html(JSON.stringify(token));
   
         $.ajax({
-          url:"<?php echo base_url(); ?>donate/payment",
+          url:"<?php echo base_url(); ?>index.php/donate/payment",
           method: 'post',
           data: { tokenId: token.id, amount: amount },
           dataType: "json",
