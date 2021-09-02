@@ -370,7 +370,7 @@ et de son prophète…»
 
                 </div>
             </section>
-            <section class="section action-section" style="padding:160px 0px;background-image:url(<?php echo base_url();?>/resources/img/sectiondon.png);background-repeat: no-repeat;background-position: right;" >
+            <section class="section action-section" style="padding:140px 0px;background-image:url(<?php echo base_url();?>/resources/img/sectiondon.png);background-repeat: no-repeat;background-position: right;" >
                 
                 <div class="container">
 							<div class="row align-items-center">
@@ -384,7 +384,6 @@ et de son prophète…»
                                 <p><strong> Votre grandeur n'est pas ce que vous avez<br>C'est ce que vous donnez !</strong></p>
 								</div>
 								<div class="col-lg-6 col-xl-5 offset-xl-1">
-									<div class="info-box"><img class="img--bg" src="img/AboutUs.jpeg" alt="img">
 										
 									</div>
 								</div>
