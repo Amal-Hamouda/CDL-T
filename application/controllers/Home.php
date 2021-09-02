@@ -98,7 +98,7 @@ function fetch_benevole()
 		   $data["fetch_benevole"] = $this->db->get("benevole");
 		   $this->load->view('affichageformbenevole', $data);
       }
-function fetch_don()
+/*function fetch_don()
       {
            //$query = $this->db->get("tbl_user");
            //select * from tbl_user
@@ -112,6 +112,6 @@ function fetch_don()
            //select * from tbl_user
            //$query = $this->db->query("SELECT * FROM tbl_user ORDER BY id DESC");
 		   $data["fetch_adhesion"] = $this->db->get("adhesion");
-		   $this->load->view('affichageformadhesion', $data);
+		   $this->load->view('affichageformadhesion', $data);*/
       }
 }

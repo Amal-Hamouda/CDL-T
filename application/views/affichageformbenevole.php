@@ -28,9 +28,9 @@
             <div class="border-end bg-white" id="sidebar-wrapper">
                 <div class="sidebar-heading border-bottom bg-light">Administateur</div>
                 <div class="list-group list-group-flush">
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Contact</a>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Question a l'imam</a>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Benevole</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?php echo base_url();?>index.php/Home/fetch_contact">Contact</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?php echo base_url();?>index.php/Home/fetch_question">Question a l'imam</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?php echo base_url();?>index.php/Home/fetch_benevole">Benevole</a>
                     <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Don</a>
                     <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Adhésion</a>
                 </div>
