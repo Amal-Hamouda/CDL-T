@@ -17039,7 +17039,7 @@ section.section {
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 98%
+    height: 100%
 }
 
 .socials {
@@ -27240,20 +27240,20 @@ section.shop {
 .counter-item__num {
     font-size: 40px;
     line-height: 50px;
-    font-weight: normal;
+    font-weight: normal;    
     letter-spacing: .010em
 }
 
 @media only screen and (min-width:992px) {
     .counter-item__num {
-        font-size: 60px;
+        font-size: 40px;
         line-height: 70px
     }
 }
 
 @media only screen and (min-width:1200px) {
     .counter-item__num {
-        font-size: 60px;
+        font-size: 40px;
         line-height: 80px
     }
 }
@@ -27266,13 +27266,13 @@ section.shop {
 
 @media only screen and (min-width:992px) {
     .counter-item__titles_stat {
-        font-size: 30px;
+        font-size: 20px;
     }
 }
 
 @media only screen and (min-width:1200px) {
     .counter-item__titles_stat {
-        font-size: 30px;
+        font-size: 20px;
     }
 }
 

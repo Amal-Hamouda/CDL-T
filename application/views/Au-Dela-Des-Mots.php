@@ -739,13 +739,6 @@ et de son prophète…»
             </div>
             <!--modal 4 end-->
             <section class="section elements elements--testimonials no-padding-top">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-auto">
-                            <h4 class="elements__title"></h4>
-                        </div>
-                    </div>
-                </div>
                 <!-- testimonials style-3 start-->
 
                 <section class="section testimonials testimonials--style-3" id="projet">
