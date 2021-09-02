@@ -370,31 +370,27 @@ et de son prophète…»
 
                 </div>
             </section>
-            <section class="section action-section">
-                <div class="jarallax">
-                    <picture>
-                        <source srcset="<?php echo base_url();?>/resources/img/sectiondon.png" media="(min-width: 992px)" /><img class="jarallax-img" src="<?php echo base_url();?>/resources/img/sectiondon.png" alt="img" />
-                    </picture>
-                </div>
+            <section class="section action-section" style="padding:100px 0px; background-image:url(<?php echo base_url();?>/resources/img/sectiondon.png)" >
+                
                 <div class="container">
-                    <div class="row">
-                        <div class="col-10 text-left">
-                            <p style="color:black; font-size:30px;font-weight:700"> Plus on aide les autres, plus on est heureux ;<br>Plus on est heureux, plus on a envie<br>d'aider les autres  </p>
-                            <div class="col-10 text-left">
-                            <p style="color: black;font-size:25px">-Frédéric Lenoir</p>
-                            </div>
-                            <div class="col-10 text-left">
-
-                                <a class="form__submit_violet"  style="margin-bottom:20px"href=""<?php echo site_url("donate");?>""><span>Faire un don</span></a>
-
-                            </div>
-                            <div class="col-10 text-left">
-                            <p style="color: black; font-size:25px" >Votre grandeur n'est pas ce que vous avez<br>C'est ce que vous donnez !</p>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
+							<div class="row align-items-center">
+								<div class="col-lg-6">
+									
+									
+									<p><strong> Plus on aide les autres, plus on est heureux ;<br>Plus on est heureux, plus on a envie<br>d'aider les autres </strong></p>
+									<p>-Frédéric Lenoir</p>
+										
+                                <a class="form__submit_violet"  style="margin-bottom:20px"href="<?php echo site_url("donate");?>"><span>Faire un don</span></a>
+                                <p><strong> Votre grandeur n'est pas ce que vous avez<br>C'est ce que vous donnez !</strong></p>
+								</div>
+								<div class="col-lg-6 col-xl-5 offset-xl-1">
+									<div class="info-box"><img class="img--bg" src="img/AboutUs.jpeg" alt="img">
+										
+									</div>
+								</div>
+							</div>
+						</div>
+          
             </section>
             <!--END-->
             <!---Counter-->
@@ -406,7 +402,7 @@ et de son prophète…»
 		</picture>
 	</div>
             <div class="container" style=" font-family: 'Montserrat';">
-                <hr style="margin-bottom: 60px;">
+                <hr style="">
                 <div class="row offset-margin">
                     <div class="col-md-3 text-center">
                         <div class="counter-item counter-item--style-3">
@@ -479,7 +475,7 @@ et de son prophète…»
                     </div>
 
                 </div>
-                <hr>
+             
             </div>
             </section>
             <!--end Counter-->
