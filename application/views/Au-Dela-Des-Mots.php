@@ -370,7 +370,7 @@ et de son prophète…»
 
                 </div>
             </section>
-            <section class="section action-section" style="padding:140px 0px;background-image:url(<?php echo base_url();?>/resources/img/sectiondon.png);background-repeat: no-repeat;background-position: right;" >
+            <section class="section action-section" style="padding:120px 0px;background-image:url(<?php echo base_url();?>/resources/img/sectiondon.png);background-repeat: no-repeat;background-position: right;" >
                 
                 <div class="container">
 							<div class="row align-items-center">
