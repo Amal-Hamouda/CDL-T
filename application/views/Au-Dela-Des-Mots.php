@@ -289,8 +289,8 @@
                                 <span style="color: blueviolet;"><i class="fas fa-donate fa-3x"></i></span>
 
                             </div>
-                            <div class="col-5 col-md-5 col-lg-5 m-0">
-                                <span class="don-text" style="color: blueviolet;"> Faites un don maintenant <br>et aidez-nous a changer des vies </span>
+                            <div class="col-5 col-md-5 col-lg-8 m-0">
+                                <span class="don-text" style="color: blueviolet;"> Faites un don maintenant et aidez-nous a changer des vies </span>
                             </div>
                             <div class="col-5 col-md-3 col-lg-2 m-0 p-0">
                                 <a class=" form__submit_violet  text-center" style="border-radius: 15px;" data-toggle="modal" data-target=".bd-example-modal-lg" href="<?php echo site_url("donate");?>">Faire un don</a>
