@@ -325,7 +325,7 @@
                             </div>
                             <p>Pour les musulmans, les actes humanitaires constituent un élément essentiel de la pratique religieuse. Nombreux sont les textes coraniques et prophétiques qui plaident en faveur de l’action humanitaire en la définissant et en ordonnant de la pratiquer. Ils sont soit de nature obligatoire, soit de nature incitative et n’excluent pas les non-musulmans de l’aide humanitaire. Pour le musulman, accomplir un acte humanitaire est une façon de recevoir l’aide du ciel, de racheter ses péchés et de mériter le paradis. Les mécanismes établis par la religion (p. ex. la zakat, le waqf et la kaffara) ont eu un impact sans précédent sur la vie de la population : affranchissement des esclaves, soutien significatif aux plus vulnérables et expansion du système d’éducation et de santé. Aujourd’hui, "Au-Delà-Des-Mots", fondée sur la foi, se réfère à ces textes pour lancer ses programmes humanitaires dans divers domaines.
                             </p>
-                            <a class="form__submit_violet" onclick="show()" style="margin-top:15px;"><span>Voir la suite</span></a>
+                            <a class="form__submit_violet" onclick="show()" style="margin-top:15px;margin-bottom:20px"><span>Voir la suite</span></a>
                         </div>
                         <div class="col-lg-6 col-xl-6" id="ZakatR">
                             <div class="img-box">
