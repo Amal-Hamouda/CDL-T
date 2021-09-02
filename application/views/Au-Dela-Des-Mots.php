@@ -370,7 +370,7 @@ et de son prophète…»
 
                 </div>
             </section>
-            <section class="section action-section" style="padding:100px 0px; background-image:url(<?php echo base_url();?>/resources/img/sectiondon.png)" >
+            <section class="section action-section" style="padding:160px 0px;background-image:url(<?php echo base_url();?>/resources/img/sectiondon.png);background-repeat: no-repeat;background-position: right;" >
                 
                 <div class="container">
 							<div class="row align-items-center">
@@ -378,7 +378,7 @@ et de son prophète…»
 									
 									
 									<p><strong> Plus on aide les autres, plus on est heureux ;<br>Plus on est heureux, plus on a envie<br>d'aider les autres </strong></p>
-									<p>-Frédéric Lenoir</p>
+									<p style="color:black">-Frédéric Lenoir</p>
 										
                                 <a class="form__submit_violet"  style="margin-bottom:20px"href="<?php echo site_url("donate");?>"><span>Faire un don</span></a>
                                 <p><strong> Votre grandeur n'est pas ce que vous avez<br>C'est ce que vous donnez !</strong></p>
