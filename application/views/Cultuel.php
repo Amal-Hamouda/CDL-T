@@ -217,7 +217,7 @@
         <!-- header end-->
         <!-- header end-->
         <!-- HERO Section start-->
-        <section class="promo-primary" style="padding-bottom:52%;">
+        <section class="promo-primary" style="padding-bottom:10%;">
             <picture>
                 <source srcset="<?php echo base_url();?>/resources/img/Herocultuel.png" media="(min-width: 992px)" /><img class="img--bg" style="height: 80%;" src="<?php echo base_url();?>/resources/img/Herocultuel.png" alt="img" />
             </picture>

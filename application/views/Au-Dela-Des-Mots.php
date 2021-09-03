@@ -286,14 +286,14 @@
                     <div class="event-item__content">
                         <div class="row d-flex justify-content-between align-items-center">
                             <div class="col-2 col-md-2 col-lg-2 m-0">
-                                <span style="color: blueviolet;"><i class="fas fa-donate fa-3x"></i></span>
+                                <span style="color: blueviolet;"><img class="asset_img_don" src="<?php echo base_url();?>/resources/img/Assetdon.png" alt="img"></span>
 
                             </div>
                             <div class="col-5 col-md-5 col-lg-8 m-0">
                                 <span class="don-text" style="color: blueviolet;"> Faites un don maintenant et aidez-nous a changer des vies </span>
                             </div>
                             <div class="col-5 col-md-3 col-lg-2 m-0 p-0">
-                                <a class=" form__submit_violet  text-center" style="border-radius: 15px;" data-toggle="modal" data-target=".bd-example-modal-lg" href="<?php echo site_url("donate");?>">Faire un don</a>
+                                <a class=" form__submit_violet  text-center" style="font-size:10px;" data-toggle="modal" data-target=".bd-example-modal-lg" href="<?php echo site_url("donate");?>">Faire un don</a>
                             </div>
                         </div>
                     </div>
@@ -338,10 +338,10 @@
 
                         </div>
                     </div>
-                    <p style="display:none;" id="para">L’humanitaire est un des principes fondamentaux de la religion musulmane.<br>
+                    <div style="margin-bottom:30px"><p style="display:none;" id="para">L’humanitaire est un des principes fondamentaux de la religion musulmane.<br>
 Faire un don ou secourir un sinistré sont des actes qui ne sont pas laissés à la libre appréciation du croyant mais sont parfois obligatoires au même titre que la prière, le jeûne du Ramadan ou le pèlerinage à La Mecque. L’exercice de l’acte humanitaire chez le musulman est donc une composante essentielle de la pratique religieuse, qu’il se limite à un don en argent ou en nature ou qu’il revête une forme plus pratique telle que, par exemple, don de soi, secours ou distribution d’aide.<br>
 Cette dimension religieuse motive, canalise et intensifie les autres dimensions que sont l’affectif et le sens du devoir.<br>
-Les textes coraniques ou prophétiques qui incitent à l’action humanitaire, qui la définissent ou qui la réglementent sont très nombreux. Ils ont soit un caractère obligatoire, soit un caractère incitatif. Pour un musulman, entreprendre une action humanitaire est un moyen de recevoir l’aide du ciel, d’effacer ses péchés, d’échapper au châtiment, de remercier le Seigneur pour ses bienfaits et de mériter le paradis.</p>
+Les textes coraniques ou prophétiques qui incitent à l’action humanitaire, qui la définissent ou qui la réglementent sont très nombreux. Ils ont soit un caractère obligatoire, soit un caractère incitatif. Pour un musulman, entreprendre une action humanitaire est un moyen de recevoir l’aide du ciel, d’effacer ses péchés, d’échapper au châtiment, de remercier le Seigneur pour ses bienfaits et de mériter le paradis.</p></div>
                 </div>
             </section>
             <script>
@@ -358,14 +358,14 @@ Les textes coraniques ou prophétiques qui incitent à l’action humanitaire, q
                 <div class="row">
                         <div class="col-xl-12 text-center mt-3"><i class="fas fa-quote-left fa-2x" style="color: #fff;"></i></div>
                         <div class="col-xl-12 text-center m-2">
-                        <div class="col-xl-12 text-center mb-3" style="color: whitesmoke;">Le hadith du Prophète rapporté par Al Hakim </div>
-                            <h2 class="Quote_1" style="letter-spacing: 0.6px;font-weight:lighter ;text-align:center">« Si, dans une commune, un homme décède de famine,<br>
+                        <div class="col-xl-12 text-center mb-3" style="color: whitesmoke;font-weight:100">Le hadith du Prophète rapporté par Al Hakim </div>
+                            <h2 class="Quote_1" style="letter-spacing: 0.6px;font-weight:500 ;text-align:center">« Si, dans une commune, un homme décède de famine,<br>
 alors tous les résidants de cette commune se mettent hors de la protection de Dieu<br>
 et de son prophète…» 
                             </h2>
                         </div>
                         <br>
-                        <div class="col-xl-12 text-center mb-3" style="color: whitesmoke;">_ Al-Hakim, Al-Moustadrak</div>
+                        <div class="col-xl-12 text-center mb-3" style="color: whitesmoke;font-weight:100">_ Al-Hakim, Al-Moustadrak</div>
                     </div>
 
                 </div>
@@ -377,11 +377,11 @@ et de son prophète…»
 								<div class="col-lg-6">
 									
 									
-									<p><strong> Plus on aide les autres, plus on est heureux ;<br>Plus on est heureux, plus on a envie<br>d'aider les autres </strong></p>
-									<p style="color:black">-Frédéric Lenoir</p>
+									<p><strong style="font-size:23px"> Plus on aide les autres, plus on est heureux ;<br>Plus on est heureux, plus on a envie<br>d'aider les autres </strong></p>
+									<p style="color:black;font-style:italic">-Frédéric Lenoir</p>
 										
                                 <a class="form__submit_violet"  style="margin-bottom:20px"href="<?php echo site_url("donate");?>"><span>Faire un don</span></a>
-                                <p><strong> Votre grandeur n'est pas ce que vous avez<br>C'est ce que vous donnez !</strong></p>
+                                <p style="color:black;font-size:18px"> Votre grandeur n'est pas ce que vous avez<br>C'est ce que vous donnez !</p>
 								</div>
 								<div class="col-lg-6 col-xl-5 offset-xl-1">
 									<div class="info-box">
@@ -864,12 +864,12 @@ et de son prophète…»
                         <div class="col-xl-12 text-center mt-3"><i class="fas fa-quote-left fa-2x" style="color: #fff;"></i></div>
                         <div class="col-xl-12 text-center m-2">
                         <div class="col-xl-12 text-center mb-3" style="color: whitesmoke;"> </div>
-                            <h2 class="Quote_1" style="letter-spacing: 0.6px;font-weight:lighter ;text-align:center">Les aumônes sont destinées aux pauvres, aux nécessiteux, à ceux qui sont chargés de la collecter, à ceux dont les cœurs sont à gagner, au rachat des captifs, aux insolvables, à ceux qui se consacrent à la cause d'Allâh et aux
+                            <h2 class="Quote_1" style="letter-spacing: 0.6px;font-weight:500 ;text-align:center">Les aumônes sont destinées aux pauvres, aux nécessiteux, à ceux qui sont chargés de la collecter, à ceux dont les cœurs sont à gagner, au rachat des captifs, aux insolvables, à ceux qui se consacrent à la cause d'Allâh et aux
                                 voyageurs.
                             </h2>
                         </div>
                         <br>
-                        <div class="col-xl-12 text-center mb-3" style="color: whitesmoke;">(Coran, S.9 V.60)</div>
+                        <div class="col-xl-12 text-center mb-3" style="color: whitesmoke;font-weight:100">(Coran, S.9 V.60)</div>
                     </div>
 
                 </div>
@@ -895,7 +895,7 @@ et de son prophète…»
                     </div></div>
                         <div class="col-xl-6 p-xl-5">
                             <form class="form message-form_ben" action="<?php echo base_url()?>index.php/Humanitaire/form_benevole" method="post" onsubmit="alert('message envoyé !')">
-                                <h4 class="justify-content-center" style="color:blueviolet;">Devenir Bénévole</h4>
+                              
                                 <div class="row">
                                     <div class="col-lg-6">
                                         <input class="form__field form_fshadow" type="text" name="last-name" placeholder="Nom" required="required" />

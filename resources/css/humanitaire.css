@@ -21009,7 +21009,7 @@ header.header--intro .button {
 }
 
 .promo--front_3 .promo-slider .align-container {
-    height: 760px
+    height: 550px
 }
 
 .about-us {
@@ -27110,6 +27110,10 @@ section.shop {
     width: 100px;
     height: 100px
 }
+.asset_img_don {
+    width: 60px;
+    height: 60px
+}
 
 .form_fshadow {
     font-family: Quicksand, sans-serif;
@@ -27383,7 +27387,7 @@ section.shop {
     .img-box__img::before {
         content: "";
         display: block;
-        padding-top: 82%
+        padding-top: 69%
     }
     #imgcont1{
         display:none;

@@ -71,7 +71,7 @@
             <div class="promo-primary__description"> <span> </span></div>
             <div class="container">
 			<div class="col-12" style="text-align: center;">
-					<a class="form__submit_accueil_Shadow" type="submit form_fshadow" style="outline:none;margin-top: 40px;" href="<?php echo site_url("Home");?>"> 	&lt; RETOUR VERS L'ACCUEIL</a>
+					<a class="form__submit" type="submit form_fshadow" style="outline:none;margin-top: 40px;" href="<?php echo site_url("Home");?>"> 	&lt; RETOUR VERS L'ACCUEIL</a>
 				</div>
                 <div class="row">
                     <div class="col-12">
@@ -394,7 +394,7 @@
 			</div>
 	  </section>
 	  <div style="text-align: center;">
-		<a class="form__submit_accueil_Shadow_org" type="submit form_fshadow" style="outline:none;margin-top: 20px;" href="<?php echo site_url("Home");?>"> 	&lt; RETOUR VERS L'ACCUEIL</a>
+		<a class="form__submit" type="submit form_fshadow" style="outline:none;margin-top: 20px;margin-bottom:50px" href="<?php echo site_url("Home");?>"> 	&lt; RETOUR VERS L'ACCUEIL</a>
 	</div>
          <!-- footer start-->
  <footer class="footer footer--front_2"id="footerid">
