@@ -1129,7 +1129,7 @@ plusieurs fois.. ”</p> <br>						<div id="Quoteita" style="color:#777">Coran s
 							<div class="projects-masonry__img"><img class="img--bg" src="<?php echo base_url();?>/resources/img/typography.jpg"
 									alt="img" />
 								<div class="projects-masonry__inner">
-									<h3 class="projects-masonry__title"><a href="#ProjectModal1"  data-toggle="modal">Lorem Ipsum</a>
+									<h3 class="projects-masonry__title"><a href="#ProjectModal1"  data-toggle="modal">Projet 2</a>
 									</h3>
 									<p>Nam fermentum fringilla libero, id gravida erat tempor quis. Aliquam sollicitudin
 										ex
@@ -1153,7 +1153,7 @@ plusieurs fois.. ”</p> <br>						<div id="Quoteita" style="color:#777">Coran s
 							class="projects-masonry__item projects-masonry__item--primary projects-masonry__item--height-2">
 							<div class="projects-masonry__img"><img class="img--bg" src="<?php echo base_url();?>/resources/img/personne.jpg" alt="img" />
 								<div class="projects-masonry__inner">
-									<h3 class="projects-masonry__title"> <a href="#ProjectModal2"  data-toggle="modal">Lorem Ipsum </a>
+									<h3 class="projects-masonry__title"> <a href="#ProjectModal2"  data-toggle="modal">Projet 1</a>
 									</h3>
 									<p>Suspendisse potenti. Praesent tortor nunc, ornare non dictum a, euismod vel
 										nulla.

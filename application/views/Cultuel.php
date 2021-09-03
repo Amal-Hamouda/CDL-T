@@ -228,7 +228,7 @@
                         <div class="align-container">
                             <div class="align-container__item">
                                 <p style="color:white; line-height:80%;margin-top:100px">
-                                <span style="font-size:20px; letter-spacing:1px;background-color:white;color:#045dab;border-radius:5px">pole</span>
+                                <span style="font-size:20px; letter-spacing:1px;background-color:white;color:#045dab;border-radius:5px;padding:10px">Pôle</span>
                                 <h1 style="color:white"> CU<b>LTUEL </b></h1>
                                 <span style="font-size:20px; letter-spacing:1px ;color:white;margin-left:60px">Centre des Lumières</span></p>
                             </div>
