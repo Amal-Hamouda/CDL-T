@@ -209,10 +209,10 @@
                                         <div class="align-container">
                                             <div class="align-container__item">
                                                 <div class="promo-slider__wrapper-1">
-                                                    <h2 class="promo-slider__title"><span>Helpo Volounteers</span><br/><span>Help to Animals</span></h2>
+                                                    <h2 class="promo-slider__title"><span>Exemple de titre</span><br/><span></span></h2>
                                                 </div>
                                                 <div class="promo-slider__wrapper-2">
-                                                    <p class="promo-slider__subtitle" style="color:#ffffff">Gray eel-catfish longnose whiptail catfish smalleye squaretail queen danio unicorn fish shortnose greeneye fusilier fish silver carp nibbler sharksucker tench lookdown catfish</p>
+                                                    <p class="promo-slider__subtitle" style="color:#ffffff">Exemple de sous titre</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -231,10 +231,10 @@
                                         <div class="align-container" id="pic_align">
                                             <div class="align-container__item">
                                                 <div class="promo-slider__wrapper-1">
-                                                    <h2 class="promo-slider__title"><span>We Help Animals</span><br/><span>Around the world</span></h2>
+                                                    <h2 class="promo-slider__title"><span>Exemple de titre</span><br/><span></span></h2>
                                                 </div>
                                                 <div class="promo-slider__wrapper-2">
-                                                    <p class="promo-slider__subtitle" style="color:#ffffff">Gray eel-catfish longnose whiptail catfish smalleye squaretail queen danio unicorn fish shortnose greeneye fusilier fish silver carp nibbler sharksucker tench lookdown catfish</p>
+                                                    <p class="promo-slider__subtitle" style="color:#ffffff">Exemple de sous titre</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -254,10 +254,10 @@
                                         <div class="align-container">
                                             <div class="align-container__item">
                                                 <div class="promo-slider__wrapper-1">
-                                                    <h2 class="promo-slider__title"><span>Animals need helps</span><br/><span>around the world.</span></h2>
+                                                    <h2 class="promo-slider__title"><span>Exemple de titre</span><br/><span></span></h2>
                                                 </div>
                                                 <div class="promo-slider__wrapper-2">
-                                                    <p class="promo-slider__subtitle" style="color:#ffffff">Gray eel-catfish longnose whiptail catfish smalleye squaretail queen danio unicorn fish shortnose greeneye fusilier fish silver carp nibbler sharksucker tench lookdown catfish</p>
+                                                    <p class="promo-slider__subtitle" style="color:#ffffff">Exemple de sous titre</p>
                                                 </div>
                                             </div>
                                         </div>
