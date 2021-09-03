@@ -285,14 +285,14 @@
                 <div class="container event-item" style="margin-top:-80px;">
                     <div class="event-item__content">
                         <div class="row d-flex justify-content-between align-items-center">
-                            <div class="col-2 col-md-2 col-lg-2 m-0">
+                            <div class="col-2 col-md-2 col-lg-2 m-0  d-flex justify-content-center">
                                 <span style="color: blueviolet;"><img class="asset_img_don" src="<?php echo base_url();?>/resources/img/Assetdon.png" alt="img"></span>
 
                             </div>
-                            <div class="col-5 col-md-5 col-lg-8 m-0">
+                            <div class="col-5 col-md-5 col-lg-8 m-0  d-flex justify-content-center">
                                 <span class="don-text" style="color: blueviolet;"> Changez une vie en faisant un don !</span>
                             </div>
-                            <div class="col-5 col-md-3 col-lg-2 m-0 p-0">
+                            <div class="col-5 col-md-3 col-lg-2 m-0 p-0  d-flex justify-content-center">
                                 <a class=" form__submit_violet  text-center" style="font-size:10px;" data-toggle="modal" data-target=".bd-example-modal-lg" href="<?php echo site_url("donate");?>">Faire un don</a>
                             </div>
                         </div>
