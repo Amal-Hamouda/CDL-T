@@ -17730,7 +17730,7 @@ section.section {
 }
 
 .action-section__title {
-    font-size: 32px
+    font-size: 29px
 }
 
 @media only screen and (min-width:768px) {
@@ -27135,6 +27135,7 @@ section.shop {
     border-radius: 50px;
     align-items: center;
     text-align: center;
+    left:90%;
 }
 
 .float:hover {
@@ -27176,6 +27177,7 @@ section.shop {
         border-radius: 50px;
         align-items: center;
         text-align: center;
+        left:80%;
     }
     .float:hover {
         background-color: #b362ff;
@@ -27391,6 +27393,14 @@ section.shop {
     }
     #imgcont1{
         display:none;
+    }
+}
+#devquote{
+    font-size:20px;
+}
+@media only screen and (max-width:768px){
+    #devquote{
+        font-size:15px;
     }
 }
 /*# sourceMappingURL=styles.min.css.map */

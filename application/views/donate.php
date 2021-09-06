@@ -491,6 +491,7 @@
         var lastname = $('#last-name').val();
         var email = $('#email').val();
         var msg = $('#texta').val();
+		var montant= amount;
 		$.ajax({
                 url: "<?php echo base_url(); ?>index.php/donate/insertpaymentstripe",
                 type: "POST",
@@ -498,7 +499,8 @@
                     firstname: firstname,
                     email: email,
                     lastname: lastname,
-                    msg: msg
+                    msg: msg,
+					montant:montant
                 },
                 cache: false,
                 success: function(dataResult){
@@ -540,6 +542,8 @@
         var lastname = $('#last-name').val();
         var email = $('#email').val();
         var msg = $('#texta').val();
+		var montant= final;
+
 		$.ajax({
                 url: "<?php echo base_url(); ?>index.php/donate/insertpaymentpaypal",
                 type: "POST",
@@ -547,7 +551,8 @@
                     firstname: firstname,
                     email: email,
                     lastname: lastname,
-                    msg: msg
+                    msg: msg,
+					montant:montant
                 },
                 cache: false,
                 success: function(dataResult){

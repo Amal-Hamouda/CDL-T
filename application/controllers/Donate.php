@@ -54,6 +54,7 @@
                 "email"=>$this->input->post("email"),
                 "msg"=>$this->input->post("msg"),
                 "payment_method"=>"paypal",
+                "montant"=>$this->input->post("montant")
                 
            );
    
@@ -66,7 +67,7 @@
                 "email"=>$this->input->post("email"),
                 "msg"=>$this->input->post("msg"),
                 "payment_method"=>"Stripe",
-                
+                "montant"=>$this->input->post("montant")
            );
    
            $this->db->insert("don", $data);

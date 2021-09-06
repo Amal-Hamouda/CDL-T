@@ -302,7 +302,7 @@
             <!-- testimonials style-1 end-->
             </section>
             <!--floating img-->
-            <a href="<?php echo site_url("donate");?>" id="StikyButton" style="visibility: hidden; width:65px;height: 65px ; top:85%;box-shadow: 1px 1px 4px 0px white;left:90%" class="float">
+            <a href="<?php echo site_url("donate");?>" id="StikyButton" style="visibility: hidden; width:65px;height: 65px ; top:85%;box-shadow: 1px 1px 4px 0px white;" class="float">
                 <img class="img-float" src="<?php echo base_url();?>/resources/img/Asset 1.png" />
             </a>
             <!--About us Start-->
@@ -883,14 +883,14 @@ et de son prophète…»
                                   background-image: url(<?php echo base_url();?>/resources/img/benevole.png);
     background-repeat: no-repeat;
     background-size: cover;">  <div class="row">
-                        <div class="col-12"style="margin-left:50px;margin-top:90px">
+                        <div class="col-12"style="margin-left:25px;margin-top:50px">
                             
 
 
                               <h6 style="color: white"> PARTICIPER A UNE ACTION </h6>
                            
                             <h2 class="action-section__title mt-3" style="color: white"> DEVENIR BÉNÉVOLE </h2>
-                            <p style="color: white; font-size:20px">Vivre, c'est aider à vivre. Il faut créer<br>d'autres bonheurs pour être heureux.<br></p>
+                            <p style="color: white;" id="devquote">Vivre, c'est aider à vivre. Il faut créer<br>d'autres bonheurs pour être heureux.<br></p>
                         </div>
                     </div></div>
                         <div class="col-xl-6 p-xl-5">
