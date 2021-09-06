@@ -491,7 +491,7 @@
         var lastname = $('#last-name').val();
         var email = $('#email').val();
         var msg = $('#texta').val();
-		var montant= amount;
+		var montant= amount/100;
 		$.ajax({
                 url: "<?php echo base_url(); ?>index.php/donate/insertpaymentstripe",
                 type: "POST",

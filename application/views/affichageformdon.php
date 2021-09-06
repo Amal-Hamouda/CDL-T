@@ -28,10 +28,10 @@
             <div class="border-end bg-white" id="sidebar-wrapper">
                 <div class="sidebar-heading border-bottom bg-light">Administateur</div>
                 <div class="list-group list-group-flush">
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Contact</a>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Question a l'imam</a>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Benevole</a>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Don</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?php echo base_url();?>index.php/Home/fetch_contact">Contact</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?php echo base_url();?>index.php/Home/fetch_question">Question a l'imam</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?php echo base_url();?>index.php/Home/fetch_benevole">Benevole</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?php echo base_url();?>index.php/Home/fetch_don">Don</a>
                     <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Adhésion</a>
                 </div>
             </div>
@@ -66,7 +66,8 @@
 									<th class="cell100 column4">Email</th>
                                     <th class="cell100 column5">Payment method</th>
                                     <th class="cell100 column6">Message</th>
-                                    <th class="cell100 column7">Date</th>
+                                    <th class="cell100 column7">montant</th>
+                                    <th class="cell100 column8">Date</th>
 
 								</tr>
 							</thead>
@@ -89,6 +90,7 @@
                      <td class="cell100 column4"><?php echo $row->email; ?></td>
                      <td class="cell100 column5"><?php echo $row->payment_method; ?></td>
                      <td class="cell100 column6"><?php echo $row->msg; ?></td>
+                     <td class="cell100 column6"><?php echo $row->montant; ?></td>
                      <td class="cell100 column7"><?php echo $row->datejour; ?></td>
 
                 </tr>
