@@ -804,7 +804,7 @@
 					</div>
 					<div class="container">
 						<div class="row">
-							<div class="col-4" style="text-align: justify;">
+							<div class="col-lg-6 col-xl-4">
 								<br><br>
 								<p style=" font-size: 32px; font-weight: bold; line-height: normal;">“ Quiconque prête à Dieu de bonne grâce, Il le lui rendra multiplié 
 plusieurs fois.. ”</p> <br>						<div id="Quoteita" style="color:#777">Coran sourate 1,verset 245</div>
