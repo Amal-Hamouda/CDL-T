@@ -32,7 +32,7 @@
                     <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?php echo base_url();?>index.php/Home/fetch_question">Question a l'imam</a>
                     <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?php echo base_url();?>index.php/Home/fetch_benevole">Benevole</a>
                     <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?php echo base_url();?>index.php/Home/fetch_don">Don</a>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Adhésion</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?php echo base_url();?>index.php/Home/fetch_adhesion">Adhésion</a>
                 </div>
             </div>
             <!-- Page content wrapper-->
@@ -66,7 +66,7 @@
 									<th class="cell100 column4">Email</th>
                                     <th class="cell100 column5">Payment method</th>
                                     <th class="cell100 column6">Message</th>
-                                    <th class="cell100 column7">montant</th>
+                                    <th class="cell100 column7">Amount</th>
                                     <th class="cell100 column8">Date</th>
 
 								</tr>

@@ -32,7 +32,7 @@
                     <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?php echo base_url();?>index.php/Home/fetch_question">Question a l'imam</a>
                     <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?php echo base_url();?>index.php/Home/fetch_benevole">Benevole</a>
                     <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?php echo base_url();?>index.php/Home/fetch_don">Don</a>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Adhésion</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?php echo base_url();?>index.php/Home/fetch_adhesion">Adhésion</a>
                 </div>
             </div>
             <!-- Page content wrapper-->

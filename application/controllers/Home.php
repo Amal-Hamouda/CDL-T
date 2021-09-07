@@ -106,12 +106,12 @@ function fetch_don()
 		   $data["fetch_don"] = $this->db->get("don");
 		   $this->load->view('affichageformdon', $data);
       }
-	/*  function fetch_adhesion()
+function fetch_adhesion()
       {
            //$query = $this->db->get("tbl_user");
            //select * from tbl_user
            //$query = $this->db->query("SELECT * FROM tbl_user ORDER BY id DESC");
 		   $data["fetch_adhesion"] = $this->db->get("adhesion");
 		   $this->load->view('affichageformadhesion', $data);
-      }*/
+      }
 }

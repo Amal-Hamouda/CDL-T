@@ -28,11 +28,11 @@
             <div class="border-end bg-white" id="sidebar-wrapper">
                 <div class="sidebar-heading border-bottom bg-light">Administateur</div>
                 <div class="list-group list-group-flush">
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Contact</a>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Question a l'imam</a>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Benevole</a>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Don</a>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Adhésion</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?php echo base_url();?>index.php/Home/fetch_contact">Contact</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?php echo base_url();?>index.php/Home/fetch_question">Question a l'imam</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?php echo base_url();?>index.php/Home/fetch_benevole">Benevole</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?php echo base_url();?>index.php/Home/fetch_don">Don</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?php echo base_url();?>index.php/Home/fetch_adhesion">Adhésion</a>
                 </div>
             </div>
             <!-- Page content wrapper-->
@@ -69,9 +69,10 @@
 									<th class="cell100 column7">Pays</th>
 									<th class="cell100 column8">Email</th>
 									<th class="cell100 column9">Phone number</th>
-                                    <th class="cell100 column10">Payment method</th>
-                                    <th class="cell100 column11">Message</th>
-                                    <th class="cell100 column12">Date</th>
+                                    <th class="cell100 column10">Amount</th>
+                                    <th class="cell100 column11">Payment method</th>
+                                    <th class="cell100 column12">Message</th>
+                                    <th class="cell100 column13">Date</th>
 
 								</tr>
 							</thead>
@@ -97,9 +98,10 @@
                      <td class="cell100 column7"><?php echo $row->pays; ?></td>
                      <td class="cell100 column8"><?php echo $row->email; ?></td>
                      <td class="cell100 column9"><?php echo $row->tel; ?></td>
-                     <td class="cell100 column10"><?php echo $row->payment_method; ?></td>
-                     <td class="cell100 column11"><?php echo $row->msg; ?></td>
-                     <td class="cell100 column12"><?php echo $row->datejour; ?></td>
+                     <td class="cell100 column10"><?php echo $row->montant; ?></td>
+                     <td class="cell100 column11"><?php echo $row->payment_method; ?></td>
+                     <td class="cell100 column12"><?php echo $row->msg; ?></td>
+                     <td class="cell100 column13"><?php echo $row->datejour; ?></td>
 
                 </tr>
            <?php
