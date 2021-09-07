@@ -36,7 +36,7 @@ $config['base_url'] = 'https://test.centre-des-lumieres.fr/CDL-T/';
 |
 */
 
-$config['index_page'] = 'index.php';
+$config['index_page'] = '';
 
 /*
 |--------------------------------------------------------------------------
