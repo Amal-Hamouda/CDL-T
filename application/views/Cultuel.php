@@ -1118,7 +1118,11 @@ myButton.close();}
             // Write the values back for the user
             document.getElementById("amount_eligable").value = formatter.format(amt_eligable);
             document.getElementById("amount_zakat").value = amt_zakat;
-
+            
+            if(amt_zakat > 0 ){
+            document.getElementById("amount_zakat").value = amt_zakat;
+        } else {document.getElementById("amount_zakat").value=0;}
+        
             // If the user is eligible to contribute Zakat, set up a Funraise donation
             // button with their Zakat amount. Else, just ask them for a $50 one time donation
             if (amt_zakat > 0) {
@@ -1387,7 +1391,8 @@ myButton.close();}
             var expenses = document.getElementById("amount_expenses").value;
             var total = document.getElementById("amount_zakat").value;
             console.log('val');
-            if (((home == "" || isNaN(home)) && (bank == "" || isNaN(bank)) && (shares == "" || isNaN(shares)) && (merchandise == "" || isNaN(merchandise)) && (gold == "" || isNaN(gold)) && (property == "" || isNaN(property)) && (other == "" || isNaN(other)) && (debts == "" || isNaN(debts)) && (expenses == "" || isNaN(expenses)))) {
+            if (total !=0){
+            if (((home == "" || isNaN(home)) && (bank == "" || isNaN(bank)) && (shares == "" || isNaN(shares)) && (merchandise == "" || isNaN(merchandise)) && (gold == "" || isNaN(gold)) && (property == "" || isNaN(property)) && (other == "" || isNaN(other)) && (debts == "" || isNaN(debts)) && (expenses == "" || isNaN(expenses))))  {
                 document.getElementById("AlertVide").style.visibility = "visible";
 
 
@@ -1397,6 +1402,11 @@ myButton.close();}
                 $("#donate_button9").hide();
                 document.getElementById("AlertVide").style.visibility = "hidden";
                 document.getElementById("Szakat").setAttribute("value", total);
+                console.log('tes');
+                console.log(total);
+
+            }}else{
+                document.getElementById("AlertVide").style.visibility = "visible";
             }
 
 

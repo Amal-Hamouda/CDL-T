@@ -216,33 +216,33 @@
 														
 															<div class="row">
 																<div class ="col-12">
-																<label class="fieldlabels">Combien voudriez-vous donner ?</label> <input type="number">
+																<label class="fieldlabels">Combien voudriez-vous donner ?</label> <input type="number" onchange="enablenext()" id="perso">
 															</div>
 																<div class="col-4">
-																<input class="checkbox-budget" type="radio" name="data" id="budget-1" value="10" checked>
+																<input class="checkbox-budget" type="radio" name="data" id="budget-1" onclick="enablenext()" value="10" checked>
 																<label class="for-checkbox-budget" for="budget-1">
 																	<span data-hover="10€">10€</span>
 																</label><!--
 																	
 																-->
-																<input class="checkbox-budget" type="radio" name="data" id="budget-2" value="25">
+																<input class="checkbox-budget" type="radio" name="data" id="budget-2" onclick="enablenext()" value="25">
 																<label class="for-checkbox-budget" for="budget-2">							
 																	<span data-hover="25€">25€</span>
 																</label></div><!--
-																--><div class="col-4"><input class="checkbox-budget" type="radio" name="data" id="budget-3" value="50">
+																--><div class="col-4"><input class="checkbox-budget" type="radio" name="data" id="budget-3" onclick="enablenext()" value="50">
 																<label class="for-checkbox-budget" for="budget-3">							
 																	<span data-hover="50€">50€</span>
 																</label><!--
 
-																--><input class="checkbox-budget" type="radio" name="data" id="budget-4" value="100">
+																--><input class="checkbox-budget" type="radio" name="data" id="budget-4" onclick="enablenext()" value="100">
 																<label class="for-checkbox-budget" for="budget-4">							
 																	<span data-hover="100€">100€</span>
 																</label></div><!--
-																--><div class="col-4"><input class="checkbox-budget" type="radio" name="data" id="budget-5" value="250">
+																--><div class="col-4"><input class="checkbox-budget" type="radio" name="data" id="budget-5" onclick="enablenext()" value="250">
 																<label class="for-checkbox-budget" for="budget-5">							
 																	<span data-hover="250€">250€</span>
 																</label><!--
-																--><input class="checkbox-budget" type="radio" name="data" id="budget-6">
+																--><input class="checkbox-budget" type="radio" name="data" onclick="disablenext()"id="budget-6" value="">
 																<label class="for-checkbox-budget" for="budget-6">							
 																	<span data-hover="...">...</span>
 																</label></div>
@@ -254,7 +254,21 @@
 															</div>
 																								</label>
 									</div>  <input type="button" name="previous" class="previous action-button-previous" value="Previous" /> <input type="button" name="next" class="next action-button" value="Next" id="check" />
-			
+									<script>
+				function disablenext(){
+					if((!document.getElementById('perso').value)||(document.getElementById('perso').value<=0)){
+						console.log(0);
+						alert("Veuillez remplir le montant personalisé")
+						document.getElementById('check').disabled = true;
+					}
+				}
+				function enablenext(){
+					
+						console.log(1);
+						document.getElementById('check').disabled = false;
+					
+				}
+				</script>
 								</fieldset>
 								<fieldset>
 									
@@ -500,6 +514,7 @@
 		var tel = $('#tel').val();
         var email = $('#email').val();
         var msg = $('#texta').val();
+		var montant= amount/100;
 		$.ajax({
                 url: "<?php echo base_url(); ?>index.php/adhesion/insertpaymentstripe",
                 type: "POST",
@@ -512,6 +527,7 @@
 					pays: pays,
 					tel: tel,
                     email: email,
+					montant:montant,
                     msg: msg
                 },
                 cache: false,
@@ -571,6 +587,7 @@
 					pays: pays,
 					tel: tel,
                     email: email,
+					montant:montant,
                     msg: msg
                 },
                 cache: false,

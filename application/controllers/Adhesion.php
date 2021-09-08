@@ -59,6 +59,8 @@
                 "email"=>$this->input->post("email"),
                 "msg"=>$this->input->post("msg"),
                 "payment_method"=>"Paypal",
+                "montant"=>$this->input->post("montant"),
+
                 
            );
    
@@ -76,7 +78,8 @@
                 "email"=>$this->input->post("email"),
                 "msg"=>$this->input->post("msg"),
                 "payment_method"=>"Stripe",
-                
+                "montant"=>$this->input->post("montant"),
+
            );
    
            $this->db->insert("adhesion", $data);

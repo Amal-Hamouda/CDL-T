@@ -272,7 +272,7 @@
 									</div>  <input type="button" name="previous" class="previous action-button-previous" value="Previous" /> <input type="button" name="next" class="next action-button" value="Next" id="check" />
 									<script>
 				function disablenext(){
-					if(!document.getElementById('perso').value){
+					if((!document.getElementById('perso').value)||(document.getElementById('perso').value<=0)){
 						console.log(0);
 						alert("Veuillez remplir le montant personalisé")
 						document.getElementById('check').disabled = true;
