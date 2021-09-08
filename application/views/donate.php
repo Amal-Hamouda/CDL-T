@@ -73,7 +73,7 @@
             <div class="promo-primary__description"> <span> </span></div>
             <div class="container">
 			<div class="col-12" style="text-align: center;">
-					<button class="form__submit" type="submit form_fshadow" style="margin-top: 40px;"> 	&lt; RETOUR VERS L'ACCUEIL</button>
+					<button class="form__submit" type="submit form_fshadow" style="margin-top: 40px;"href="<?php echo site_url("Home");?>"> 	&lt; RETOUR VERS L'ACCUEIL</button>
 				</div>
                 <div class="row">
                     <div class="col-auto">
