@@ -54,4 +54,4 @@ function validation()
   {
    $this->index();
   }
- }
+ }}
