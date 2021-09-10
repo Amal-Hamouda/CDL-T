@@ -22,6 +22,12 @@ class Home extends CI_Controller {
 	{
 		$this->load->view('Index');
 	}
+	public function login()
+{
+    
+  $this->load->view('login');
+
+}
 	public function form_validation(){
 		
 		$data = array(
