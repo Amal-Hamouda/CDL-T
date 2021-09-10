@@ -1,5 +1,5 @@
 <?php
-class login extends CI_Controller {
+class Login extends CI_Controller {
 
 public function index()
 {
@@ -18,7 +18,7 @@ function validation()
    $email = $this->input->post('user_email');
    $password = $this->input->post('user_password');
    $this->db->where('email', $email);
-   $query = $this->db->get('login');
+   $query = $this->db->get('login_admin');
    if($query->num_rows() > 0)
    {
     foreach($query->result() as $row)
