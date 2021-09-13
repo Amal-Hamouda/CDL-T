@@ -70,8 +70,8 @@ function validation()
   {
    $this->session->unset_userdata($row);
   }
-  redirect('login');
- }
+  $this->load->view('login');
+}
  function fetch_contact()
       {
            //$query = $this->db->get("tbl_user");
