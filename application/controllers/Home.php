@@ -22,10 +22,10 @@ class Home extends CI_Controller {
 	{
 		$this->load->view('Index');
 	}
-	public function test()
+	public function login()
 {
     
-  $this->load->view('test');
+  $this->load->view('login');
 
 }
 	public function form_validation(){

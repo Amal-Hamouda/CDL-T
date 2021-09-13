@@ -1,5 +1,5 @@
 <?php
-class test extends CI_Controller {
+class login extends CI_Controller {
 
      public function __construct() {
            parent::__construct();
@@ -11,7 +11,7 @@ class test extends CI_Controller {
 public function index()
 {
     
-  $this->load->view('test');
+  $this->load->view('login');
 
 }
 function validation()
@@ -41,7 +41,7 @@ function validation()
       {
        
         $this->session->set_flashdata('message','Mot de passe erroné');
-        $this->load->view('test');
+        $this->load->view('login');
       }
     
     }
@@ -50,7 +50,7 @@ function validation()
    {
    
     $this->session->set_flashdata('message','email erroné');
-    $this->load->view('test');
+    $this->load->view('login');
   
    }
   
