@@ -88,7 +88,7 @@
                      <td class="cell100 column3"><?php echo $row->nom; ?></td>
                      <td class="cell100 column4"><?php echo $row->email; ?></td>
                      <td class="cell100 column5"><?php echo $row->phone; ?></td>
-                     <td class="cell100 column6"><?php echo $row->msg; ?></td>
+                     <td class="cell100 column6"><textarea><?php echo $row->msg; ?></textarea></td>                     
                      <td class="cell100 column7"><?php echo $row->datejour; ?></td>
 
                 </tr>
