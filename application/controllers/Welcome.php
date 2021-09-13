@@ -35,7 +35,8 @@ function validation()
       if($password == $row->password)
       {
        $this->session->set_userdata('id', $row->id);
-       $this->load->view('affichageformcontact');
+	   $data["fetch_contact"] = $this->db->get("contact");
+	   $this->load->view('affichageformcontact', $data);
       }
       else
       {
