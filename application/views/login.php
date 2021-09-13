@@ -23,7 +23,7 @@
                     ';
                 }
                 ?>
-                <form method="post" action="<?php echo base_url(); ?>index.php/login/validation">
+                <form method="post" action="<?php echo base_url(); ?>index.php/welcome/validation">
                     <div class="form-group">
                         <label>Enter Email Address</label>
                         <input type="text" name="user_email" class="form-control" value="<?php echo set_value('user_email'); ?>" />
