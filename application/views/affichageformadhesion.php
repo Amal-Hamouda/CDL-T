@@ -100,7 +100,7 @@
                      <td class="cell100 column9"><?php echo $row->tel; ?></td>
                      <td class="cell100 column10"><?php echo $row->montant; ?></td>
                      <td class="cell100 column11"><?php echo $row->payment_method; ?></td>
-                     <td class="cell100 column12"><?php echo $row->msg; ?></td>
+                     <td class="cell100 column12"><textarea readonly style="border: none; overflow: auto; outline: none; box-shadow: none; resize:none; background: #f8f6ff"><?php echo $row->msg; ?></textarea></td>
                      <td class="cell100 column13"><?php echo $row->datejour; ?></td>
 
                 </tr>
