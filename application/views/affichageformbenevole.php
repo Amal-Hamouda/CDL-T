@@ -28,11 +28,11 @@
             <div class="border-end bg-white" id="sidebar-wrapper">
                 <div class="sidebar-heading border-bottom bg-light">Administateur</div>
                 <div class="list-group list-group-flush">
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?php echo base_url();?>index.php/Home/fetch_contact">Contact</a>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?php echo base_url();?>index.php/Home/fetch_question">Question a l'imam</a>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?php echo base_url();?>index.php/Home/fetch_benevole">Benevole</a>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?php echo base_url();?>index.php/Home/fetch_don">Don</a>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?php echo base_url();?>index.php/Home/fetch_adhesion">Adhésion</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?php echo base_url();?>index.php/welcome/fetch_contact">Contact</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?php echo base_url();?>index.php/welcome/fetch_question">Question a l'imam</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?php echo base_url();?>index.php/welcome/fetch_benevole">Benevole</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?php echo base_url();?>index.php/welcome/fetch_don">Don</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?php echo base_url();?>index.php/welcome/fetch_adhesion">Adhésion</a>
                 </div>
             </div>
             <!-- Page content wrapper-->
@@ -45,6 +45,8 @@
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
                                 <li class="nav-item active"><a class="nav-link" href="<?php echo base_url();?>index.php/Home">Home</a></li>
+                                <li class="nav-item active"><a class="nav-link" href="<?php echo base_url();?>index.php/welcome/logout">Logout</a></li>
+
                             </ul>
                         </div>
                     </div>
@@ -88,7 +90,7 @@
                      <td class="cell100 column3"><?php echo $row->nom; ?></td>
                      <td class="cell100 column4"><?php echo $row->email; ?></td>
                      <td class="cell100 column5"><?php echo $row->phone; ?></td>
-                     <td class="cell100 column6"><textarea readonly style="border: none; overflow: auto; outline: none; box-shadow: none; resize:none; background: #f8f6ff"><?php echo $row->msg; ?></textarea></td>
+                     <td class="cell100 column6"><textarea readonly style="border: none; overflow: auto; outline: none; box-shadow: none; resize:none;"><?php echo $row->msg; ?></textarea></td>
                      <td class="cell100 column7"><?php echo $row->datejour; ?></td>
 
                 </tr>
