@@ -5,16 +5,13 @@ class Welcome extends CI_Controller {
            parent::__construct();
            $this->load->library("session");
            $this->load->helper('url');
-		   if($this->session->userdata('id'))
-		   {
-			$this->load->view('login');
-		   }
         }
          
 
 public function index()
 {
     
+  $this->load->view('login');
 
 }
 function validation()
