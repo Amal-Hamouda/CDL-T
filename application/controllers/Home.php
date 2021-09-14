@@ -91,7 +91,7 @@ function fetch_contact()
 	 $data["fetch_contact"] = $this->db->get("contact");
 	 $this->load->view('affichageformcontact', $data);
 	  }
-	  else{ redirect('login');}
+	  else{ redirect('welcome');}
 }
 function fetch_question()
 {
@@ -103,7 +103,7 @@ function fetch_question()
 	 $data["fetch_question"] = $this->db->get("question_imam");
 	 $this->load->view('affichageformquestion', $data);
 	  }
-	  else{ redirect('login');}
+	  else{ redirect('welcome');}
 }
 function fetch_benevole()
 {
@@ -115,7 +115,7 @@ function fetch_benevole()
 	 $data["fetch_benevole"] = $this->db->get("benevole");
 	 $this->load->view('affichageformbenevole', $data);
 	  }
-	  else{ redirect('login');}
+	  else{ redirect('welcome');}
 }
 function fetch_don()
 {
@@ -127,7 +127,7 @@ function fetch_don()
 	 $data["fetch_don"] = $this->db->get("don");
 	 $this->load->view('affichageformdon', $data);
 	  }
-	  else{ redirect('login');}
+	  else{ redirect('welcome');}
 }
 function fetch_adhesion()
 {
@@ -139,6 +139,6 @@ function fetch_adhesion()
 	 $data["fetch_adhesion"] = $this->db->get("adhesion");
 	 $this->load->view('affichageformadhesion', $data);
 	  }
-	  else{ redirect('login');}
+	  else{ redirect('welcome');}
 }
 }
