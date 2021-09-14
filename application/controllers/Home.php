@@ -80,4 +80,65 @@ class Home extends CI_Controller {
 	mail($to, $subject, $message, implode("\r\n", $headers));
 	$this->load->view('Index');
 }
+function fetch_contact()
+{
+	  if($this->session->userdata('id'))
+{
+
+	 //$query = $this->db->get("tbl_user");
+	 //select * from tbl_user
+	 //$query = $this->db->query("SELECT * FROM tbl_user ORDER BY id DESC");
+	 $data["fetch_contact"] = $this->db->get("contact");
+	 $this->load->view('affichageformcontact', $data);
+	  }
+	  else{ redirect('welcome');}
+}
+function fetch_question()
+{
+	  if($this->session->userdata('id'))
+{
+	 //$query = $this->db->get("tbl_user");
+	 //select * from tbl_user
+	 //$query = $this->db->query("SELECT * FROM tbl_user ORDER BY id DESC");
+	 $data["fetch_question"] = $this->db->get("question_imam");
+	 $this->load->view('affichageformquestion', $data);
+	  }
+	  else{ redirect('welcome');}
+}
+function fetch_benevole()
+{
+	  if($this->session->userdata('id'))
+	  {
+	 //$query = $this->db->get("tbl_user");
+	 //select * from tbl_user
+	 //$query = $this->db->query("SELECT * FROM tbl_user ORDER BY id DESC");
+	 $data["fetch_benevole"] = $this->db->get("benevole");
+	 $this->load->view('affichageformbenevole', $data);
+	  }
+	  else{ redirect('welcome');}
+}
+function fetch_don()
+{
+	  if($this->session->userdata('id'))
+	  {
+	 //$query = $this->db->get("tbl_user");
+	 //select * from tbl_user
+	 //$query = $this->db->query("SELECT * FROM tbl_user ORDER BY id DESC");
+	 $data["fetch_don"] = $this->db->get("don");
+	 $this->load->view('affichageformdon', $data);
+	  }
+	  else{ redirect('welcome');}
+}
+function fetch_adhesion()
+{
+	  if($this->session->userdata('id'))
+	  {
+	 //$query = $this->db->get("tbl_user");
+	 //select * from tbl_user
+	 //$query = $this->db->query("SELECT * FROM tbl_user ORDER BY id DESC");
+	 $data["fetch_adhesion"] = $this->db->get("adhesion");
+	 $this->load->view('affichageformadhesion', $data);
+	  }
+	  else{ redirect('welcome');}
+}
 }

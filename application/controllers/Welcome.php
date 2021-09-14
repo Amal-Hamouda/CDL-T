@@ -10,8 +10,12 @@ class Welcome extends CI_Controller {
 
 public function index()
 {
-    
-  $this->load->view('login');
+      if($this->session->userdata('id'))
+      {
+  redirect('home/fetch_contact');
+  }
+  else{
+  $this->load->view('login');}
 
 }
 function validation()
@@ -74,42 +78,63 @@ function validation()
 }
  function fetch_contact()
       {
+            if($this->session->userdata('id'))
+	{
+	
            //$query = $this->db->get("tbl_user");
            //select * from tbl_user
            //$query = $this->db->query("SELECT * FROM tbl_user ORDER BY id DESC");
 		   $data["fetch_contact"] = $this->db->get("contact");
 		   $this->load->view('affichageformcontact', $data);
+            }
+            else{ redirect('login');}
       }
 function fetch_question()
       {
+            if($this->session->userdata('id'))
+	{
            //$query = $this->db->get("tbl_user");
            //select * from tbl_user
            //$query = $this->db->query("SELECT * FROM tbl_user ORDER BY id DESC");
 		   $data["fetch_question"] = $this->db->get("question_imam");
 		   $this->load->view('affichageformquestion', $data);
+            }
+            else{ redirect('login');}
       }
 function fetch_benevole()
       {
+            if($this->session->userdata('id'))
+            {
            //$query = $this->db->get("tbl_user");
            //select * from tbl_user
            //$query = $this->db->query("SELECT * FROM tbl_user ORDER BY id DESC");
 		   $data["fetch_benevole"] = $this->db->get("benevole");
 		   $this->load->view('affichageformbenevole', $data);
+            }
+            else{ redirect('login');}
       }
 function fetch_don()
       {
+            if($this->session->userdata('id'))
+            {
            //$query = $this->db->get("tbl_user");
            //select * from tbl_user
            //$query = $this->db->query("SELECT * FROM tbl_user ORDER BY id DESC");
 		   $data["fetch_don"] = $this->db->get("don");
 		   $this->load->view('affichageformdon', $data);
+            }
+            else{ redirect('login');}
       }
 function fetch_adhesion()
       {
+            if($this->session->userdata('id'))
+            {
            //$query = $this->db->get("tbl_user");
            //select * from tbl_user
            //$query = $this->db->query("SELECT * FROM tbl_user ORDER BY id DESC");
 		   $data["fetch_adhesion"] = $this->db->get("adhesion");
 		   $this->load->view('affichageformadhesion', $data);
+            }
+            else{ redirect('login');}
       }
 } 
