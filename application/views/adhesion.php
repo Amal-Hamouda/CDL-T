@@ -487,7 +487,7 @@
     								var pay = document.querySelector('input[type="radio"]:checked').value*100;
                     var amount = pay;
 									console.log(amount);
-    var stripe= Stripe('pk_test_51JHpHoG89vko2fx6HqUIn0ktlO2HJJPYj97tiI8Fww881IVfrX9KzXVa9xc4UjijCuDQg2DfwJa31XPGJx1cA3rj00cKqQiClC'),
+    var stripe= Stripe('pk_test_51JHpHoG89vko2fx6HqUIn0ktlO2HJJPYj97tiI8Fww881IVfrX9KzXVa9xc4UjijCuDQg2DfwJa31XPGJx1cA3rj00cKqQiClC')
     
   
         $.ajax({
