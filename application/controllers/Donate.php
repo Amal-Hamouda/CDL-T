@@ -32,7 +32,7 @@
         public function payment()
         {
           require_once('vendor/autoload.php');
-         
+          $success = site_url("Home");
           $stripeSecret = 'sk_test_51JHpHoG89vko2fx6LOAAOiW6g8NBU4dfXh8QbKULTHMs8b7UJwDQXkkS18RsyTk8JJ5mS3bP3KQ3WZ41Bz51YfWC00nEi4ookx';
      
           \Stripe\Stripe::setApiKey($stripeSecret);
