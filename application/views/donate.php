@@ -469,24 +469,15 @@
     								var pay = document.querySelector('input[type="radio"]:checked').value*100;
                     var amount = pay;
 									console.log(amount);
-    var handler = StripeCheckout.configure({
-      key: 'pk_test_51JHpHoG89vko2fx6HqUIn0ktlO2HJJPYj97tiI8Fww881IVfrX9KzXVa9xc4UjijCuDQg2DfwJa31XPGJx1cA3rj00cKqQiClC',
-      locale: 'auto',
-      token: function (token) {
-        // You can access the token ID with `token.id`.
-        // Get the token ID to your server-side code for use.
-        console.log('Token Created!!');
-        console.log(token)
-        $('#token_response').html(JSON.stringify(token));
+    var stripe =Stripe('pk_test_51JHpHoG89vko2fx6HqUIn0ktlO2HJJPYj97tiI8Fww881IVfrX9KzXVa9xc4UjijCuDQg2DfwJa31XPGJx1cA3rj00cKqQiClC')
   
         $.ajax({
           url:"<?php echo base_url(); ?>index.php/donate/payment",
           method: 'post',
-          data: { tokenId: token.id, amount: amount },
+          data: { amount: amount },
           dataType: "json",
           success: function( response ) {
             console.log(response.data);
-            $('#token_response').append( '<br />' + JSON.stringify(response.data));
 			var firstname = $('#first-name').val();
         var lastname = $('#last-name').val();
         var email = $('#email').val();
@@ -507,17 +498,13 @@
 
                 }
             });
-          }
-        })
-      }
-    });
+        
+  
     document.getElementById('checkout-button').onclick = function() {
-    handler.open({
-      name: 'Don',
-      description: 'Faire un don',
-      amount: amount,
-	  currency: 'eur'
-    });}
+		stripe.redirectToCheckout({sessionId : response.data})
+  }  
+  }
+        });
 	let  final = document.querySelector('input[type="radio"]:checked').value;
 		 console.log(final+"tt");
 		 var myButton = paypal.Buttons({
