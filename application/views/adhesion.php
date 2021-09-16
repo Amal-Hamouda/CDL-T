@@ -484,6 +484,9 @@
 	<script type="text/javascript">
   
   document.getElementById('check').onclick = function() {
+	var personel = document.getElementById("perso").value;
+
+document.getElementById("budget-6").value= personel;
     								var pay = document.querySelector('input[type="radio"]:checked').value*100;
                     var amount = pay;
 									console.log(amount);
