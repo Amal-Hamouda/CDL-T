@@ -33,17 +33,33 @@
           require_once('vendor/autoload.php');
          
           $stripeSecret = 'sk_test_51JHpHoG89vko2fx6LOAAOiW6g8NBU4dfXh8QbKULTHMs8b7UJwDQXkkS18RsyTk8JJ5mS3bP3KQ3WZ41Bz51YfWC00nEi4ookx';
-     
+          $success = site_url("Home");
           \Stripe\Stripe::setApiKey($stripeSecret);
-          
+          $product = \Stripe\Product::create([
+              'name'=>'donation'
+          ]);
+          $price =\Stripe\Price::create([
+
+            'unit_amount' => $this->input->post('amount'),
+            'currency' => 'eur',
+            'recurring' => ['interval' => 'month'],
+            'product' => $product,        
+          ]);
          
-          $stripe = \Stripe\Charge::create ([
-            "amount" => $this->input->post('amount'),
-            "currency" => "eur",
-            "source" => $this->input->post('tokenId'),
-            "description" => "Don"
+          $stripe = \Stripe\Checkout\Session::create ([
+            'success_url' => $success,
+            'cancel_url' => 'https://example.com/cancel',
+            'payment_method_types' => ['card'],
+            'line_items' => [
+              [
+                'price' => $price,
+                'quantity' => 1,
+              ],
+            ],
+            'mode' => 'subscription',
     ]);
-            $data = array('success' => true, 'data'=> $stripe);
+    
+            $data = array('success' => true, 'data'=> $stripe->id);
      
             echo json_encode($data);
         }
