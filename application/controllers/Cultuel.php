@@ -97,7 +97,7 @@
    
         // Envoi
         mail($to, $subject, $message, implode("\r\n", $headers));
-       // $this->load->view('Cultuel');
+       $this->load->view('Cultuel');
     }
         public function form_contact(){
 		
@@ -149,7 +149,7 @@
 
      // Envoi
      mail($to, $subject, $message, implode("\r\n", $headers));
-        //$this->load->view('Cultuel');
+        $this->load->view('Cultuel');
     }
     }
     ?>
