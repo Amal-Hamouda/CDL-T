@@ -215,7 +215,7 @@
 
 		</section>
 
-		<a href="<?php echo base_url();?>index.php/donate" id="StikyButton" style=" width:65px;height: 65px ; top:85%;box-shadow: 1px 1px 4px 0px white;left:90%" class="float">
+		<a href="<?php echo base_url();?>index.php/donate" id="StikyButton" style=" width:65px;height: 65px ; top:85%;box-shadow: 1px 1px 4px 0px white;" class="float">
                 <img class="img-float" src="<?php echo base_url();?>/resources/img/Asset 1.png" />
             </a>
 
@@ -1641,7 +1641,7 @@ $(document).ready(function () {
             $target = $(target);
 
        $('html, body').stop().animate({
-        'scrollTop': $target.offset().top-50
+        'scrollTop': $target.offset().top-100
     }, 0, 'swing', function () {
     });
 
