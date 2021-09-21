@@ -27403,6 +27403,9 @@ section.shop {
         font-size:15px;
     }
 }
+#fairedonimg{
+    background-position: right;
+}
 @media only screen and (max-width:1024px){
     #fairedonimg{
         background-position: center;
