@@ -91,13 +91,13 @@
                     <div class="aside-inner"><span class="aside-inner__title">Email</span><a class="aside-inner__link" href="mailto:support@helpo.org">Bureau@centre-des-lumieres.fr</a></div>
                     <div class="aside-inner"><span class="aside-inner__title">Phone numbers</span><a class="aside-inner__link" href="tel:06 72 23 00 00">06 72 23 00 00</a><a class="aside-inner__link" href="tel:06 72 23 00 00">06 72 23 00 00</a></div>
                     <ul class="aside-socials">
-                        <li class="aside-socials__item"><a class="aside-socials__link" href="#"><i
+                        <li class="aside-socials__item"><a class="aside-socials__link" href="https://www.facebook.com/Centredeslumieres/"><i
 							class="fa fa-facebook" aria-hidden="true"></i></a></li>
                         <li class="aside-socials__item"><a class="aside-socials__link aside-socials__link--active" href="#"><i 
 							class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                        <li class="aside-socials__item"><a class="aside-socials__link" href="#"><i
+                        <li class="aside-socials__item"><a class="aside-socials__link" href="https://www.instagram.com/centredeslumieres/"><i
 									class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                        <li class="aside-socials__item"><a class="aside-socials__link" href="#"><i
+                        <li class="aside-socials__item"><a class="aside-socials__link" href="https://www.youtube.com/channel/UCEQ3IEfGzlegMOjnBLE2rJw"><i
 									class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
                     </ul>
                 </div>
@@ -113,13 +113,13 @@
                     <div class="col-lg-9"><a class="top-bar__link" href="tel:06 72 23 00 00" style="color:black">06 72 23 00 00</a><a class="top-bar__link" href="mailto:Bureau@centre-des-lumieres.fr" style="color:black">Bureau@centre-des-lumieres.fr</a></div>
                     <div class="col-lg-3 text-right">
                         <ul class="socials">
-                            <li class="socials__item"><a class="socials__link" href="#"><i class="fa fa-facebook"
+                            <li class="socials__item"><a class="socials__link" href="https://www.facebook.com/Centredeslumieres/"><i class="fa fa-facebook"
 										aria-hidden="true"></i></a></li>
                             <li class="socials__item"><a class="socials__link" href="#"><i class="fa fa-twitter"
 										aria-hidden="true"></i></a></li>
-                            <li class="socials__item"><a class="socials__link" href="#"><i class="fa fa-instagram"
+                            <li class="socials__item"><a class="socials__link" href="https://www.instagram.com/centredeslumieres/"><i class="fa fa-instagram"
 										aria-hidden="true"></i></a></li>
-                            <li class="socials__item"><a class="socials__link" href="#"><i class="fa fa-youtube-play"
+                            <li class="socials__item"><a class="socials__link" href="https://www.youtube.com/channel/UCEQ3IEfGzlegMOjnBLE2rJw"><i class="fa fa-youtube-play"
 										aria-hidden="true"></i></a></li>
 
                         </ul>
@@ -146,21 +146,21 @@
 
                                 <li id="Accueil" class="main-menu__item main-menu__item--has-child main-menu__item--active"><a class="main-menu__link" href="<?php echo site_url("Home");?>"><span>Accueil</span></a>
                                 </li>
-                                <li id="Somme" class="main-menu__item main-menu__item--has-child"><a class="main-menu__link" href="#QuiSommeNous"><span>A Propos de Nous</span></a>
+                                <li id="Somme" class="main-menu__item main-menu__item--has-child"><a class="main-menu__link" href="#QuiSommeNous" id ="fix"><span>A Propos de Nous</span></a>
                                 </li>
                                 <li class="main-menu__item main-menu__item--has-child" id="Participer1"><a class="main-menu__link"><span>Identité</span></a>
                                     <ul class="main-menu__sub-list">
-                                        <li><a href="#vision"><span>Vision</span></a></li>
+                                        <li><a href="#vision" id ="fix"><span>Vision</span></a></li>
                                         <li>
-                                            <a href="#principes"> <span>Principe</span></a>
+                                            <a href="#principes" id ="fix"> <span>Principe</span></a>
                                         </li>
-                                        <li><a href="#valeurs"><span>valeurs</span></a></li>
-                                        <li><a href="#AppM"><span>Application mobile</span></a></li>
+                                        <li><a href="#valeurs" id ="fix"><span>valeurs</span></a></li>
+                                        <li><a href="#AppM" id ="fix"><span>Application mobile</span></a></li>
 
                                     </ul>
 
                                 </li>
-                                <li id="Contact" class="main-menu__item main-menu__item--has-child"><a class="main-menu__link" href="#Contact1"><span>Contact</span></a>
+                                <li id="Contact" class="main-menu__item main-menu__item--has-child"><a class="main-menu__link" href="#Contact1" id ="fix"><span>Contact</span></a>
 
                                 </li>
                                 <li id="participer" class="main-menu__item main-menu__item--has-child"> <a class="form__submit" href="<?php echo site_url("donate");?>" style="margin-top:15px	"><span>Faire un don</span></a>
@@ -1334,12 +1334,12 @@ plusieurs fois.. ”</p> <br>						<div id="Quoteita" style="color:#777">Coran s
 									<div class="icon-item__text">
 										 <!-- socials start-->
 										 <ul class="socials">
-                                            <li class="socials__item"><a class="socials__link" href="#"><i
+                                            <li class="socials__item"><a class="socials__link" href="https://www.facebook.com/Centredeslumieres/"><i
                                                 class="fa fa-facebook" aria-hidden="true"></i></a></li>
                                                 <li class="socials__item"><a class="socials__link socials__link--active" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                            <li class="socials__item"><a class="socials__link" href="#"><i
+                                            <li class="socials__item"><a class="socials__link" href="https://www.instagram.com/centredeslumieres/"><i
 														class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                            <li class="socials__item"><a class="socials__link" href="#"><i
+                                            <li class="socials__item"><a class="socials__link" href="https://www.youtube.com/channel/UCEQ3IEfGzlegMOjnBLE2rJw"><i
 														class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
                                             
                                            
@@ -1425,13 +1425,13 @@ plusieurs fois.. ”</p> <br>						<div id="Quoteita" style="color:#777">Coran s
 				</div>
 				<!-- footer socials start-->
 				<ul class="footer-socials">
-					<li class="footer-socials__item"><a class="footer-socials__link" href="#"><i
+					<li class="footer-socials__item"><a class="footer-socials__link" href="https://www.facebook.com/Centredeslumieres/"><i
 								class="fa fa-facebook" aria-hidden="true"></i></a></li>
 					<li class="footer-socials__item"><a class="footer-socials__link" href="#"><i
 								class="fa fa-twitter" aria-hidden="true"></i></a></li>
-					<li class="footer-socials__item"><a class="footer-socials__link" href="#"><i
+					<li class="footer-socials__item"><a class="footer-socials__link" href="https://www.instagram.com/centredeslumieres/"><i
 									class="fa fa-instagram" aria-hidden="true"></i></a></li>
-					<li class="footer-socials__item"><a class="footer-socials__link" href="#"><i
+					<li class="footer-socials__item"><a class="footer-socials__link" href="https://www.youtube.com/channel/UCEQ3IEfGzlegMOjnBLE2rJw"><i
 								class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
 				  
 				</ul>
@@ -1455,15 +1455,15 @@ plusieurs fois.. ”</p> <br>						<div id="Quoteita" style="color:#777">Coran s
 									href="#">Culturel</a>
 							</li>
 							<li class="footer-menu__item"><a class="footer-menu__link"
-									href="#QuiSommeNous">A
+									href="#QuiSommeNous" id ="fix">A
 									Propos </a></li>
 							<li class="footer-menu__item"><a class="footer-menu__link" href="<?php echo site_url("Cultuel");?>">Cultuel</a>
 							</li>
 							<li class="footer-menu__item"><a class="footer-menu__link"
-									href="#vision">Vision</a></li>
+									href="#vision" id ="fix">Vision</a></li>
 							<li class="footer-menu__item"><a class="footer-menu__link" href="<?php echo site_url("Humanitaire");?>">Humanitaire</a>
 							</li>
-							<li class="footer-menu__item"><a class="footer-menu__link" href="#Contact1">Contact</a>
+							<li class="footer-menu__item"><a class="footer-menu__link" href="#Contact1" id ="fix">Contact</a>
 							</li>
 							<li class="footer-menu__item"><a class="footer-menu__link" style="visibility: hidden;">
 									Contact</a></li>
@@ -1632,7 +1632,25 @@ plusieurs fois.. ”</p> <br>						<div id="Quoteita" style="color:#777">Coran s
 		});
 
 	</script>
+        <script>
+$(document).ready(function () {
+    $('#fix').on('click', function (e) {
+        // e.preventDefault();
 
+        var target = this.hash,
+            $target = $(target);
+
+       $('html, body').stop().animate({
+        'scrollTop': $target.offset().top-50
+    }, 0, 'swing', function () {
+    });
+
+        console.log(window.location);
+
+        return false;
+    });
+});
+</script>
 
 	<div style="display: none">
 	

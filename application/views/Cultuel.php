@@ -102,13 +102,13 @@
 							class="aside-inner__link" href="tel:06 72 23 00 00">06 72 23 00 00</a><a
 							class="aside-inner__link" href="tel:06 72 23 00 00">06 72 23 00 00</a></div>
 					<ul class="aside-socials">
-                        <li class="aside-socials__item"><a class="aside-socials__link" href="#"><i
+                        <li class="aside-socials__item"><a class="aside-socials__link" href="https://www.facebook.com/Centredeslumieres/"><i
                             class="fa fa-facebook" aria-hidden="true"></i></a></li>
                         <li class="aside-socials__item"><a class="aside-socials__link aside-socials__link--active"
 								href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-						<li class="aside-socials__item"><a class="aside-socials__link" href="#"><i
+						<li class="aside-socials__item"><a class="aside-socials__link" href="https://www.instagram.com/centredeslumieres/"><i
 									class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                        <li class="aside-socials__item"><a class="aside-socials__link" href="#"><i
+                        <li class="aside-socials__item"><a class="aside-socials__link" href="https://www.youtube.com/channel/UCEQ3IEfGzlegMOjnBLE2rJw"><i
 									class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
 					
 					
@@ -126,13 +126,13 @@
                     <div class="col-lg-9"><a class="top-bar__link" href="tel:06 72 23 00 00">06 72 23 00 00</a><a class="top-bar__link" href="mailto:Bureau@centre-des-lumieres.fr">Bureau@centre-des-lumieres.fr</a></div>
                     <div class="col-lg-3 text-right">
                         <ul class="socials">
-                            <li class="socials__item"><a class="socials__link" href="#"><i class="fa fa-facebook"
+                            <li class="socials__item"><a class="socials__link" href="https://www.facebook.com/Centredeslumieres/"><i class="fa fa-facebook"
 										aria-hidden="true"></i></a></li>
                             <li class="socials__item"><a class="socials__link" href="#"><i class="fa fa-twitter"
 										aria-hidden="true"></i></a></li>
-                            <li class="socials__item"><a class="socials__link" href="#"><i class="fa fa-instagram"
+                            <li class="socials__item"><a class="socials__link" href="https://www.instagram.com/centredeslumieres/"><i class="fa fa-instagram"
 										aria-hidden="true"></i></a></li>
-                            <li class="socials__item"><a class="socials__link" href="#"><i class="fa fa-youtube-play"
+                            <li class="socials__item"><a class="socials__link" href="https://www.youtube.com/channel/UCEQ3IEfGzlegMOjnBLE2rJw"><i class="fa fa-youtube-play"
 										aria-hidden="true"></i></a></li>
 
                         </ul>
@@ -162,21 +162,21 @@
                                 <li id="Accueil" class="main-menu__item main-menu__item--has-child main-menu__item--active"><a class="main-menu__link" href="<?php echo site_url("Home");?>"><span>Accueil</span></a>
                                 </li>
                                 <li id="Somme" class="main-menu__item main-menu__item--has-child
-											"><a class="main-menu__link" href="#QuiSommeNous"><span>A Propos</span></a>
+											"><a class="main-menu__link" href="#QuiSommeNous" id ="fix"><span>A Propos</span></a>
                                 </li>
                     <li class="main-menu__item main-menu__item--has-child" id="Utilités"><a class="main-menu__link"><span>Utilités</span></a>
                                     <ul class="main-menu__sub-list">
-                                        <li><a href="#horairep"><span>Horaire de prière</span></a></li>
-                                        <li><a href="#AppM"><span>Application mobile</span></a></li>
-                                        <li> <a href="#QuestionImam"><span>Question à l'Imam</span></a></li>
-                                        <li><a href="#footerid"><span>Liens Utiles</span></a></li>
+                                        <li><a href="#horairep" id ="fix"><span>Horaire de prière</span></a></li>
+                                        <li><a href="#AppM" id ="fix"><span>Application mobile</span></a></li>
+                                        <li> <a href="#QuestionImam" id ="fix"><span>Question à l'Imam</span></a></li>
+                                        <li><a href="#footerid" id ="fix"><span>Liens Utiles</span></a></li>
                                     </ul>
 
                                 </li>
-                                <li id="Contact" class="main-menu__item main-menu__item--has-child"><a class="main-menu__link" href="#Contact1"><span>Contact</span></a>
+                                <li id="Contact" class="main-menu__item main-menu__item--has-child"><a class="main-menu__link" href="#Contact1" id ="fix"><span>Contact</span></a>
 
                                 </li>
-                                <li id="participer" class="main-menu__item main-menu__item--has-child"><a class="form__submit_blue" href="#calculzak" style="margin-top:15px;"><span>Je calcule ma ZAKAT</span></a>
+                                <li id="participer" class="main-menu__item main-menu__item--has-child"><a class="form__submit_blue" href="#calculzak" id ="fix" style="margin-top:15px;"><span>Je calcule ma ZAKAT</span></a>
 
                                 </li>
 
@@ -228,7 +228,6 @@
                         <div class="align-container">
                             <div class="align-container__item">
                                 <p style="color:white; line-height:80%;margin-top:100px">
-                                <span style="font-size:20px; letter-spacing:1px;background-color:white;color:#045dab;border-radius:5px;padding:10px">Pôle</span>
                                 <h1 style="color:white"> CU<b>LTUEL </b></h1>
                                 <span style="font-size:20px; letter-spacing:1px ;color:white;margin-left:60px">Centre des Lumières</span></p>
                             </div>
@@ -245,8 +244,7 @@
                         <div class="heading heading--primary"><span class="heading__pre-title" style="color: black;">À propos du pôle </span>
                             <h2 class="heading__title"><span style="color: #045dab;">CULTUEL</span> </h2>
                         </div>
-                        <p style="color: black;">En tant qu’acteur humanitaire de premier plan, on est habilité à collecter votre Zakât puis à la relayer aux ayants-droits dans le respect de l’éthique musulmane. En France comme dans nos nombreux pays d’intervention, tels que
-                            la Syrie, le Pakistan, la Palestine ou encore le Mali, nous venons en aide à des millions de personnes. Précaires, elles font toutes partie individuellement comme collectivement de celles qui peuvent légitimement bénéficier
+                        <p style="color: black;">En tant qu’acteur humanitaire de premier plan, on est habilité à collecter votre Zakât puis à la relayer aux ayants-droits dans le respect de l’éthique musulmane. En France comme dans nos nombreux pays d’intervention, nous venons en aide à des millions de personnes. Précaires, elles font toutes partie individuellement comme collectivement de celles qui peuvent légitimement bénéficier
                             de votre Zakât.
                         </p>
                         <p>
@@ -853,12 +851,12 @@ myButton.close();}
                             <div class="icon-item__text">
                                 <!-- socials start-->
 								<ul class="socials">
-									<li class="socials__item"><a class="socials__link" href="#"><i
+									<li class="socials__item"><a class="socials__link" href="https://www.facebook.com/Centredeslumieres/"><i
 										class="fa fa-facebook" aria-hidden="true"></i></a></li>
 										<li class="socials__item"><a class="socials__link socials__link--active" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-									<li class="socials__item"><a class="socials__link" href="#"><i
+									<li class="socials__item"><a class="socials__link" href="https://www.instagram.com/centredeslumieres/"><i
 												class="fa fa-instagram" aria-hidden="true"></i></a></li>
-									<li class="socials__item"><a class="socials__link" href="#"><i
+									<li class="socials__item"><a class="socials__link" href="https://www.youtube.com/channel/UCEQ3IEfGzlegMOjnBLE2rJw"><i
 												class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
 									
 								   
@@ -995,13 +993,13 @@ myButton.close();}
 				</div>
 				<!-- footer socials start-->
 				<ul class="footer-socials">
-					<li class="footer-socials__item"><a class="footer-socials__link" href="#"><i
+					<li class="footer-socials__item"><a class="footer-socials__link" href="https://www.facebook.com/Centredeslumieres/"><i
 								class="fa fa-facebook" aria-hidden="true"></i></a></li>
 					<li class="footer-socials__item"><a class="footer-socials__link" href="#"><i
 								class="fa fa-twitter" aria-hidden="true"></i></a></li>
-					<li class="footer-socials__item"><a class="footer-socials__link" href="#"><i
+					<li class="footer-socials__item"><a class="footer-socials__link" href="https://www.instagram.com/centredeslumieres/"><i
 									class="fa fa-instagram" aria-hidden="true"></i></a></li>
-					<li class="footer-socials__item"><a class="footer-socials__link" href="#"><i
+					<li class="footer-socials__item"><a class="footer-socials__link" href="https://www.youtube.com/channel/UCEQ3IEfGzlegMOjnBLE2rJw"><i
 								class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
 				  
 				</ul>
@@ -1025,24 +1023,24 @@ myButton.close();}
 									href="#">Culturel</a>
 							</li>
 							<li class="footer-menu__item"><a class="footer-menu__link"
-									href="#QuiSommeNous">A
+									href="#QuiSommeNous" id ="fix">A
 									Propos </a></li>
 							<li class="footer-menu__item"><a class="footer-menu__link" href="<?php echo site_url("Cultuel");?>">Cultuel</a>
 							</li>
 							<li class="footer-menu__item"><a class="footer-menu__link"
-									href="#horairep">Horaire</a></li>
+									href="#horairep" id ="fix">Horaire</a></li>
 							<li class="footer-menu__item"><a class="footer-menu__link" href="<?php echo site_url("Humanitaire");?>">Humanitaire</a>
 							</li>
-							<li class="footer-menu__item"><a class="footer-menu__link" href="#QuestionImam">Question à l'Imam</a>
+							<li class="footer-menu__item"><a id ="fix" class="footer-menu__link" href="#QuestionImam">Question à l'Imam</a>
 							</li>
 							<li class="footer-menu__item"><a class="footer-menu__link" style="visibility: hidden;">
 									Contact</a></li>
-							<li class="footer-menu__item"><a class="footer-menu__link"
+							<li class="footer-menu__item"><a id ="fix" class="footer-menu__link"
 										href="#Contact1">Contact</a></li>		
 							<li class="footer-menu__item"><a class="footer-menu__link" href="#"
 									style="visibility:hidden;" type="hidden">Contact</a></li>
 									<li class="footer-menu__item"><a class="footer-menu__link"
-										href="#footerid">Liens utiles</a></li>	
+										href="#footerid" id ="fix">Liens utiles</a></li>	
 						</ul>
 					</nav>
 				</div>
@@ -1490,6 +1488,25 @@ myButton.close();}
             $("#mymodelcalcul").modal('hide');
         });
     </script>
+            <script>
+$(document).ready(function () {
+    $('#fix').on('click', function (e) {
+        // e.preventDefault();
+
+        var target = this.hash,
+            $target = $(target);
+
+       $('html, body').stop().animate({
+        'scrollTop': $target.offset().top-50
+    }, 0, 'swing', function () {
+    });
+
+        console.log(window.location);
+
+        return false;
+    });
+});
+</script>
 </body>
 
 </html>

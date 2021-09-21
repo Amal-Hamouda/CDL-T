@@ -27416,6 +27416,8 @@ section.shop {
     border-radius: 50px;
     align-items: center;
     text-align: center;
+    left:90%;
+    
 }
 
 .float:hover {
@@ -27457,6 +27459,7 @@ section.shop {
         border-radius: 50px;
         align-items: center;
         text-align: center;
+        left:80%;
     }
     .float:hover {
         background-color: #eec55d;

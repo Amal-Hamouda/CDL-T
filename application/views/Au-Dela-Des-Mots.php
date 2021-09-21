@@ -84,12 +84,12 @@
                     <div class="aside-inner"><span class="aside-inner__title">Email</span><a class="aside-inner__link" href="mailto:support@helpo.org">Bureau@centre-des-lumieres.fr</a></div>
                     <div class="aside-inner"><span class="aside-inner__title">Phone numbers</span><a class="aside-inner__link" href="tel:06 72 23 00 00">06 72 23 00 00</a><a class="aside-inner__link" href="tel:06 72 23 00 00">06 72 23 00 00</a></div>
                     <ul class="aside-socials">
-                        <li class="aside-socials__item"><a class="aside-socials__link" href="#"><i
+                        <li class="aside-socials__item"><a class="aside-socials__link" href="https://www.facebook.com/Centredeslumieres/"><i
                             class="fa fa-facebook" aria-hidden="true"></i></a></li>
                         <li class="aside-socials__item"><a class="aside-socials__link aside-socials__link--active" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                        <li class="aside-socials__item"><a class="aside-socials__link" href="#"><i
+                        <li class="aside-socials__item"><a class="aside-socials__link" href="https://www.instagram.com/centredeslumieres/"><i
 									class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                        <li class="aside-socials__item"><a class="aside-socials__link" href="#"><i
+                        <li class="aside-socials__item"><a class="aside-socials__link" href="https://www.youtube.com/channel/UCEQ3IEfGzlegMOjnBLE2rJw"><i
 									class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
 
 
@@ -107,13 +107,13 @@
                     <div class="col-lg-9"><a class="top-bar__link" href="tel:06 72 23 00 00">06 72 23 00 00</a><a class="top-bar__link" href="mailto:Bureau@centre-des-lumieres.fr">Bureau@centre-des-lumieres.fr</a></div>
                     <div class="col-lg-3 text-right">
                         <ul class="socials">
-                            <li class="socials__item"><a class="socials__link" href="#"><i class="fa fa-facebook"
+                            <li class="socials__item"><a class="socials__link" href="https://www.facebook.com/Centredeslumieres/"><i class="fa fa-facebook"
 										aria-hidden="true"></i></a></li>
                             <li class="socials__item"><a class="socials__link" href="#"><i class="fa fa-twitter"
 										aria-hidden="true"></i></a></li>
-                            <li class="socials__item"><a class="socials__link" href="#"><i class="fa fa-instagram"
+                            <li class="socials__item"><a class="socials__link" href="https://www.instagram.com/centredeslumieres/"><i class="fa fa-instagram"
 										aria-hidden="true"></i></a></li>
-                            <li class="socials__item"><a class="socials__link" href="#"><i class="fa fa-youtube-play"
+                            <li class="socials__item"><a class="socials__link" href="https://www.youtube.com/channel/UCEQ3IEfGzlegMOjnBLE2rJw"><i class="fa fa-youtube-play"
 										aria-hidden="true"></i></a></li>
 
                         </ul>
@@ -143,14 +143,14 @@
                                 <li id="Accueil" class="main-menu__item main-menu__item--has-child main-menu__item--active"><a class="main-menu__link" href="<?php echo site_url("Home");?>"><span>Accueil</span></a>
                                 </li>
                                 <li id="Somme" class="main-menu__item main-menu__item--has-child
-											"><a class="main-menu__link" href="#aprop"><span>A Propos</span></a>
+											"><a class="main-menu__link" href="#aprop" id ="fix"><span>A Propos</span></a>
                                 </li>
                                 <li id="Horaire" class="main-menu__item main-menu__item--has-child
-											"><a class="main-menu__link" href="#projet"><span>Projets</span></a>
+											"><a class="main-menu__link" href="#projet" id ="fix"><span>Projets</span></a>
                                 </li>
-                                <li id="Benevole" class="main-menu__item main-menu__item--has-child"><a class="main-menu__link" href="#devenirBenevole"><span>Devenir Bénevole</span></a>
+                                <li id="Benevole" class="main-menu__item main-menu__item--has-child"><a class="main-menu__link" href="#devenirBenevole" id ="fix"><span>Devenir Bénevole</span></a>
 
-                                    <li id="Contact" class="main-menu__item main-menu__item--has-child"><a class="main-menu__link" href="#Contact1"><span>Contact</span></a>
+                                    <li id="Contact" class="main-menu__item main-menu__item--has-child"><a class="main-menu__link" href="#Contact1" id ="fix"><span>Contact</span></a>
 
                                     </li>
                                     <li id="participer" class="main-menu__item main-menu__item--has-child"><a class="form__submit_violet" href="<?php echo site_url("donate");?>" style="margin-top:15px;"><span>Faire un don</span></a>
@@ -209,10 +209,10 @@
                                         <div class="align-container">
                                             <div class="align-container__item">
                                                 <div class="promo-slider__wrapper-1">
-                                                    <h2 class="promo-slider__title"><span>Exemple de titre</span><br/><span></span></h2>
+                                                    <h2 class="promo-slider__title"><span></span><br/><span></span></h2>
                                                 </div>
                                                 <div class="promo-slider__wrapper-2">
-                                                    <p class="promo-slider__subtitle" style="color:#ffffff">Exemple de sous titre</p>
+                                                    <p class="promo-slider__subtitle" style="color:#ffffff"></p>
                                                 </div>
                                             </div>
                                         </div>
@@ -231,10 +231,10 @@
                                         <div class="align-container" id="pic_align">
                                             <div class="align-container__item">
                                                 <div class="promo-slider__wrapper-1">
-                                                    <h2 class="promo-slider__title"><span>Exemple de titre</span><br/><span></span></h2>
+                                                    <h2 class="promo-slider__title"><span></span><br/><span></span></h2>
                                                 </div>
                                                 <div class="promo-slider__wrapper-2">
-                                                    <p class="promo-slider__subtitle" style="color:#ffffff">Exemple de sous titre</p>
+                                                    <p class="promo-slider__subtitle" style="color:#ffffff"></p>
                                                 </div>
                                             </div>
                                         </div>
@@ -254,10 +254,10 @@
                                         <div class="align-container">
                                             <div class="align-container__item">
                                                 <div class="promo-slider__wrapper-1">
-                                                    <h2 class="promo-slider__title"><span>Exemple de titre</span><br/><span></span></h2>
+                                                    <h2 class="promo-slider__title"><span></span><br/><span></span></h2>
                                                 </div>
                                                 <div class="promo-slider__wrapper-2">
-                                                    <p class="promo-slider__subtitle" style="color:#ffffff">Exemple de sous titre</p>
+                                                    <p class="promo-slider__subtitle" style="color:#ffffff"></p>
                                                 </div>
                                             </div>
                                         </div>
@@ -370,7 +370,7 @@ et de son prophète…»
 
                 </div>
             </section>
-            <section class="section action-section" style="padding:120px 0px;background-image:url(<?php echo base_url();?>/resources/img/sectiondon.png);background-repeat: no-repeat;background-position: right;" >
+            <section class="section action-section" style="padding:120px 0px;background-image:url(<?php echo base_url();?>/resources/img/sectiondon.png);background-repeat: no-repeat;background-position: right;" id="fairedonimg" >
                 
                 <div class="container">
 							<div class="row align-items-center">
@@ -746,12 +746,12 @@ et de son prophète…»
 
 
                     <div class="container">
-                        <div class="row">
+                        <div class="row" style="margin-top:30px">
                             <div class="col-xl-4">
                                 <div class="row align-items-end">
                                 <div class="col-sm-8 col-md-6 col-xl-12">
                                         <div class="primary-color"><span class="heading__pre-titl primary-colore"></span>
-                                            <h2 class="heading__title primary-color"><span>NOS <br> PROJET</span><br /></h2>
+                                            <h2 class="heading__title primary-color"><span>NOS <br> PROJETS</span><br /></h2>
                                         </div>
                                         <p>ici à AU DELÀ DES MOTS, nous faisons de notre mieux pour aider les autres à travers nos projets et nos événements</p>
                                     </div>
@@ -970,11 +970,11 @@ et de son prophète…»
             <!--contact start-->
             <div class="main" id="Contact1">
                 <section class="section contacts">
-                    <div class="container style">
+                    <div class="container style" style="margin-top:30px">
                         <div class="row margin-bottom">
                             <div class="col-12" style="margin-bottom: -75px;">
                                 <div class="d-flex justify-content-center text-center">
-                                    <h2 class="heading__title" style="color:blueviolet"><span>Contactez Nous</span> </h2>
+                                    <h2 class="heading__title" style="color:blueviolet"><span>Contactez-Nous</span> </h2>
 
                                 </div>
                             </div>
@@ -1007,12 +1007,12 @@ et de son prophète…»
                                     <div class="icon-item__text">
                                         <!-- socials start-->
                                         <ul class="socials">
-                                            <li class="socials__item"><a class="socials__link" href="#"><i
+                                            <li class="socials__item"><a class="socials__link" href="https://www.facebook.com/Centredeslumieres/"><i
                                                 class="fa fa-facebook" aria-hidden="true"></i></a></li>
                                             <li class="socials__item"><a class="socials__link socials__link--active" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                            <li class="socials__item"><a class="socials__link" href="#"><i
+                                            <li class="socials__item"><a class="socials__link" href="https://www.instagram.com/centredeslumieres/"><i
 														class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                            <li class="socials__item"><a class="socials__link" href="#"><i
+                                            <li class="socials__item"><a class="socials__link" href="https://www.youtube.com/channel/UCEQ3IEfGzlegMOjnBLE2rJw"><i
 														class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
 
 
@@ -1091,13 +1091,13 @@ et de son prophète…»
                         </div>
                         <!-- footer socials start-->
                         <ul class="footer-socials">
-                            <li class="footer-socials__item"><a class="footer-socials__link" href="#"><i
+                            <li class="footer-socials__item"><a class="footer-socials__link" href="https://www.facebook.com/Centredeslumieres/"><i
                                         class="fa fa-facebook" aria-hidden="true"></i></a></li>
                             <li class="footer-socials__item"><a class="footer-socials__link" href="#"><i
                                         class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                            <li class="footer-socials__item"><a class="footer-socials__link" href="#"><i
+                            <li class="footer-socials__item"><a class="footer-socials__link" href="https://www.instagram.com/centredeslumieres/"><i
                                             class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                            <li class="footer-socials__item"><a class="footer-socials__link" href="#"><i
+                            <li class="footer-socials__item"><a class="footer-socials__link" href="https://www.youtube.com/channel/UCEQ3IEfGzlegMOjnBLE2rJw"><i
                                         class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
 
                         </ul>
@@ -1118,18 +1118,18 @@ et de son prophète…»
 
                                     <li class="footer-menu__item"><a class="footer-menu__link" href="#">Culturel</a>
                                     </li>
-                                    <li class="footer-menu__item"><a class="footer-menu__link" href="#aprop">A
+                                    <li class="footer-menu__item"><a class="footer-menu__link" href="#aprop" id ="fix">A
                                             Propos </a></li>
                                     <li class="footer-menu__item"><a class="footer-menu__link" href="<?php echo site_url("Cultuel");?>">Cultuel</a>
                                     </li>
-                                    <li class="footer-menu__item"><a class="footer-menu__link" href="#projet">Projets</a></li>
+                                    <li class="footer-menu__item"><a class="footer-menu__link" href="#projet" id ="fix">Projets</a></li>
                                     <li class="footer-menu__item"><a class="footer-menu__link" href="<?php echo site_url("Humanitaire");?>">Humanitaire</a>
                                     </li>
-                                    <li class="footer-menu__item"><a class="footer-menu__link" href="#devenirBenevole">Devenir Bénévole</a>
+                                    <li class="footer-menu__item"><a class="footer-menu__link" href="#devenirBenevole" id ="fix">Devenir Bénévole</a>
                                     </li>
                                     <li class="footer-menu__item"><a class="footer-menu__link" style="visibility: hidden;">
                                             Contact</a></li>
-                                    <li class="footer-menu__item"><a class="footer-menu__link" href="#Contact1">Contact</a>
+                                    <li class="footer-menu__item"><a class="footer-menu__link" href="#Contact1" id ="fix">Contact</a>
                                     </li>
                                     <li class="footer-menu__item"><a class="footer-menu__link" href="#" style="visibility:hidden;" type="hidden">Contact</a></li>
                                 </ul>
@@ -1153,6 +1153,25 @@ et de son prophète…»
         <script src="<?php echo base_url();?>/resources/js/libs.min.js"></script>
         <!-- scripts-->
         <script src="<?php echo base_url();?>/resources/js/common.min.js"></script>
+        <script>
+$(document).ready(function () {
+    $('#fix').on('click', function (e) {
+        // e.preventDefault();
+
+        var target = this.hash,
+            $target = $(target);
+
+       $('html, body').stop().animate({
+        'scrollTop': $target.offset().top-50
+    }, 0, 'swing', function () {
+    });
+
+        console.log(window.location);
+
+        return false;
+    });
+});
+</script>
         <script>
             window.onscroll = () => {
                 console.log(scrollY);

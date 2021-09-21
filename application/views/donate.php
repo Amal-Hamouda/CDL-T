@@ -218,10 +218,13 @@
 									<div class="form-card">
 										<div class="row">
 											<div class="col-12">
-												<h2 class="fs-title">Choix du montant</h2>
+												<h2 class="fs-title">Ajoutez vos informations</h2>
 											</div>
 											
-										</div> <label class="fieldlabels">
+										</div><label class="fieldlabels">First Name: *</label> <input type="text" name="fname" id="first-name" placeholder="First Name" /><label class="fieldlabels">Last name</label> <input type="text" name="lname" id="last-name" placeholder="Last Name(optional)" /> 
+										<label class="fieldlabels">Email: *</label> <input type="email" name="email" id="email" placeholder="Email" />
+										<textarea id="texta" name="comm" rows="4" placeholder="Add a comment"></textarea>
+										 <label class="fieldlabels">
 											<div class="section over-hide z-bigger">
 												<input class="checkbox" type="checkbox" name="general" id="general">
 											
@@ -232,7 +235,7 @@
 														
 															<div class="row">
 																<div class ="col-12">
-																<label class="fieldlabels">Combien voudriez-vous donner ?</label> <input type="number" onchange="enablenext()" id="perso">
+																<label class="fieldlabels">Combien voudriez-vous donner ?</label> <input type="number" placeholder="Insérer le montant désiré..." onchange="enablenext()" id="perso">
 															</div>
 																<div class="col-4">
 																<input class="checkbox-budget" type="radio" name="data" id="budget-1" onclick="enablenext()" value="10" checked>
@@ -260,7 +263,7 @@
 																</label><!--
 																--><input class="checkbox-budget" type="radio" name="data" onclick="disablenext()"id="budget-6" value="">
 																<label class="for-checkbox-budget" for="budget-6">							
-																	<span data-hover="...">...</span>
+																	<span data-hover="Perso">Perso</span>
 																</label></div>
 																
 															</div>
@@ -288,15 +291,7 @@
 								</fieldset>
 								<fieldset>
 									
-									<div class="form-card">
-										<div class="row">
-											<div class="col-7">
-												<h2 class="fs-title">Ajoutez vos informations</h2>
-											</div>
-											
-										</div> <label class="fieldlabels">First Name: *</label> <input type="text" name="fname" id="first-name" placeholder="First Name" /><label class="fieldlabels">Last name</label> <input type="text" name="lname" id="last-name" placeholder="Last Name(optional)" /> 
-										<label class="fieldlabels">Email: *</label> <input type="email" name="email" id="email" placeholder="Email" />
-										<textarea id="texta" name="comm" rows="4" placeholder="Add a comment"></textarea>
+									<div class="form-card"> 
 										<section>
 											<div class="container py-5" style="margin-top:-10%">
 												<div class="row">
@@ -404,13 +399,13 @@
 				</div>
 				<!-- footer socials start-->
 				<ul class="footer-socials">
-					<li class="footer-socials__item"><a class="footer-socials__link" href="#"><i
+					<li class="footer-socials__item"><a class="footer-socials__link" href="https://www.facebook.com/Centredeslumieres/"><i
 								class="fa fa-facebook" aria-hidden="true"></i></a></li>
 					<li class="footer-socials__item"><a class="footer-socials__link" href="#"><i
 								class="fa fa-twitter" aria-hidden="true"></i></a></li>
-					<li class="footer-socials__item"><a class="footer-socials__link" href="#"><i
+					<li class="footer-socials__item"><a class="footer-socials__link" href="https://www.instagram.com/centredeslumieres/"><i
 									class="fa fa-instagram" aria-hidden="true"></i></a></li>
-					<li class="footer-socials__item"><a class="footer-socials__link" href="#"><i
+					<li class="footer-socials__item"><a class="footer-socials__link" href="https://www.youtube.com/channel/UCEQ3IEfGzlegMOjnBLE2rJw"><i
 								class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
 				  
 				</ul>

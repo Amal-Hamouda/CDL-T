@@ -196,91 +196,16 @@
 											</div>
 											
 										</div> <label class="fieldlabels" style="text-align: center;">Aidez notre organisation en faisant un don dès aujourd'hui! Tous les dons contribuent directement à faire une différence pour notre cause.</label> 
-									</div> <input type="button" name="next" class="next action-button" value="Faire le Don !" />
+									</div> <input type="button" name="next" class="next action-button" value="Adhérer au CDL!" />
 								</fieldset>
 								<fieldset>
 									<div class="form-card">
 										<div class="row">
 											<div class="col-12">
-												<h2 class="fs-title">Choix du montant</h2>
+												<h2 class="fs-title">Je soussigné(e)</h2>
 											</div>
 											
-										</div> <label class="fieldlabels">
-											<div class="section over-hide z-bigger">
-												<input class="checkbox" type="checkbox" name="general" id="general">
-											
-												
-												<div class="section over-hide z-bigger">
-													<div class="container pb-5">
-														<div class="row justify-content-center pb-5">
-														
-															<div class="row">
-																<div class ="col-12">
-																<label class="fieldlabels">Combien voudriez-vous donner ?</label> <input type="number" onchange="enablenext()" id="perso">
-															</div>
-																<div class="col-4">
-																<input class="checkbox-budget" type="radio" name="data" id="budget-1" onclick="enablenext()" value="10" checked>
-																<label class="for-checkbox-budget" for="budget-1">
-																	<span data-hover="10€">10€</span>
-																</label><!--
-																	
-																-->
-																<input class="checkbox-budget" type="radio" name="data" id="budget-2" onclick="enablenext()" value="25">
-																<label class="for-checkbox-budget" for="budget-2">							
-																	<span data-hover="25€">25€</span>
-																</label></div><!--
-																--><div class="col-4"><input class="checkbox-budget" type="radio" name="data" id="budget-3" onclick="enablenext()" value="50">
-																<label class="for-checkbox-budget" for="budget-3">							
-																	<span data-hover="50€">50€</span>
-																</label><!--
-
-																--><input class="checkbox-budget" type="radio" name="data" id="budget-4" onclick="enablenext()" value="100">
-																<label class="for-checkbox-budget" for="budget-4">							
-																	<span data-hover="100€">100€</span>
-																</label></div><!--
-																--><div class="col-4"><input class="checkbox-budget" type="radio" name="data" id="budget-5" onclick="enablenext()" value="250">
-																<label class="for-checkbox-budget" for="budget-5">							
-																	<span data-hover="250€">250€</span>
-																</label><!--
-																--><input class="checkbox-budget" type="radio" name="data" onclick="disablenext()"id="budget-6" value="">
-																<label class="for-checkbox-budget" for="budget-6">							
-																	<span data-hover="...">...</span>
-																</label></div>
-																
-															</div>
-															</div>
-															</div>
-															</div>
-															</div>
-																								</label>
-									</div>  <input type="button" name="previous" class="previous action-button-previous" value="Previous" /> <input type="button" name="next" class="next action-button" value="Next" id="check" />
-									<script>
-				function disablenext(){
-					if((!document.getElementById('perso').value)||(document.getElementById('perso').value<=0)){
-						console.log(0);
-						alert("Veuillez remplir le montant personalisé")
-						document.getElementById('check').disabled = true;
-					}
-				}
-				function enablenext(){
-					
-						console.log(1);
-						document.getElementById('check').disabled = false;
-					
-				}
-				</script>
-								</fieldset>
-								<fieldset>
-									
-									<div class="form-card">
-									<div class="row ">
-                                            <div class="col-7">
-                                                <h2 class="fs-title">Je soussigné(e)</h2>
-                                                
-                                            </div>
-                                            
-                                        </div>
-                                        <div class="justify-content-center mb-2">
+										</div> <div class="justify-content-center mb-2">
                                                 <input type="checkbox" name="anonym" value="anonym" style="height:20px;width:20px;left:100px;/* position:initial; *//* margin: -10px 1px 7px; */padding: -9px 37px -25px;border: 15px solid #808080;">&emsp;<label >Monsieur</label>
                                                 
                                                 <input type="checkbox" name="anonym" value="anonym" style="height:20px;width:20px;left:230px;">&emsp;&emsp;&emsp;<label >Madame</label>
@@ -317,6 +242,76 @@
                                         <label class="fieldlabels">Email: *</label> <input type="email" id="email" name="email" placeholder="Email" />
                                         <h6>Adhère au CDL</h6>
                                         <textarea id="texta" name="comm" rows="4" placeholder="Add a comment"></textarea>
+										<label class="fieldlabels">
+											<div class="section over-hide z-bigger">
+												<input class="checkbox" type="checkbox" name="general" id="general">
+											
+												
+												<div class="section over-hide z-bigger">
+													<div class="container pb-5">
+														<div class="row justify-content-center pb-5">
+														
+															<div class="row">
+																<div class ="col-12">
+																<label class="fieldlabels">Combien voudriez-vous donner ?</label> <input type="number" placeholder="Insérer le montant désiré..." onchange="enablenext()" id="perso">
+															</div>
+																<div class="col-4">
+																<input class="checkbox-budget" type="radio" name="data" id="budget-1" onclick="enablenext()" value="10" checked>
+																<label class="for-checkbox-budget" for="budget-1">
+																	<span data-hover="10€">10€</span>
+																</label><!--
+																	
+																-->
+																<input class="checkbox-budget" type="radio" name="data" id="budget-2" onclick="enablenext()" value="25">
+																<label class="for-checkbox-budget" for="budget-2">							
+																	<span data-hover="25€">25€</span>
+																</label></div><!--
+																--><div class="col-4"><input class="checkbox-budget" type="radio" name="data" id="budget-3" onclick="enablenext()" value="50">
+																<label class="for-checkbox-budget" for="budget-3">							
+																	<span data-hover="50€">50€</span>
+																</label><!--
+
+																--><input class="checkbox-budget" type="radio" name="data" id="budget-4" onclick="enablenext()" value="100">
+																<label class="for-checkbox-budget" for="budget-4">							
+																	<span data-hover="100€">100€</span>
+																</label></div><!--
+																--><div class="col-4"><input class="checkbox-budget" type="radio" name="data" id="budget-5" onclick="enablenext()" value="250">
+																<label class="for-checkbox-budget" for="budget-5">							
+																	<span data-hover="250€">250€</span>
+																</label><!--
+																--><input class="checkbox-budget" type="radio" name="data" onclick="disablenext()"id="budget-6" value="">
+																<label class="for-checkbox-budget" for="budget-6">							
+																	<span data-hover="Perso">Perso</span>
+																</label></div>
+																
+															</div>
+															</div>
+															</div>
+															</div>
+															</div>
+																								</label>
+									</div>  <input type="button" name="previous" class="previous action-button-previous" value="Previous" /> <input type="button" name="next" class="next action-button" value="Next" id="check" />
+									<script>
+				function disablenext(){
+					if((!document.getElementById('perso').value)||(document.getElementById('perso').value<=0)){
+						console.log(0);
+						alert("Veuillez remplir le montant personalisé")
+						document.getElementById('check').disabled = true;
+					}
+				}
+				function enablenext(){
+					
+						console.log(1);
+						document.getElementById('check').disabled = false;
+					
+				}
+				</script>
+								</fieldset>
+								<fieldset>
+									
+									<div class="form-card">
+								
+                                        
                                         
                                         <label class="fieldlabels"></label>
 										<section>
@@ -426,13 +421,13 @@
 				</div>
 				<!-- footer socials start-->
 				<ul class="footer-socials">
-					<li class="footer-socials__item"><a class="footer-socials__link" href="#"><i
+					<li class="footer-socials__item"><a class="footer-socials__link" href="https://www.facebook.com/Centredeslumieres/"><i
 								class="fa fa-facebook" aria-hidden="true"></i></a></li>
 					<li class="footer-socials__item"><a class="footer-socials__link" href="#"><i
 								class="fa fa-twitter" aria-hidden="true"></i></a></li>
-					<li class="footer-socials__item"><a class="footer-socials__link" href="#"><i
+					<li class="footer-socials__item"><a class="footer-socials__link" href="https://www.instagram.com/centredeslumieres/"><i
 									class="fa fa-instagram" aria-hidden="true"></i></a></li>
-					<li class="footer-socials__item"><a class="footer-socials__link" href="#"><i
+					<li class="footer-socials__item"><a class="footer-socials__link" href="https://www.youtube.com/channel/UCEQ3IEfGzlegMOjnBLE2rJw"><i
 								class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
 				  
 				</ul>

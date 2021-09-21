@@ -27403,6 +27403,11 @@ section.shop {
         font-size:15px;
     }
 }
+@media only screen and (max-width:1024px){
+    #fairedonimg{
+        background-position: center;
+    }
+}
 /*# sourceMappingURL=styles.min.css.map */
 
 
