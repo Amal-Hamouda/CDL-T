@@ -1099,105 +1099,386 @@ plusieurs fois.. ”</p> <br>						<div id="Quoteita" style="color:#777">Coran s
 
 			<!-- causes end-->
 			<!-- section start-->
-			<section class="section" style=" font-family: 'Montserrat';">
-				<div class="container">
-					<div class="row align-items-end margin-bottom">
-						<div class="col-sm-6">
-							<div class="heading heading--primary"><span class="heading__pre-title">Nos dernières actualités </span>
-								<h2 class="heading__title no-margin-bottom" style="color:black"><span>Centre des
-										lumières</span></h2>
-							</div>
-						</div>
-						<div class="col-sm-6 text-sm-right">
-							<!-- slider nav start-->
-							<div class="slider__nav projects-slider__nav">
-								<div class="slider__arrows">
-									<div class="slider__prev"><i class="fa fa-chevron-left" aria-hidden="true"></i>
-									</div>
-									<div class="slider__next"><i class="fa fa-chevron-right" aria-hidden="true"></i>
-									</div>
-								</div>
-							</div>
-							<!-- slider nav end-->
-						</div>
-					</div>
-				</div>
-				<div class="projects-slider">
-					<div class="projects-slider__item">
-						<div
-							class="projects-masonry__item projects-masonry__item--primary projects-masonry__item--height-2">
-							<div class="projects-masonry__img"><img class="img--bg" src="<?php echo base_url();?>/resources/img/typography.jpg"
-									alt="img" />
-								<div class="projects-masonry__inner">
-									<h3 class="projects-masonry__title"><a href="#ProjectModal1"  data-toggle="modal">Projet 2</a>
-									</h3>
-									<p>Nam fermentum fringilla libero, id gravida erat tempor quis. Aliquam sollicitudin
-										ex
-										nec dictum molestie. Sed condimentum quam eget risus imperdiet aliquet.
-										Pellentesque
-										sed elit sed arcu blandit posuere sed ut nisl. Aliquam in fermentum quam, quis
-										efficitur metus. </p>
-									<div class="projects-masonry__details-holder">
-										<div class="projects-masonry__details-item"><span>But: </span><span>25
-												000$</span>
-										</div>
-										<div class="projects-masonry__details-item"><span>Date: </span><span>23
-												Jan'19</span></div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="projects-slider__item">
-						<div
-							class="projects-masonry__item projects-masonry__item--primary projects-masonry__item--height-2">
-							<div class="projects-masonry__img"><img class="img--bg" src="<?php echo base_url();?>/resources/img/personne.jpg" alt="img" />
-								<div class="projects-masonry__inner">
-									<h3 class="projects-masonry__title"> <a href="#ProjectModal2"  data-toggle="modal">Projet 1</a>
-									</h3>
-									<p>Suspendisse potenti. Praesent tortor nunc, ornare non dictum a, euismod vel
-										nulla.
-									</p>
-									<div class="projects-masonry__details-holder">
-										<div class="projects-masonry__details-item"><span>But: </span><span>10
-												000$</span>
-										</div>
-										<div class="projects-masonry__details-item"><span>Date: </span><span>23
-												Jan'19</span></div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="projects-slider__item">
-						<div
-							class="projects-masonry__item projects-masonry__item--primary projects-masonry__item--height-2">
-							<div class="projects-masonry__img"><img class="img--bg" src="<?php echo base_url();?>/resources/img/Mosque.jpg" alt="img" />
-								<div class="projects-masonry__inner">
-									<h3 class="projects-masonry__title"> <a href="#ProjectModal3"  data-toggle="modal">Projet de
-											construction
-											de la mosquée</a></h3>
-									<p> Après plusieurs années d'efforts, les conditions pour la réalisation du projet
-										de
-										construction de la mosquée des cèdres , sont en train d'être réunies. Un
-										terrain,
-										d'environ 860m², a été identifié et réservé pour l’édification de la future
-										Mosquée.
-									</p>
-									<div class="projects-masonry__details-holder">
-										<div class="projects-masonry__details-item"><span>Goal: </span><span>25
-												000$</span>
-										</div>
-										<div class="projects-masonry__details-item"><span>Date: </span><span>23
-												Jan'19</span></div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			
+			<section class="section elements elements--testimonials no-padding-top">
+                <!-- testimonials style-3 start-->
+
+                <section class="section testimonials testimonials--style-3" id="projet">
+
+
+
+                    <div class="container">
+                        <div class="row" style="margin-top:30px">
+                            <div class="col-xl-4">
+                                <div class="row align-items-end">
+                                <div class="col-sm-8 col-md-6 col-xl-12">
+                                        <div class="primary-color"><span class="heading__pre-titl primary-colore"></span>
+                                            <h2 class="heading__title primary-color"><span>NOS <br> PROJETS</span><br /></h2>
+                                        </div>
+                                        <p>ici à AU DELÀ DES MOTS, nous faisons de notre mieux pour aider les autres à travers nos projets et nos événements</p>
+                                    </div>
+                                    <div class="col-sm-4 col-md-6 col-xl-12">
+                                        <!-- slider nav start-->
+                                        <div class="slider__nav testimonials-style-3__nav">
+                                            <div class="slider__arrows">
+                                                <div class="slider__prev"><i class="fa fa-chevron-left" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="slider__next"><i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- slider nav end-->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-8">
+                                <div class="testimonials__slider-holder">
+                                    <div class="testimonials-slider testimonials-slider--style-3">
+                                        <div class="testimonials-slider__item">
+                                            <div class="testimonials-slider__icon primary-color">“</div>
+                                            <div class="testimonials-slider__text">
+                                                <h4>Projet 1</h4>
+                                                <div class="row">
+                                                    <div class="col-xl-12 m-0 p-0 col-lg-8 col-md-8">
+                                                        <p>Slickhead grunion lake trout. Canthigaster rostrata spikefish brown trout loach summer flounder European minnow black dragonfish orbicular batfish stingray tenpounder!</p>
+                                                    </div>
+
+                                                </div>
+                                                <div class="row">
+                                                    <img class="img-fluid" src="<?php echo base_url();?>/resources/img/prj1.jpg">
+                                                </div>
+
+                                                <div class="testimonials-slider__author">
+
+                                                    <a href="#modalScrollableCenter1" role="button" class="form__submit  m-2" data-toggle="modal">Plus de détail</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="testimonials-slider__item">
+                                            <div class="testimonials-slider__icon primary-color">“</div>
+                                            <div class="testimonials-slider__text">
+                                                <h4>Projet 2</h4>
+                                                <div class="row">
+                                                    <div class="col-xl-12 m-0 p-0 col-lg-8 col-md-8">
+                                                        <p>Slickhead grunion lake trout. Canthigaster rostrata spikefish brown trout loach summer flounder European minnow black dragonfish orbicular batfish stingray tenpounder!</p>
+                                                    </div>
+
+                                                </div>
+                                                <div class="row">
+                                                    <img class="img-fluid" src="<?php echo base_url();?>/resources/img/prj2.jpg">
+                                                </div>
+
+                                                <div class="testimonials-slider__author">
+                                                    <a href="#modalScrollableCenter2"  role="button" class="form__submit  m-2" data-toggle="modal">Plus de détail</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="testimonials-slider__item">
+                                            <div class="testimonials-slider__icon primary-color">“</div>
+                                            <div class="testimonials-slider__text">
+                                                <h4>Projet 3</h4>
+                                                <div class="row">
+                                                    <div class="col-xl-12 m-0 p-0 col-lg-8 col-md-8">
+                                                        <p>Slickhead grunion lake trout. Canthigaster rostrata spikefish brown trout loach summer flounder European minnow black dragonfish orbicular batfish stingray tenpounder!</p>
+                                                    </div>
+
+                                                </div>
+                                                <div class="row">
+                                                    <img class="img-fluid" src="<?php echo base_url();?>/resources/img/prj3.jpg">
+                                                </div>
+
+                                                <div class="testimonials-slider__author">
+                                                    <a href="#modalScrollableCenter3" role="button" class="form__submit  m-2" data-toggle="modal">Plus de détail</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="testimonials-slider__item">
+                                            <div class="testimonials-slider__icon primary-color">“</div>
+                                            <div class="testimonials-slider__text">
+                                                <h4>Projet 4</h4>
+                                                <div class="row">
+                                                    <div class="col-xl-12 m-0 p-0 col-lg-8 col-md-8">
+                                                        <p>Slickhead grunion lake trout. Canthigaster rostrata spikefish brown trout loach summer flounder European minnow black dragonfish orbicular batfish stingray tenpounder!</p>
+                                                    </div>
+
+                                                </div>
+                                                <div class="row">
+                                                    <img class="img-fluid" src="<?php echo base_url();?>/resources/img/Palestine.jpg">
+                                                </div>
+
+                                                <div class="testimonials-slider__author">
+                                                    <a href="#modalScrollableCenter4" role="button" class="form__submit  m-2" data-toggle="modal">Plus de détail</a>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- testimonials style-3 end-->
+            </section>
+			 <!--modal 1 start-->
+			 <div id="modalScrollableCenter1" class="modal fade bd-example-modal-xl" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered modal-xl">
+                    <div class="modal-content">
+                        <section style="background-image:url(<?php echo base_url();?>/resources/img/imgmodal.jpg);background-repeat: no-repeat;background-size: cover;height:180px">
+
+                            <button type="button" class="close" data-dismiss="modal" style="color:white;" id="modalx">X</button>
+                        </section>
+                        <div class="modal-body" style="margin-right:5%;margin-left: 5%;margin-bottom: 2%;">
+                            <center>
+                                <div class="col-12">
+                                    <h4 style="color:#d4ac46">Nom du projet</h4>
+                                </div>
+                                <br>
+                                <div class="row" style="background-color: #d4ac46;border:1px solid white; border-radius:10px;width:100%">
+                                    <div class="col" style="color:#fff;font-size: 15px;font-weight: bold;margin-top:10px ;"> Date
+                                        <br>
+                                        <p style="font-weight: lighter;">10.07.2021</p>
+
+                                    </div>
+                                    <div class="col" style="color:#fff;font-size: 15px;font-weight: bold;margin-top:10px ;">Lieu
+                                        <br>
+                                        <p style="font-weight: lighter;">Paris</p>
+
+                                    </div>
+                                    <div class="col" style="color:#fff;font-size: 15px;font-weight: bold;margin-top:10px ;">Participants
+                                        <br>
+                                        <p style="font-weight: lighter;">153 </p>
+
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="col-12" style="margin-bottom:2% ;">
+                                    <p>La laïcité repose sur trois principes et valeurs : la liberté de conscience et celle de manifester ses convictions dans les limites du respect de l’ordre public, la séparation des.C’est à partir d’une vision de l’Humain
+                                        en général (femmes et hommes) et de sa condition vulnérable en particulier, que le centre des lumières puise la légitimité de ses actions cultuelles culturelles et humanitaires. Les Hommes doivent être au service
+                                        les uns des autres. C’est par le don et le partage qu’ils s’accomplissent.</p>
+
+                                </div>
+
+                                <div class="row">
+                                    <div class="col">
+                                        <img class="img-fluid_modal" src="<?php echo base_url();?>/resources/img/Palestine.jpg">
+
+                                    </div>
+                                    <div class="col">
+                                        <img class="img-fluid_modal" src="<?php echo base_url();?>/resources/img/Palestine.jpg">
+
+                                    </div>
+                                    <div class="col">
+                                        <img class="img-fluid_modal" src="<?php echo base_url();?>/resources/img/Palestine.jpg">
+
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="col-12" style="background-color:lightgrey;border:1px solid white; border-radius:10px;width:100%">
+                                    <p style="color:black; margin-top:15px;font-size: 15px;">don récoltés lors de cette action : 5000€</p>
+
+                                </div>
+                            </center>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!--modal 1 end-->
+            <!--modal 2 start-->
+            <div id="modalScrollableCenter2" class="modal fade bd-example-modal-xl" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered modal-xl">
+                    <div class="modal-content">
+                        <section style="background-image:url(<?php echo base_url();?>/resources/img/imgmodal.jpg);background-repeat: no-repeat;background-size: cover;height:180px">
+
+                            <button type="button" class="close" data-dismiss="modal" style="color:white;" id="modalx">X</button>
+                        </section>
+                        <div class="modal-body" style="margin-right:5%;margin-left: 5%;margin-bottom: 2%;">
+                            <center>
+                                <div class="col-12">
+                                    <h4 style="color:#d4ac46">Nom du projet</h4>
+                                </div>
+                                <br>
+                                <div class="row" style="background-color: #d4ac46;border:1px solid white; border-radius:10px;width:100%">
+                                    <div class="col" style="color:#fff;font-size: 15px;font-weight: bold;margin-top:10px ;"> Date
+                                        <br>
+                                        <p style="font-weight: lighter;">10.07.2021</p>
+
+                                    </div>
+                                    <div class="col" style="color:#fff;font-size: 15px;font-weight: bold;margin-top:10px ;">Lieu
+                                        <br>
+                                        <p style="font-weight: lighter;">Paris</p>
+
+                                    </div>
+                                    <div class="col" style="color:#fff;font-size: 15px;font-weight: bold;margin-top:10px ;">Participants
+                                        <br>
+                                        <p style="font-weight: lighter;">153 </p>
+
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="col-12" style="margin-bottom:2% ;">
+                                    <p>La laïcité repose sur trois principes et valeurs : la liberté de conscience et celle de manifester ses convictions dans les limites du respect de l’ordre public, la séparation des.C’est à partir d’une vision de l’Humain
+                                        en général (femmes et hommes) et de sa condition vulnérable en particulier, que le centre des lumières puise la légitimité de ses actions cultuelles culturelles et humanitaires. Les Hommes doivent être au service
+                                        les uns des autres. C’est par le don et le partage qu’ils s’accomplissent.</p>
+
+                                </div>
+
+                                <div class="row">
+                                    <div class="col">
+                                        <img class="img-fluid_modal" src="<?php echo base_url();?>/resources/img/Palestine.jpg">
+
+                                    </div>
+                                    <div class="col">
+                                        <img class="img-fluid_modal" src="<?php echo base_url();?>/resources/img/Palestine.jpg">
+
+                                    </div>
+                                    <div class="col">
+                                        <img class="img-fluid_modal" src="<?php echo base_url();?>/resources/img/Palestine.jpg">
+
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="col-12" style="background-color:lightgrey;border:1px solid white; border-radius:10px;width:100%">
+                                    <p style="color:black; margin-top:15px;font-size: 15px;">don récoltés lors de cette action : 5000€</p>
+
+                                </div>
+                            </center>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!--modal 2 end-->
+            <!--modal 3 start-->
+            <div id="modalScrollableCenter3" class="modal fade bd-example-modal-xl" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered modal-xl">
+                    <div class="modal-content">
+                        <section style="background-image:url(<?php echo base_url();?>/resources/img/imgmodal.jpg);background-repeat: no-repeat;background-size: cover;height:180px">
+
+                            <button type="button" class="close" data-dismiss="modal" style="color:white;" id="modalx">X</button>
+                        </section>
+                        <div class="modal-body" style="margin-right:5%;margin-left: 5%;margin-bottom: 2%;">
+                            <center>
+                                <div class="col-12">
+                                    <h4 style="color:#d4ac46">Nom du projet</h4>
+                                </div>
+                                <br>
+                                <div class="row" style="background-color: #d4ac46;border:1px solid white; border-radius:10px;width:100%">
+                                    <div class="col" style="color:#fff;font-size: 15px;font-weight: bold;margin-top:10px ;"> Date
+                                        <br>
+                                        <p style="font-weight: lighter;">10.07.2021</p>
+
+                                    </div>
+                                    <div class="col" style="color:#fff;font-size: 15px;font-weight: bold;margin-top:10px ;">Lieu
+                                        <br>
+                                        <p style="font-weight: lighter;">Paris</p>
+
+                                    </div>
+                                    <div class="col" style="color:#fff;font-size: 15px;font-weight: bold;margin-top:10px ;">Participants
+                                        <br>
+                                        <p style="font-weight: lighter;">153 </p>
+
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="col-12" style="margin-bottom:2% ;">
+                                    <p>La laïcité repose sur trois principes et valeurs : la liberté de conscience et celle de manifester ses convictions dans les limites du respect de l’ordre public, la séparation des.C’est à partir d’une vision de l’Humain
+                                        en général (femmes et hommes) et de sa condition vulnérable en particulier, que le centre des lumières puise la légitimité de ses actions cultuelles culturelles et humanitaires. Les Hommes doivent être au service
+                                        les uns des autres. C’est par le don et le partage qu’ils s’accomplissent.</p>
+
+                                </div>
+
+                                <div class="row">
+                                    <div class="col">
+                                        <img class="img-fluid_modal" src="<?php echo base_url();?>/resources/img/Palestine.jpg">
+
+                                    </div>
+                                    <div class="col">
+                                        <img class="img-fluid_modal" src="<?php echo base_url();?>/resources/img/Palestine.jpg">
+
+                                    </div>
+                                    <div class="col">
+                                        <img class="img-fluid_modal" src="<?php echo base_url();?>/resources/img/Palestine.jpg">
+
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="col-12" style="background-color:lightgrey;border:1px solid white; border-radius:10px;width:100%">
+                                    <p style="color:black; margin-top:15px;font-size: 15px;">don récoltés lors de cette action : 5000€</p>
+
+                                </div>
+                            </center>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!--modal 3 end-->
+            <!--modal 4 start-->
+            <div id="modalScrollableCenter4" class="modal fade bd-example-modal-xl" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered modal-xl">
+                    <div class="modal-content">
+                        <section style="background-image:url(<?php echo base_url();?>/resources/img/imgmodal.jpg);background-repeat: no-repeat;background-size: cover;height:180px">
+
+                            <button type="button" class="close" data-dismiss="modal" style="color:white;" id="modalx">X</button>
+                        </section>
+                        <div class="modal-body" style="margin-right:5%;margin-left: 5%;margin-bottom: 2%;">
+                            <center>
+                                <div class="col-12">
+                                    <h4 style="color:#d4ac46">Nom du projet</h4>
+                                </div>
+                                <br>
+                                <div class="row" style="background-color: #d4ac46;border:1px solid white; border-radius:10px;width:100%">
+                                    <div class="col" style="color:#fff;font-size: 15px;font-weight: bold;margin-top:10px ;"> Date
+                                        <br>
+                                        <p style="font-weight: lighter;">10.07.2021</p>
+
+                                    </div>
+                                    <div class="col" style="color:#fff;font-size: 15px;font-weight: bold;margin-top:10px ;">Lieu
+                                        <br>
+                                        <p style="font-weight: lighter;">Paris</p>
+
+                                    </div>
+                                    <div class="col" style="color:#fff;font-size: 15px;font-weight: bold;margin-top:10px ;">Participants
+                                        <br>
+                                        <p style="font-weight: lighter;">153 </p>
+
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="col-12" style="margin-bottom:2% ;">
+                                    <p>La laïcité repose sur trois principes et valeurs : la liberté de conscience et celle de manifester ses convictions dans les limites du respect de l’ordre public, la séparation des.C’est à partir d’une vision de l’Humain
+                                        en général (femmes et hommes) et de sa condition vulnérable en particulier, que le centre des lumières puise la légitimité de ses actions cultuelles culturelles et humanitaires. Les Hommes doivent être au service
+                                        les uns des autres. C’est par le don et le partage qu’ils s’accomplissent.</p>
+
+                                </div>
+
+                                <div class="row">
+                                    <div class="col">
+                                        <img class="img-fluid_modal" src="<?php echo base_url();?>/resources/img/Palestine.jpg">
+
+                                    </div>
+                                    <div class="col">
+                                        <img class="img-fluid_modal" src="<?php echo base_url();?>/resources/img/Palestine.jpg">
+
+                                    </div>
+                                    <div class="col">
+                                        <img class="img-fluid_modal" src="<?php echo base_url();?>/resources/img/Palestine.jpg">
+
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="col-12" style="background-color:lightgrey;border:1px solid white; border-radius:10px;width:100%">
+                                    <p style="color:black; margin-top:15px;font-size: 15px;">don récoltés lors de cette action : 5000€</p>
+
+                                </div>
+                            </center>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!--modal 4 end-->
 			<!-- section end-->
 			<!-- text section start-->
 
