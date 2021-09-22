@@ -336,7 +336,7 @@
 	<div class="container">
 		<div class="d-flex justify-content-center">
 			<div class="col-12 col-md-12" style="background-color: #d4ac46;border-radius: 8px;opacity:0.9; color:black;">
-				<p style=" font-size: 16px; font-weight: 600; line-height: ;"> <br> Depuis maintenant plusieurs années le centre des lumières fait la promotion de la culture arabo-musulmane en
+				<p style=" font-size: 16px; font-weight: 600;"> <br> Depuis maintenant plusieurs années le centre des lumières fait la promotion de la culture arabo-musulmane en
 					France et dans le monde à travers :<br>
 				la littérature, les sciences et techniques islamiques, la civilisation, la calligraphie, l'art (peinture
 					sculpture, musique, poésie, architecture, archéologie).
