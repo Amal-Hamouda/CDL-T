@@ -146,21 +146,21 @@
 
                                 <li id="Accueil" class="main-menu__item main-menu__item--has-child main-menu__item--active"><a class="main-menu__link" href="<?php echo site_url("Home");?>"><span>Accueil</span></a>
                                 </li>
-                                <li id="Somme" class="main-menu__item main-menu__item--has-child"><a class="main-menu__link" href="#QuiSommeNous" id ="fix"><span>A Propos de Nous</span></a>
+                                <li id="Somme" class="main-menu__item main-menu__item--has-child"><a class="main-menu__link fix" href="#QuiSommeNous"><span>A Propos de Nous</span></a>
                                 </li>
                                 <li class="main-menu__item main-menu__item--has-child" id="Participer1"><a class="main-menu__link"><span>Identité</span></a>
                                     <ul class="main-menu__sub-list">
-                                        <li><a href="#vision" id ="fix"><span>Vision</span></a></li>
+                                        <li><a href="#vision" class="fix"><span>Vision</span></a></li>
                                         <li>
-                                            <a href="#principes" id ="fix"> <span>Principe</span></a>
+                                            <a href="#principes" class="fix"> <span>Principe</span></a>
                                         </li>
-                                        <li><a href="#valeurs" id ="fix"><span>valeurs</span></a></li>
-                                        <li><a href="#AppM" id ="fix"><span>Application mobile</span></a></li>
+                                        <li><a href="#valeurs" class ="fix"><span>valeurs</span></a></li>
+                                        <li><a href="#AppM" class="fix"><span>Application mobile</span></a></li>
 
                                     </ul>
 
                                 </li>
-                                <li id="Contact" class="main-menu__item main-menu__item--has-child"><a class="main-menu__link" href="#Contact1" id ="fix"><span>Contact</span></a>
+                                <li id="Contact" class="main-menu__item main-menu__item--has-child"><a class="main-menu__link fix" href="#Contact1"><span>Contact</span></a>
 
                                 </li>
                                 <li id="participer" class="main-menu__item main-menu__item--has-child"> <a class="form__submit" href="<?php echo site_url("donate");?>" style="margin-top:15px	"><span>Faire un don</span></a>
@@ -1454,16 +1454,16 @@ plusieurs fois.. ”</p> <br>						<div id="Quoteita" style="color:#777">Coran s
 							<li class="footer-menu__item"><a class="footer-menu__link"
 									href="#">Culturel</a>
 							</li>
-							<li class="footer-menu__item"><a class="footer-menu__link"
-									href="#QuiSommeNous" id ="fix">A
+							<li class="footer-menu__item"><a class="footer-menu__link fix"
+									href="#QuiSommeNous">A
 									Propos </a></li>
 							<li class="footer-menu__item"><a class="footer-menu__link" href="<?php echo site_url("Cultuel");?>">Cultuel</a>
 							</li>
-							<li class="footer-menu__item"><a class="footer-menu__link"
-									href="#vision" id ="fix">Vision</a></li>
+							<li class="footer-menu__item"><a class="footer-menu__link fix"
+									href="#vision" >Vision</a></li>
 							<li class="footer-menu__item"><a class="footer-menu__link" href="<?php echo site_url("Humanitaire");?>">Humanitaire</a>
 							</li>
-							<li class="footer-menu__item"><a class="footer-menu__link" href="#Contact1" id ="fix">Contact</a>
+							<li class="footer-menu__item"><a class="footer-menu__link fix" href="#Contact1" >Contact</a>
 							</li>
 							<li class="footer-menu__item"><a class="footer-menu__link" style="visibility: hidden;">
 									Contact</a></li>
@@ -1634,7 +1634,7 @@ plusieurs fois.. ”</p> <br>						<div id="Quoteita" style="color:#777">Coran s
 	</script>
         <script>
 $(document).ready(function () {
-    $('#fix').on('click', function (e) {
+    $('.fix').on('click', function (e) {
         // e.preventDefault();
 
         var target = this.hash,

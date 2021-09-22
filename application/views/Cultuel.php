@@ -162,21 +162,21 @@
                                 <li id="Accueil" class="main-menu__item main-menu__item--has-child main-menu__item--active"><a class="main-menu__link" href="<?php echo site_url("Home");?>"><span>Accueil</span></a>
                                 </li>
                                 <li id="Somme" class="main-menu__item main-menu__item--has-child
-											"><a class="main-menu__link" href="#QuiSommeNous" id ="fix"><span>A Propos</span></a>
+											"><a class="main-menu__link fix" href="#QuiSommeNous"><span>A Propos</span></a>
                                 </li>
                     <li class="main-menu__item main-menu__item--has-child" id="Utilités"><a class="main-menu__link"><span>Utilités</span></a>
                                     <ul class="main-menu__sub-list">
-                                        <li><a href="#horairep" id ="fix"><span>Horaire de prière</span></a></li>
-                                        <li><a href="#AppM" id ="fix"><span>Application mobile</span></a></li>
-                                        <li> <a href="#QuestionImam" id ="fix"><span>Question à l'Imam</span></a></li>
-                                        <li><a href="#footerid" id ="fix"><span>Liens Utiles</span></a></li>
+                                        <li><a href="#horairep" class ="fix"><span>Horaire de prière</span></a></li>
+                                        <li><a href="#AppM" class ="fix"><span>Application mobile</span></a></li>
+                                        <li> <a href="#QuestionImam" class ="fix"><span>Question à l'Imam</span></a></li>
+                                        <li><a href="#footerid" class ="fix"><span>Liens Utiles</span></a></li>
                                     </ul>
 
                                 </li>
-                                <li id="Contact" class="main-menu__item main-menu__item--has-child"><a class="main-menu__link" href="#Contact1" id ="fix"><span>Contact</span></a>
+                                <li id="Contact" class="main-menu__item main-menu__item--has-child"><a class="main-menu__link fix" href="#Contact1"><span>Contact</span></a>
 
                                 </li>
-                                <li id="participer" class="main-menu__item main-menu__item--has-child"><a class="form__submit_blue" href="#calculzak" id ="fix" style="margin-top:15px;"><span>Je calcule ma ZAKAT</span></a>
+                                <li id="participer" class="main-menu__item main-menu__item--has-child"><a class="form__submit_blue fix" href="#calculzak" style="margin-top:15px;"><span>Je calcule ma ZAKAT</span></a>
 
                                 </li>
 
@@ -1022,25 +1022,25 @@ myButton.close();}
 							<li class="footer-menu__item"><a class="footer-menu__link"
 									href="#">Culturel</a>
 							</li>
-							<li class="footer-menu__item"><a class="footer-menu__link"
-									href="#QuiSommeNous" id ="fix">A
+							<li class="footer-menu__item"><a class="footer-menu__link fix"
+									href="#QuiSommeNous" >A
 									Propos </a></li>
 							<li class="footer-menu__item"><a class="footer-menu__link" href="<?php echo site_url("Cultuel");?>">Cultuel</a>
 							</li>
-							<li class="footer-menu__item"><a class="footer-menu__link"
-									href="#horairep" id ="fix">Horaire</a></li>
+							<li class="footer-menu__item"><a class="footer-menu__link fix"
+									href="#horairep" >Horaire</a></li>
 							<li class="footer-menu__item"><a class="footer-menu__link" href="<?php echo site_url("Humanitaire");?>">Humanitaire</a>
 							</li>
-							<li class="footer-menu__item"><a id ="fix" class="footer-menu__link" href="#QuestionImam">Question à l'Imam</a>
+							<li class="footer-menu__item"><a class="footer-menu__link fix" href="#QuestionImam">Question à l'Imam</a>
 							</li>
 							<li class="footer-menu__item"><a class="footer-menu__link" style="visibility: hidden;">
 									Contact</a></li>
-							<li class="footer-menu__item"><a id ="fix" class="footer-menu__link"
+							<li class="footer-menu__item"><a class="footer-menu__link fix"
 										href="#Contact1">Contact</a></li>		
 							<li class="footer-menu__item"><a class="footer-menu__link" href="#"
 									style="visibility:hidden;" type="hidden">Contact</a></li>
-									<li class="footer-menu__item"><a class="footer-menu__link"
-										href="#footerid" id ="fix">Liens utiles</a></li>	
+									<li class="footer-menu__item"><a class="footer-menu__link fix"
+										href="#footerid">Liens utiles</a></li>	
 						</ul>
 					</nav>
 				</div>
@@ -1490,7 +1490,7 @@ myButton.close();}
     </script>
             <script>
 $(document).ready(function () {
-    $('#fix').on('click', function (e) {
+    $('.fix').on('click', function (e) {
         // e.preventDefault();
 
         var target = this.hash,

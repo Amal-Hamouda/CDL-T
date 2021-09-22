@@ -143,14 +143,14 @@
                                 <li id="Accueil" class="main-menu__item main-menu__item--has-child main-menu__item--active"><a class="main-menu__link" href="<?php echo site_url("Home");?>"><span>Accueil</span></a>
                                 </li>
                                 <li id="Somme" class="main-menu__item main-menu__item--has-child
-											"><a class="main-menu__link" href="#aprop" id ="fix"><span>A Propos</span></a>
+											"><a class="main-menu__link fix" href="#aprop"><span>A Propos</span></a>
                                 </li>
                                 <li id="Horaire" class="main-menu__item main-menu__item--has-child
-											"><a class="main-menu__link" href="#projet" id ="fix"><span>Projets</span></a>
+											"><a class="main-menu__link fix" href="#projet"><span>Projets</span></a>
                                 </li>
-                                <li id="Benevole" class="main-menu__item main-menu__item--has-child"><a class="main-menu__link" href="#devenirBenevole" id ="fix"><span>Devenir Bénevole</span></a>
+                                <li id="Benevole" class="main-menu__item main-menu__item--has-child"><a class="main-menu__link fix" href="#devenirBenevole"><span>Devenir Bénevole</span></a>
 
-                                    <li id="Contact" class="main-menu__item main-menu__item--has-child"><a class="main-menu__link" href="#Contact1" id ="fix"><span>Contact</span></a>
+                                    <li id="Contact" class="main-menu__item main-menu__item--has-child"><a class="main-menu__link fix" href="#Contact1"><span>Contact</span></a>
 
                                     </li>
                                     <li id="participer" class="main-menu__item main-menu__item--has-child"><a class="form__submit_violet" href="<?php echo site_url("donate");?>" style="margin-top:15px;"><span>Faire un don</span></a>
@@ -1118,18 +1118,18 @@ et de son prophète…»
 
                                     <li class="footer-menu__item"><a class="footer-menu__link" href="#">Culturel</a>
                                     </li>
-                                    <li class="footer-menu__item"><a class="footer-menu__link" href="#aprop" id ="fix">A
+                                    <li class="footer-menu__item"><a class="footer-menu__link fix" href="#aprop">A
                                             Propos </a></li>
                                     <li class="footer-menu__item"><a class="footer-menu__link" href="<?php echo site_url("Cultuel");?>">Cultuel</a>
                                     </li>
-                                    <li class="footer-menu__item"><a class="footer-menu__link" href="#projet" id ="fix">Projets</a></li>
+                                    <li class="footer-menu__item"><a class="footer-menu__link fix" href="#projet">Projets</a></li>
                                     <li class="footer-menu__item"><a class="footer-menu__link" href="<?php echo site_url("Humanitaire");?>">Humanitaire</a>
                                     </li>
-                                    <li class="footer-menu__item"><a class="footer-menu__link" href="#devenirBenevole" id ="fix">Devenir Bénévole</a>
+                                    <li class="footer-menu__item"><a class="footer-menu__link fix" href="#devenirBenevole">Devenir Bénévole</a>
                                     </li>
                                     <li class="footer-menu__item"><a class="footer-menu__link" style="visibility: hidden;">
                                             Contact</a></li>
-                                    <li class="footer-menu__item"><a class="footer-menu__link" href="#Contact1" id ="fix">Contact</a>
+                                    <li class="footer-menu__item"><a class="footer-menu__link fix" href="#Contact1">Contact</a>
                                     </li>
                                     <li class="footer-menu__item"><a class="footer-menu__link" href="#" style="visibility:hidden;" type="hidden">Contact</a></li>
                                 </ul>
@@ -1155,7 +1155,7 @@ et de son prophète…»
         <script src="<?php echo base_url();?>/resources/js/common.min.js"></script>
         <script>
 $(document).ready(function () {
-    $('#fix').on('click', function (e) {
+    $('.fix').on('click', function (e) {
         // e.preventDefault();
 
         var target = this.hash,
