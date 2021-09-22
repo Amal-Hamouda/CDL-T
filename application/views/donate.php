@@ -272,7 +272,7 @@
 															</div>
 															</div>
 																								</label>
-									</div>  <input type="button" name="previous" class="previous action-button-previous" value="Previous" /> <input type="button" name="next" class="next action-button" value="Next" id="check" />
+									</div>  <input type="button" name="previous" class="previous action-button-previous" value="Précédent " /> <input type="button" name="next" class="next action-button" value="Suivant" id="check" />
 									<script>
 				function disablenext(){
 					if((!document.getElementById('perso').value)||(document.getElementById('perso').value<=0)){
@@ -372,7 +372,7 @@
 										  </section>
 										<label class="fieldlabels"></label>
 								</div>
-									<input type="button" name="previous" class="previous action-button-previous" value="Previous"  id="previous"/>
+									<input type="button" name="previous" class="previous action-button-previous" value="Précédent"  id="previous"/>
 								</fieldset>
 							</form>
 						</div>

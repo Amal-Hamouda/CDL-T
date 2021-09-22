@@ -1492,7 +1492,34 @@ plusieurs fois.. ”</p> <br>						<div id="Quoteita" style="color:#777">Coran s
 			<!-- donors start-->
 
 			<!-- donors end-->
+			<section class="section action-section" style="padding:120px 0">
+            <div class="jarallax">
+                <picture>
+                    <source srcset="<?php echo base_url();?>/resources/img/sub.png" style="background-image: url(<?php echo base_url();?>/resources/img/sub.png);background-repeat: no-repeat;background-size: cover; background-attachment: fixed; background-position:center center;" /><img class="jarallax-img" src="<?php echo base_url();?>/resources/img/sub.png" alt="img" />
+                </picture>
+            </div>
+            <div class="container" id="Participer" style="margin-top:40px;margin-bottom: -40px ;">
+                <div class="row">
 
+                    <div class="col-12 text-center">
+                        <h2 class="action-section__title" style=" font-family: 'Montserrat';font-weight: 90; color:black">Adhérer<br>
+						À notre cause</h2>
+                    </div>
+                   
+
+
+
+                    <div class="col-12 text-center">
+                        <br>
+                        <h2 class="action-section__title" style="font-weight: 50;font-size:x-large"></h2>
+                        <br>
+						<a class="form__submit" href="<?php echo site_url("adhesion");?>" style="margin-left:30px;"><span>Adhésion</span></a>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
 <!-- testimonials style-1 start-->
 <section class="section testimonials testimonials--style-1">
 	<div class="container">

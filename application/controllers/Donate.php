@@ -37,7 +37,7 @@
      
           \Stripe\Stripe::setApiKey($stripeSecret);
           $product = \Stripe\Product::create([
-              'name'=>'donation'
+              'name'=>'CDL'
           ]);
           $price =\Stripe\Price::create([
 
