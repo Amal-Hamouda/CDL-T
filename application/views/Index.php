@@ -1513,7 +1513,7 @@ plusieurs fois.. ”</p> <br>						<div id="Quoteita" style="color:#777">Coran s
                         <br>
                         <h2 class="action-section__title" style="font-weight: 50;font-size:x-large"></h2>
                         <br>
-						<a class="form__submit" href="<?php echo site_url("adhesion");?>" style="margin-left:30px;"><span>Adhésion</span></a>
+						<a class="form__submit" href="<?php echo site_url("adhesion");?>"><span>Adhésion</span></a>
 
 
                     </div>
