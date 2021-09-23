@@ -212,7 +212,7 @@
 											</div>
 											
 										</div> <label class="fieldlabels" style="text-align: center;">Aidez notre organisation en faisant un don dès aujourd'hui! Tous les dons contribuent directement à faire une différence pour notre cause.</label> 
-									</div> <input type="button" name="next" class="next action-button" value="Faire le Don !" />
+									</div> <input type="button" name="next" class="next action-button-f" value="Faire le Don !" />
 								</fieldset>
 								<fieldset>
 									<div class="form-card">

@@ -27484,6 +27484,24 @@ p {
     outline-width: 0
 }
 
+#msform .action-button-f {
+    width: 200px;
+    background: #d4ac46;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 15px 7px;
+    margin: 10px 10px 10px 5px;
+    float: center;
+}
+
+#msform .action-button-f:hover,
+#msform .action-button-f:focus {
+    background-color: #bd8e17fd
+}
+
 #msform .action-button {
     width: 200px;
     background: #d4ac46;
