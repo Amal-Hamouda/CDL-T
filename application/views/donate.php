@@ -283,10 +283,14 @@
 				}
 				function enablenext(){
 					
-					if((!document.getElementById('perso').value)||(document.getElementById('perso').value<=0)){
+					if(document.getElementById('perso').value>0){
 						console.log(1);
 						document.getElementById('check').disabled = false;
 						document.getElementById('budget-6').checked= true;
+					}
+					else{
+						alert("Veuillez remplir le montant personalisé")
+						document.getElementById('check').disabled = true;
 					}
 				}
 				</script>
