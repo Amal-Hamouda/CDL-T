@@ -285,6 +285,7 @@
 					
 						console.log(1);
 						document.getElementById('check').disabled = false;
+						document.getElementById('budget-6').checked= true;
 					
 				}
 				</script>
