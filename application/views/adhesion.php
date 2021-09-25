@@ -303,7 +303,7 @@
 					
 						console.log(1);
 						document.getElementById('check').disabled = false;						
-						document.getElementById('budget-1').checked;
+						document.getElementById('budget-6').checked= true;
 					
 				}
 				</script>
@@ -483,6 +483,7 @@
 	var personel = document.getElementById("perso").value;
 
 document.getElementById("budget-6").value= personel;
+
     								var pay = document.querySelector('input[type="radio"]:checked').value*100;
                     var amount = pay;
 									console.log(amount);
