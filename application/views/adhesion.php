@@ -302,9 +302,8 @@
 				function enablenext(){
 					
 						console.log(1);
-						console.log(document.getElementById('perso').value);
-
-						document.getElementById('check').disabled = false;
+						document.getElementById('check').disabled = false;						
+						document.getElementById('budget-1').checked;
 					
 				}
 				</script>
