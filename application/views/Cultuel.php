@@ -503,7 +503,7 @@ votre 4ème pilier de l'Islam d'où vous êtes</h2>
                                     <br>
                                     <br>
                                     <center>
-                                        <input type="button" class="button button--primary" id="donate_button2" style="border-color: #4A4C70; color: rgb(0, 0, 0);" data-amount="50" data-formId="2426" href="#" value="Je paie ma zakat" data-toggle="modal" data-target=".bd-example-modal-lg3" />
+                                        <input type="button" class="button button--primary" id="donate_button2" style="border-color: #4A4C70; color: rgb(0, 0, 0);" data-amount="50" data-formId="2426" href="#" value="Je paie ma zakat" data-toggle="modal"  />
                                     </center>
 
                                 </div>
@@ -1433,6 +1433,15 @@ else{
             var pay = document.getElementById("Szakat").value*100;
                     var amount = pay;
 									console.log(amount);
+                                    if( amount > 0 ){
+                                     var donate_button2 = document.getElementById('donate_button2');
+
+console.log(donate_button2.dataset.target);
+
+donate_button2.dataset.target = ".bd-example-modal-lg3";
+
+console.log(donate_button2.dataset.target);
+
     var handler = StripeCheckout.configure({
       key: 'pk_test_51JHpHoG89vko2fx6HqUIn0ktlO2HJJPYj97tiI8Fww881IVfrX9KzXVa9xc4UjijCuDQg2DfwJa31XPGJx1cA3rj00cKqQiClC',
       locale: 'auto',
@@ -1492,7 +1501,11 @@ else{
 myButton.render('#paypal-payment-button');
 document.getElementById('xclose3').onclick = function() {
 myButton.close();}
-        });
+        }else{
+    alert("Veuillez remplir un montant positif");
+
+
+}});
         $("#xclose").click(function() {
             $("#show").hide();
             $("#donate_button9").show();
