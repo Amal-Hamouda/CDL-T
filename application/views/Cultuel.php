@@ -557,7 +557,7 @@ votre 4ème pilier de l'Islam d'où vous êtes</h2>
                                 <hr />
                                 <br>
                                 <br>
-                                <center> <input type="button" class="button button--primary" data-toggle="modal" data-target=".bd-example-modal-lg3" id="PaymentButton" style="border-color: #4A4C70; color: rgb(0, 0, 0);" data-amount="50" data-formId="2426" href="#" value="je verse ma zakat" />
+                                <center> <input type="button" class="button button--primary" data-toggle="modal"  id="PaymentButton" style="border-color: #4A4C70; color: rgb(0, 0, 0);" data-amount="50" data-formId="2426" href="#" value="je verse ma zakat" />
                                 </center>
 
                                 <br>
@@ -609,11 +609,21 @@ votre 4ème pilier de l'Islam d'où vous êtes</h2>
 
                 </div>
                 <script src="https://checkout.stripe.com/checkout.js"></script>
-                <script>
-        document.getElementById('PaymentButton').onclick = function() {
+                <script> document.getElementById('PaymentButton').onclick = function() {
             var pay = document.getElementById("SzakatP").value*100;
                     var amount = pay;
-									console.log(amount);
+									console.log(amount+"t");
+
+
+                                    if( amount > 0 ){
+                                        
+ var PaymentButton = document.getElementById('PaymentButton');
+
+console.log(PaymentButton.dataset.target);
+
+PaymentButton.dataset.target = ".bd-example-modal-lg3";
+
+console.log(PaymentButton.dataset.target);
     var handler = StripeCheckout.configure({
       key: 'pk_test_51JHpHoG89vko2fx6HqUIn0ktlO2HJJPYj97tiI8Fww881IVfrX9KzXVa9xc4UjijCuDQg2DfwJa31XPGJx1cA3rj00cKqQiClC',
       locale: 'auto',
@@ -673,6 +683,12 @@ votre 4ème pilier de l'Islam d'où vous êtes</h2>
 myButton.render('#paypal-payment-button');
 document.getElementById('xclose3').onclick = function() {
 myButton.close();}
+}
+else{
+    alert("Veuillez remplir un montant positif");
+
+
+}
 }
   </script>
 
