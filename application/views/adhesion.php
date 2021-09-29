@@ -358,14 +358,8 @@
  <script src="https://www.paypal.com/sdk/js?client-id=AcAUrZDfwcXyX3G0de-lbhxpiT6fqTgTBDyI31Zd9P4WdkbUX7AaoBXEbvNewQp5EpzaAvP0ZjEmUTCW&disable-funding=credit,card"></script>
 	
 																 <div id="paypal" class="tab-pane fade pt-3">
-																 <div id="smart-button-container">
-	   <div style="text-align: center;">
- 
-						 <div id="paypal-payment-button">
- 
-						 </div>
-	   </div>
-	 </div>
+																
+																 <a id="myLink" href="javascript:Form2.submit()">A Link</a>
 																 </div> 
 																 
    <!-- End -->
@@ -490,6 +484,11 @@
 document.getElementById("budget-6").value= personel;
 
     								var pay = document.querySelector('input[type="radio"]:checked').value*100;
+
+    								var AmountPay = document.querySelector('input[type="radio"]:checked').value;
+									
+									$('#myLink').wrap('<form id ="form2" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top"><input type="hidden" name="cmd" value="_xclick-subscriptions"><input type="hidden" name="business" value="Tutorial@business.example.com"><input type="hidden" name="lc" value="FR"><input type="hidden" name="item_name" value="test"><input type="hidden" name="item_number" value="002"><input type="hidden" name="no_note" value="1"><input type="hidden" name="src" value="1"><input type="hidden" name="currency_code" value="USD"><input type="hidden" name="bn" value="PP-SubscriptionsBF:btn_subscribeCC_LG.gif:NonHostedGuest"><table><tr><td><input type="hidden" name="on0" value="Payments">Payments</td></tr><tr><td><select name="os0"><option value="Option 1">Option 1 :'+AmountPay+' USD - monthly</option></select> </td></tr></table><input type="hidden" name="option_select0" value="Option 1"><input type="hidden" name="option_amount0" value="<script>amount<script>"><input type="hidden" name="option_period0" value="M"><input type="hidden" name="option_frequency0" value="1"><input type="hidden" name="option_select1" value="Option 2"><input type="hidden" name="option_amount1" value="20.00"><input type="hidden" name="option_period1" value="M"><input type="hidden" name="option_frequency1" value="1"><input type="hidden" name="option_select2" value="Option 3"><input type="hidden" name="option_amount2" value="'+AmountPay+'"><input type="hidden" name="option_period2" value="M"><input type="hidden" name="option_frequency2" value="1"><input type="hidden" name="option_index" value="0"><input type="image" src="https://www.sandbox.paypal.com/en_US/FR/i/btn/btn_subscribeCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"><img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1"></form>');
+
                     var amount = pay;
 									console.log(amount);
     var stripe= Stripe('pk_test_51JHpHoG89vko2fx6HqUIn0ktlO2HJJPYj97tiI8Fww881IVfrX9KzXVa9xc4UjijCuDQg2DfwJa31XPGJx1cA3rj00cKqQiClC')
