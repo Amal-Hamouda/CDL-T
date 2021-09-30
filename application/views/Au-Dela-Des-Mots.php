@@ -81,7 +81,7 @@
 
                     </ul>
                     <!-- aside menu end-->
-                    <div class="aside-inner"><span class="aside-inner__title">Email</span><a class="aside-inner__link" href="mailto:support@helpo.org">Bureau@centre-des-lumieres.fr</a></div>
+                    <div class="aside-inner"><span class="aside-inner__title">Email</span><a class="aside-inner__link" href="audeladesmots.asso@gmail.com">audeladesmots.asso@gmail.com</a></div>
                     <div class="aside-inner"><span class="aside-inner__title">Phone numbers</span><a class="aside-inner__link" href="tel:06 72 23 00 00">06 72 23 00 00</a><a class="aside-inner__link" href="tel:06 72 23 00 00">06 72 23 00 00</a></div>
                     <ul class="aside-socials">
                         <li class="aside-socials__item"><a class="aside-socials__link" href="https://www.facebook.com/Centredeslumieres/"><i
@@ -104,7 +104,7 @@
         <div class="top-bar d-none d-lg-block" style="background:#7E42AE">
             <div class="container-fluid">
                 <div class="row align-items-end">
-                    <div class="col-lg-9"><a class="top-bar__link" href="tel:06 72 23 00 00">06 72 23 00 00</a><a class="top-bar__link" href="mailto:Bureau@centre-des-lumieres.fr">Bureau@centre-des-lumieres.fr</a></div>
+                    <div class="col-lg-9"><a class="top-bar__link" href="tel:06 72 23 00 00">06 72 23 00 00</a><a class="top-bar__link" href="mailto:audeladesmots.asso@gmail.com">audeladesmots.asso@gmail.com</a></div>
                     <div class="col-lg-3 text-right">
                         <ul class="socials">
                             <li class="socials__item"><a class="socials__link" href="https://www.facebook.com/Centredeslumieres/"><i class="fa fa-facebook"
@@ -302,7 +302,7 @@
             <!-- testimonials style-1 end-->
             </section>
             <!--floating img-->
-            <a href="<?php echo site_url("donate");?>" id="StikyButton" style="visibility: hidden; width:65px;height: 65px ; top:85%;box-shadow: 1px 1px 4px 0px white;" class="float">
+            <a href="<?php echo site_url("donate");?>" id="StikyButton" style="visibility: hidden; width:65px;height: 65px ; top:85%;box-shadow: 1px 1px 4px 0px white;" class="float" title="faire un don">
                 <img class="img-float" src="<?php echo base_url();?>/resources/img/Asset 1.png" />
             </a>
             <!--About us Start-->
@@ -358,14 +358,13 @@ Les textes coraniques ou prophétiques qui incitent à l’action humanitaire, q
                 <div class="row">
                         <div class="col-xl-12 text-center mt-3"><i class="fas fa-quote-left fa-2x" style="color: #fff;"></i></div>
                         <div class="col-xl-12 text-center m-2">
-                        <div class="col-xl-12 text-center mb-3" style="color: whitesmoke;font-weight:100">Le hadith du Prophète rapporté par Al Hakim </div>
-                            <h2 class="Quote_1" style="letter-spacing: 0.6px;font-weight:500 ;text-align:center">« Si, dans une commune, un homme décède de famine,<br>
-alors tous les résidants de cette commune se mettent hors de la protection de Dieu<br>
-et de son prophète…» 
+                        <div class="col-xl-12 text-center mb-3" style="color: whitesmoke;font-weight:100"></div>
+                            <h2 class="Quote_1" style="letter-spacing: 0.6px;font-weight:500 ;text-align:center">« Etre bienveillant,<br>
+                            c'est la meilleure façon de réaliser son propre bonheur » 
                             </h2>
                         </div>
                         <br>
-                        <div class="col-xl-12 text-center mb-3" style="color: whitesmoke;font-weight:100">_ Al-Hakim, Al-Moustadrak</div>
+                        <div class="col-xl-12 text-center mb-3" style="color: whitesmoke;font-weight:100"></div>
                     </div>
 
                 </div>
@@ -775,7 +774,7 @@ et de son prophète…»
                                         <div class="testimonials-slider__item">
                                             <div class="testimonials-slider__icon primary-color">“</div>
                                             <div class="testimonials-slider__text">
-                                                <h4>Projet 1</h4>
+                                                <h4>Food truck</h4>
                                                 <div class="row">
                                                     <div class="col-xl-12 m-0 p-0 col-lg-8 col-md-8">
                                                         <p>Slickhead grunion lake trout. Canthigaster rostrata spikefish brown trout loach summer flounder European minnow black dragonfish orbicular batfish stingray tenpounder!</p>
@@ -795,7 +794,7 @@ et de son prophète…»
                                         <div class="testimonials-slider__item">
                                             <div class="testimonials-slider__icon primary-color">“</div>
                                             <div class="testimonials-slider__text">
-                                                <h4>Projet 2</h4>
+                                                <h4>Drive</h4>
                                                 <div class="row">
                                                     <div class="col-xl-12 m-0 p-0 col-lg-8 col-md-8">
                                                         <p>Slickhead grunion lake trout. Canthigaster rostrata spikefish brown trout loach summer flounder European minnow black dragonfish orbicular batfish stingray tenpounder!</p>
@@ -987,7 +986,7 @@ et de son prophète…»
                                     <div class="icon-item__text" style="margin-bottom:-20px">
                                         <p>Adresse</p>
                                     </div>
-                                    <div class="icon-item__text"> 577 Bellevue Avenue <br> Malden,MA 02148</div>
+                                    <div class="icon-item__text"> 85 rue de Dijon <br>  77290 Mitry-Mory</div>
                                 </div>
                             </div>
                             <div class="col-sm-4 col-lg-4">
@@ -996,7 +995,7 @@ et de son prophète…»
                                     <div class="icon-item__text" style="margin-bottom:-20px">
                                         <p>Messagerie</p>
                                     </div>
-                                    <div class="icon-item__text"></div> <a class="icon-item__link" href="mailto:Bureau@centre-des-lumieres.fr">au.dela.des.mots@gmail.com</a><br>+1 222-345-0000
+                                    <div class="icon-item__text"></div> <a class="icon-item__link" href="mailto:audeladesmots.asso@gmail.com">audeladesmots.asso@gmail.com</a><br>0611335723
                                 </div>
                             </div>
                             <div class="col-sm-4 col-lg-4">
@@ -1085,9 +1084,8 @@ et de son prophète…»
                         <div class="footer-contacts">
                             <p class="footer-contacts__address">Rue Galilée Zac de la Vilette aux aulnes 77290 mitry-mory
                             </p>
-                            <p class="footer-contacts__phone">Phone: <a href="tel:06 72 23 00 00">06 72 23 00 00</a>
-                            </p>
-                            <p class="footer-contacts__mail">Email: <a href="mailto:support@helpo.org">Bureau@centre-des-lumieres.fr</a></p>
+                           
+                            <p class="footer-contacts__mail">Email: <a href="audeladesmots.asso@gmail.com">audeladesmots.asso@gmail.com</a></p>
                         </div>
                         <!-- footer socials start-->
                         <ul class="footer-socials">

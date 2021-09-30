@@ -278,6 +278,10 @@
                         <h2 class="subscribe__title" style="letter-spacing: 0.6px;color: black;">L’aumône éteint le péché exactement comme<br>l’eau éteint le feu…
                         </h2>
                     </div>
+                    <div class="col-xl-12 text-center m-3">
+                        <h2 class="subscribe__title" style="letter-spacing: 0.6px;color: black;">الصدقة تطفئ الخطيئة كما يطفئ الماء النار
+                        </h2>
+                    </div>
                     <div class="col-xl-12 text-center mb-3" style="color:#626262;"id="Quoteita">Al-Boukhari, Sahih, hadith N° 2951</div>
                 </div>
 
@@ -711,6 +715,10 @@ else{
                         <h2 class="subscribe__title" style="letter-spacing: 0.6px;color: white;">Ceux qui dépensent leurs biens pour Dieu <br>ressemblent à un grain d’où naissent sept épis,<br> chaque épi étant constitué de cent grains. Et <br>Dieu multiplie davantage à qui Il veut…
                         </h2>
                     </div>
+                    <div class="col-xl-12 text-center m-3">
+                        <h2 class="subscribe__title" style="letter-spacing: 0.6px;color: white;">مَثَلُ الَّذِينَ يُنْفِقُونَ أَمْوَالَهُمْ فِي سَبِيلِ اللَّهِ كَمَثَلِ حَبَّةٍ أَنْبَتَتْ سَبْعَ سَنَابِلَ <br>فِي كُلِّ سُنْبُلَةٍ مِائَةُ حَبَّةٍ وَاللَّهُ يُضَاعِفُ لِمَنْ يَشَاءُ 
+                        </h2>
+                    </div>
                     <div class="col-xl-12 text-center mb-3" id="Quoteita" style="font-style:italic;color:#D4D4D4">Coran, sourate 1, verset 261.</div>
                 </div>
             </div>
@@ -824,7 +832,7 @@ else{
 									</svg>
                             </div>
                             <div class="icon-item__text">
-                                <p style="color: black;">Adress: Rue Galilée Zac de la Vilette aux aulnes 77290 mitry-mory</p>
+                                <p style="color: black;">Adresse: Rue Galilée Zac de la Vilette aux aulnes 77290 mitry-mory</p>
                             </div>
                         </div>
                     </div>
@@ -837,7 +845,7 @@ else{
 									</svg>
                             </div>
                             <div class="icon-item__text">
-                                <p style="color: black;">Phone: <a class="icon-item__link" href="tel:06 72 23 00 00" style="color: black;">06 72 23 00 00</a>
+                                <p style="color: black;">Phone: <a class="icon-item__link" href="tel:06 25 30 40 83" style="color: black;">06 25 30 40 83</a>
                                 </p>
                             </div>
                         </div>
@@ -851,7 +859,7 @@ else{
 									</svg>
                             </div>
                             <div class="icon-item__text">
-                                <p style="color: black;">Email: <a class="icon-item__link" href="mailto:Bureau@centre-des-lumieres.fr" style="color: black;">Bureau@centre-<br>des-lumieres.fr</a>
+                                <p style="color: black;">Email: <a class="icon-item__link" href="mailto:yourham@gmail.com" style="color: black;">yourham@<br>gmail.com</a>
                                 </p>
                             </div>
                         </div>
@@ -887,7 +895,7 @@ else{
             <!-- section start contact-->
             </br>
      
- <a href="<?php echo base_url();?>index.php/donate" id="StikyButton" style=" width:65px;height: 65px ; top:85%;box-shadow: 1px 1px 4px 0px white;" class="float">
+ <a href="<?php echo base_url();?>index.php/donate" id="StikyButton" style=" width:65px;height: 65px ; top:85%;box-shadow: 1px 1px 4px 0px white;" class="float" title="faire un don">
                 <img class="img-float" src="<?php echo base_url();?>/resources/img/Asset 1.png" />
             </a>
             <div class="container">
@@ -1002,10 +1010,10 @@ else{
 				<div class="footer-contacts">
 					<p class="footer-contacts__address">Rue Galilée Zac de la Vilette aux aulnes 77290
 						mitry-mory</p>
-					<p class="footer-contacts__phone">Phone: <a href="tel:06 72 23 00 00">06 72 23 00 00</a>
+					<p class="footer-contacts__phone">Phone: <a href="tel:06 25 30 40 83">06 25 30 40 83</a>
 					</p>
 					<p class="footer-contacts__mail">Email: <a
-							href="mailto:support@helpo.org">Bureau@centre-des-lumieres.fr</a></p>
+							href="mailto:yourham@gmail.com">yourham@gmail.com</a></p>
 				</div>
 				<!-- footer socials start-->
 				<ul class="footer-socials">

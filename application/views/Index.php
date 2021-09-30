@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="shortcut icon" href="<?php echo base_url();?>/resources/img/favicon.ico" />
-    <title>Centre des lumieress</title>
+    <title>Centre des lumieres</title>
     <!-- styles-->
 
     <link rel="stylesheet" href="<?php echo base_url();?>/resources/css/styles.min.css" />
@@ -215,7 +215,7 @@
 
 		</section>
 
-		<a href="<?php echo base_url();?>index.php/donate" id="StikyButton" style=" width:65px;height: 65px ; top:85%;box-shadow: 1px 1px 4px 0px white;" class="float">
+		<a href="<?php echo base_url();?>index.php/donate" id="StikyButton" style=" width:65px;height: 65px ; top:85%;box-shadow: 1px 1px 4px 0px white;" class="float" title="faire un don">
                 <img class="img-float" src="<?php echo base_url();?>/resources/img/Asset 1.png" />
             </a>
 
