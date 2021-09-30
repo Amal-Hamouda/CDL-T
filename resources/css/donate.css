@@ -27876,7 +27876,15 @@ b {
     -webkit-box-shadow: 0 20px 38px rgba(0, 0, 0, .16);
     box-shadow: 0 20px 38px rgba(0, 0, 0, .16)
 }
-
+#paypalimg{
+    height:100px;display: block;margin-left: auto;margin-right: auto;width: 300px !important
+    }
+    
+    @media (max-width:576px) {
+        #paypalimg{
+           width:180px !important;
+            }
+    }
 
 /*# sourceMappingURL=styles.min.css.map */
 
