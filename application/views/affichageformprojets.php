@@ -91,7 +91,7 @@
                      <td class="cell100 column3"><?php echo $row->lieu; ?></td>
                      <td class="cell100 column4"><textarea readonly style="border: none; overflow: auto; outline: none; box-shadow: none; resize:none;"><?php echo $row->description; ?></textarea></td>
                      <td class="cell100 column5"><?php echo $row->Budget; ?></td>
-                     <td class="cell100 column6"><img src="<?php echo base_url();?>/resources/img/imgmodel.jpg" style="height:50px"></td>                     
+                     <td class="cell100 column6"><img src="<?php echo base_url();?>/resources/img/imgmodal.jpg" style="height:50px"></td>                     
                      <td class="cell100 column7"><img src="<?php echo base_url();?>/resources/img/prj1.jpg" style="height:50px"></td>
                      <td class="cell100 column8"><img src="<?php echo base_url();?>/resources/img/Palestine.jpg" style="height:50px"></td>
                 </tr>
