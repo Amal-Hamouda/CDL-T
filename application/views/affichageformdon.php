@@ -91,8 +91,8 @@
                      <td class="cell100 column4"><?php echo $row->email; ?></td>
                      <td class="cell100 column5"><?php echo $row->payment_method; ?></td>
                      <td class="cell100 column6"><textarea readonly style="border: none; overflow: auto; outline: none; box-shadow: none; resize:none;"><?php echo $row->msg; ?></textarea></td>
-                     <td class="cell100 column6"><?php echo $row->montant; ?></td>
-                     <td class="cell100 column7"><?php echo $row->datejour; ?></td>
+                     <td class="cell100 column7"><?php echo $row->montant; ?></td>
+                     <td class="cell100 column8"><?php echo $row->datejour; ?></td>
 
                 </tr>
            <?php
@@ -102,7 +102,7 @@
            {
            ?>
                 <tr class="row100 body">
-                     <td class="cell100" colspan="7">No Data Found</td>
+                     <td class="cell100" colspan="8">No Data Found</td>
                 </tr>
            <?php
            }

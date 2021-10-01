@@ -141,4 +141,16 @@ function fetch_adhesion()
 	  }
 	  else{ redirect('welcome');}
 }
+function fetch_projets()
+{
+	  if($this->session->userdata('id'))
+	  {
+	 //$query = $this->db->get("tbl_user");
+	 //select * from tbl_user
+	 //$query = $this->db->query("SELECT * FROM tbl_user ORDER BY id DESC");
+	 $data["fetch_projets"] = $this->db->get("projets");
+	 $this->load->view('affichageformprojets', $data);
+	  }
+	  else{ redirect('welcome');}
+}
 }

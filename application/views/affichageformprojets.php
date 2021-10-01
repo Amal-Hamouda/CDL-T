@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Adhésion</title>
+	<title>contact</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->	
@@ -18,7 +18,7 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>resources/perfect-scrollbar/perfect-scrollbar.css">
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>resources/css/util.css">
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>resources/css/main_ad.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>resources/css/main.css">
     <link href="<?php echo base_url();?>resources/css/styles.css" rel="stylesheet" />
 <!--===============================================================================================-->
 </head>
@@ -33,6 +33,7 @@
                     <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?php echo base_url();?>index.php/home/fetch_benevole">Benevole</a>
                     <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?php echo base_url();?>index.php/home/fetch_don">Don</a>
                     <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?php echo base_url();?>index.php/home/fetch_adhesion">Adhésion</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?php echo base_url();?>index.php/home/fetch_projets">Projets</a>
                 </div>
             </div>
             <!-- Page content wrapper-->
@@ -53,7 +54,7 @@
                 </nav>
                 <!-- Page content-->
                 <div class="container-fluid">
-                    <h1 class="mt-4">Adhésion</h1>
+                    <h1 class="mt-4">Projets</h1>
 <div class="limiter">
 		<div class="container-table100">
 			<div class="wrap-table100">
@@ -62,20 +63,14 @@
 						<table>
 							<thead>
 								<tr class="row100 head">
-									<th class="cell100 column1">ID</th>
-									<th class="cell100 column2">First Name</th>
-									<th class="cell100 column3">Last Name</th>
-                                    <th class="cell100 column4">Date of birth</th>
-									<th class="cell100 column5">Adresse</th>
-									<th class="cell100 column6">Ville</th>
-									<th class="cell100 column7">Pays</th>
-									<th class="cell100 column8">Email</th>
-									<th class="cell100 column9">Phone number</th>
-                                    <th class="cell100 column10">Amount</th>
-                                    <th class="cell100 column11">Payment method</th>
-                                    <th class="cell100 column12">Message</th>
-                                    <th class="cell100 column13">Date</th>
-
+									<th class="cell100 column1">Nom du Projet</th>
+									<th class="cell100 column2">Date</th>
+									<th class="cell100 column3">Lieu</th>
+									<th class="cell100 column4">Description</th>
+									<th class="cell100 column5">Budget</th>
+                                    <th class="cell100 column6">Image couverture</th>
+                                    <th class="cell100 column7">Image exterieur</th>
+                                    <th class="cell100 column8">Image interieur</th>
 								</tr>
 							</thead>
 						</table>
@@ -85,26 +80,20 @@
 						<table>
 							<tbody>
                                    <?php
-           if($fetch_adhesion->num_rows() > 0)
+           if($fetch_projets->num_rows() > 0)
            {
-                foreach($fetch_adhesion->result() as $row)
+                foreach($fetch_projets->result() as $row)
                 {
            ?>
                 <tr class="row100 body">
-                     <td class="cell100 column1"><?php echo $row->id; ?></td>
-                     <td class="cell100 column2"><?php echo $row->prenom; ?></td>
-                     <td class="cell100 column3"><?php echo $row->nom; ?></td>
-                     <td class="cell100 column4"><?php echo $row->date_de_naissance; ?></td>
-                     <td class="cell100 column5"><?php echo $row->adresse; ?></td>
-                     <td class="cell100 column6"><?php echo $row->ville; ?></td>
-                     <td class="cell100 column7"><?php echo $row->pays; ?></td>
-                     <td class="cell100 column8"><?php echo $row->email; ?></td>
-                     <td class="cell100 column9"><?php echo $row->tel; ?></td>
-                     <td class="cell100 column10"><?php echo $row->montant; ?></td>
-                     <td class="cell100 column11"><?php echo $row->payment_method; ?></td>
-                     <td class="cell100 column12"><textarea readonly style="border: none; overflow: auto; outline: none; box-shadow: none; resize:none;"><?php echo $row->msg; ?></textarea></td>
-                     <td class="cell100 column13"><?php echo $row->datejour; ?></td>
-
+                     <td class="cell100 column1"><?php echo $row->nomduprojet; ?></td>
+                     <td class="cell100 column2"><?php echo $row->date; ?></td>
+                     <td class="cell100 column3"><?php echo $row->lieu; ?></td>
+                     <td class="cell100 column4"><textarea readonly style="border: none; overflow: auto; outline: none; box-shadow: none; resize:none;"><?php echo $row->description; ?></textarea></td>
+                     <td class="cell100 column5"><?php echo $row->Budget; ?></td>
+                     <td class="cell100 column6"><img src="<?php echo base_url();?>/resources/img/imgmodel.jpg" style="height:50px"></td>                     
+                     <td class="cell100 column7"><img src="<?php echo base_url();?>/resources/img/prj1.jpg" style="height:50px"></td>
+                     <td class="cell100 column8"><img src="<?php echo base_url();?>/resources/img/Palestine.jpg" style="height:50px"></td>
                 </tr>
            <?php
                 }
@@ -113,13 +102,14 @@
            {
            ?>
                 <tr class="row100 body">
-                     <td class="cell100" colspan="13">No Data Found</td>
+                     <td class="cell100" colspan="8">No Data Found</td>
                 </tr>
            <?php
            }
            ?>			
 							</tbody>
 						</table>
+     
 					</div>
 				</div>
                 </div>
