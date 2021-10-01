@@ -88,7 +88,7 @@
                 {
            ?>
                 <tr class="row100 body">
-                <td class="cell100 column1"> <input type="checkbox" id="valide" name="valide" value="valide"></td>
+                <td class="cell100 column1"> <input type="checkbox" id="valide" name="valide" value="valide"  style="margin-left:auto; margin-right:auto;"></td>
                      <td class="cell100 column1"><?php echo $row->nomduprojet; ?></td>
                      <td class="cell100 column2"><?php echo $row->date; ?></td>
                      <td class="cell100 column3"><?php echo $row->lieu; ?></td>
