@@ -63,14 +63,16 @@
 						<table>
 							<thead>
 								<tr class="row100 head">
+                                     <th class="cell100 column1">Public</th>
 									<th class="cell100 column1">Nom du Projet</th>
 									<th class="cell100 column2">Date</th>
 									<th class="cell100 column3">Lieu</th>
 									<th class="cell100 column4">Description</th>
 									<th class="cell100 column5">Budget</th>
                                     <th class="cell100 column6">Image couverture</th>
-                                    <th class="cell100 column7">Image exterieur</th>
-                                    <th class="cell100 column8">Image interieur</th>
+                                    <th class="cell100 column7">Image exterieure</th>
+                                    <th class="cell100 column8">Image interieure</th>
+                                 
 								</tr>
 							</thead>
 						</table>
@@ -86,6 +88,7 @@
                 {
            ?>
                 <tr class="row100 body">
+                <td class="cell100 column1"> <input type="checkbox" id="valide" name="valide" value="valide"></td>
                      <td class="cell100 column1"><?php echo $row->nomduprojet; ?></td>
                      <td class="cell100 column2"><?php echo $row->date; ?></td>
                      <td class="cell100 column3"><?php echo $row->lieu; ?></td>

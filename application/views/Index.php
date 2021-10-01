@@ -1949,7 +1949,7 @@ $(document).ready(function () {
             $target = $(target);
 
        $('html, body').stop().animate({
-        'scrollTop': $target.offset().top-80
+        'scrollTop': $target.offset().top-90
     }, 0, 'swing', function () {
     });
 
