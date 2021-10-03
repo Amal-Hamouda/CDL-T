@@ -90,13 +90,13 @@
                 <tr class="row100 body">
                 <td class="cell100 column1"> <input type="checkbox" id="valide" name="valide" value="valide"  style="margin-left:auto; margin-right:auto;"></td>
                      <td class="cell100 column1"><?php echo $row->nomduprojet; ?></td>
-                     <td class="cell100 column2"><?php echo $row->date; ?></td>
+                     <td class="cell100 column2"><?php echo $row->dateproj; ?></td>
                      <td class="cell100 column3"><?php echo $row->lieu; ?></td>
                      <td class="cell100 column4"><textarea readonly style="border: none; overflow: auto; outline: none; box-shadow: none; resize:none;"><?php echo $row->description; ?></textarea></td>
                      <td class="cell100 column5"><?php echo $row->Budget; ?></td>
-                     <td class="cell100 column6"><img src="<?php echo base_url();?>/resources/img/imgmodal.jpg" style="height:50px"></td>                     
-                     <td class="cell100 column7"><img src="<?php echo base_url();?>/resources/img/prj1.jpg" style="height:50px"></td>
-                     <td class="cell100 column8"><img src="<?php echo base_url();?>/resources/img/Palestine.jpg" style="height:50px"></td>
+                     <td class="cell100 column6"><img src="<?php echo base_url();?>/resources/<?php echo $row->image_file_cov; ?>" style="height:50px"></td>                     
+                     <td class="cell100 column7"><img src="<?php echo base_url();?>/resources/<?php echo $row->image_file_ext; ?>" style="height:50px"></td>
+                     <td class="cell100 column8"><img src="<?php echo base_url();?>/resources/<?php echo $row->image_file_cov; ?>" style="height:50px"></td>
                 </tr>
            <?php
                 }
