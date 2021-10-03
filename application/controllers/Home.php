@@ -157,4 +157,54 @@ public function AjoutProj()
 {
 	$this->load->view('AjoutProj');
 }
+function ajoutprojet()
+      {
+
+        $config['upload_path'] = './resources/';
+                $config['allowed_types'] = 'jpg|jpeg|png|gif';
+                $config['encrypt_name'] = TRUE ;
+                $this->load->library('upload', $config);
+                if($this->upload->do_upload('image_file_cov'))
+                {
+                    $data = $this->upload->data();
+                    $file_name=$this->upload->data();
+         $image=$file_name['file_name'];
+        
+         if($this->upload->do_upload('image_file_ext')){
+            $data = $this->upload->data();
+            $file_name2=$this->upload->data();
+ $image2=$file_name2['file_name'];
+            
+        if($this->upload->do_upload('image_file_ext')){
+            $data = $this->upload->data();
+            $file_name3=$this->upload->data();
+        $image3=$file_name3['file_name'];
+ 
+
+           
+            $nomduprojet=htmlspecialchars($this->input->post('nomduprojet'));
+            $nomduprojet=AddSlashes($nomduprojet);
+            $dateproj=$this->input->post('dateproj');  
+            $lieu=htmlspecialchars($this->input->post('lieu'));
+            $lieu=AddSlashes($lieu);
+            $description=htmlspecialchars($this->input->post('description'));
+            $description=AddSlashes($description);
+            $participant=$this->input->post('participant');
+            $budget=$this->input->post('budget');
+           
+            
+            
+
+            //$query =$this->db->query("INSERT INTO projets(nomduprojet,dateproj,lieu,description,participant,Budget,img_file_cov,img_file_ext,img_file_int) VALUES ('$nomduprojet','$dateproj','$lieu','$description','$participant','$budget','1','0','0','0','$image')");
+           $query =$this->db->query("INSERT INTO projets(nomduprojet,dateproj,lieu,description,participant,Budget,image_file_cov,image_file_ext,image_file_int) VALUES ('$nomduprojet','$dateproj','$lieu','$description','$participant','$budget','$image','$image2','$image3')");
+
+
+          
+
+
+        }
+               }
+            }
+
+      }
 }

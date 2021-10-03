@@ -43,7 +43,7 @@
                 alert('noimg');
             } else {
                 $.ajax({
-                    url: "<?php echo base_url(); ?>index.php/loginadmin/ajoutprojet",
+                    url: "<?php echo base_url(); ?>index.php/Home/ajoutprojet",
                     method: "POST",
                     data: new FormData(this),
                     contentType: false,
