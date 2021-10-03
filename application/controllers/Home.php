@@ -153,4 +153,8 @@ function fetch_projets()
 	  }
 	  else{ redirect('welcome');}
 }
+public function AjoutProj()
+{
+	$this->load->view('AjoutProj');
+}
 }
