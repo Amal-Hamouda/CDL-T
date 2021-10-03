@@ -95,6 +95,10 @@ function fetch_contact()
 		   $data["fetch_contact"] = $this->db->get("contact");
 		   $this->load->view('affichageformcontact', $data);
       }
+	  public function AjoutProj()
+	{
+		$this->load->view('AjoutProj');
+	}
 function fetch_question()
       {
            //$query = $this->db->get("tbl_user");
