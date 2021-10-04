@@ -82,14 +82,14 @@
         <label for="budget" class="col-form-label">Budget:</label><br>
         <input type="number" style="background-color:#6c7ae02e;border:1px solid #ced4da" class="form-control" id="budget" name="budget"><br>
         <label for="image_file_cov">Image Couverture: <i class="fa fa-image" style="cursor:pointer;font-size:24px"></i></label><br>
-        <input type="file" style="display:none;visibility:none" onchange="getImage(this.value);" name="image_file_cov" id="image_file_cov" class="btn btn-info" /><br>
-        <div id="display-image"></div>
+        <input type="file" style="display:none;visibility:none" onchange="loadFile(event)" name="image_file_cov" id="image_file_cov" class="btn btn-info" /><br>
+        <img id="display-image" width="200"/>
         <label for="image_file_ext">Image Exterieure: <i class="fa fa-image" style="cursor:pointer;font-size:24px"></i></label><br>
-        <input type="file" style="display:none;visibility:none" onchange="getImage2(this.value);" name="image_file_ext" id="image_file_ext" class="btn btn-info" /><br>
-        <div id="display-image2"></div>
+        <input type="file" style="display:none;visibility:none" onchange="loadFile2(event)" name="image_file_ext" id="image_file_ext" class="btn btn-info" /><br>
+        <img id="display-image2" width="200"/>
         <label for="image_file_int">Image Interieure: <i class="fa fa-image" style="cursor:pointer;font-size:24px"></i></label><br>
-        <input type="file" style="display:none;visibility:none" onchange="getImage3(this.value);" name="image_file_int" id="image_file_int" class="btn btn-info" /><br>
-        <div id="display-image3"></div>
+        <input type="file" style="display:none;visibility:none" onchange="loadFile3(event)" name="image_file_int" id="image_file_int" class="btn btn-info" /><br>
+        <img id="display-image3" width="200"/>
    
                             </div>
                             <div class="modal-footer">
@@ -218,6 +218,24 @@
     });
 </script>
 <script>
+var loadFile = function(event) {
+	var image = document.getElementById('display-image');
+	image.src = URL.createObjectURL(event.target.files[0]);
+};
+</script>
+<script>
+var loadFile2 = function(event) {
+	var image = document.getElementById('display-image2');
+	image.src = URL.createObjectURL(event.target.files[0]);
+};
+</script>
+<script>
+var loadFile3 = function(event) {
+	var image = document.getElementById('display-image3');
+	image.src = URL.createObjectURL(event.target.files[0]);
+};
+</script>
+<!--<script>
     function getImage(imagename){
         var newimg=imagename.replace(/^.*\\/,"");
         $('#display-image').html(newimg);
@@ -234,4 +252,4 @@
         var newimg3=imagename.replace(/^.*\\/,"");
         $('#display-image3').html(newimg3);
     }
-</script>
+</script>-->
