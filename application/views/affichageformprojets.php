@@ -55,8 +55,50 @@
                 <!-- Page content-->
                 <div class="container-fluid">
                     <h1 class="mt-4">Projets</h1>
-<div class="limiter">
-		<div class="container-table100">
+                    <button type="button" class="btn" data-toggle="modal" data-target="#modalproj"><i class="fa fa-plus"></i> Ajout projet</button>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                            <form id="upload_form">
+        <label for="nomduprojet">Nom du Projet</label><br>
+        <input type="text" id="nomduprojet" name="nomduprojet"><br>
+        <label for="lname">Date</label><br>
+        <input type="date" id="dateproj" name="dateproj"><br>
+        <label for="lieu">Lieu</label><br>
+        <input type="text" id="lieu" name="lieu"><br>
+        <label for="description">Description</label><br>
+        <input type="text" id="description" name="description"><br>
+        <label for="Participant">Participant</label><br>
+        <input type="number" id="participant" name="participant"><br>
+        <label for="budget">Budget</label><br>
+        <input type="number" id="budget" name="budget"><br>
+        <label for="image_file_cov">Image Couverture</label><br>
+        <input type="file" name="image_file_cov" id="image_file_cov" class="btn btn-info" /><br>
+        <label for="image_file_ext">Image Exterieure</label><br>
+        <input type="file" name="image_file_ext" id="image_file_ext" class="btn btn-info" /><br>
+        <label for="image_file_int">Image Interieure</label><br>
+        <input type="file" name="image_file_int" id="image_file_int" class="btn btn-info" /><br>
+        
+   
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
+                                <button type="button" name="upload" id="upload" value="upload" class="btn btn-primary">Ajouter</button>
+                            </div>
+                            </form>
+                            </div>
+                        </div>
+                        </div>
+                 
+                        <div class="limiter">
+		        <div class="container-table100">
 			<div class="wrap-table100">
 				<div class="table100 ver1 m-b-110">
 					<div class="table100-head">
@@ -148,3 +190,26 @@
 
 </body>
 </html>
+<script>
+    $(document).ready(function() {
+        $('#upload_form').on('submit', function(e) {
+            e.preventDefault();
+
+            if ($('#image_file_cov').val() == '') {
+                alert('noimg');
+            } else {
+                $.ajax({
+                    url: "<?php echo base_url(); ?>index.php/Home/ajoutprojet",
+                    method: "POST",
+                    data: new FormData(this),
+                    contentType: false,
+                    cache: false,
+                    processData: false,
+                    success: function(data) {
+                        alert("IdÃ©e est en cours de traitement");
+                    }
+                });
+            }
+        });
+    });
+</script>
