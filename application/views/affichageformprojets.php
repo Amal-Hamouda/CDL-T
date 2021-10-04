@@ -56,11 +56,11 @@
                 <div class="container-fluid">
                     <h1 class="mt-4">Projets</h1>
                     <button type="button" class="btn" data-toggle="modal" data-target="#modalproj"><i class="fa fa-plus"></i> Ajout projet</button>
-                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal fade" id="modalproj" tabindex="-1" role="dialog" aria-labelledby="modalprojLabel" aria-hidden="true">
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                <h5 class="modal-title" id="modalprojLabel">Ajouter un projet</h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                                 </button>
