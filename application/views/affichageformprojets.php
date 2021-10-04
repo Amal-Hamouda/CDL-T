@@ -81,13 +81,13 @@
         <input type="number" style="background-color:#6c7ae02e;border:1px solid #ced4da"class="form-control" id="participant" name="participant"><br>
         <label for="budget" class="col-form-label">Budget:</label><br>
         <input type="number" style="background-color:#6c7ae02e;border:1px solid #ced4da" class="form-control" id="budget" name="budget"><br>
-        <label for="image_file_cov">Image Couverture:<i class="fa fa-image" style="cursor:pointer;font-size:24px"></i></label><br>
+        <label for="image_file_cov">Image Couverture: <i class="fa fa-image" style="cursor:pointer;font-size:24px"></i></label><br>
         <input type="file" style="display:none;visibility:none" onchange="getImage(this.value);" name="image_file_cov" id="image_file_cov" class="btn btn-info" /><br>
         <div id="display-image"></div>
-        <label for="image_file_ext">Image Exterieure:<i class="fa fa-image" style="cursor:pointer;font-size:24px"></i></label><br>
+        <label for="image_file_ext">Image Exterieure: <i class="fa fa-image" style="cursor:pointer;font-size:24px"></i></label><br>
         <input type="file" style="display:none;visibility:none" onchange="getImage2(this.value);" name="image_file_ext" id="image_file_ext" class="btn btn-info" /><br>
         <div id="display-image2"></div>
-        <label for="image_file_int">Image Interieure:<i class="fa fa-image" style="cursor:pointer;font-size:24px"></i></label><br>
+        <label for="image_file_int">Image Interieure: <i class="fa fa-image" style="cursor:pointer;font-size:24px"></i></label><br>
         <input type="file" style="display:none;visibility:none" onchange="getImage3(this.value);" name="image_file_int" id="image_file_int" class="btn btn-info" /><br>
         <div id="display-image3"></div>
    
