@@ -83,13 +83,13 @@
         <input type="number" style="background-color:#6c7ae02e;border:1px solid #ced4da" class="form-control" id="budget" name="budget"><br>
         <label for="image_file_cov">Image Couverture: <i class="fa fa-image" style="cursor:pointer;font-size:24px"></i></label>
         <input type="file" style="display:none;visibility:none" onchange="loadFile(event)" name="image_file_cov" id="image_file_cov" class="btn btn-info" />
-        <img id="display-image" width="100"/><br>
+        <img id="display-image" width="100" style="margin-bottom:10px"/><br>
         <label for="image_file_ext">Image Exterieure: <i class="fa fa-image" style="cursor:pointer;font-size:24px"></i></label>
         <input type="file" style="display:none;visibility:none" onchange="loadFile2(event)" name="image_file_ext" id="image_file_ext" class="btn btn-info" />
-        <img id="display-image2" width="100"/><br>
+        <img id="display-image2" width="100" style="margin-bottom:10px"/><br>
         <label for="image_file_int">Image Interieure: <i class="fa fa-image" style="cursor:pointer;font-size:24px"></i></label>
         <input type="file" style="display:none;visibility:none" onchange="loadFile3(event)" name="image_file_int" id="image_file_int" class="btn btn-info" />
-        <img id="display-image3" width="100"/><br>
+        <img id="display-image3" width="100" style="margin-bottom:10px"/><br>
    
                             </div>
                             <div class="modal-footer">
