@@ -21,7 +21,7 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>resources/css/main.css">
     <link href="<?php echo base_url();?>resources/css/styles.css" rel="stylesheet" />
 <!--===============================================================================================-->
-<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"> </script> 
 </head>
 <body>
@@ -87,12 +87,11 @@
         <input type="file" style="background-color:#6c7ae02e;" name="image_file_ext" id="image_file_ext" class="btn btn-info" /><br>
         <label for="image_file_int">Image Interieure:</label><br>
         <input type="file" style="background-color:#6c7ae02e;" name="image_file_int" id="image_file_int" class="btn btn-info" /><br>
-        <button type="button" name="upload" id="upload" value="upload" class="btn btn-primary">Ajouter</button>
    
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
-                                <button type="button" name="upload" id="upload" value="upload" class="btn btn-primary">Ajouter</button>
+                                <button name="upload" id="upload" value="upload" class="btn btn-primary">Ajouter</button>
                             </div>
                             </form>
                             </div>
