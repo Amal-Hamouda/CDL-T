@@ -67,18 +67,18 @@
                             </div>
                             <div class="modal-body">
                             <form id="upload_form">
-        <label for="nomduprojet">Nom du Projet</label><br>
-        <input type="text" id="nomduprojet" name="nomduprojet"><br>
-        <label for="lname">Date</label><br>
-        <input type="date" id="dateproj" name="dateproj"><br>
-        <label for="lieu">Lieu</label><br>
-        <input type="text" id="lieu" name="lieu"><br>
-        <label for="description">Description</label><br>
-        <input type="text" id="description" name="description"><br>
-        <label for="Participant">Participant</label><br>
-        <input type="number" id="participant" name="participant"><br>
-        <label for="budget">Budget</label><br>
-        <input type="number" id="budget" name="budget"><br>
+        <label for="nomduprojet" class="col-form-label">Nom du Projet</label><br>
+        <input type="text" class="form-control" id="nomduprojet" name="nomduprojet"><br>
+        <label for="date" class="col-form-label">Date</label><br>
+        <input type="date" class="form-control" id="dateproj" name="dateproj"><br>
+        <label for="lieu" class="col-form-label">Lieu</label><br>
+        <input type="text" class="form-control" id="lieu" name="lieu"><br>
+        <label for="description" class="col-form-label">Description</label><br>
+        <input type="text" class="form-control" id="description" name="description"><br>
+        <label for="Participant" class="col-form-label">Participant</label><br>
+        <input type="number" class="form-control" id="participant" name="participant"><br>
+        <label for="budget" class="col-form-label">Budget</label><br>
+        <input type="number" class="form-control" id="budget" name="budget"><br>
         <label for="image_file_cov">Image Couverture</label><br>
         <input type="file" name="image_file_cov" id="image_file_cov" class="btn btn-info" /><br>
         <label for="image_file_ext">Image Exterieure</label><br>
