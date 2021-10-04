@@ -85,7 +85,7 @@
         <input type="file" style="background-color:#6c7ae02e;" name="image_file_ext" id="image_file_ext" class="btn btn-info" /><br>
         <label for="image_file_int">Image Interieure:</label><br>
         <input type="file" style="background-color:#6c7ae02e;" name="image_file_int" id="image_file_int" class="btn btn-info" /><br>
-        
+        <button type="button" name="upload" id="upload" value="upload" class="btn btn-primary">Ajouter</button>
    
                             </div>
                             <div class="modal-footer">
