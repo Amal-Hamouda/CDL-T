@@ -67,24 +67,24 @@
                             </div>
                             <div class="modal-body">
                             <form id="upload_form">
-        <label for="nomduprojet" class="col-form-label">Nom du Projet</label><br>
-        <input type="text" class="form-control" id="nomduprojet" name="nomduprojet"><br>
-        <label for="date" class="col-form-label">Date</label><br>
-        <input type="date" class="form-control" id="dateproj" name="dateproj"><br>
-        <label for="lieu" class="col-form-label">Lieu</label><br>
-        <input type="text" class="form-control" id="lieu" name="lieu"><br>
-        <label for="description" class="col-form-label">Description</label><br>
-        <input type="text" class="form-control" id="description" name="description"><br>
-        <label for="Participant" class="col-form-label">Participant</label><br>
-        <input type="number" class="form-control" id="participant" name="participant"><br>
-        <label for="budget" class="col-form-label">Budget</label><br>
-        <input type="number" class="form-control" id="budget" name="budget"><br>
-        <label for="image_file_cov">Image Couverture</label><br>
-        <input type="file" name="image_file_cov" id="image_file_cov" class="btn btn-info" /><br>
-        <label for="image_file_ext">Image Exterieure</label><br>
-        <input type="file" name="image_file_ext" id="image_file_ext" class="btn btn-info" /><br>
-        <label for="image_file_int">Image Interieure</label><br>
-        <input type="file" name="image_file_int" id="image_file_int" class="btn btn-info" /><br>
+        <label for="nomduprojet" class="col-form-label">Nom du Projet:</label><br>
+        <input type="text" style="background-color:#6c7ae02e;border:1px solid #ced4da" class="form-control" id="nomduprojet" name="nomduprojet"><br>
+        <label for="date" class="col-form-label">Date:</label><br>
+        <input type="date" style="background-color:#6c7ae02e;border:1px solid #ced4da" class="form-control" id="dateproj" name="dateproj"><br>
+        <label for="lieu" class="col-form-label">Lieu:</label><br>
+        <input type="text" style="background-color:#6c7ae02e;border:1px solid #ced4da"class="form-control" id="lieu" name="lieu"><br>
+        <label for="description" class="col-form-label">Description:</label><br>
+        <input type="text" style="background-color:#6c7ae02e;border:1px solid #ced4da"class="form-control" id="description" name="description"><br>
+        <label for="Participant" class="col-form-label">Participant:</label><br>
+        <input type="number" style="background-color:#6c7ae02e;border:1px solid #ced4da"class="form-control" id="participant" name="participant"><br>
+        <label for="budget" class="col-form-label">Budget:</label><br>
+        <input type="number" style="background-color:#6c7ae02e;border:1px solid #ced4da" class="form-control" id="budget" name="budget"><br>
+        <label for="image_file_cov">Image Couverture:</label><br>
+        <input type="file" style="background-color:#6c7ae02e;" name="image_file_cov" id="image_file_cov" class="btn btn-info" /><br>
+        <label for="image_file_ext">Image Exterieure:</label><br>
+        <input type="file" style="background-color:#6c7ae02e;" name="image_file_ext" id="image_file_ext" class="btn btn-info" /><br>
+        <label for="image_file_int">Image Interieure:</label><br>
+        <input type="file" style="background-color:#6c7ae02e;" name="image_file_int" id="image_file_int" class="btn btn-info" /><br>
         
    
                             </div>
