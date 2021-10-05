@@ -1131,15 +1131,16 @@ plusieurs fois.. ”</p> <br>						<div id="Quoteita" style="color:#777">Coran s
                                 </div>
                             </div>
 
-							<?php
-           if($fetch_projets->num_rows() > 0)
-           {
-                foreach($fetch_projets->result() as $row)
-                {
-           ?>
+		
                             <div class="col-xl-8">
                                 <div class="testimonials__slider-holder">
                                     <div class="testimonials-slider testimonials-slider--style-3">
+				<?php
+           		if($fetch_projets->num_rows() > 0)
+           		{
+                	foreach($fetch_projets->result() as $row)
+                	{
+           		?>
                                         <div class="testimonials-slider__item">
                                             <div class="testimonials-slider__icon primary-color">“</div>
                                             <div class="testimonials-slider__text">
@@ -1148,15 +1149,24 @@ plusieurs fois.. ”</p> <br>						<div id="Quoteita" style="color:#777">Coran s
                                                     <div class="col-xl-12 m-0 p-0 col-lg-8 col-md-8">
                                                         <p>Slickhead grunion lake trout. Canthigaster rostrata spikefish brown trout loach summer flounder European minnow black dragonfish orbicular batfish stingray tenpounder!</p>
                                                     </div>
+
                                                 </div>
                                                 <div class="row">
                                                     <img class="img-fluid" src="<?php echo base_url();?>/resources/img/prj1.jpg">
                                                 </div>
+
                                                 <div class="testimonials-slider__author">
+
                                                     <a href="#modalScrollableCenter1" role="button" class="form__submit  m-2" data-toggle="modal">Plus de détail</a>
                                                 </div>
                                             </div>
                                         </div>
+				<?php
+                	}
+        		}
+           		?>
+                                        
+                                       
                                     </div>
                                 </div>
                             </div>
