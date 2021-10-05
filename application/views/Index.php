@@ -1170,11 +1170,6 @@ plusieurs fois.. ”</p> <br>						<div id="Quoteita" style="color:#777">Coran s
                                     </div>
                                 </div>
                             </div>
-
-							<?php
-                }
-           }
-           ?>
                         </div>
                     </div>
                 </section>
