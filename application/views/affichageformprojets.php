@@ -264,6 +264,14 @@ var loadFile3 = function(event) {
 	image.src = URL.createObjectURL(event.target.files[0]);
 };
 </script>
+<script>
+    $('input[type=checkbox]').on('change', function (e) {
+    if ($('input[type=checkbox]:checked').length > 3) {
+        $(this).prop('checked', false);
+        alert("Selectionner 3 elements");
+    }
+});
+</script>
 <!--<script>
     function getImage(imagename){
         var newimg=imagename.replace(/^.*\\/,"");
