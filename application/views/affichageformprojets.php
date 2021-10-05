@@ -169,7 +169,7 @@ thead:last-child tr:last-child th:first-child, tbody:last-child tr:last-child td
                      <td><?php echo $row->nomduprojet; ?></td>
                      <td><?php echo $row->dateproj; ?></td>
                      <td><?php echo $row->lieu; ?></td>
-                     <td><textarea readonly style="border: none; overflow: auto; outline: none; box-shadow: none; resize:none;"><?php echo $row->description; ?></textarea></td>
+                     <td><textarea readonly style="border: none; overflow: auto; outline: none; box-shadow: none; resize:none;width:100%"><?php echo $row->description; ?></textarea></td>
                      <td><?php echo $row->Budget; ?></td>
                      <td><img src="<?php echo base_url();?>/resources/<?php echo $row->image_file_cov; ?>" style="height:50px"></td>                     
                      <td><img src="<?php echo base_url();?>/resources/<?php echo $row->image_file_ext; ?>" style="height:50px"></td>
