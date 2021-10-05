@@ -21,6 +21,48 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>resources/css/main.css">
     <link href="<?php echo base_url();?>resources/css/styles.css" rel="stylesheet" />
 <!--===============================================================================================-->
+<style>
+table { 
+    border: 1px solid #ddd;
+    border-collapse: separate;
+    border-left: 0;
+    border-radius: 6px;
+    border-spacing: 0px;
+	
+}
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+    border-collapse: separate;
+}
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+th{
+	background-color: #6c7ae0;
+	color:white;
+	padding: 12px 4px 12px 4px !important;
+}
+th, td {
+    padding: 8px 4px 6px 4px; 
+    vertical-align: top;
+    border-left: 1px solid #ddd;
+	text-align:center;    
+}
+td {
+    border-top: 1px solid #ddd;    
+}
+thead:first-child tr:first-child th:first-child, tbody:first-child tr:first-child td:first-child {
+    border-radius: 4px 0 0 0;
+}
+thead:last-child tr:last-child th:first-child, tbody:last-child tr:last-child td:first-child {
+    border-radius: 0 0 0 4px;
+}
+
+</style>
 </head>
 <body>
 <div class="d-flex" id="wrapper">
@@ -54,42 +96,29 @@
                 <!-- Page content-->
                 <div class="container-fluid">
                     <h1 class="mt-4">Question a l'imam</h1>
-<div class="limiter">
-		<div class="container-table100">
-			<div class="wrap-table100">
-				<div class="table100 ver1 m-b-110">
-					<div class="table100-head">
-						<table>
-							<thead>
-								<tr class="row100 head">
-									<th class="cell100 column1">ID</th>
-									<th class="cell100 column2">First Name</th>
-									<th class="cell100 column3">Last Name</th>
-									<th class="cell100 column4">Email</th>
-                                    <th class="cell100 column5">Message</th>
-                                    <th class="cell100 column6">Date</th>
-
-								</tr>
-							</thead>
-						</table>
-					</div>
-
-					<div class="table100-body js-pscroll">
-						<table>
-							<tbody>
-                                   <?php
+                    <table>
+  <tr>
+                                    <th>ID</th>
+									<th>First Name</th>
+									<th>Last Name</th>
+									<th>Email</th>
+                                    <th>Message</th>
+                                    <th>Date</th>
+  </tr>
+  <tr>
+  <?php
            if($fetch_question->num_rows() > 0)
            {
                 foreach($fetch_question->result() as $row)
                 {
            ?>
-                <tr class="row100 body">
-                     <td class="cell100 column1"><?php echo $row->id; ?></td>
-                     <td class="cell100 column2"><?php echo $row->prenom; ?></td>
-                     <td class="cell100 column3"><?php echo $row->nom; ?></td>
-                     <td class="cell100 column4"><?php echo $row->email; ?></td>
-                     <td class="cell100 column5"><textarea readonly style="border: none; overflow: auto; outline: none; box-shadow: none; resize:none;"><?php echo $row->msg; ?></textarea></td>
-                     <td class="cell100 column6"><?php echo $row->datejour; ?></td>
+                <tr>
+                     <td><?php echo $row->id; ?></td>
+                     <td><?php echo $row->prenom; ?></td>
+                     <td><?php echo $row->nom; ?></td>
+                     <td><?php echo $row->email; ?></td>
+                     <td><textarea readonly style="border: none; overflow: auto; outline: none; box-shadow: none; resize:none;"><?php echo $row->msg; ?></textarea></td>
+                     <td><?php echo $row->datejour; ?></td>
 
                 </tr>
            <?php
@@ -98,20 +127,15 @@
            else
            {
            ?>
-                <tr class="row100 body">
-                     <td class="cell100" colspan="6">No Data Found</td>
+                <tr >
+                     <td colspan="6">No Data Found</td>
                 </tr>
            <?php
            }
-           ?>			
-							</tbody>
-						</table>
-					</div>
-				</div>
-                </div>
-		</div>
-	</div>
-    </div>
+           ?>		
+  </tr>
+</table>
+
             </div>
         </div>
 <!--===============================================================================================-->	
