@@ -151,6 +151,7 @@ thead:last-child tr:last-child th:first-child, tbody:last-child tr:last-child td
 									<th>Date</th>
 									<th>Lieu</th>
 									<th>Description</th>
+                                    <th>Participants</th>
 									<th>Budget</th>
                                     <th>Image couverture</th>
                                     <th>Image exterieure</th>
@@ -170,6 +171,7 @@ thead:last-child tr:last-child th:first-child, tbody:last-child tr:last-child td
                      <td><?php echo $row->dateproj; ?></td>
                      <td><?php echo $row->lieu; ?></td>
                      <td><textarea readonly style="border: none; overflow: auto; outline: none; box-shadow: none; resize:none;width:100%"><?php echo $row->description; ?></textarea></td>
+                     <td><?php echo $row->participant; ?></td>
                      <td><?php echo $row->Budget; ?></td>
                      <td><img src="<?php echo base_url();?>/resources/<?php echo $row->image_file_cov; ?>" style="height:50px"></td>                     
                      <td><img src="<?php echo base_url();?>/resources/<?php echo $row->image_file_ext; ?>" style="height:50px"></td>
@@ -182,7 +184,7 @@ thead:last-child tr:last-child th:first-child, tbody:last-child tr:last-child td
            {
            ?>
                 <tr>
-                     <td colspan="8">No Data Found</td>
+                     <td colspan="9">No Data Found</td>
                 </tr>
            <?php
            }
