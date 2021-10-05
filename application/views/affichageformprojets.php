@@ -144,7 +144,7 @@ thead:last-child tr:last-child th:first-child, tbody:last-child tr:last-child td
                             </div>
                         </div>
                         </div>
-                        <table>
+                        <table style="margin-top:40px">
   <tr>
                                     <th>Public</th>
 									<th>Nom du Projet</th>
