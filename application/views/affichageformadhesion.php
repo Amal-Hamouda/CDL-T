@@ -100,16 +100,16 @@ thead:last-child tr:last-child th:first-child, tbody:last-child tr:last-child td
                     <table style="margin-top:40px">
   <tr>
                                     <th>ID</th>
-									<th>First Name</th>
-									<th>Last Name</th>
-                                    <th>Date of birth</th>
+									<th>Prenom</th>
+									<th>Nom</th>
+                                    <th>Date de naissance</th>
 									<th>Adresse</th>
 									<th>Ville</th>
 									<th>Pays</th>
 									<th>Email</th>
-									<th>Phone number</th>
-                                    <th>Amount</th>
-                                    <th>Payment method</th>
+									<th>Tel</th>
+                                    <th>Montant</th>
+                                    <th>methode de paiement</th>
                                     <th>Message</th>
                                     <th>Date</th>
   </tr>

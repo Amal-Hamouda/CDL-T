@@ -100,10 +100,10 @@ thead:last-child tr:last-child th:first-child, tbody:last-child tr:last-child td
                     <table style="margin-top:40px">
   <tr>
                                      <th>ID</th>
-									<th>First Name</th>
-									<th>Last Name</th>
+									<th>Prenom</th>
+									<th>Nom</th>
 									<th>Email</th>
-                                    <th>Phone</th>
+                                    <th>Tel</th>
                                     <th>Message</th>
                                     <th>Date</th>
   </tr>

@@ -97,12 +97,12 @@ thead:last-child tr:last-child th:first-child, tbody:last-child tr:last-child td
                     <table style="margin-top:40px">
   <tr>
                                     <th>ID</th>
-									<th>First Name</th>
-									<th>Last Name</th>
+									<th>Prenom</th>
+									<th>Nom</th>
 									<th>Email</th>
-                                    <th>Payment method</th>
                                     <th>Message</th>
-                                    <th>Amount</th>
+                                    <th>Methode de paiement</th>
+                                    <th>Montant</th>
                                     <th>Date</th>
   </tr>
   <tr>
@@ -117,8 +117,8 @@ thead:last-child tr:last-child th:first-child, tbody:last-child tr:last-child td
                      <td><?php echo $row->prenom; ?></td>
                      <td><?php echo $row->nom; ?></td>
                      <td><?php echo $row->email; ?></td>
-                     <td><?php echo $row->payment_method; ?></td>
                      <td><textarea readonly style="border: none; overflow: auto; outline: none; box-shadow: none; resize:none;width:100%"><?php echo $row->msg; ?></textarea></td>
+                     <td><?php echo $row->payment_method; ?></td>
                      <td><?php echo $row->montant; ?></td>
                      <td><?php echo $row->datejour; ?></td>
 
