@@ -1144,15 +1144,14 @@ plusieurs fois.. ”</p> <br>						<div id="Quoteita" style="color:#777">Coran s
                                         <div class="testimonials-slider__item">
                                             <div class="testimonials-slider__icon primary-color">“</div>
                                             <div class="testimonials-slider__text">
-                                                <h4>Projet 1</h4>
+                                                <h4><?php echo $row->nomduprojet; ?></h4>
                                                 <div class="row">
                                                     <div class="col-xl-12 m-0 p-0 col-lg-8 col-md-8">
-                                                        <p>Slickhead grunion lake trout. Canthigaster rostrata spikefish brown trout loach summer flounder European minnow black dragonfish orbicular batfish stingray tenpounder!</p>
+                                                        <p><?php echo $row->description; ?></p>
                                                     </div>
-
                                                 </div>
                                                 <div class="row">
-                                                    <img class="img-fluid" src="<?php echo base_url();?>/resources/img/prj1.jpg">
+                                                    <img class="img-fluid" src="<?php echo base_url();?>/resources/<?php echo $row->image_file_cov; ?>">
                                                 </div>
 
                                                 <div class="testimonials-slider__author">
