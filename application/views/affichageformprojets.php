@@ -22,7 +22,51 @@
     <link href="<?php echo base_url();?>resources/css/styles.css" rel="stylesheet" />
 <!--===============================================================================================-->
 <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"> </script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"> </script>
+<!--===============================================================================================-->
+
+    <style>
+table { 
+    border: 1px solid #ddd;
+    border-collapse: separate;
+    border-left: 0;
+    border-radius: 6px;
+    border-spacing: 0px;
+	
+}
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+    border-collapse: separate;
+}
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+th{
+	background-color: #6c7ae0;
+	color:white;
+	padding: 12px 4px 12px 4px !important;
+}
+th, td {
+    padding: 8px 4px 6px 4px; 
+    vertical-align: top;
+    border-left: 1px solid #ddd;
+	text-align:center;    
+}
+td {
+    border-top: 1px solid #ddd;    
+}
+thead:first-child tr:first-child th:first-child, tbody:first-child tr:first-child td:first-child {
+    border-radius: 4px 0 0 0;
+}
+thead:last-child tr:last-child th:first-child, tbody:last-child tr:last-child td:first-child {
+    border-radius: 0 0 0 4px;
+}
+
+</style> 
 </head>
 <body>
 <div class="d-flex" id="wrapper">
@@ -100,49 +144,36 @@
                             </div>
                         </div>
                         </div>
-                 
-                        <div class="limiter">
-		        <div class="container-table100">
-			<div class="wrap-table100">
-				<div class="table100 ver1 m-b-110">
-					<div class="table100-head">
-						<table>
-							<thead>
-								<tr class="row100 head">
-                                     <th class="cell100 column1">Public</th>
-									<th class="cell100 column1">Nom du Projet</th>
-									<th class="cell100 column2">Date</th>
-									<th class="cell100 column3">Lieu</th>
-									<th class="cell100 column4">Description</th>
-									<th class="cell100 column5">Budget</th>
-                                    <th class="cell100 column6">Image couverture</th>
-                                    <th class="cell100 column7">Image exterieure</th>
-                                    <th class="cell100 column8">Image interieure</th>
-                                 
-								</tr>
-							</thead>
-						</table>
-					</div>
-
-					<div class="table100-body js-pscroll">
-						<table>
-							<tbody>
-                                   <?php
+                        <table>
+  <tr>
+                                    <th>Public</th>
+									<th>Nom du Projet</th>
+									<th>Date</th>
+									<th>Lieu</th>
+									<th>Description</th>
+									<th>Budget</th>
+                                    <th>Image couverture</th>
+                                    <th>Image exterieure</th>
+                                    <th>Image interieure</th>
+  </tr>
+ 
+  <tr>
+  <?php
            if($fetch_projets->num_rows() > 0)
            {
                 foreach($fetch_projets->result() as $row)
                 {
            ?>
-                <tr class="row100 body">
-                <td class="cell100 column1"> <input type="checkbox" id="valide" name="valide" value="valide"  style="margin-left:auto; margin-right:auto;"></td>
-                     <td class="cell100 column1"><?php echo $row->nomduprojet; ?></td>
-                     <td class="cell100 column2"><?php echo $row->dateproj; ?></td>
-                     <td class="cell100 column3"><?php echo $row->lieu; ?></td>
-                     <td class="cell100 column4"><textarea readonly style="border: none; overflow: auto; outline: none; box-shadow: none; resize:none;"><?php echo $row->description; ?></textarea></td>
-                     <td class="cell100 column5"><?php echo $row->Budget; ?></td>
-                     <td class="cell100 column6"><img src="<?php echo base_url();?>/resources/<?php echo $row->image_file_cov; ?>" style="height:50px"></td>                     
-                     <td class="cell100 column7"><img src="<?php echo base_url();?>/resources/<?php echo $row->image_file_ext; ?>" style="height:50px"></td>
-                     <td class="cell100 column8"><img src="<?php echo base_url();?>/resources/<?php echo $row->image_file_cov; ?>" style="height:50px"></td>
+                <tr>
+                <td> <input type="checkbox" id="valide" name="valide" value="valide"  style="margin-left:auto; margin-right:auto;"></td>
+                     <td><?php echo $row->nomduprojet; ?></td>
+                     <td><?php echo $row->dateproj; ?></td>
+                     <td><?php echo $row->lieu; ?></td>
+                     <td><textarea readonly style="border: none; overflow: auto; outline: none; box-shadow: none; resize:none;"><?php echo $row->description; ?></textarea></td>
+                     <td><?php echo $row->Budget; ?></td>
+                     <td><img src="<?php echo base_url();?>/resources/<?php echo $row->image_file_cov; ?>" style="height:50px"></td>                     
+                     <td><img src="<?php echo base_url();?>/resources/<?php echo $row->image_file_ext; ?>" style="height:50px"></td>
+                     <td><img src="<?php echo base_url();?>/resources/<?php echo $row->image_file_cov; ?>" style="height:50px"></td>
                 </tr>
            <?php
                 }
@@ -150,21 +181,17 @@
            else
            {
            ?>
-                <tr class="row100 body">
-                     <td class="cell100" colspan="8">No Data Found</td>
+                <tr>
+                     <td colspan="8">No Data Found</td>
                 </tr>
            <?php
            }
            ?>			
-							</tbody>
-						</table>
-     
-					</div>
-				</div>
-                </div>
-		</div>
-	</div>
-    </div>
+  </tr>
+
+</table>
+                      
+   
             </div>
         </div>
 <!--===============================================================================================-->	
