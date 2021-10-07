@@ -254,8 +254,7 @@ thead:last-child tr:last-child th:first-child, tbody:last-child tr:last-child td
 document.getElementById('exit').addEventListener("click", f1);
 function f1 () {
      $('#content').load('<?php echo base_url(); ?>index.php/Home/ajoutprojet');
-    });
-});
+    };
 </script>
 <script>
 var loadFile = function(event) {
