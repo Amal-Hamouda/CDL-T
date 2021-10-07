@@ -97,7 +97,7 @@ thead:last-child tr:last-child th:first-child, tbody:last-child tr:last-child td
                 <!-- Page content-->
                 <div class="container-fluid">
                     <h1 class="mt-4">Adhésion</h1>
-                    <table style="margin-top:40px">
+                    <table style="margin-top:40px" id="table">
   <tr>
                                     <th>ID</th>
 									<th>Prenom</th>
@@ -150,7 +150,9 @@ thead:last-child tr:last-child th:first-child, tbody:last-child tr:last-child td
            ?>			
   </tr>
 </table>
-
+<div style="text-align:center">
+                        <button id="downloadexcel" class="btn btn-success">Export to excel</button>
+   </div>
             </div>
         </div>
 <!--===============================================================================================-->	
@@ -173,6 +175,16 @@ thead:last-child tr:last-child th:first-child, tbody:last-child tr:last-child td
 			
 		
 	</script>
+<!--===============================================================================================-->
+<script src="<?php echo base_url();?>resources/js/table2excel.js"></script>
+
+<script>
+    document.getElementById("downloadexcel").addEventListener('click', function(){
+        var table2excel = new Table2Excel();
+  table2excel.export(document.querySelectorAll("#table"), "Tableau adhesion");
+    });
+ 
+</script>
 <!--===============================================================================================-->
 	<script src="<?php echo base_url();?>resources/js/main.js"></script>
     <script src="<?php echo base_url();?>resources/js/scripts.js"></script>
