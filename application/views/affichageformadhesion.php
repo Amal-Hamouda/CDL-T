@@ -133,7 +133,7 @@ thead:last-child tr:last-child th:first-child, tbody:last-child tr:last-child td
                      <td><?php echo $row->montant; ?></td>
                      <td><?php echo $row->payment_method; ?></td>
                      <td><textarea readonly style="border: none; overflow: auto; outline: none; box-shadow: none; resize:none;width:100%"><?php echo $row->msg; ?></textarea></td>
-                     <td><?php echo $row->datejour; ?></td>
+                     <td><?php echo date( "d/m/y h:i:sa", strtotime($row->datejour)) ; ?></td>
 
                 </tr>
            <?php
