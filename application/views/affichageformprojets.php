@@ -144,7 +144,7 @@ thead:last-child tr:last-child th:first-child, tbody:last-child tr:last-child td
                             </div>
                         </div>
                         </div>
-                        <div id=content>
+                        
                         <table style="margin-top:40px" id="table">
   <tr>
                                     <th>Public</th>
@@ -193,7 +193,7 @@ thead:last-child tr:last-child th:first-child, tbody:last-child tr:last-child td
   </tr>
 
 </table>
-        </div>
+        
    
             </div>
         </div>
@@ -250,7 +250,7 @@ thead:last-child tr:last-child th:first-child, tbody:last-child tr:last-child td
 
 <script>
 $('#exit').click(function(){
-$('#content').load('#table')
+$('#table').load('#table')
 });
 </script>
 <script>
