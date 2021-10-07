@@ -257,6 +257,7 @@ thead:last-child tr:last-child th:first-child, tbody:last-child tr:last-child td
             dataType: 'json',
             success: function(response) {
                 $('#table').html(response);
+                $("#table").load("<?php echo base_url(); ?>index.php/Home/fetch_projets #table");
             }
         });
     });
