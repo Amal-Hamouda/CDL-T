@@ -144,8 +144,7 @@ thead:last-child tr:last-child th:first-child, tbody:last-child tr:last-child td
                             </div>
                         </div>
                         </div>
-                        <?php
-                        $contents='<table style="margin-top:40px" id="table">
+                        <table style="margin-top:40px" id="table">
   <tr>
                                     <th>Public</th>
 									<th>Nom du Projet</th>
@@ -192,9 +191,8 @@ thead:last-child tr:last-child th:first-child, tbody:last-child tr:last-child td
            ?>			
   </tr>
 
-</table>';
-echo json_encode($content);
-?>    
+</table>
+            
    
             </div>
         </div>
