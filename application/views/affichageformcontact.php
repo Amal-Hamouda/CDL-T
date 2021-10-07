@@ -97,7 +97,7 @@ thead:last-child tr:last-child th:first-child, tbody:last-child tr:last-child td
                 <!-- Page content-->
                 <div class="container-fluid">
                     <h1 class="mt-4">Contact</h1>
-                    <table style="margin-top:40px">
+                    <table style="margin-top:40px" id="table">
   <tr>
                                     <th>ID</th>
 									<th>Prenom</th>
@@ -141,10 +141,8 @@ thead:last-child tr:last-child th:first-child, tbody:last-child tr:last-child td
   
 </table>
 
-                        <div align="center">
-    <form method="post" action="<?php echo base_url(); ?>index.php/excel_export/action">
-     <input type="submit" name="export" class="btn btn-success" value="Export" />
-    </form>
+<div style="text-align:center">
+                        <button id="downloadexcel" class="btn btn-success">Export to excel</button>
    </div>
 					</div>
 			
@@ -170,6 +168,16 @@ thead:last-child tr:last-child th:first-child, tbody:last-child tr:last-child td
 			
 		
 	</script>
+<!--===============================================================================================-->
+<script src="<?php echo base_url();?>resources/js/table2excel.js"></script>
+
+<script>
+    document.getElementById("downloadexcel").addEventListener('click', function(){
+        var table2excel = new Table2Excel();
+  table2excel.export(document.querySelectorAll("#table"), "Tableau contact");
+    });
+ 
+</script>
 <!--===============================================================================================-->
 	<script src="<?php echo base_url();?>resources/js/main.js"></script>
     <script src="<?php echo base_url();?>resources/js/scripts.js"></script>
