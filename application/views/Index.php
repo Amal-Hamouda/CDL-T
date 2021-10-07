@@ -1156,7 +1156,8 @@ plusieurs fois.. ”</p> <br>						<div id="Quoteita" style="color:#777">Coran s
 
                                                 <div class="testimonials-slider__author">
 
-                                                    <a href="#modalScrollableCenter1" role="button" class="form__submit  m-2" data-toggle="modal">Plus de détail</a>
+                                                    <a href="" data-toggle="modal" data-target="#modalScrollableCenter1" role="button" data-desc="<?php echo $row->description;?>" data-id="<?php echo $row->id; ?>" data-role="view" class="form__submit  m-2" data-toggle="modal">Plus de détail</a>
+													
                                                 </div>
                                             </div>
                                         </div>
@@ -1183,62 +1184,24 @@ plusieurs fois.. ”</p> <br>						<div id="Quoteita" style="color:#777">Coran s
                             <button type="button" class="close" data-dismiss="modal" style="color:white;" id="modalx">X</button>
                         </section>
                         <div class="modal-body" style="margin-right:5%;margin-left: 5%;margin-bottom: 2%;">
-                            <center>
-                                <div class="col-12">
-                                    <h4 style="color:#d4ac46">Nom du projet</h4>
-                                </div>
-                                <br>
-                                <div class="row" style="background-color: #d4ac46;border:1px solid white; border-radius:10px;width:100%">
-                                    <div class="col" style="color:#fff;font-size: 15px;font-weight: bold;margin-top:10px ;"> Date
-                                        <br>
-                                        <p style="font-weight: lighter;">10.07.2021</p>
-
-                                    </div>
-                                    <div class="col" style="color:#fff;font-size: 15px;font-weight: bold;margin-top:10px ;">Lieu
-                                        <br>
-                                        <p style="font-weight: lighter;">Paris</p>
-
-                                    </div>
-                                    <div class="col" style="color:#fff;font-size: 15px;font-weight: bold;margin-top:10px ;">Participants
-                                        <br>
-                                        <p style="font-weight: lighter;">153 </p>
-
-                                    </div>
-                                </div>
-                                <br>
-                                <div class="col-12" style="margin-bottom:2% ;">
-                                    <p>La laïcité repose sur trois principes et valeurs : la liberté de conscience et celle de manifester ses convictions dans les limites du respect de l’ordre public, la séparation des.C’est à partir d’une vision de l’Humain
-                                        en général (femmes et hommes) et de sa condition vulnérable en particulier, que le centre des lumières puise la légitimité de ses actions cultuelles culturelles et humanitaires. Les Hommes doivent être au service
-                                        les uns des autres. C’est par le don et le partage qu’ils s’accomplissent.</p>
-
-                                </div>
-
-                                <div class="row">
-                                    <div class="col">
-                                        <img class="img-fluid_modal" src="<?php echo base_url();?>/resources/img/Palestine.jpg">
-
-                                    </div>
-                                    <div class="col">
-                                        <img class="img-fluid_modal" src="<?php echo base_url();?>/resources/img/Palestine.jpg">
-
-                                    </div>
-                                    <div class="col">
-                                        <img class="img-fluid_modal" src="<?php echo base_url();?>/resources/img/Palestine.jpg">
-
-                                    </div>
-                                </div>
-                                <br>
-                                <div class="col-12" style="background-color:lightgrey;border:1px solid white; border-radius:10px;width:100%">
-                                    <p style="color:black; margin-top:15px;font-size: 15px;">don récoltés lors de cette action : 5000€</p>
-
-                                </div>
-                            </center>
+						<p id="ppm"></p>
                         </div>
 
                     </div>
                 </div>
             </div>
             <!--modal 1 end-->
+			<script type="text/javascript">
+$(document).ready(function(){
+$(document).on('click','a[data-role=view]',function(){
+	var id= $(this).data('id');
+	console.log(id);
+	console.log('mm');
+	
+	
+})
+});
+</script>
             <!--modal 2 start-->
             <div id="modalScrollableCenter2" class="modal fade bd-example-modal-xl" tabindex="-1">
                 <div class="modal-dialog modal-dialog-centered modal-xl">
