@@ -1191,17 +1191,7 @@ plusieurs fois.. ”</p> <br>						<div id="Quoteita" style="color:#777">Coran s
                 </div>
             </div>
             <!--modal 1 end-->
-			<script type="text/javascript">
-$(document).ready(function(){
-$(document).on('click','a[data-role=view]',function(){
-	var id= $(this).data('id');
-	console.log(id);
-	console.log('mm');
-	
-	
-})
-});
-</script>
+			
             <!--modal 2 start-->
             <div id="modalScrollableCenter2" class="modal fade bd-example-modal-xl" tabindex="-1">
                 <div class="modal-dialog modal-dialog-centered modal-xl">
@@ -1858,6 +1848,18 @@ $(document).on('click','a[data-role=view]',function(){
 		});
 
 	</script>
+<script type="text/javascript">
+$(document).ready(function(){
+$(document).on('click','a[data-role=view]',function(){
+	var id= $(this).data('id');
+	console.log(id);
+	console.log('mm');
+	
+	
+})
+});
+</script>
+
         <script>
 $(document).ready(function () {
     $('.fix').on('click', function (e) {
