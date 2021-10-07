@@ -249,11 +249,6 @@ thead:last-child tr:last-child th:first-child, tbody:last-child tr:last-child td
 </script>
 
 <script>
-$('#exit').click(function(){
-$('#table').load("test.centre-des-lumieres.fr/CDL-T/index.php/Home/table");
-});
-</script>
-<script>
 var loadFile = function(event) {
 	var image = document.getElementById('display-image');
 	image.src = URL.createObjectURL(event.target.files[0]);
