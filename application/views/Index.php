@@ -1151,7 +1151,11 @@ plusieurs fois.. ”</p> <br>						<div id="Quoteita" style="color:#777">Coran s
                                                     </div>
                                                 </div>
                                                 <div class="row">
+<<<<<<< HEAD
                                                     <img class="img-fluid" style="width:400px;height:400px;" src="<?php echo base_url();?>/resources/<?php echo $row->image_file_cov; ?>">
+=======
+                                                    <img class="img-fluid" style=" width: 400px; height:300px;display: block;margin-left: auto;margin-right: auto; " src="<?php echo base_url();?>/resources/<?php echo $row->image_file_cov; ?>">
+>>>>>>> Team
                                                 </div>
 
                                                 <div class="testimonials-slider__author">
