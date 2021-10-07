@@ -69,6 +69,7 @@ thead:last-child tr:last-child th:first-child, tbody:last-child tr:last-child td
 </style> 
 </head>
 <body>
+<div id="content">
 <div class="d-flex" id="wrapper">
             <!-- Sidebar-->
             <div class="border-end bg-white" id="sidebar-wrapper">
@@ -193,7 +194,7 @@ thead:last-child tr:last-child th:first-child, tbody:last-child tr:last-child td
 
 </table>
             
-   
+        </div>
             </div>
         </div>
 <!--===============================================================================================-->	
@@ -250,16 +251,9 @@ thead:last-child tr:last-child th:first-child, tbody:last-child tr:last-child td
     });
 </script>
 <script type="text/javascript">
-$(document).ready(function () {
-    $(document).on('click', '.exit', function () {
-        $.ajax({
-            url: "<?php echo base_url();?>index.php/home/fetch_projets",
-            type: "POST",
-            dataType: 'json',
-            success: function(response) {
-                $('#table').html(response);
-            }
-        });
+document.getElementById('exit').addEventListener('click', f1);
+function f1 () {
+     $('#content').load('<?php echo base_url(); ?>index.php/Home/ajoutprojet');
     });
 });
 </script>
