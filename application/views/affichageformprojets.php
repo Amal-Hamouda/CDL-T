@@ -138,7 +138,7 @@ thead:last-child tr:last-child th:first-child, tbody:last-child tr:last-child td
    
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" class="exit" data-dismiss="modal">Annuler</button>
+                                <button type="button" class="btn btn-secondary" id="exit" data-dismiss="modal">Annuler</button>
                                 <button name="upload" id="upload"  value="upload" class="btn btn-primary">Ajouter</button>
                             </div>
                             </form>
@@ -251,7 +251,7 @@ thead:last-child tr:last-child th:first-child, tbody:last-child tr:last-child td
     });
 </script>
 <script type="text/javascript">
-document.getElementById('exit').addEventListener('click', f1);
+document.getElementById('exit').addEventListener("click", f1);
 function f1 () {
      $('#content').load('<?php echo base_url(); ?>index.php/Home/ajoutprojet');
     });
