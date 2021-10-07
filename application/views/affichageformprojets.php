@@ -250,7 +250,7 @@ thead:last-child tr:last-child th:first-child, tbody:last-child tr:last-child td
 
 <script>
 $('#exit').click(function(){
-$('#content').load('<?php echo base_url(); ?>index.php/Home/ajoutprojet')
+$('#content').load('#table')
 });
 </script>
 <script>
