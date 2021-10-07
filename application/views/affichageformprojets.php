@@ -250,7 +250,7 @@ thead:last-child tr:last-child th:first-child, tbody:last-child tr:last-child td
 
 <script type="text/javascript">
 
-  document.getElementByid("exit").addEventListener("click", function () {
+  document.getElementByid("exit").addEventListener('click', function () {
         $.ajax({
             url: '<?php echo base_url(); ?>index.php/Home/table',
             method: get,
