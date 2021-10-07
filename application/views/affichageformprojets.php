@@ -250,7 +250,7 @@ thead:last-child tr:last-child th:first-child, tbody:last-child tr:last-child td
 
 <script>
 $('#exit').click(function(){
-$('#table').load("<?php echo base_url();?>index.php/Home/table");
+$('#table').load("test.centre-des-lumieres.fr/CDL-T/index.php/Home/table");
 });
 </script>
 <script>
