@@ -31,7 +31,7 @@ class Home extends CI_Controller {
 }
 public function table()
 {
-    
+	$data["fetch_projets"] = $this->db->get("projets");
   $this->load->view('table');
 
 }

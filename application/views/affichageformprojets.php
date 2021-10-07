@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>contact</title>
+	<title>Projets</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->	
@@ -249,8 +249,8 @@ thead:last-child tr:last-child th:first-child, tbody:last-child tr:last-child td
 </script>
 
 <script type="text/javascript">
-$(document).ready(function () {
-    $(document).on('click', '#exit', function () {
+
+  document.getElementByid("exit").addEventListener("click", function () {
         $.ajax({
             url: '<?php echo base_url(); ?>index.php/Home/table',
             method: get,
@@ -260,7 +260,7 @@ $(document).ready(function () {
             }
         });
     });
-});
+
 </script>
 <script>
 var loadFile = function(event) {
