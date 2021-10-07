@@ -248,6 +248,20 @@ thead:last-child tr:last-child th:first-child, tbody:last-child tr:last-child td
     });
 </script>
 
+<script type="text/javascript">
+$(document).ready(function () {
+    $(document).on('click', '#exit', function () {
+        $.ajax({
+            url: '<?php echo base_url(); ?>index.php/Home/table',
+            method: get,
+            dataType: 'json',
+            success: function(response) {
+                $('#table').html(response);
+            }
+        });
+    });
+});
+</script>
 <script>
 var loadFile = function(event) {
 	var image = document.getElementById('display-image');
