@@ -137,14 +137,15 @@ thead:last-child tr:last-child th:first-child, tbody:last-child tr:last-child td
    
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
-                                <button name="upload" id="upload" value="upload" class="btn btn-primary">Ajouter</button>
+                                <button type="button" class="btn btn-secondary" class="exit" data-dismiss="modal">Annuler</button>
+                                <button name="upload" id="upload"  value="upload" class="btn btn-primary">Ajouter</button>
                             </div>
                             </form>
                             </div>
                         </div>
                         </div>
-                        <table style="margin-top:40px" id="table">
+                        <?php
+                        $contents='<table style="margin-top:40px" id="table">
   <tr>
                                     <th>Public</th>
 									<th>Nom du Projet</th>
@@ -191,8 +192,9 @@ thead:last-child tr:last-child th:first-child, tbody:last-child tr:last-child td
            ?>			
   </tr>
 
-</table>
-            
+</table>';
+echo json_encode($content);
+?>    
    
             </div>
         </div>
@@ -241,20 +243,27 @@ thead:last-child tr:last-child th:first-child, tbody:last-child tr:last-child td
                     processData: false,
                     success: function(data) {
                         alert("IdÃ©e est en cours de traitement");
-                        $.ajax({
-url: "<?php echo base_url();?>index.php/home/fetch_projets",
-method: "GET",
-dataType: 'json',
-success: function(response) {
-   $('#table').html(response);
-}
-});
+      
                     }
                 });
 
             }
         });
     });
+</script>
+<script type="text/javascript">
+$(document).ready(function () {
+    $(document).on('click', '.exit', function () {
+        $.ajax({
+            url: "<?php echo base_url();?>index.php/home/fetch_projets",
+            method: get,
+            dataType: 'json',
+            success: function(response) {
+                $('#table').html(response);
+            }
+        });
+    });
+});
 </script>
 <script>
 var loadFile = function(event) {
