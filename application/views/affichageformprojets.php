@@ -253,7 +253,7 @@ thead:last-child tr:last-child th:first-child, tbody:last-child tr:last-child td
   document.getElementById("exit").addEventListener('click', function () {
         $.ajax({
             url: '<?php echo base_url(); ?>index.php/Home/table',
-            method: get,
+            type:'get' ,
             dataType: 'json',
             success: function(response) {
                 $('#table').html(response);
