@@ -217,6 +217,21 @@ thead:last-child tr:last-child th:first-child, tbody:last-child tr:last-child td
 		
 	</script>
 <!--===============================================================================================-->
+<script type="text/javascript">
+$(document).ready(function () {
+$(document).on('click', '#upload', function () {
+$.ajax({
+url: "<?php echo base_url();?>index.php/home/fetch_projets",
+method: "GET",
+dataType: 'json',
+success: function(response) {
+   $('#table').html(response);
+}
+});
+});
+});
+</script>
+<!--===============================================================================================-->
 	<script src="<?php echo base_url();?>resources/js/main.js"></script>
     <script src="<?php echo base_url();?>resources/js/scripts.js"></script>
 
