@@ -1751,7 +1751,7 @@ plusieurs fois.. ”</p> <br>						<div id="Quoteita" style="color:#777">Coran s
 
 			if (largeur < 576) {
 
-				console.log(window.scrollY);
+				
 
 				if (window.scrollY > 135 && window.scrollY < 415) {
 					elementL1.style.transform ="translate(-50px,0)";
@@ -1796,8 +1796,7 @@ plusieurs fois.. ”</p> <br>						<div id="Quoteita" style="color:#777">Coran s
 					elementR3.style.transform ="transition: 2s";
 				}
 			}
-			console.log(testEcran(largeur));
-			console.log("Votre résolution d 'écran est:" + screen.width +"x" + screen.height +"H" + hauteur +" W" + largeur);
+		
 			if (window.scrollY < 699) {
 				Accueil.classList.add('main-menu__item--active ');
 				Somme.classList.remove('main-menu__item--active ');
@@ -1832,9 +1831,7 @@ plusieurs fois.. ”</p> <br>						<div id="Quoteita" style="color:#777">Coran s
 				Accueil.classList.remove('main-menu__item--active ');
 				participer.classList.remove('main-menu__item--active ');
 			}
-			else {
-				console.log(window.scrollY);
-			}
+			
 		};
 	</script>
 	<script>
@@ -1853,8 +1850,15 @@ $(document).ready(function(){
 $(document).on('click','a[data-role=view]',function(){
 	var id= $(this).data('id');
 	console.log(id);
-	console.log('mm');
-	
+	$.ajax({
+   url:"<?php echo base_url(); ?>index.php/Home/fetch_ProjetUnique",
+   method:"POST",
+   data:{id:id},
+   success:function(data)
+   {	
+   $('#ppm').html(data);
+   }
+  })
 	
 })
 });

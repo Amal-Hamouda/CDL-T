@@ -213,4 +213,56 @@ function ajoutprojet()
             }
 
       }
+
+
+	  function fetch_ProjetUnique(){
+		
+		$id =$_POST["id"];
+		$fetch_projets = $this->db->get("projets");
+		$this->db->where('id', $id);
+		$output = '';
+		if($fetch_projets->num_rows() > 0)
+           		{
+                	foreach($fetch_projets->result() as $row)
+                	{
+						$output .= '<div class="col-12">
+						<h4 style="color:#d4ac46">Nom du projet '.$row["file_name"].'</h4></div>';
+					
+	 
+                	}
+					echo $output;
+        		}
+           		
+
+		$connect = mysqli_connect("localhost", "ep6", "ep6consult", "prj");
+		
+	$query = "
+	select id_use,idee_id,first_name,file_name from rating INNER JOIN user ON (user.id_user=rating.id_use) where idee_id= $id 
+	";
+	
+	$result = mysqli_query($connect, $query);
+	 $output = '';
+	 
+	 if(mysqli_num_rows($result) > 0)
+	 {
+	  while($row = mysqli_fetch_array($result))
+	  {
+	
+		$output .= '
+	 <div class="panel panel-default">
+	  <div class="panel-body" style="word-wrap: break-word">
+	  <img src='.base_url().'upload/'.$row["file_name"].' width="30" height="30" class="img-circle m-b" />';
+	  $output .= '<b> '.$row["first_name"]. '</b></div></div>';
+	}
+		
+	echo $output;
+	
+	}
+	else{
+		$output .= '<p class="text-danger">Pas de Vote</p>';
+		echo $output;
+	}
+	}
+	
+
 }
