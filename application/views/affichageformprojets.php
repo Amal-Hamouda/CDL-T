@@ -254,7 +254,7 @@ $(document).ready(function () {
     $(document).on('click', '.exit', function () {
         $.ajax({
             url: "<?php echo base_url();?>index.php/home/fetch_projets",
-            method: get,
+            type: "POST",
             dataType: 'json',
             success: function(response) {
                 $('#table').html(response);
