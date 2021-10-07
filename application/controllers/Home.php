@@ -226,7 +226,7 @@ function ajoutprojet()
                 	foreach($fetch_projets->result() as $row)
                 	{
 						$output .= '<div class="col-12">
-						<h4 style="color:#d4ac46">Nom du projet '.$row->id.'</h4></div>';
+						<h4 style="color:#d4ac46">Nom du projet '.$id.'</h4></div>';
 					
 	 
                 	}
