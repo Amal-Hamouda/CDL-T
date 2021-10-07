@@ -29,6 +29,12 @@ class Home extends CI_Controller {
   $this->load->view('login');
 
 }
+public function table()
+{
+    
+  $this->load->view('table');
+
+}
 	public function form_validation(){
 		
 		$data = array(
@@ -203,7 +209,7 @@ function ajoutprojet()
           
 
 
-        }
+        			}
                }
             }
 
