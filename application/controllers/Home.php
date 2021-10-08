@@ -218,8 +218,11 @@ function ajoutprojet()
 	  function fetch_ProjetUnique(){
 		
 		$id =$_POST["id"];
-		$fetch_projets = $this->db->get("projets");
-		$fetch_projets =$this->db->where('id', $id);
+		$this->db->select('*');
+		$this->db->from('projets');
+		$this->db->where('id', $id);
+		$fetch_projets = $this->db->get();
+		
 		
 		$output = '';
 		if($fetch_projets->num_rows() > 0)
