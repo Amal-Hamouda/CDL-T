@@ -293,7 +293,7 @@ function ajoutprojet()
 	 
                 	}
 					echo $output;
-					echo $id;
+					
         		}
            		
 
