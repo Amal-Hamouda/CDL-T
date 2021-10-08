@@ -265,11 +265,11 @@ function ajoutprojet()
 
 					</div>';
 					$output .= '<div class="col">
-					<img class="img-fluid_modal" src="'.echo base_url().'/resources/'.$row->image_file_ext.'">
+					<img class="img-fluid_modal" src="'.base_url().'/resources/'.$row->image_file_ext.'">
 
 				</div>';
 					$output .= '<div class="col">
-					<img class="img-fluid_modal" src="'.<?php echo base_url();?>.'/resources/'.$row->image_file_int.'">
+					<img class="img-fluid_modal" src="'.base_url().'/resources/'.$row->image_file_int.'">
 
 				</div>';
 						$output .= '</div><br>';
