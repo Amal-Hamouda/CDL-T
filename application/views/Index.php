@@ -1156,7 +1156,7 @@ plusieurs fois.. ”</p> <br>						<div id="Quoteita" style="color:#777">Coran s
 
                                                 <div class="testimonials-slider__author">
 
-                                                    <a href="#" data-desc="<?php echo $row->description;?>" data-id="<?php echo $row->id; ?>" data-toggle="modal" data-target="#modalScrollableCenter1"  data-role="view" data-toggle="modal">Plus de détail</a>
+                                                    <a href="#" data-desc="<?php echo $row->description;?>" data-id="<?php echo $row->id; ?>" data-toggle="modal" data-target="#modalScrollableCenter1"  data-role="view" class="form__submit  m-2" data-toggle="modal">Plus de détail</a>
 													
                                                 </div>
                                             </div>
