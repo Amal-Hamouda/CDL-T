@@ -261,21 +261,21 @@ function ajoutprojet()
 
 						$output .= '<div class="row">';
 						$output .= '<div class="col">
-						<img class="img-fluid_modal" src="<?php echo base_url();?>/resources/'.$row->image_file_cov.'">
+						<img class="img-fluid_modal" src="'.base_url().'/resources/'.$row->image_file_cov.'">
 
 					</div>';
 					$output .= '<div class="col">
-					<img class="img-fluid_modal" src="<?php echo base_url();?>/resources/'.$row->image_file_ext.'">
+					<img class="img-fluid_modal" src="'.echo base_url().'/resources/'.$row->image_file_ext.'">
 
 				</div>';
 					$output .= '<div class="col">
-					<img class="img-fluid_modal" src="<?php echo base_url();?>/resources/'.$row->image_file_int.'">
+					<img class="img-fluid_modal" src="'.<?php echo base_url();?>.'/resources/'.$row->image_file_int.'">
 
 				</div>';
 						$output .= '</div><br>';
 
 						$output .= '<div class="col-12" style="background-color:lightgrey;border:1px solid white; border-radius:10px;width:100%">
-						<p style="color:black; margin-top:15px;font-size: 15px;">don récoltés lors de cette action : '.$row->budget.'€</p>
+						<p style="color:black; margin-top:15px;font-size: 15px;">don récoltés lors de cette action : '.$row->Budget.'€</p>
 
 					</div>  </center>';
 						
