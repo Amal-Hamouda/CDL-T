@@ -229,7 +229,7 @@ function ajoutprojet()
            		{
                 	foreach($fetch_projets->result() as $row)
                 	{
-						$output .= '<div class="col-12">
+						$output .= '<center><div class="col-12">
 						<h4 style="color:#d4ac46">Nom du projet '.$id.'</h4></div><br>';
 					
 						$output .= '	<div class="row" style="background-color: #d4ac46;border:1px solid white; border-radius:10px;width:100%">';
@@ -253,7 +253,36 @@ function ajoutprojet()
 
                                     </div>';
 
-						$output .='</div>';
+						$output .='</div><br>';
+
+						$output .= '<div class="col-12" style="margin-bottom:2% ;"><p>'.$row->description.'</p>
+
+						</div>';
+
+						$output .= '<div class="row">';
+						$output .= '<div class="col">
+						<img class="img-fluid_modal" src="<?php echo base_url();?>/resources/'.$row->image_file_cov.'">
+
+					</div>';
+					$output .= '<div class="col">
+					<img class="img-fluid_modal" src="<?php echo base_url();?>/resources/'.$row->image_file_ext.'">
+
+				</div>';
+					$output .= '<div class="col">
+					<img class="img-fluid_modal" src="<?php echo base_url();?>/resources/'.$row->image_file_int.'">
+
+				</div>';
+						$output .= '</div><br>';
+
+						$output .= '<div class="col-12" style="background-color:lightgrey;border:1px solid white; border-radius:10px;width:100%">
+						<p style="color:black; margin-top:15px;font-size: 15px;">don récoltés lors de cette action : '.$row->budget.'€</p>
+
+					</div>  </center>';
+						
+                                
+						
+					
+					
 
 
 
