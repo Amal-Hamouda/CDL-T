@@ -219,6 +219,7 @@ function ajoutprojet()
 		
 		$id =$_POST["id"];
 		$fetch_projets = $this->db->get("projets");
+		$fetch_projets =$this->db->where('id', $id);
 		
 		$output = '';
 		if($fetch_projets->num_rows() > 0)
