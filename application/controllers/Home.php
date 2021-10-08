@@ -230,8 +230,37 @@ function ajoutprojet()
                 	foreach($fetch_projets->result() as $row)
                 	{
 						$output .= '<div class="col-12">
-						<h4 style="color:#d4ac46">Nom du projet '.$id.'</h4></div>';
+						<h4 style="color:#d4ac46">Nom du projet '.$id.'</h4></div><br>';
 					
+						$output .= '	<div class="row" style="background-color: #d4ac46;border:1px solid white; border-radius:10px;width:100%">';
+							
+						$output .= '<div class="col" style="color:#fff;font-size: 15px;font-weight: bold;margin-top:10px ;"> Date
+							<br>
+							<p style="font-weight: lighter;">'.$row->dateproj.'</p>
+
+									</div>';
+						
+									
+						$output .= '	<div class="col" style="color:#fff;font-size: 15px;font-weight: bold;margin-top:10px ;">Lieu
+									<br>
+									<p style="font-weight: lighter;">'.$row->lieu.'</p>
+
+								</div>';
+
+						$output .= '<div class="col" style="color:#fff;font-size: 15px;font-weight: bold;margin-top:10px ;">Participants
+                                        <br>
+                                        <p style="font-weight: lighter;">'.$row->participant.'</p>
+
+                                    </div>';
+
+						$output .='</div>';
+
+
+
+
+						
+								
+
 	 
                 	}
 					echo $output;
