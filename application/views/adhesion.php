@@ -256,26 +256,26 @@
 																<label class="fieldlabels">Combien voudriez-vous donner ?</label> <input type="number" placeholder="Insérer le montant désiré..." onchange="enablenext()" id="perso">
 															</div>
 																<div class="col-4">
-																<input class="checkbox-budget" type="radio" name="data" id="budget-1" onclick="enablenext()" value="10" checked>
+																<input class="checkbox-budget" type="radio" name="data" id="budget-1" onclick="" value="10" checked>
 																<label class="for-checkbox-budget" for="budget-1">
 																	<span data-hover="10€">10€</span>
 																</label><!--
 																	
 																-->
-																<input class="checkbox-budget" type="radio" name="data" id="budget-2" onclick="enablenext()" value="25">
+																<input class="checkbox-budget" type="radio" name="data" id="budget-2" onclick="" value="25">
 																<label class="for-checkbox-budget" for="budget-2">							
 																	<span data-hover="25€">25€</span>
 																</label></div><!--
-																--><div class="col-4"><input class="checkbox-budget" type="radio" name="data" id="budget-3" onclick="enablenext()" value="50">
+																--><div class="col-4"><input class="checkbox-budget" type="radio" name="data" id="budget-3" onclick="" value="50">
 																<label class="for-checkbox-budget" for="budget-3">							
 																	<span data-hover="50€">50€</span>
 																</label><!--
 
-																--><input class="checkbox-budget" type="radio" name="data" id="budget-4" onclick="enablenext()" value="100">
+																--><input class="checkbox-budget" type="radio" name="data" id="budget-4" onclick="" value="100">
 																<label class="for-checkbox-budget" for="budget-4">							
 																	<span data-hover="100€">100€</span>
 																</label></div><!--
-																--><div class="col-4"><input class="checkbox-budget" type="radio" name="data" id="budget-5" onclick="enablenext()" value="250">
+																--><div class="col-4"><input class="checkbox-budget" type="radio" name="data" id="budget-5" onclick="" value="250">
 																<label class="for-checkbox-budget" for="budget-5">							
 																	<span data-hover="250€">250€</span>
 																</label><!--
@@ -299,7 +299,19 @@
 						document.getElementById('check').disabled = true;
 					}
 				}
-				
+				function enablenext(){
+					console.log(document.getElementById('perso').value);
+					if(document.getElementById('perso').value > 0){
+						console.log(1);
+						document.getElementById('check').disabled = false;
+						document.getElementById('budget-6').checked= true;
+					}
+					else{
+						alert("Veuillez remplir le montant personalisé")
+						document.getElementById('check').disabled = true;
+					}
+					
+				}
 				</script>
 								</fieldset>
 								<fieldset>
