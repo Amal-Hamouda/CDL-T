@@ -144,7 +144,7 @@ thead:last-child tr:last-child th:first-child, tbody:last-child tr:last-child td
                             </div>
                         </div>
                         </div>
-                        
+                                     <div>
                         <table style="margin-top:40px" id="table">
   <tr>
                                     <th>Public</th>
@@ -185,7 +185,7 @@ thead:last-child tr:last-child th:first-child, tbody:last-child tr:last-child td
            {
            ?>
                 <tr>
-                     <td colspan="9">No Data Found</td>
+                     <td colspan="9">Pas de projets</td>
                 </tr>
            <?php
            }
@@ -193,6 +193,7 @@ thead:last-child tr:last-child th:first-child, tbody:last-child tr:last-child td
   </tr>
 
 </table>
+                                    </div>
         
    
             </div>

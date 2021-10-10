@@ -300,7 +300,8 @@
 					}
 				}
 				function enablenext(){
-					if(document.getElementById('perso').value>0){
+					console.log(document.getElementById('perso').value);
+					if(document.getElementById('perso').value > 0){
 						console.log(1);
 						document.getElementById('check').disabled = false;
 						document.getElementById('budget-6').checked= true;
