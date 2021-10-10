@@ -299,19 +299,7 @@
 						document.getElementById('check').disabled = true;
 					}
 				}
-				function enablenext(){
-					console.log(document.getElementById('perso').value);
-					if(document.getElementById('perso').value > 0){
-						console.log(1);
-						document.getElementById('check').disabled = false;
-						document.getElementById('budget-6').checked= true;
-					}
-					else{
-						alert("Veuillez remplir le montant personalisé")
-						document.getElementById('check').disabled = true;
-					}
-					
-				}
+				
 				</script>
 								</fieldset>
 								<fieldset>
