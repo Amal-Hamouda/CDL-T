@@ -240,7 +240,8 @@ thead:last-child tr:last-child th:first-child, tbody:last-child tr:last-child td
                     cache: false,
                     processData: false,
                     success: function(data) {
-                        alert("IdÃ©e est en cours de traitement");
+                        alert("Projet ajoutée avec succes");
+                        $('#modalproj').modal('hide');
                     }
                 });
             }
