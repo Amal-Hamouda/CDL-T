@@ -481,12 +481,17 @@
 		</div>
 	</div>
 	<script type="text/javascript">
+		document.getElementById('previous').onclick = function() {
+document.getElementById('form2').outerHTML= "";
+
+		}
+		</script>
+	<script type="text/javascript">
   
   document.getElementById('check').onclick = function() {
 	var personel = document.getElementById("perso").value;
 
 document.getElementById("budget-6").value= personel;
-document.getElementById("form2").outerHTML= "";
     								var pay = document.querySelector('input[type="radio"]:checked').value*100;
 
     								var AmountPay = document.querySelector('input[type="radio"]:checked').value;
