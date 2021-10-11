@@ -397,7 +397,7 @@
 										  </section>
 										<label class="fieldlabels"></label>
 								</div>
-									<input type="button" name="previous" class="previous action-button-previous" value="Précédent"  id="previous"/>
+									<input type="button" name="previous" class="previous action-button-previous" value="Précédent"  onclick="remove()" id="previous"/>
 								</fieldset>
 							</form>
 						</div>
@@ -601,6 +601,12 @@ myButton.render('#paypal-payment-button');
 document.getElementById('previous').onclick = function() {
 myButton.close();}
   }
+</script>
+<script>
+	function remove() {
+  var element = document.getElementById("myLink");
+  element.remove();
+}
 </script>
 </footer>
 <!-- footer end-->
