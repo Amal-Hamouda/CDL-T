@@ -397,7 +397,7 @@
 										  </section>
 										<label class="fieldlabels"></label>
 								</div>
-									<input type="button" name="previous" class="previous action-button-previous" value="Précédent"  onclick="remove()" id="previous"/>
+									<input type="button" name="previous" class="previous action-button-previous" value="Précédent"  id="previous"/>
 								</fieldset>
 							</form>
 						</div>
@@ -602,10 +602,11 @@ document.getElementById('previous').onclick = function() {
 myButton.close();}
   }
 </script>
-<script>
-	function remove() {
+<script type="text/javascript">
+document.getElementById('previous').onclick=function() {
+console.log("test");
 document.getElementById("form2").outerHTML= "";
-console.log("test")}
+}
 </script>
 </footer>
 <!-- footer end-->
