@@ -408,12 +408,7 @@
 	  <div style="text-align: center;">
 		<a class="form__submit" type="submit form_fshadow" style="outline:none;margin-top: 20px;margin-bottom:50px" href="<?php echo site_url("Home");?>"> 	&lt; RETOUR VERS L'ACCUEIL</a>
 	</div>
-	<script type="text/javascript">
-document.getElementById('previous').onclick=function() {
-console.log("test");
-document.getElementById("form2").outerHTML= "";
-}
-</script>
+
          <!-- footer start-->
  <footer class="footer footer--front_2"id="footerid">
 	<div class="container">
@@ -491,7 +486,7 @@ document.getElementById("form2").outerHTML= "";
 	var personel = document.getElementById("perso").value;
 
 document.getElementById("budget-6").value= personel;
-
+document.getElementById("form2").outerHTML= "";
     								var pay = document.querySelector('input[type="radio"]:checked').value*100;
 
     								var AmountPay = document.querySelector('input[type="radio"]:checked').value;
