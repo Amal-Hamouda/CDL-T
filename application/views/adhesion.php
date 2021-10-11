@@ -604,9 +604,8 @@ myButton.close();}
 </script>
 <script>
 	function remove() {
-  var element = document.getElementById("form2");
-  element.remove();
-}
+document.getElementById("form2").outerHTML= "";
+console.log("test")}
 </script>
 </footer>
 <!-- footer end-->
