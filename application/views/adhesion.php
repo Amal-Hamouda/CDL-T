@@ -408,6 +408,12 @@
 	  <div style="text-align: center;">
 		<a class="form__submit" type="submit form_fshadow" style="outline:none;margin-top: 20px;margin-bottom:50px" href="<?php echo site_url("Home");?>"> 	&lt; RETOUR VERS L'ACCUEIL</a>
 	</div>
+	<script type="text/javascript">
+document.getElementById('previous').onclick=function() {
+console.log("test");
+document.getElementById("form2").outerHTML= "";
+}
+</script>
          <!-- footer start-->
  <footer class="footer footer--front_2"id="footerid">
 	<div class="container">
@@ -602,12 +608,7 @@ document.getElementById('previous').onclick = function() {
 myButton.close();}
   }
 </script>
-<script type="text/javascript">
-document.getElementById('previous').onclick=function() {
-console.log("test");
-document.getElementById("form2").outerHTML= "";
-}
-</script>
+
 </footer>
 <!-- footer end-->
     </div>
