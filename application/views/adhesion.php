@@ -603,7 +603,7 @@ myButton.render('#paypal-payment-button');
 document.getElementById('previous').onclick = function() {
 myButton.close();
 console.log('hey');
-var frm= "";
+$('#form2').wrap('<a id="myLink" href="javascript:form2.submit()">A Link</a>');
 
 }
   }
