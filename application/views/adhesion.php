@@ -604,7 +604,6 @@ document.getElementById('previous').onclick = function() {
 myButton.close();
 console.log('hey');
 $('#myLink').unwrap();
-document.getElementById('form2').remove();
 }
   }
 </script>
