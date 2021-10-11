@@ -480,12 +480,7 @@
 	   
 		</div>
 	</div>
-	<script type="text/javascript">
-		document.getElementById('previous').onclick = function() {
-document.getElementById('form2').outerHTML= "";
 
-		}
-		</script>
 	<script type="text/javascript">
   
   document.getElementById('check').onclick = function() {
@@ -606,7 +601,9 @@ document.getElementById("budget-6").value= personel;
 myButton.render('#paypal-payment-button');
 document.getElementById('previous').onclick = function() {
 myButton.close();
-console.log('hey')}
+console.log('hey');
+document.getElementById('form2').outerHTML= "";
+}
   }
 </script>
 
