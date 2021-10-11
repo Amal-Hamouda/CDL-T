@@ -605,7 +605,8 @@ document.getElementById("budget-6").value= personel;
 });
 myButton.render('#paypal-payment-button');
 document.getElementById('previous').onclick = function() {
-myButton.close();}
+myButton.close();
+console.log('hey')}
   }
 </script>
 
