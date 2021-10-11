@@ -604,7 +604,7 @@ myButton.close();}
 </script>
 <script>
 	function remove() {
-  var element = document.getElementById("myLink");
+  var element = document.getElementById("form2");
   element.remove();
 }
 </script>
