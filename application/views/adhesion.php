@@ -603,7 +603,8 @@ myButton.render('#paypal-payment-button');
 document.getElementById('previous').onclick = function() {
 myButton.close();
 console.log('hey');
-$('#myLink').unwrap();
+var frm= "";
+
 }
   }
 </script>
