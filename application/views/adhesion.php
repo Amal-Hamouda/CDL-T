@@ -362,7 +362,7 @@
 	
 																 <div id="paypal" class="tab-pane fade pt-3">
 																
-																 <a id="myLink" href="javascript:Form2.submit()">A Link</a>
+																 <a id="myLink" href="javascript:form2.submit()">A Link</a>
 																 </div> 
 																 
    <!-- End -->
