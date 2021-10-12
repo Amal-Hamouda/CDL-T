@@ -326,10 +326,10 @@ function ajoutprojet()
 
 
 	function validProjet(){
-		$IDProjet =$_POST["IDProjet"];
+		$rep =$_POST["IDProjet"];
 		$query =$this->db->query("UPDATE projets
 		SET view = 1
-		WHERE id = $IDProjet;");
+		WHERE id = $rep;");
 	}
 	
 
