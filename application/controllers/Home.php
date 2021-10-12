@@ -202,7 +202,7 @@ function ajoutprojet()
             
 
             //$query =$this->db->query("INSERT INTO projets(nomduprojet,dateproj,lieu,description,participant,Budget,img_file_cov,img_file_ext,img_file_int) VALUES ('$nomduprojet','$dateproj','$lieu','$description','$participant','$budget','1','0','0','0','$image')");
-           $query =$this->db->query("INSERT INTO projets(nomduprojet,dateproj,lieu,description,participant,Budget,image_file_cov,image_file_ext,image_file_int) VALUES ('$nomduprojet','$dateproj','$lieu','$description','$participant','$budget','$image','$image2','$image3')");         
+           $query =$this->db->query("INSERT INTO projets(nomduprojet,dateproj,lieu,description,participant,Budget,image_file_cov,image_file_ext,image_file_int,view) VALUES ('$nomduprojet','$dateproj','$lieu','$description','$participant','$budget','$image','$image2','$image3','0')");         
 
         			}
                }
@@ -322,6 +322,14 @@ function ajoutprojet()
            		
 
 	
+	}
+
+
+	function validProjet(){
+		$IDProjet =$_POST["IDProjet"];
+		$query =$this->db->query("UPDATE projets
+		SET view = 1
+		WHERE id = $IDProjet;"
 	}
 	
 

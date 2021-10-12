@@ -168,6 +168,10 @@ thead:last-child tr:last-child th:first-child, tbody:last-child tr:last-child td
            ?>
                 <tr>
                 <td> <input type="checkbox" id="valide" name="valide" value="valide"  style="margin-left:auto; margin-right:auto;"></td>
+                
+                <td> <input type="hideen" id="<?php echo $row->id;?>" name="IDProjet" style="margin-left:auto; margin-right:auto;"></td>
+                
+
                      <td><?php echo $row->nomduprojet; ?></td>
                      <td><?php echo $row->dateproj; ?></td>
                      <td><?php echo $row->lieu; ?></td>
@@ -286,10 +290,14 @@ var loadFile3 = function(event) {
 </script>
 <script>
     $('input[type=checkbox]').on('change', function (e) {
+        var IDProjet = document.getElementsByName('IDProjet').values;
     if ($('input[type=checkbox]:checked').length > 3) {
         $(this).prop('checked', false);
-        alert("Selectionner 3 elements");
-    }
+        alert("Selectionner 3 elements"+ IDProjet);    }
+        else {
+            alert("Projet Validé"+ IDProjet);
+          
+        }
 });
 </script>
 <!--<script>
