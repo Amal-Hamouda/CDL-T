@@ -226,7 +226,7 @@ function ajoutprojet()
 											  <th>Image interieure</th>
 			</tr>
 		   
-			<tr>';
+			';
  
  
 			if($fetch_projets->num_rows() > 0)
