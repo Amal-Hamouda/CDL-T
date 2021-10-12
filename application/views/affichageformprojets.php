@@ -144,7 +144,7 @@ thead:last-child tr:last-child th:first-child, tbody:last-child tr:last-child td
                             </div>
                         </div>
                         </div>
-                                     <div>
+                                     <div id="TabProj">
                         <table style="margin-top:40px" id="table">
   <tr>
                                     <th>Public</th>
@@ -243,6 +243,7 @@ thead:last-child tr:last-child th:first-child, tbody:last-child tr:last-child td
                     success: function(data) {
                         alert("Projet ajoutée avec succes");
                         $('#modalproj').modal('hide');
+                        $('#TabProj').html(data);
                     }
                 });
             }
