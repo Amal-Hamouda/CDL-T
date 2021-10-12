@@ -167,7 +167,7 @@ thead:last-child tr:last-child th:first-child, tbody:last-child tr:last-child td
                 {
            ?>
                 <tr>
-                <td> <input type="checkbox" id="valide" name="valide" value="valide" onclick="Valid('<?php echo $row1['id_idee']?>')" style="margin-left:auto; margin-right:auto;"></td>
+                <td> <input type="checkbox" id="valide" name="valide" value="valide" onclick="Valid('<?php  echo $row->id;?>')" style="margin-left:auto; margin-right:auto;"></td>
                 
               
 
