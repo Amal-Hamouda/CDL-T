@@ -203,7 +203,45 @@ function ajoutprojet()
 
             //$query =$this->db->query("INSERT INTO projets(nomduprojet,dateproj,lieu,description,participant,Budget,img_file_cov,img_file_ext,img_file_int) VALUES ('$nomduprojet','$dateproj','$lieu','$description','$participant','$budget','1','0','0','0','$image')");
            $query =$this->db->query("INSERT INTO projets(nomduprojet,dateproj,lieu,description,participant,Budget,image_file_cov,image_file_ext,image_file_int) VALUES ('$nomduprojet','$dateproj','$lieu','$description','$participant','$budget','$image','$image2','$image3')");
+		   $fetch_projets = $this->db->get('projets');
+		   
+		   $output = '';
+		   $output = '<table style="margin-top:40px" id="table">
+		   <tr>
+											 <th>Public</th>
+											 <th>Nom du Projet</th>
+											 <th>Date</th>
+											 <th>Lieu</th>
+											 <th>Description</th>
+											 <th>Participants</th>
+											 <th>Budget</th>
+											 <th>Image couverture</th>
+											 <th>Image exterieure</th>
+											 <th>Image interieure</th>
+		   </tr>
+		  
+		   <tr>';
 
+
+		   if($fetch_projets->num_rows() > 0)
+		   {
+			foreach($fetch_projets->result() as $row)
+			{
+				$output = '<tr>
+					 <td> <input type="checkbox" id="valide" name="valide" value="valide"  style="margin-left:auto; margin-right:auto;"></td>
+					 <td>'.$row->nomduprojet.'</td>
+					 <td>'.$row->dateproj.'</td>
+					 <td>'.$row->lieu.'</td>
+					 <td><textarea readonly style="border: none; overflow: auto; outline: none; box-shadow: none; resize:none;width:100%">'. $row->description.'</textarea></td>
+					 <td>'.$row->participant.'</td>
+					 <td>'.$row->Budget.'</td>
+					 <td><img src="<?php echo base_url();?>/resources/'.$row->image_file_cov.'" style="height:50px"></td>                     
+					 <td><img src="<?php echo base_url();?>/resources/'. $row->image_file_ext.'" style="height:50px"></td>
+					 <td><img src="<?php echo base_url();?>/resources/'.$row->image_file_cov.'" style="height:50px"></td>
+						  </tr> </table>';
+			}
+			echo $output;
+		}
 
           
 
@@ -278,22 +316,8 @@ function ajoutprojet()
 						<p style="color:black; margin-top:15px;font-size: 15px;">don récoltés lors de cette action : '.$row->Budget.'€</p>
 
 					</div>  </center>';
-						
-                                
-						
-					
-					
-
-
-
-
-						
-								
-
-	 
                 	}
 					echo $output;
-					
         		}
            		
 
