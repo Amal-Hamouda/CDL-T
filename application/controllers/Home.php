@@ -226,7 +226,7 @@ function ajoutprojet()
 											  <th>Image interieure</th>
 			</tr>
 		   
-			';
+			<tr>';
  
  
 			if($fetch_projets->num_rows() > 0)
@@ -244,9 +244,10 @@ function ajoutprojet()
 					  <td><img src="'.base_url().'/resources/'.$row->image_file_cov.'" style="height:50px"></td>                     
 					  <td><img src="'.base_url().'/resources/'. $row->image_file_ext.'" style="height:50px"></td>
 					  <td><img src="'.base_url().'/resources/'.$row->image_file_cov.'" style="height:50px"></td>
-						   </tr> </table>';
+						   </tr>';
 			 }
 		    }
+			$output .= '/<tr>  </table>';
 		 echo $output;
 
       }
