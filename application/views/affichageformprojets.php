@@ -303,7 +303,7 @@ var loadFile3 = function(event) {
 
 function Valid(rep,viewrep){
 
-    if ($('input[type=checkbox]:checked').length < 3) {
+    if ($('input[type=checkbox]:checked').length <= 3) {
         $.ajax({
    url: "<?php echo base_url(); ?>index.php/Home/validProjet",
    method:"POST",
