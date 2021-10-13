@@ -327,9 +327,16 @@ function ajoutprojet()
 
 	function validProjet(){
 		$rep =$_POST["rep"];
+		$viewrep =$_POST["viewrep"];
+		if ($viewrep == 0){
 		$query =$this->db->query("UPDATE projets
 		SET view = 1
+		WHERE id = $rep;");}
+		else {
+			$query =$this->db->query("UPDATE projets
+		SET view = 0
 		WHERE id = $rep;");
+		}
 	}
 	
 

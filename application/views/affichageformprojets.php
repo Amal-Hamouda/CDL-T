@@ -170,10 +170,10 @@ thead:last-child tr:last-child th:first-child, tbody:last-child tr:last-child td
 
                 <td> 
                 <?php if ($row->view == 0) {?>
-                    <input type="checkbox" id="valide" name="valide" value="valide"    onclick="Valid('<?php  echo $row->id;?>')" style="margin-left:auto; margin-right:auto;"></td>
+                    <input type="checkbox" id="valide" name="valide" value="valide"    onclick="Valid('<?php  echo $row->id;?>','<?php  echo $row->view;?>')" style="margin-left:auto; margin-right:auto;"></td>
                     <?php } ?>
                     <?php if ($row->view == 1) {?>
-                    <input type="checkbox" id="valide" name="valide" value="valide" checked="checked" onclick="Valid('<?php  echo $row->id;?>')" style="margin-left:auto; margin-right:auto;"></td>
+                    <input type="checkbox" id="valide" name="valide" value="valide" checked="checked" onclick="Valid('<?php  echo $row->id;?>','<?php  echo $row->view;?>')" style="margin-left:auto; margin-right:auto;"></td>
                     <?php } ?>
 
                      <td><?php echo $row->nomduprojet; ?></td>
@@ -301,11 +301,11 @@ var loadFile3 = function(event) {
         
 });
 
-function Valid(rep){
+function Valid(rep,viewrep){
 	$.ajax({
    url: "<?php echo base_url(); ?>index.php/Home/validProjet",
    method:"POST",
-   data:{rep:rep},
+   data:{rep:rep,viewrep:viewrep},
    success:function(data)
    {	
 	   
