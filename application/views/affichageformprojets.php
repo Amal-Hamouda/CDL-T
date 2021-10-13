@@ -114,11 +114,11 @@ thead:last-child tr:last-child th:first-child, tbody:last-child tr:last-child td
                             <div class="modal-body">
                             <form id="upload_form">
         <label for="nomduprojet" class="col-form-label">Nom du Projet:</label><br>
-        <input type="text" style="background-color:#6c7ae02e;border:1px solid #ced4da" class="form-control" id="nomduprojet" name="nomduprojet"><br>
+        <input type="text" style="background-color:#6c7ae02e;border:1px solid #ced4da" required="required" class="form-control" id="nomduprojet" name="nomduprojet"><br>
         <label for="date" class="col-form-label">Date:</label><br>
-        <input type="date" style="background-color:#6c7ae02e;border:1px solid #ced4da" class="form-control" id="dateproj" name="dateproj"><br>
+        <input type="date" style="background-color:#6c7ae02e;border:1px solid #ced4da" required="required" class="form-control" id="dateproj" name="dateproj"><br>
         <label for="lieu" class="col-form-label">Lieu:</label><br>
-        <input type="text" style="background-color:#6c7ae02e;border:1px solid #ced4da"class="form-control" id="lieu" name="lieu"><br>
+        <input type="text" style="background-color:#6c7ae02e;border:1px solid #ced4da"class="form-control" required="required" id="lieu" name="lieu"><br>
         <label for="description" class="col-form-label">Description:</label><br>
         <input type="text" style="background-color:#6c7ae02e;border:1px solid #ced4da"class="form-control" id="description" name="description"><br>
         <label for="Participant" class="col-form-label">Participant:</label><br>
@@ -126,13 +126,13 @@ thead:last-child tr:last-child th:first-child, tbody:last-child tr:last-child td
         <label for="budget" class="col-form-label">Budget:</label><br>
         <input type="number" style="background-color:#6c7ae02e;border:1px solid #ced4da" class="form-control" id="budget" name="budget"><br>
         <label for="image_file_cov">Image Couverture: <i class="fa fa-image" style="cursor:pointer;font-size:24px"></i></label>
-        <input type="file" style="display:none;visibility:none" onchange="loadFile(event)" name="image_file_cov" id="image_file_cov" class="btn btn-info" />
+        <input type="file" style="display:none;visibility:none" required="required" onchange="loadFile(event)" name="image_file_cov" id="image_file_cov" class="btn btn-info" />
         <img id="display-image" width="100" style="margin-bottom:10px"/><br>
         <label for="image_file_ext">Image Exterieure: <i class="fa fa-image" style="cursor:pointer;font-size:24px"></i></label>
-        <input type="file" style="display:none;visibility:none" onchange="loadFile2(event)" name="image_file_ext" id="image_file_ext" class="btn btn-info" />
+        <input type="file" style="display:none;visibility:none" required="required" onchange="loadFile2(event)" name="image_file_ext" id="image_file_ext" class="btn btn-info" />
         <img id="display-image2" width="100" style="margin-bottom:10px"/><br>
         <label for="image_file_int">Image Interieure: <i class="fa fa-image" style="cursor:pointer;font-size:24px"></i></label>
-        <input type="file" style="display:none;visibility:none" onchange="loadFile3(event)" name="image_file_int" id="image_file_int" class="btn btn-info" />
+        <input type="file" style="display:none;visibility:none" required="required" onchange="loadFile3(event)" name="image_file_int" id="image_file_int" class="btn btn-info" />
         <img id="display-image3" width="100" style="margin-bottom:10px"/><br>
    
                             </div>
