@@ -169,13 +169,13 @@ thead:last-child tr:last-child th:first-child, tbody:last-child tr:last-child td
                 <tr>
 
                 <td> 
-                <?php if ($row->view == 0) {?>
-                    <input type="checkbox" id="valide" name="valide" value="valide"    onclick="Valid('<?php  echo $row->id;?>','<?php  echo $row->view;?>')" style="margin-left:auto; margin-right:auto;"></td>
-                    <?php } ?>
-                    <?php if ($row->view == 1) {?>
-                    <input type="checkbox" id="valide" name="valide" value="valide" checked="checked" onclick="Valid('<?php  echo $row->id;?>','<?php  echo $row->view;?>')" style="margin-left:auto; margin-right:auto;"></td>
-                    <?php } ?>
-
+                        <?php if ($row->view == 0) {?>
+                        <input type="checkbox" id="valide" name="valide" value="valide"    onclick="Valid('<?php  echo $row->id;?>','<?php  echo $row->view;?>')" style="margin-left:auto; margin-right:auto;">
+                        <?php } ?>
+                        <?php if ($row->view == 1) {?>
+                        <input type="checkbox" id="valide" name="valide" value="valide" checked="checked" onclick="Valid('<?php  echo $row->id;?>','<?php  echo $row->view;?>')" style="margin-left:auto; margin-right:auto;">
+                        <?php } ?>
+                </td>
                      <td><?php echo $row->nomduprojet; ?></td>
                      <td><?php echo $row->dateproj; ?></td>
                      <td><?php echo $row->lieu; ?></td>

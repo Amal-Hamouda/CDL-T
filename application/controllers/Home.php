@@ -234,7 +234,17 @@ function ajoutprojet()
 			 foreach($fetch_projets->result() as $row)
 			 {
 				 $output .= '<tr>
-					  <td> <input type="checkbox" id="valide" name="valide" value="valide"  style="margin-left:auto; margin-right:auto;"></td>
+				 <td>'; 
+				 if($row->view == 0) {
+					 
+					$output .= '<input type="checkbox" id="valide" name="valide" value="valide"    onclick="Valid('.$row->id.','. $row->view.')" style="margin-left:auto; margin-right:auto;">';
+					}
+
+					if ($row->view == 1) {
+						$output .= '<input type="checkbox" id="valide" name="valide" value="valide" checked="checked" onclick="Valid('.$row->id.','. $row->view.')" style="margin-left:auto; margin-right:auto;">';
+					}
+					$output .= '</td>
+					   
 					  <td>'.$row->nomduprojet.'</td>
 					  <td>'.$row->dateproj.'</td>
 					  <td>'.$row->lieu.'</td>
