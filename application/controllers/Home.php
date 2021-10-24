@@ -20,7 +20,10 @@ class Home extends CI_Controller {
 	 */
 	public function index()
 	{
-		$data["fetch_projets"] = $this->db->get("projets");
+		$this->db->select('*');
+		$this->db->from('projets');
+		$this->db->where('valid', 1);
+		$data["fetch_projets"] = $this->db->get();
 		$this->load->view('Index',$data);
 	}
 	public function login()
