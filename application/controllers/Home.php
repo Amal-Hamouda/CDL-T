@@ -22,7 +22,7 @@ class Home extends CI_Controller {
 	{
 		$this->db->select('*');
 		$this->db->from('projets');
-		$this->db->where('valid', 1);
+		$this->db->where('view', 1);
 		$data["fetch_projets"] = $this->db->get();
 		$this->load->view('Index',$data);
 	}
