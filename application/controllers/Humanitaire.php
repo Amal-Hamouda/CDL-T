@@ -3,7 +3,11 @@ class Humanitaire extends CI_Controller {
 
 public function index()
 {
-    $this->load->view('Au-Dela-Des-Mots');
+    $this->db->select('*');
+		$this->db->from('projets');
+		$this->db->where('view', 1);
+		$data["fetch_projets"] = $this->db->get();
+    $this->load->view('Au-Dela-Des-Mots',$data);
 }
 public function form_benevole(){
 		
