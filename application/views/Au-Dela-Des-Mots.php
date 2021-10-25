@@ -477,71 +477,6 @@ Les textes coraniques ou prophétiques qui incitent à l’action humanitaire, q
             </div>
             </section>
             <!--end Counter-->
-            <!--modal 1 start-->
-            <div id="modalScrollableCenter1" class="modal fade bd-example-modal-xl" tabindex="-1">
-                <div class="modal-dialog modal-dialog-centered modal-xl">
-                    <div class="modal-content">
-                        <section style="background-image:url(<?php echo base_url();?>/resources/img/imgmodal.jpg);background-repeat: no-repeat;background-size: cover;height:180px">
-
-                            <button type="button" class="close" data-dismiss="modal" style="color:white;" id="modalx">X</button>
-                        </section>
-                        <div class="modal-body" style="margin-right:5%;margin-left: 5%;margin-bottom: 2%;">
-                            <center>
-                                <div class="col-12">
-                                    <h4 style="color:#7E42AE">Nom du projet</h4>
-                                </div>
-                                <br>
-                                <div class="row" style="background-color: #7E42AE;border:1px solid white; border-radius:10px;width:100%">
-                                    <div class="col" style="color:#fff;font-size: 15px;font-weight: bold;margin-top:10px ;"> Date
-                                        <br>
-                                        <p style="font-weight: lighter;">10.07.2021</p>
-
-                                    </div>
-                                    <div class="col" style="color:#fff;font-size: 15px;font-weight: bold;margin-top:10px ;">Lieu
-                                        <br>
-                                        <p style="font-weight: lighter;">Paris</p>
-
-                                    </div>
-                                    <div class="col" style="color:#fff;font-size: 15px;font-weight: bold;margin-top:10px ;">Participants
-                                        <br>
-                                        <p style="font-weight: lighter;">153 </p>
-
-                                    </div>
-                                </div>
-                                <br>
-                                <div class="col-12" style="margin-bottom:2% ;">
-                                    <p>La laïcité repose sur trois principes et valeurs : la liberté de conscience et celle de manifester ses convictions dans les limites du respect de l’ordre public, la séparation des.C’est à partir d’une vision de l’Humain
-                                        en général (femmes et hommes) et de sa condition vulnérable en particulier, que le centre des lumières puise la légitimité de ses actions cultuelles culturelles et humanitaires. Les Hommes doivent être au service
-                                        les uns des autres. C’est par le don et le partage qu’ils s’accomplissent.</p>
-
-                                </div>
-
-                                <div class="row">
-                                    <div class="col">
-                                        <img class="img-fluid_modal" src="<?php echo base_url();?>/resources/img/Palestine.jpg">
-
-                                    </div>
-                                    <div class="col">
-                                        <img class="img-fluid_modal" src="<?php echo base_url();?>/resources/img/Palestine.jpg">
-
-                                    </div>
-                                    <div class="col">
-                                        <img class="img-fluid_modal" src="<?php echo base_url();?>/resources/img/Palestine.jpg">
-
-                                    </div>
-                                </div>
-                                <br>
-                                <div class="col-12" style="background-color:lightgrey;border:1px solid white; border-radius:10px;width:100%">
-                                    <p style="color:black; margin-top:15px;font-size: 15px;">don récoltés lors de cette action : 5000€</p>
-
-                                </div>
-                            </center>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <!--modal 1 end-->
             <!--modal 2 start-->
             <section class="section elements elements--testimonials no-padding-top">
                 <!-- testimonials style-3 start-->
@@ -616,6 +551,23 @@ Les textes coraniques ou prophétiques qui incitent à l’action humanitaire, q
                 </section>
                 <!-- testimonials style-3 end-->
             </section>
+            <!--modal 1 start-->
+            <div id="modalScrollableCenter1" class="modal fade bd-example-modal-xl" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered modal-xl">
+                    <div class="modal-content">
+                        <section style="background-image:url(<?php echo base_url();?>/resources/img/imgmodal.jpg);background-repeat: no-repeat;background-size: cover;height:180px">
+
+                            <button type="button" class="close" data-dismiss="modal" style="color:white;" id="modalx">X</button>
+                        </section>
+                        <div class="modal-body" style="margin-right:5%;margin-left: 5%;margin-bottom: 2%;">
+                        <p id="ppm"></p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!--modal 1 end-->
+            
             <section class="Quotes" style="background-color:#7E42AE;">
                 <div class="container">
                     <div class="row">
@@ -910,6 +862,24 @@ Les textes coraniques ou prophétiques qui incitent à l’action humanitaire, q
         <script src="<?php echo base_url();?>/resources/js/libs.min.js"></script>
         <!-- scripts-->
         <script src="<?php echo base_url();?>/resources/js/common.min.js"></script>
+        <script type="text/javascript">
+$(document).ready(function(){
+$(document).on('click','a[data-role=view]',function(){
+	var id= $(this).data('id');
+	console.log(id);
+	$.ajax({
+   url:"<?php echo base_url(); ?>index.php/Home/fetch_ProjetUnique",
+   method:"POST",
+   data:{id:id},
+   success:function(data)
+   {	
+   $('#ppm').html(data);
+   }
+  })
+	
+})
+});
+</script>
         <script>
 $(document).ready(function () {
     $('.fix').on('click', function (e) {
