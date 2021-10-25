@@ -868,7 +868,7 @@ $(document).on('click','a[data-role=view]',function(){
 	var id= $(this).data('id');
 	console.log(id);
 	$.ajax({
-   url:"<?php echo base_url(); ?>index.php/Home/fetch_ProjetUnique",
+   url:"<?php echo base_url(); ?>index.php/Humanitaire/fetch_ProjetUnique",
    method:"POST",
    data:{id:id},
    success:function(data)
