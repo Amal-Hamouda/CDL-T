@@ -637,7 +637,7 @@
 							<p>La laïcité garantit aux croyants et aux non-croyants le même droit à la liberté
 								d’expression
 								de leurs convictions.
-								Nous, associations musulmanes participons à élever notre communauté à plus de
+								Nous,  associations musulmanes participons à élever notre communauté à plus de
 								spiritualité et à l'inviter à agir pour l’intérêt général.</p>
 							<p>Le centre des lumières croit en un monde bienveillant et plus juste où les besoins
 								fondamentaux des personnes vulnérables sont satisfaits.</p>
@@ -2010,7 +2010,7 @@
 			<circle cx="12" cy="10" r="3" />
 		</symbol>
 		<symbol viewBox="0 0 16 16" id="previous" xmlns="http://www.w3.org/2000/svg">
-			<path d="M0 7.9L6 3v3h2c8 0 8 8 8 8s-1-4-7.8-4H6v2.9l-6-5z" />
+			<path d="M0 7.9L6 3v3h2c8 0 8 8 8 8s-1-4-7.8-4H6v2.9l-6-5z" /> 
 		</symbol>
 		<symbol viewBox="0 0 31.357 31.357" id="question" xmlns="http://www.w3.org/2000/svg">
 			<path d="M15.255 0c5.424 0 10.764 2.498 10.764 8.473 0 5.51-6.314 7.629-7.67 9.62-1.018 1.481-.678 3.562-3.475 3.562-1.822 0-2.712-1.482-2.712-2.838 0-5.046 7.414-6.188 7.414-10.343 0-2.287-1.522-3.643-4.066-3.643-5.424 0-3.306 5.592-7.414 5.592-1.483 0-2.756-.89-2.756-2.584C5.339 3.683 10.084 0 15.255 0zm-.211 24.406a3.492 3.492 0 013.475 3.476 3.49 3.49 0 01-3.475 3.476 3.49 3.49 0 01-3.476-3.476 3.491 3.491 0 013.476-3.476z" />
